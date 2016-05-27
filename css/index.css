@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/*重置盒子模型*/
+* {
+  font-family: "Arial", "Microsoft Yahei", "微软雅黑", "Times New Roman", "sans-serif", "serif";
+  /*font-family: Tahoma, Helvetica, Arial, sans-serif; //Tahoma 系的中性字体。推荐使用在13px以上的环境。
+  font-family: Trebuchet MS, Verdana, Helvetica, Arial, sans-serif; //Verdana 系的宽扁字体。推荐在11px以下环境使用。
+  font-family: Geogia, Times New Roman, Times, serif; //衬线字体的不二之选。
+  font-family: Lucida Console, Monaco, Courier New, mono, monospace; //一系列等宽字体。写代码很好用。*/
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5% /*10 ÷ 16 × 100% = 62.5%*/;
+}
+.canvas {
+  border: 1px solid #009543;
+}
