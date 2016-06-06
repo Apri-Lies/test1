@@ -38,8 +38,11 @@ a:hover{color:#8E44AD;}
 .purple{background-color: #8E44AD;}
 .gray{background-color: #2C3E50;}
 
-/* 字体颜色 */
+/* 字体 */
+/* 颜色 */
 .white{color:#fff;}
+/* 缩进*/
+.textIndent{text-indent: 2em;text-align:justify;}
 
 /* 浮动 */
 .float-l{float:left;}

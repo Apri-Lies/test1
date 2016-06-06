@@ -1,4 +1,5 @@
 $(function () {
+    /*加载页面*/
     $(".header").load("../tpl/header.tpl nav");
     var listClass = $(".header .nav-menu").attr("class");
     if (listClass !== undefined) {
@@ -6,6 +7,22 @@ $(function () {
             $(".header .nav-menu").removeClass("in");
         }
     }
+    $(".blog-sidebar .sidebar-module ol>li>a").click(loadUrl);
+    function loadUrl(){
+        var aHref =  $(this).prop("href");
+        var temporary = aHref.split("#");
+        var aload = "../tpl/"+temporary[1]+".tpl";
+        $(".blog-main").load(aload);
+        return aload;
+    }
+    $(".footer").load("../tpl/footer.tpl",function(){
+        var titleActive = $(".nav-menu li>a");
+        for(var i=0;i<titleActive.length;i++){
+            if($(titleActive[i]).html() == "Blog"){
+                /*$(".nav-menu li")[i].addClass("active").siblings().$removeClass("active");*/
+            }
+        }
+    });
     /*页面重新加载后事件会重新绑定，使用代理将事件绑定到父元素上*/
     $(document).on("click", ".header .navbar-toggle", function () {
         $(".header .nav-menu").hasClass("in") ? $(".header .nav-menu").removeClass("in") : $(".header .nav-menu").addClass("in");
@@ -19,8 +36,7 @@ $(function () {
         if ($(window).scrollTop()>100){
             $(".backtop").fadeIn(1500);
         }
-        else
-        {
+        else{
             $(".backtop").fadeOut(1500);
         }
     });
