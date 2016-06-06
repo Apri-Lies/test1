@@ -51,4 +51,5 @@
     .header .nav-menu li>a{color:#D4CF30;}
 }
 @media screen and (max-width: 480px) {
+    .carousel-inner .carousel-caption{display: none;}
 }
