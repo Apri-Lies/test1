@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=7">
+    <title>查看详情</title>
+    <link href="../css/base.css" rel="stylesheet" media="screen">
+    <link href="../css/table/fixed_table_rc.css" type="text/css" rel="stylesheet" media="all" />
+    <link href="../css/common.css" rel="stylesheet" media="screen">
+    <link href="../css/car.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div class="content">
+    <!--位置路径-->
+    <div class="path mt5 clearfix">
+        <div class="fl pl20">
+            <i class="icon-home"></i>
+            <a href="">商家管理</a>
+            <i class="icon-arrow-r"></i>
+            <a href="#">查看详情</a>
+        </div>
+    </div>
+    <!--内容页签切换-->
+    <div class="clearfix mt10">
+        <div class="bordt1 bordl1">
+            <h3 class="orange-l  pl5">对账清单详情</h3>
+            <div class="info-table">
+				<table width="100%" cellpadding="0" cellspacing="0" >
+					<tbody>
+						<tr>
+							<td>商家名称：</td>
+							<td>粤A201603013</td>
+							<td>商家代码：</td>
+							<td>东风日产</td>
+						</tr>
+						<tr>
+							<td>商家类型：</td>
+							<td>粤A201603013</td>
+							<td>目标台数：</td>
+							<td>东风日产</td>
+						</tr>
+						<tr>
+							<td>已完成台数：</td>
+							<td>粤A201603013</td>
+							<td>未完成台数：</td>
+							<td>东风日产</td>
+						</tr>
+						<tr>
+							<td>因返还台数：</td>
+							<td>粤A201603013</td>
+							<td>已返还台数：</td>
+							<td>东风日产</td>
+						</tr>
+						<tr>
+							<td>查勘人：</td>
+							<td>粤A201603013</td>
+							<td>拍卖底价：</td>
+							<td>东风日产</td>
+						</tr>
+						<tr>
+							<td>未返还金额：</td>
+							<td colspan="3">1111</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+        </div>
+        <div class="bordt1 bordr1  mt20">
+            <h3 class="orange-l  pl5">完成目标台数</h3>
+            <div class="tab-box clearfix  bordl1 bordt1">
+                <table class="tab-fix">
+                    <thead>
+                    <tr class="orange-l">
+                    	<th>序号</th>
+                        <th>成交日期</th>
+                        <th>交易状态</th>
+                        <th>品牌</th>
+                        <th>车系</th>
+                        <th>车型</th>
+                        <th>VIN</th>
+                        <th>评估编号</th>
+                        <th>场次编号</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>11ewr11</td>
+                        <td>111er122</td>
+                        <td>11dgfaf11</td>
+                        <td>114rwef11</td>
+                        <td>11v11</td>
+                        <td>2016-04-20 11:21:32</td>
+                        <td>114rwef11</td>
+                        <td>11v11</td>
+                        <td>11ewr11</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="bordt1 bordr1  mt20">
+            <h3 class="orange-l  pl5">返还清单列表</h3>
+            <div class="tab-box clearfix  bordl1 bordt1">
+                <table class="tab-fix1">
+                    <thead>
+                    <tr class="orange-l">
+                    	<th>序号</th>
+                        <th>成交日期</th>
+                        <th>返还金额</th>
+                        <th>状态</th>
+                        <th>交易状态</th>
+                        <th>品牌</th>
+                        <th>车系</th>
+                        <th>车型</th>
+                        <th>VIN</th>
+                        <th>评估编号</th>
+                        <th>场次编号</th>
+                        <th>操作</th>
+                        
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>11ewr11</td>
+                        <td>11ewr11</td>
+                        <td>111er122</td>
+                        <td>11dgfaf11</td>
+                        <td>114rwef11</td>
+                        <td>11v11</td>
+                        <td>2016-04-20 11:21:32</td>
+                        <td>114rwef11</td>
+                        <td>2016-04-20 11:21:32</td>
+                        <td>114rwef11</td>
+                        <td>11v11</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="text-c mt10">
+        	<button class="btn btn_bg_gray w100">返回上一页</button>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script src="../js/table/fixed_table_rc.js" type="text/javascript"></script>
+<script src="../js/index.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.tab-fix').fxdHdrCol({
+            fixedCols: 0,
+            width: "100%",
+            height: 120,
+            colModal: [
+                {width: 50,align: 'center'},
+                {width: 120,align: 'center'},
+                {width: 120,align: 'center'},
+                {width: 120,align: 'center'},
+                {width: 120,align: 'center'},
+                {width: 120,align: 'center'},
+                {width: 200,align: 'center'},
+                {width: 200,align: 'center'},
+                {width: 200,align: 'center'},
+                {width: 200,align: 'center'},
+                {width: 120,align: 'center'}
+   
+            ]
+        });
+    });
+	$(function () {
+        $('.tab-fix1').fxdHdrCol({
+            fixedCols: 0,
+            width: "100%",
+            height: 120,
+            colModal: [
+            	{width: 50,align: 'center'},
+                {width: 120,align: 'center'},
+                {width: 120,align: 'center'},
+                {width: 120,align: 'center'},
+                {width: 120,align: 'center'},
+                {width: 120,align: 'center'},
+                {width: 120,align: 'center'},
+                {width: 200,align: 'center'},
+                {width: 200,align: 'center'},
+                {width: 200,align: 'center'},
+                {width: 200,align: 'center'},
+                {width: 120,align: 'center'}
+   
+            ]
+        });
+    });
+
+</script>
+
+</body>
+</html>

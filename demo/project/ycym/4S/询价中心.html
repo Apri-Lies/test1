@@ -1,0 +1,836 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=7">
+    <title>询价中心</title>
+    <link href="../css/base.css" rel="stylesheet" media="screen">
+	<link href="../css/common.css" rel="stylesheet" media="screen">
+    <link href="../css/table/fixed_table_rc.css" type="text/css" rel="stylesheet" media="all"/>
+</head>
+<body>
+<div class="content">
+    <div class="path clearfix"> 
+    	<div class="w200">
+	        <i class="icon-home"></i>
+	        <a href="">询价管理</a>
+	        <i class="icon-arrow-r"></i>
+	        <a href="询价中心.html">询价中心</a>  
+        </div>
+    </div>
+    <div class="clearfix">
+        <dl class="fl mt10 w390">
+            <dt class="fl input-lable">地区：</dt>
+            <dd class="fl">
+				<div class="test1">
+                    <input type="hidden" class="province" value="010000">
+                    <input type="hidden" class="city" value="010100">
+                    <input type="hidden" class="area" value="010101">
+                    <div name="province" type="selectbox" class="sb ml0"><div class="selected">北京</div><div class="opts"><a href="javascript:void(0);" val="-1">请选择</a><a href="javascript:void(0);" val="010000" class="selected">北京</a><a href="javascript:void(0);" val="020000">江苏</a><a href="javascript:void(0);" val="030000">浙江</a></div><div class="sb_icon arrow"></div><input type="hidden" name="province" value="010000"></div>
+                    <div name="city" type="selectbox" class="sb ml10"><div class="selected">北京</div><div class="opts" ><a href="javascript:void(0);" val="-1">请选择</a><a href="javascript:void(0);" val="010100" class="selected">北京</a></div><div class="sb_icon arrow"></div><input type="hidden" name="city" value="010100"></div>
+                    <div name="area" type="selectbox" class="sb ml10"><div class="selected">海淀区</div><div class="opts"><a href="javascript:void(0);" val="-1">请选择</a><a href="javascript:void(0);" val="010101" class="selected">海淀区</a><a href="javascript:void(0);" val="010102">崇文区</a></div><div class="sb_icon arrow"></div><input type="hidden" name="area" value="010101"></div>
+        		</div>
+			</dd>
+        </dl>
+        <dl class="fl mt10 w470">
+            <dt class="input-lable fl">商家名称／车牌号／品牌/VIN/询价编号：</dt>
+            <dd class="fl input">
+                <input type="text" class="text" placeholder="商家名称／车牌号">
+            </dd>
+        </dl>
+        <dl class="fl mt10 w360">
+            <dt class="input-lable fl">发布人／评估人／委托人：</dt>
+            <dd class="input fl">
+                <input type="text" class="text" placeholder="例：发布人">
+            </dd>
+        </dl>
+        <dl class="fl mt10 w480">
+            <dt class="fl input-lable">询价发布时间：</dt>
+            <dd class="fl">
+                <input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img">
+            </dd>
+            <dt class="fl ml5 input-lable">至：</dt>
+            <dd class="fl ">
+                <input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img">
+            </dd>
+        </dl>
+        <dl class="fl w220 mt10">
+            <button class="btn orange w100">查询</button>
+            <button class="ml5 btn-export w100">导出</button>
+        </dl>
+    </div>
+    <div class="clearfix mt10 w500">
+        <span class="dlw350 " style="color: #FF0000">全部（15）</span>
+        <span class="dlw350">询价中（5）</span>
+        <span class="dlw350" style="color: #7B68EE">询价结束（3）</span>
+    </div>
+    <div class="tab-box clearfix mt10 bordl1">
+        <table class="tab-fix">
+            <thead>
+	            <tr class="orange-l">
+	                <th>操作</th>
+	                <th>序号</th>
+	                <th>商家名称</th>
+	                <th>状态</th>
+	                <th>品牌</th>
+	                <th>车系</th>
+	                <th>车型</th>
+	                <th>vin</th>
+	                <th>发布人</th>
+	                <th>最低报价（万元）</th>
+	                <th>最高报价（万元）</th>
+	                <th>平均价（万元）</th>
+	                <th>询价总数</th>
+	                <th>收到报价数</th>
+	                <th>询价剩余时间</th>
+	                <th>询价编号</th>
+	                <th>评估ID</th>
+	                <th>车牌号</th>
+	                <th>询价开始时间</th>
+	                <th>询价结束时间</th>
+	                <th>评估人</th>
+	                <th>委托人</th>
+	            </tr>
+            </thead>
+            <tbody>
+	            <tr>
+	                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+	                    <div class="_operate clearfix top0 left58">
+	                        <a href="询价中心详情.html">查看</a><a href="发布询价.html">发布询价</a><a href="发起拍卖.html">发起拍卖</a>
+	                    </div>操作
+	                </td>
+	                <td>1</td>
+	                <td>测试001</td>
+	                <td>询价中</td>
+	                <td>一汽-大众</td>
+	                <td>捷达</td>
+	                <td>GDF-V 1.9L 柴油先锋</td>
+	                <td>JF1ZN12A0G9024198</td>
+	                <td>李司棋</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	            </tr>
+	            <tr>
+	                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+	                    <div class="_operate clearfix top0 left58">
+	                        <a href="询价中心详情.html">查看</a><a href="发布询价.html">发布询价</a><a href="发起拍卖.html">发起拍卖</a>
+	                    </div>操作
+	                </td>
+	                <td>2</td>
+	                <td>测试001</td>
+	                <td>询价中</td>
+	                <td>一汽-大众</td>
+	                <td>捷达</td>
+	                <td>GDF-V 1.9L 柴油先锋</td>
+	                <td>JF1ZN12A0G9024198</td>
+	                <td>李司棋</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	            </tr>
+	            <tr>
+	                 <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+	                    <div class="_operate clearfix top0 left58">
+	                        <a href="询价中心详情.html">查看</a><a href="发布询价.html">发布询价</a><a href="发起拍卖.html">发起拍卖</a>
+	                    </div>操作
+	                </td>
+	                <td>3</td>
+	                <td>测试001</td>
+	                <td>询价中</td>
+	                <td>一汽-大众</td>
+	                <td>捷达</td>
+	                <td>GDF-V 1.9L 柴油先锋</td>
+	                <td>JF1ZN12A0G9024198</td>
+	                <td>李司棋</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	            </tr>
+	            <tr>
+	                 <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+	                    <div class="_operate clearfix top0 left58">
+	                        <a href="询价中心详情.html">查看</a><a href="发布询价.html">发布询价</a><a href="发起拍卖.html">发起拍卖</a>
+	                    </div>操作
+	                </td>
+	                <td>4</td>
+	                <td>测试001</td>
+	                <td>询价中</td>
+	                <td>一汽-大众</td>
+	                <td>捷达</td>
+	                <td>GDF-V 1.9L 柴油先锋</td>
+	                <td>JF1ZN12A0G9024198</td>
+	                <td>李司棋</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	            </tr>
+	            <tr>
+	                 <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+	                    <div class="_operate clearfix top0 left58">
+	                        <a href="询价中心详情.html">查看</a><a href="发布询价.html">发布询价</a><a href="发起拍卖.html">发起拍卖</a>
+	                    </div>操作
+	                </td>
+	                <td>5</td>
+	                <td>测试001</td>
+	                <td>询价中</td>
+	                <td>一汽-大众</td>
+	                <td>捷达</td>
+	                <td>GDF-V 1.9L 柴油先锋</td>
+	                <td>JF1ZN12A0G9024198</td>
+	                <td>李司棋</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	            </tr>
+	            <tr>
+	                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+	                    <div class="_operate clearfix top0 left58">
+	                        <a href="询价中心详情.html">查看</a><a href="发布询价.html">发布询价</a><a href="发起拍卖.html">发起拍卖</a>
+	                    </div>操作
+	                </td>
+	                <td>6</td>
+	                <td>测试001</td>
+	                <td>询价中</td>
+	                <td>一汽-大众</td>
+	                <td>捷达</td>
+	                <td>GDF-V 1.9L 柴油先锋</td>
+	                <td>JF1ZN12A0G9024198</td>
+	                <td>李司棋</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	            </tr>
+	            <tr>
+	                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+	                    <div class="_operate clearfix top0 left58">
+	                        <a href="询价中心详情.html">查看</a><a href="发布询价.html">发布询价</a><a href="发起拍卖.html">发起拍卖</a>
+	                    </div>操作
+	                </td>
+	                <td>7</td>
+	                <td>测试001</td>
+	                <td>询价中</td>
+	                <td>一汽-大众</td>
+	                <td>捷达</td>
+	                <td>GDF-V 1.9L 柴油先锋</td>
+	                <td>JF1ZN12A0G9024198</td>
+	                <td>李司棋</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	            </tr>
+	            <tr>
+	                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+	                    <div class="_operate clearfix top0 left58">
+	                        <a href="询价中心详情.html">查看</a><a href="发布询价.html">发布询价</a><a href="发起拍卖.html">发起拍卖</a>
+	                    </div>操作
+	                </td>
+	                <td>8</td>
+	                <td>测试001</td>
+	                <td>询价中</td>
+	                <td>一汽-大众</td>
+	                <td>捷达</td>
+	                <td>GDF-V 1.9L 柴油先锋</td>
+	                <td>JF1ZN12A0G9024198</td>
+	                <td>李司棋</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	            </tr>
+	            <tr>
+	                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+	                    <div class="_operate clearfix top0 left58">
+	                        <a href="询价中心详情.html">查看</a><a href="发布询价.html">发布询价</a><a href="发起拍卖.html">发起拍卖</a>
+	                    </div>操作
+	                </td>
+	                <td>9</td>
+	                <td>测试001</td>
+	                <td>询价中</td>
+	                <td>一汽-大众</td>
+	                <td>捷达</td>
+	                <td>GDF-V 1.9L 柴油先锋</td>
+	                <td>JF1ZN12A0G9024198</td>
+	                <td>李司棋</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	            </tr>
+	            <tr>
+	                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+	                    <div class="_operate clearfix top0 left58">
+	                        <a href="询价中心详情.html">查看</a><a href="发布询价.html">发布询价</a><a href="发起拍卖.html">发起拍卖</a>
+	                    </div>操作
+	                </td>
+	                <td>10</td>
+	                <td>测试001</td>
+	                <td>询价中</td>
+	                <td>一汽-大众</td>
+	                <td>捷达</td>
+	                <td>GDF-V 1.9L 柴油先锋</td>
+	                <td>JF1ZN12A0G9024198</td>
+	                <td>李司棋</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	            </tr>
+	            <tr>
+	                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+	                    <div class="_operate clearfix top0 left58">
+	                        <a href="询价中心详情.html">查看</a><a href="发布询价.html">发布询价</a><a href="发起拍卖.html">发起拍卖</a>
+	                    </div>操作
+	                </td>
+	                <td>11</td>
+	                <td>测试001</td>
+	                <td>询价中</td>
+	                <td>一汽-大众</td>
+	                <td>捷达</td>
+	                <td>GDF-V 1.9L 柴油先锋</td>
+	                <td>JF1ZN12A0G9024198</td>
+	                <td>李司棋</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	            </tr>
+	            <tr>
+	                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+	                    <div class="_operate clearfix top0 left58">
+	                        <a href="询价中心详情.html">查看</a><a href="发布询价.html">发布询价</a><a href="发起拍卖.html">发起拍卖</a>
+	                    </div>操作
+	                </td>
+	                <td>12</td>
+	                <td>测试001</td>
+	                <td>询价中</td>
+	                <td>一汽-大众</td>
+	                <td>捷达</td>
+	                <td>GDF-V 1.9L 柴油先锋</td>
+	                <td>JF1ZN12A0G9024198</td>
+	                <td>李司棋</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	            </tr>
+	            <tr>
+	                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+	                    <div class="_operate clearfix top0 left58">
+	                        <a href="询价中心详情.html">查看</a><a href="发布询价.html">发布询价</a><a href="发起拍卖.html">发起拍卖</a>
+	                    </div>操作
+	                </td>
+	                <td>13</td>
+	                <td>测试001</td>
+	                <td>询价中</td>
+	                <td>一汽-大众</td>
+	                <td>捷达</td>
+	                <td>GDF-V 1.9L 柴油先锋</td>
+	                <td>JF1ZN12A0G9024198</td>
+	                <td>李司棋</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	            </tr>
+	            <tr>
+	                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+	                    <div class="_operate clearfix top0 left58">
+	                        <a href="询价中心详情.html">查看</a><a href="发布询价.html">发布询价</a><a href="发起拍卖.html">发起拍卖</a>
+	                    </div>操作
+	                </td>
+	                <td>14</td>
+	                <td>测试001</td>
+	                <td>询价中</td>
+	                <td>一汽-大众</td>
+	                <td>捷达</td>
+	                <td>GDF-V 1.9L 柴油先锋</td>
+	                <td>JF1ZN12A0G9024198</td>
+	                <td>李司棋</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	            </tr>
+	            <tr>
+	                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+	                    <div class="_operate clearfix top0 left58">
+	                        <a href="询价中心详情.html">查看</a><a href="发布询价.html">发布询价</a><a href="发起拍卖.html">发起拍卖</a>
+	                    </div>操作
+	                </td>
+	                <td>15</td>
+	                <td>测试001</td>
+	                <td>询价中</td>
+	                <td>一汽-大众</td>
+	                <td>捷达</td>
+	                <td>GDF-V 1.9L 柴油先锋</td>
+	                <td>JF1ZN12A0G9024198</td>
+	                <td>李司棋</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	            </tr>
+	             <tr>
+	                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+	                    <div class="_operate clearfix top0 left58">
+	                        <a href="询价中心详情.html">查看</a><a href="发布询价.html">发布询价</a><a href="发起拍卖.html">发起拍卖</a>
+	                    </div>操作
+	                </td>
+	                <td>16</td>
+	                <td>测试001</td>
+	                <td>询价中</td>
+	                <td>一汽-大众</td>
+	                <td>捷达</td>
+	                <td>GDF-V 1.9L 柴油先锋</td>
+	                <td>JF1ZN12A0G9024198</td>
+	                <td>李司棋</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	            </tr>
+	             <tr>
+	                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+	                    <div class="_operate clearfix top0 left58">
+	                        <a href="询价中心详情.html">查看</a><a href="发布询价.html">发布询价</a><a href="发起拍卖.html">发起拍卖</a>
+	                    </div>操作
+	                </td>
+	                <td>17</td>
+	                <td>测试001</td>
+	                <td>询价中</td>
+	                <td>一汽-大众</td>
+	                <td>捷达</td>
+	                <td>GDF-V 1.9L 柴油先锋</td>
+	                <td>JF1ZN12A0G9024198</td>
+	                <td>李司棋</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	            </tr>
+	             <tr>
+	                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+	                    <div class="_operate clearfix bottom0 left58">
+	                        <a href="询价中心详情.html">查看</a><a href="发布询价.html">发布询价</a><a href="发起拍卖.html">发起拍卖</a>
+	                    </div>操作
+	                </td>
+	                <td>18</td>
+	                <td>测试001</td>
+	                <td>询价中</td>
+	                <td>一汽-大众</td>
+	                <td>捷达</td>
+	                <td>GDF-V 1.9L 柴油先锋</td>
+	                <td>JF1ZN12A0G9024198</td>
+	                <td>李司棋</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	            </tr>
+	             <tr>
+	                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+	                    <div class="_operate clearfix bottom0 left58">
+	                        <a href="询价中心详情.html">查看</a><a href="发布询价.html">发布询价</a><a href="发起拍卖.html">发起拍卖</a>
+	                    </div>操作
+	                </td>
+	                <td>19</td>
+	                <td>测试001</td>
+	                <td>询价中</td>
+	                <td>一汽-大众</td>
+	                <td>捷达</td>
+	                <td>GDF-V 1.9L 柴油先锋</td>
+	                <td>JF1ZN12A0G9024198</td>
+	                <td>李司棋</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	            </tr>
+	             <tr>
+	                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+	                    <div class="_operate clearfix bottom0 left58">
+	                        <a href="询价中心详情.html">查看</a><a href="发布询价.html">发布询价</a><a href="发起拍卖.html">发起拍卖</a>
+	                    </div>操作
+	                </td>
+	                <td>20</td>
+	                <td>测试001</td>
+	                <td>询价中</td>
+	                <td>一汽-大众</td>
+	                <td>捷达</td>
+	                <td>GDF-V 1.9L 柴油先锋</td>
+	                <td>JF1ZN12A0G9024198</td>
+	                <td>李司棋</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>1.00</td>
+	                <td>1</td>
+	                <td>1</td>
+	                <td>0</td>
+	            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="page fr clearfix mt5 ">
+        <ul>
+            <li><a href="#" class="list"><</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#" class="list">></a></li>
+        </ul>
+    </div>
+    <div class="popup-cover xujia_check" style="display: none;">
+        <div class="popup-win" style="  left:15%; top:5%; width: 960px;position:absolute;" id="">
+            <h2 class="" style="padding: 5px 20px;background: #FF6634;margin-bottom: 0px;font-weight: normal;color: #fff;">查看<div class="lour-close fr">x</div></h2>
+            <div class="content clearfix ">
+                <div class="warn-list clearfix">
+                    <div class="seller h-title clearfix">
+                        <h1 class="pl15">询价信息</h1>
+                    </div>
+                </div>
+                <div class="tab-box  clearfix _table">
+                    <table width="100%" cellpadding="0" cellspacing="0" class="text-left">
+                        <tr>
+                            <td width="20%">发布商家</td>
+                            <td width="80%" colspan="3">广州长佶科技有限公司</td>
+                        </tr>
+                        <tr>
+                            <td>询价编号：</td>
+                            <td>69220151222222441</td>
+                            <td>状态：</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>标题：</td>
+                            <td>长安商用1.5L 精英型</td>
+                            <td>询价描述：</td>
+                            <td>左前龙门架有事故</td>
+                        </tr>
+                        <tr>
+                            <td>询价车辆：</td>
+                            <td>UU15071313273753870</td>
+                            <td>评估ID：</td>
+                            <td>UU15071313273753870</td>
+                        </tr>
+                        <tr>
+                            <td>发布人：</td>
+                            <td>区向坚</td>
+                            <td>评估人：</td>
+                            <td>黄大洪</td>
+                        </tr>
+                        <tr>
+                            <td>品牌：</td>
+                            <td>长安商用</td>
+                            <td>车系：</td>
+                            <td>欧诺</td>
+                        </tr>
+                        <tr>
+                            <td>车型：</td>
+                            <td>1.5L 精英型</td>
+                            <td>车牌号：</td>
+                            <td>粤YJN228</td>
+                        </tr>
+                        <tr>
+                            <td>VIN：</td>
+                            <td>LS4ASB3E9DA630389</td>
+                            <td>最低报价：</td>
+                            <td>43000万元</td>
+                        </tr>
+                        <tr>
+                            <td>最高报价：</td>
+                            <td>43000万元</td>
+                            <td>平均价：</td>
+                            <td>43000.00万元</td>
+                        </tr>
+                        <tr>
+                            <td>询价开始时间：</td>
+                            <td>2015-07-13 13:48</td>
+                            <td>询价结束时间：</td>
+                            <td>2015-07-13 14:00</td>
+                        </tr>
+                        <tr>
+                            <td>询价剩余时间：</td>
+                            <td>已结束</td>
+                            <td>询问总家数：</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>收到报价数量：</td>
+                            <td>1</td>
+                            <td>委托人：</td>
+                            <td>区向坚</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="warn-list clearfix">
+                    <div class="seller h-title clearfix">
+                        <h1 class="pl15"> 询价结果</h1>
+                    </div>
+                </div>
+                <div class="tab-box  clearfi _table1">
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>车商名称</td>
+                            <td>报价</td>
+                            <td>报价时间</td>
+                            <td>联系方式</td>
+                        </tr>
+                        <tr>
+                            <td>星星汽车服务车行</td>
+                            <td>1万元</td>
+                            <td>2015-12-22 22:25:32</td>
+                            <td>456</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">最高价：10000.00 最低价：10000.00 报价总数：1人</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script src="../js/jquery.inputbox.js" type="text/javascript"></script>
+<script src="../js/jquery.ganged.js" type="text/javascript"></script>
+<script src="../js//table/fixed_table_rc.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        var data = ['010000:北京', '020000:江苏', '030000:浙江', '040000:南京', '010100:北京', '020100:南京', '020200:苏州', '020300:无锡', '020400:常州', '030100:杭州', '030200:嘉兴', '030300:绍兴'];
+        $('.test1').ganged({'data': data, 'width': 100, 'height': 30});
+    })
+    $(function () {
+        $('.tab-fix').fxdHdrCol({
+            fixedCols:0,
+            width: "100%",
+            height:500,
+            colModal: [
+                {width: 50,align: 'center'},
+                {width: 50,align: 'center'},
+                {width: 100,align: 'center'},
+                {width: 100,align: 'center'},
+                {width: 150,align: 'center'},
+                {width: 100,align: 'center'},
+                {width: 200,align: 'center'},
+                {width: 200,align: 'center'},
+                {width: 100,align: 'center'},
+                {width: 150,align: 'center'},
+                {width: 150,align: 'center'},
+                {width: 150,align: 'center'},
+                {width: 100,align: 'center'},
+                {width: 100,align: 'center'},
+                {width: 150,align: 'center'},
+                {width: 100,align: 'center'},
+                {width: 150,align: 'center'},
+                {width: 150,align: 'center'},
+                {width: 150,align: 'center'},
+                {width: 100,align: 'center'},
+                {width: 100,align: 'center'},
+                {width: 150,align: 'center'}
+            ]
+        });
+    });
+     $(function () {
+		$("tbody tr:odd").addClass("odd");
+		$("tbody tr:even").addClass("even");
+	});
+    function _on_hover(obj){
+        var li_div = obj.getElementsByTagName("div");
+        li_div[0].style.display="block";
+	    }
+    function _out_hover(obj){
+        var li_div = obj.getElementsByTagName("div");
+        li_div[0].style.display="none";
+    }
+</script>
+</body>
+</html>

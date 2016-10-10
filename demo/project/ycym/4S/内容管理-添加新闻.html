@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>添加新闻</title>
+<link rel="stylesheet" media="screen" href="../css/base.css">
+<link rel="stylesheet" media="screen" href="../css/common.css">
+<link rel="stylesheet" media="screen" href="../css/4s.css">
+</head>
+<body>
+	<div class="content">
+		<div class="path clearfix">
+			<div class="fl w400">
+				<i class="icon-home"></i> <a href="">网站管理</a> 
+				<i class="icon-arrow-r"></i><a href="新闻管理(4s).html">新闻管理</a> 
+				<i class="icon-arrow-r"></i><a href="添加新闻管理(4s).html">添加新闻管理</a>
+			</div>
+		</div>
+		<div class="mt10 clearfix">
+			<h3 class="orange-l pl15">添加新闻</h3>
+			<div class="pb15 clearfix">
+				<div class="w550 fl mt15 ">
+					<label class="lable-all fl">标题:</label>
+					<input class="text fl" placeholder="请输入标题" id="name">
+				</div>
+				
+				<div class="w550 fl mt15 ">
+					<label class="lable-all fl">封面照片:</label>
+					<input type="file" name="fileField" id="fileField" class="fl pt5"/>
+				</div>
+				<div class="w550 fl mt15 ">
+					<label class="lable-all fl">排序:</label>
+					<input class="text fl" placeholder="请输入新闻排序" id="name">		
+				</div>
+				
+				<div class="w550 fl mt15 ">
+					<label class="lable-all fl">新闻日期:</label>
+					<input id="d11" type="fl text" onClick="WdatePicker()"class="input-date input-date-img"><em class="input-lable ml5">*显示在前台</em>
+				</div>
+				
+				<div class="w550 fl mt15 ">
+					<label class="lable-all fl">有效日期:</label>
+					<input id="d11" type="fl text" onClick="WdatePicker()" class="input-date input-date-img">
+				</div>
+				<div class="w550 fl mt15 ">
+					<label class="lable-all fl">失效日期:</label>
+						<input id="d11" type="fl text" onClick="WdatePicker()"class="input-date input-date-img">
+				</div>
+				
+				<div class="w550 fl mt15 ">
+					<label class="lable-all fl">PC端点击量:</label>
+					<input class="fl text" value="0">
+				</div>
+				<div class="w550 fl mt15 ">
+					<label class="lable-all fl">移动端点击量:</label>
+					<input class="fl text" value="0">
+				</div>				
+				<div class="w800 fl mt15 ">
+					<label class="lable-all fl">外链:</label>
+					<input class="text fl w300" placeholder="请输入外链地址" id="name"><em class="input-lable ml5">如果填写本框，则点击标题即跳转到该地址</em>
+				</div>				
+				<div class="w800 fl mt15">
+					<label class="lable-all fl">描述:</label>
+					<textarea class="fl" cols="70" rows="8"></textarea>
+				</div>
+				
+				<div class="w800 fl mt15" style="width: 1000px" >
+					<label class="lable-all fl">内容:</label>
+					<script id="ueditor" type="text/plain" style="width:700px;height:500px;padding-left: 130px;"></script>
+				</div>
+				
+				<div class="w800 fl mt15 ">
+					<label class="lable-all pt5 fl">状态:</label>
+					<div class="radio-right fl pt5">
+							<a href="javascript:void(0);" class="a_radio a1" date="1" name="order"><em>正常</em></a>
+							<a href="javascript:void(0);" class="a_radio a1" date="1" name="order"><em>失效</em></a>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="mt20 mb20 text-c">
+			<a href="新闻管理.html"><button class="w100 btn orange-l">返回上一页</button></a>
+			<button class="w100 btn orange">提交</button>
+		</div>
+	</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script src="../js/index.js"></script>	
+<script type="text/javascript" charset="utf-8" src="../js/UEditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/UEditor/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="../js/UEditor/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript" src="../js/UEditor/ueditor.js"></script>
+</body>
+</html>

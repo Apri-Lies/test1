@@ -1,15 +1,46 @@
 <div class="blog-post">
     <h2 class="blog-post-title">js判断一个对象是否为空对象</h2>
 
-    <div class="blog-post-meta"><em>Time:</em><span>December 10, 2015</span><em>source:</em> <a href="#">Internet</a></div>
+    <h3>原生JS方法</h3>
+    <pre>
+        <code>
+            if (typeof model.rows === "object" && !(model.rows instanceof Array)){
+            var hasProp = false;
+            for (var prop in model.rows){
+            hasProp = true;
+            break;
+            }
+            if (hasProp){
+            model.rows = [model.rows];
+            }else{
+            throw "model.rows is empty object";
+            return false;
+            }
+            }
+        </code>
+    </pre>
+    <h3>jQuery中的实现方法</h3>
 
-    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-    <ul>
-        <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-        <li>Donec id elit non mi porta gravida at eget metus.</li>
-        <li>Nulla vitae elit libero, a pharetra augue.</li>
-    </ul>
-    <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-
-    <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+    <p class="textIndent">JavaScript判断object/json 是否为空，可以使用jQuery的isEmptyObject()方法</p>
+    <pre>
+        <code>
+            function isEmptyObject(e) {
+            var t;
+            for (t in e)
+            return !1;
+            return !0
+            }
+        </code>
+    </pre>
+    <p class="textIndent">调用</p>
+    <pre>
+        <code>
+            console.log($.isEmptyObject({"re": 2}));    //false
+            console.log(isEmptyObject());           //true
+            console.log(isEmptyObject({}));         //true
+            console.log(isEmptyObject(null));       //true
+            console.log(isEmptyObject(23));         //true
+            console.log(isEmptyObject({"te": 2}));      //false
+        </code>
+    </pre>
 </div>

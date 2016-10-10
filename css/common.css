@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*重置盒子模型*/
+/*box-reset*/
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -24,28 +24,31 @@ body,html {
   color:#666;
 }
 ul,li{margin:0;padding:0;}
-/* 默认列表 */
-ul>li{list-style: none;}
-
-/* 默认链接 */
+/* default-list */
+ol,ul{list-style: none;}
+table {border-collapse:collapse;border-spacing:0;}
+/* default-link */
 a{color:#3B9A93;}
 a:hover{color:#8E44AD;}
-
-/* 背景色 */
+/* background-color */
 .tif-blue{background-color: #16A085;}
 .green{background-color: #27AE60;}
 .blue{background-color: #2980B9;}
 .purple{background-color: #8E44AD;}
 .gray{background-color: #2C3E50;}
+/* font */
 
-/* 字体 */
-/* 颜色 */
+/* color */
 .white{color:#fff;}
-/* 缩进*/
+/* text-Indent*/
 .textIndent{text-indent: 2em;text-align:justify;}
-
-/* 浮动 */
+/* float */
 .float-l{float:left;}
 .float-r{float:right;}
 .clearfloat{zoom:1}
 .clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+/* table */
+.t-box{display:table;}
+.t-row{display:table-row;}
+.t-cell{display:table-cell;}
+.table{}

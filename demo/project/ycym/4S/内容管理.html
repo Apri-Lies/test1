@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="../css/base.css" rel="stylesheet" media="screen">
+		<link href="../css/common.css" rel="stylesheet" media="screen">
+		<link href="../css/4s.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+		<div class="path clearfix">
+			<div class="fl pl10">
+				<i class="icon-home"></i>
+				<a href="">网站管理</a>
+				<i class="icon-arrow-r"></i>
+				<a href="">内容管理</a>
+			</div>
+		</div>
+		<div style="height:700px;">
+			<div class="tabs">
+	            <ul class="">
+	                <li class="active"><a href="#">公司介绍</a></li>
+	                <li class=""><a href="#">联系方式</a></li>
+	                <li class=""><a href="#">关于我们</a></li>
+	                <li class=""><a href="#">介绍服务</a></li>
+	            </ul>
+	        </div>
+	        <div class="sub_tab pl30 pt30">
+	        	<div>
+		        	<label class="fl">编辑内容：</label>
+		        	<script id="container1" name="content" type="text/plain" style="width:700px;height:400px;padding-left:70px;"></script>
+	        	</div>
+	        	<div style="display: none;">
+		        	<label class="fl">编辑内容：</label>
+		        	<script id="container2" name="content" type="text/plain" style="width:700px;height:400px;padding-left:70px;"></script>
+	        	</div>
+	        	<div style="display: none;">
+		        	<label class="fl">编辑内容：</label>
+		        	<script id="container3" name="content" type="text/plain" style="width:700px;height:400px;padding-left:70px;"></script>
+	        	</div>
+	        	<div style="display: none;">
+		        	<label class="fl">编辑内容：</label>
+		        	<script id="container4" name="content" type="text/plain" style="width:700px;height:400px;padding-left:70px;"></script>
+	        	</div>	        	
+	        </div>
+	       <div class="center  w100"><button class=" btn orange w100 mt20">提交</button></div>
+	       
+        </div>
+
+<script src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/UEditor/ueditor.config.js"></script>
+<script type="text/javascript" src="../js/UEditor/ueditor.all.min.js"> </script>
+<script type="text/javascript" src="../js/UEditor/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript" src="../js/UEditor/ueditor.js"></script>
+<script type="text/javascript">
+        var ue = UE.getEditor('container1');
+        /*var ue = UE.getEditor('container2');
+        var ue = UE.getEditor('container3');
+        var ue = UE.getEditor('container4');*/
+        
+        $(function(){
+		$('.tabs>ul>li').click(function(){
+			var index=$(this).index();
+			//var ue = UE.getEditor('container'+(index+1).toString());
+			$(this).addClass('active').siblings().removeClass('active');
+			$(".sub_tab>div").eq(index).show().siblings().hide();
+			
+		})
+	})
+</script>
+</body>
+</html>

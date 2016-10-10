@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=7">
+    <title>短信配置-单独配置</title>
+    <link href="../css/base.css" rel="stylesheet" media="screen">
+    <link href="../css/common.css" rel="stylesheet" media="screen">
+    <link href="../css/admin-main.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div class="content">
+    <!--位置路径-->
+    <div class="path mt5 clearfix">
+        <div class="fl pl20">
+            <i class="icon-home"></i>
+            <a href="站点设置.html">系统设置</a>
+            <i class="icon-arrow-r"></i>
+            <a href="#">短信配置</a>
+        </div>
+    </div>
+    <!--内容-->
+    <h3 class="orange-l pl5 mt5">短信接口</h3>
+
+    <div class="clearfix bordb1 bordl1 bordr1 pb20">
+        <dl class="min-w500 mt20 fl">
+            <dt class="fl input-lable w180 text-r">接口地址：</dt>
+            <dd class="fl input">
+                <input type="text" class="text" value="" placeholder="接口地址">
+            </dd>
+            <dd class="color-ff4200 fl line-h32 hide">输入信息有误</dd>
+        </dl>
+        <dl class="min-w500 mt20 fl">
+            <dt class="fl input-lable w180 text-r">接口用户名：</dt>
+            <dd class="fl input">
+                <input type="text" class="text" value="" placeholder="接口用户名">
+            </dd>
+            <dd class="color-ff4200 fl line-h32 hide">输入信息有误</dd>
+        </dl>
+        <dl class="min-w500 mt20 fl">
+            <dt class="fl input-lable w180 text-r">接口密码：</dt>
+            <dd class="fl input">
+                <input type="text" class="text" value="" placeholder="接口密码">
+            </dd>
+            <dd class="color-ff4200 fl line-h32 hide">输入信息有误</dd>
+        </dl>
+    </div>
+    <h3 class="orange-l pl5 mt5">常用配置</h3>
+
+    <div class="clearfix bordr1 bordl1 bordt1">
+        <div class="tabs mt20">
+            <ul class="pl30">
+                <li class="active ml40"><a href="短信配置.html">单独配置</a></li>
+                <li class=""><a href="短信配置-小规模拍卖.html">小规模拍卖</a></li>
+                <li class=""><a href="短信配置-区域拍卖.html">区域拍卖</a></li>
+            </ul>
+        </div>
+        <div class="sub_tab pb10 bordl0 bordr0 clearfix pt30">
+            <dl class="w-100 mt20 fl">
+                <dt class="fl input-lable w200 text-r">手机获取服务器时间：</dt>
+                <dd class="fl input">
+                    <input type="text" class="text" value="" placeholder="手机获取服务器时间">
+                </dd>
+                <dd class="fl color-ff4200  line-h32 pl10 hide">输入信息有误</dd>
+            </dl>
+            <dl class="w-100 mt10 fl">
+                <dt class="fl input-lable w200 text-r">注册验证码短信：</dt>
+                <dd class="fl">
+                    <textarea class="bordt1 bordb1 bordl1 bordr1 line-h32 pl10" cols="60" rows="4" placeholder=""></textarea>
+                </dd>
+                <dd class="fl pl10 w400">[code]为验证码，必须加入</dd>
+            </dl>
+            <dl class="w-100 mt10 fl">
+                <dt class="fl input-lable w200 text-r">注册通知：</dt>
+                <dd class="fl">
+                    <textarea class="bordt1 bordb1 bordl1 bordr1 line-h32 pl10" cols="60" rows="4" placeholder=""></textarea>
+                </dd>
+                <dd class="fl pl10 w400">[password]为密码，[gid]为商家</dd>
+            </dl>
+            <dl class="w-100 mt10 fl">
+                <dt class="fl input-lable w200 text-r">通过审核通知：</dt>
+                <dd class="fl">
+                    <textarea class="bordt1 bordb1 bordl1 bordr1 line-h32 pl10" cols="60" rows="4" placeholder=""></textarea>
+                </dd>
+                <dd class="fl pl10 w400">[code]为验证码，必须加入</dd>
+            </dl>
+            <dl class="w-100 mt10 fl">
+                <dt class="fl input-lable w200 text-r">驳回审核通知：</dt>
+                <dd class="fl">
+                    <textarea class="bordt1 bordb1 bordl1 bordr1 line-h32 pl10" cols="60" rows="4" placeholder=""></textarea>
+                </dd>
+                <dd class="fl pl10 w400">[remark]为驳回原因，不加入则不会在 短信内提示原因</dd>
+            </dl>
+            <dl class="w-100 mt10 fl">
+                <dt class="fl input-lable w200 text-r">分配通知短信：</dt>
+                <dd class="fl">
+                    <textarea class="bordt1 bordb1 bordl1 bordr1 line-h32 pl10" cols="60" rows="4" placeholder=""></textarea>
+                </dd>
+                <dd class="fl pl10 w400">[g_name]为操作商家、[contact]为预约联系人、[mobile]为预约联系电话，均必须加入！</dd>
+            </dl>
+            <dl class="w-100 mt10 fl">
+                <dt class="fl input-lable w200 text-r">拍卖开始前提醒：</dt>
+                <dd class="fl">
+                    <textarea class="bordt1 bordb1 bordl1 bordr1 line-h32 pl10" cols="60" rows="4" placeholder=""></textarea>
+                </dd>
+                <dd class="fl pl10 w400">[pmcc]为拍卖场次，[car]为车辆信息 (品牌+车系)</dd>
+            </dl>
+            <dl class="w-100 mt10 fl">
+                <dt class="fl input-lable w200 text-r">子站用户注册通知：</dt>
+                <dd class="fl">
+                    <textarea class="bordt1 bordb1 bordl1 bordr1 line-h32 pl10" cols="60" rows="4" placeholder=""></textarea>
+                </dd>
+                <dd class="fl pl10 w400">[pass]为子站用户注册码</dd>
+            </dl>
+            <div class="clearfix w-100 text-c">
+                <button class="btn orange mt20 w100">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>

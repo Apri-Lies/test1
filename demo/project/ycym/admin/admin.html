@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=7">
+    <title>平台</title>
+    <link rel="stylesheet" media="screen" href="../css/base.css">
+    <link href="../css/common.css" rel="stylesheet" media="screen">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/index.js"></script>
+    <script>
+        //	是否收缩【true-已经缩起】
+        var flag = true;
+
+        window.onload = function () {
+            //鼠标放上 切换背景
+            $(".subNavBox .subNavimg").each(function () {
+                $(this).mouseenter(function () {
+                    var src = $(this).find(".img-tab").find("img").attr("src").split("_");
+                    $(this).find(".img-tab").find("img").attr("src", src[0] + "_" + src[1] + "_" + "2.png");
+                }).mouseleave(function () {
+                    var src = $(this).find(".img-tab").find("img").attr("src").split("_");
+                    $(this).find(".img-tab").find("img").attr("src", src[0] + "_" + src[1] + "_" + "1.png");
+                })
+            })
+//点击收缩
+            $(".cf").click(function () {
+                if ($("#sidebar").width() > 150) {
+                    /*$('.c-left').html('<i class="iconfont">&#xe60e;</i>');*/
+                    $(this).removeClass('lleft');
+                    $(this).addClass('lright');
+                    $('#sidebar').css("width", "48px");
+                    $('#sc').css("width", "48px");
+                    $('.part2').css("width", "48px");
+                    $('.item').css("width", "48px");
+                    $('.subNavlist').css("width", "48px");
+                    $('.subNavlist  label').css("display", "none");
+                    $('.subNavlist em').css("margin-left", "15px");
+                    $('.navContent').css("display", "none");
+                    flag = false;
+                    $('#contentFrame').width($(window).width() - $('#sidebar').width());
+                }
+                else {
+                    /*$('.c-left').html('<i class="iconfont">&#xe611;</i>');*/
+                    $(this).removeClass('lright');
+                    $(this).addClass('lleft');
+                    $('#sidebar').css("width", "180px");
+                    $('#sc').css("width", "180px");
+                    $('.part2').css("width", "180px");
+                    $('.item').css("width", "180px");
+                    $('.subNavlist  label').css("display", "block");
+                    $('.subNavlist').css("width", "180px");
+                    $('.subNavlist em').css("margin-left", "5px");
+                    flag = true;
+                    $('#contentFrame').width($(window).width() - $('#sidebar').width());
+                }
+            });
+            $('.item').height($(window).height())
+            $("#contentFrame").width($(window).width() - $('#sidebar').width());
+            $("#contentFrame").height($(window).height() - $('#headFrame').height()-48);
+
+        }
+
+        $(window).resize(function () {
+            $('.item').height($(window).height())
+            $("#contentFrame").width($(window).width() - $('#sidebar').width());
+            $("#contentFrame").height($(window).height() - $('#headFrame').height()-48);
+        });
+
+        $(function () {
+            $(".subNav").click(function () {
+                if (flag) {
+                    $(this).toggleClass("currentDd").siblings(".subNav").removeClass("currentDd")
+                    $(this).toggleClass("currentDt").siblings(".subNav").removeClass("currentDt")
+                    $(this).next(".navContent").slideToggle(300).siblings(".navContent").slideUp(500)
+                }
+            })
+        })
+
+    </script>
+</head>
+<body>
+<div class="Head-All clearfix">  
+      <a href="#" alt="" class="logo fl"><img src="../images/logo.png" alt=""></a>
+      <div class="headTips fr pt10">
+      	<a href="###" class="tips" id="MyPersonImg"><img src="../images/head.gif" alt="修改信息" class="img1" style="width:18px;"></a>
+        <a href="#" class="tips"><img src="../images/car-index/computer.png" alt="" class="img1"></a>
+        <a href="#" class="tips"><img src="../images/car-index/set.png" alt="" class="img1"></a>
+        <!--<a href="#" class="tips notice"><img src="../images/car-index/news.png" alt="" class="img1">
+            <div class="Number">5</div>
+        </a>-->
+        <!-- <a href="#" class="tips"><img src="../images/car-index/down.png" alt="" class="img1"></a> -->
+        <!--<a href="#" class="tips"><img src="../images/car-index/compass.png" alt="" class="img1"></a>-->
+        <a href="#" class="tips"><img src="../images/car-index/about.png" alt="" class="img1">
+        </a>
+       <!-- <a href="#" class="tips fsk"><img src="../images/car-index/personal.png" alt="" class="img1"><img src="../images/car-index/personal-bottom.png"/>
+        </a>
+        <a href="#" class="tips"><img src="../images/note.png" alt="" class="img1"></a>-->
+        <a href="#" class="tips"><img src="../images/car-index/edition.png" alt="" class="img1 deal"></a>
+        <a href="#" class="tips" id="note"><img src="../images/note.png" alt="" class="img1"></a>
+        <a href="#" class="tips"><img src="../images/exit.png" alt="" class="img1"></a>
+    </div>
+   		
+</div>
+<div class="popup-cover deal-box" style="display: none;">
+    <div class="popup-win" style="  left:38%; top:25%; width:400px;position:absolute;" >
+        <div class="popup-title">
+            <div class="fl title">温馨提示</div>
+            <div class="fr close deal-close">x</div>
+        </div>
+        <div class="mt20" style=" width: 300px; line-height: 35px;margin:10px auto 0;">当前系统版本号：V1.01.125</div>
+        <div class="time" style=" width: 300px; line-height: 35px;margin:0 auto ;">最近更新日期：<span>2016-5-31</span></div>
+        <div style=" width: 300px; line-height:22px;margin:0 auto 20px;">
+            最近更新说明：为了让网站更实用，网站近日进行大更新，在更新过程中带来不好的阅读体验，谢谢大家的耐心等待。
+        </div>
+        <div class="mt10 mb10" style=" width:400px;">
+            <div class="text-c">
+                <button class="btn orange-l ml10 deal-cancel w100">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+$(".deal").click(function(){
+		$(".deal-box").show();
+		$(".deal-close").click(function(){
+			 $(".deal-box").hide();
+		})
+		$(".deal-cancel").click(function(){
+			 $(".deal-box").hide();
+		})
+	})
+</script>
+<div class="menubox  fl" id="sidebar">
+    <div id="c" class="cf lleft">
+        <!--<div class="c-left"><i class="iconfont">&#xe611;</i></div>-->
+    </div>
+    <div class="part2">
+        <div class="item ">
+            <div class="subNavBox">
+                <div class="subNavimg subNavlist "><a target="contentFrame" href="container.html"><em class="fl img-tab"><img src="../images/car-index/index_1_1.png"/></em><label>首页</label></a></div>
+                <div class="subNavimg subNavlist subNav"><em class="fl img-tab"><img src="../images/car-index/index_2_1.png"/></em><label>商家管理</label></div>
+                <ul class="navContent">
+                    <li><a target="contentFrame" href="商家列表-审核.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/merchantManage_1_1.png"/></em><span class="fl">商家列表</span></a></li>
+                    <li><a target="contentFrame" href="咨询管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/merchantManage_2_1.png"/></em><span class="fl">咨询管理</span></a></li>
+                    <li><a target="contentFrame" href="岗位管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/merchantManage_3_1.png"/></em><span class="fl">岗位管理</span></a></li>
+                    <li><a target="contentFrame" href="员工清单.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/merchantManage_4_1.png"/></em><span class="fl">员工清单</span></a></li>
+                    <li><a target="contentFrame" href="子站管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/merchantManage_5_1.png"/></em><span class="fl">子站管理</span></a></li>
+                    <li><a target="contentFrame" href="车源共享.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/merchantManage_5_1.png"/></em><span class="fl">车源共享</span></a></li>
+                    <li><a target="contentFrame" href="评估预约.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/merchantManage_7_1.png"/></em><span class="fl">评估预约</span></a></li>
+                    <li><a target="contentFrame" href="置换预约.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/merchantManage_8_1.png"/></em><span class="fl">置换预约</span></a></li>
+                    <li><a target="contentFrame" href="求购信息.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/merchantManage_9_1.png"/></em><span class="fl">求购信息</span></a></li>
+                </ul>
+                <div class="subNavimg subNavlist subNav"><em class="fl img-tab"><img src="../images/car-index/index_3_1.png"/></em><label>区域拍卖</label></div>
+                <ul class="navContent">
+                    <li><a target="contentFrame" href="区域列表.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/regionalSale_1_1.png"/></em><span class="fl">区域列表</span></a></li>
+                    <li><a target="contentFrame" href="区域临时会员管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/regionalSale_2_1.png"/></em><span class="fl">区域临时会员管理</span></a></li>
+                    <li><a target="contentFrame" href="拍卖专场管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/regionalSale_3_1.png"/></em><span class="fl">拍卖专场管理</span></a></li>
+                    <li><a target="contentFrame" href="参拍车辆管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/regionalSale_4_1.png"/></em><span class="fl">参拍车辆管理</span></a></li>
+                    <li><a target="contentFrame" href="区域拍卖实况.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/regionalSale_5_1.png"/></em><span class="fl">区域拍卖实况</span></a></li>
+                    <li><a target="contentFrame" href="代理商保证金管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/regionalSale_6_1.png"/></em><span class="fl">保证金管理</span></a></li>
+                    <li><a target="contentFrame" href="代理商佣金审核管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/regionalSale_7_1.png"/></em><span class="fl">代理商佣金审核</span></a></li>
+                    <li><a target="contentFrame" href="会员佣金结算管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/regionalSale_8_1.png"/></em><span class="fl">会员佣金结算管理</span></a></li>
+                </ul>
+                <div class="subNavimg subNavlist subNav"><em class="fl img-tab"><img src="../images/car-index/index_5_1.png"></em><label>车辆管理</label></div>
+                <ul class="navContent">
+                    <li><a target="contentFrame" href="车辆管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/regionalSale_4_1.png"/></em><span class="fl">车辆管理</span></a></li>
+                </ul>
+                <div class="subNavimg subNavlist subNav"><em class="fl img-tab"><img src="../images/car-index/index_6_1.png"></em><label>询价管理</label></div>
+                <ul class="navContent">
+                    <li><a target="contentFrame" href="询价中心.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/inquiryCenter_1_1.png"/></em><span class="fl">询价中心</span></a></li>
+                </ul>
+                <div class="subNavimg subNavlist subNav"><em class="fl img-tab"><img src="../images/car-index/index_7_1.png"></em><label>拍卖管理</label></div>
+                <ul class="navContent">
+                    <li><a target="contentFrame" href="拍卖中心.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/auction_1_1.png"/></em><span class="fl">拍卖中心</span></a></li>
+                </ul>
+                <div class="subNavimg subNavlist subNav"><em class="fl img-tab"><img src="../images/car-index/index_7_1.png"/></em><label>财务管理</label></div>
+                <ul class="navContent">
+                    <li><a target="contentFrame" href="4S保证金管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/financeManage_1_1.png"/></em><span class="fl">保证金管理</span></a></li>
+                    <li><a target="contentFrame" href="信息费管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/financeManage_2_1.png"/></em><span class="fl">信息费管理</span></a></li>
+                    <li><a target="contentFrame" href="信息费结算.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/financeManage_1_1.png"/></em><span class="fl">信息费结算</span></a></li>
+                    <li><a target="contentFrame" href="对账清单管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/financeManage_1_1.png"/></em><span class="fl">对账清单管理</span></a></li>
+                    <li><a target="contentFrame" href="买家付款记录审核.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/financeManage_1_1.png"/></em><span class="fl">买家付款记录审核</span></a></li>
+                    <li><a target="contentFrame" href="返还付款登记.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/financeManage_1_1.png"/></em><span class="fl">返还付款登记</span></a></li>
+                    <li><a target="contentFrame" href="退车管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/financeManage_1_1.png"/></em><span class="fl">退车管理</span></a></li>
+                    <li><a target="contentFrame" href="信息费冲销.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/financeManage_1_1.png"/></em><span class="fl">信息费冲销</span></a></li>
+                    <li><a target="contentFrame" href="违约管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/financeManage_1_1.png"/></em><span class="fl">违约管理</span></a></li>
+                    <li><a target="contentFrame" href="佣金返还登记.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/financeManage_1_1.png"/></em><span class="fl">佣金返还登记</span></a></li>
+                    <li><a target="contentFrame" href="保证金流水记录.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/financeManage_1_1.png"/></em><span class="fl">保证金流水记录</span></a></li>
+                </ul>
+                <div class="subNavimg subNavlist subNav"><em class="fl img-tab"><img src="../images/car-index/index_8_1.png"></em><label>内容管理</label></div>
+                <ul class="navContent">
+                    <li><a target="contentFrame" href="新闻管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/contentManage_1_1.png"/></em><span class="fl">新闻管理</span></a></li>
+                    <li><a target="contentFrame" href="活动管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/contentManage_2_1.png"/></em><span class="fl">活动管理</span></a></li>
+                    <li><a target="contentFrame" href="公告管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/contentManage_3_1.png"/></em><span class="fl">公告管理</span></a></li>
+                    <li><a target="contentFrame" href="广告位管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/contentManage_4_1.png"/></em><span class="fl">广告位管理</span></a></li>
+                    <li><a target="contentFrame" href="合作伙伴.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/contentManage_5_1.png"/></em><span class="fl">合作伙伴</span></a></li>
+                    <li><a target="contentFrame" href="单页管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/contentManage_6_1.png"/></em><span class="fl">单页管理</span></a></li>
+                    <li><a target="contentFrame" href="关于我们.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/contentManage_7_1.png"/></em><span class="fl">关于我们</span></a></li>
+                </ul>
+                <div class="subNavimg subNavlist subNav"><em class="fl img-tab"><img src="../images/car-index/index_9_1.png"></em><label>权限管理</label></div>
+                <ul class="navContent">
+                    <li><a target="contentFrame" href="后台用户管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/jurisdiction_2_1.png"/></em><span class="fl">后台用户管理</span></a></li>
+                    <li><a target="contentFrame" href="节点管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/jurisdiction_3_1.png"/></em><span class="fl">节点管理</span></a></li>
+                    <li><a target="contentFrame" href="角色管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/jurisdiction_4_1.png"/></em><span class="fl">角色管理</span></a></li>
+                </ul>
+                <div class="subNavimg subNavlist subNav"><em class="fl img-tab"><img src="../images/car-index/index_10_1.png"></em><label>系统设置</label></div>
+                <ul class="navContent">
+                    <li><a target="contentFrame" href="修改信息.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/jurisdiction_2_1.png"/></em><span class="fl">修改密码</span></a></li>
+                    <li><a target="contentFrame" href="站点设置.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/system_1_1.png"/></em><span class="fl">站点设置</span></a></li>
+                    <li><a target="contentFrame" href="平台推荐商家.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/system_2_1.png"/></em><span class="fl">平台推荐商家</span></a></li>
+                    <li><a target="contentFrame" href="客服配置.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/system_3_1.png"/></em><span class="fl">客服配置</span></a></li>
+                    <li><a target="contentFrame" href="导航管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/system_4_1.png"/></em><span class="fl">导航管理</span></a></li>
+                    <li><a target="contentFrame" href="短信配置.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/system_5_1.png"/></em><span class="fl">短信配置</span></a></li>
+                    <li><a target="contentFrame" href="邮箱配置.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/system_6_1.png"/></em><span class="fl">邮箱配置</span></a></li>
+                    <li><a target="contentFrame" href="平台管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/system_7_1.png"/></em><span class="fl">平台管理</span></a></li>
+                    <li><a target="contentFrame" href="基础数据维护.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/system_8_1.png"/></em><span class="fl">基础数据维护</span></a></li>
+                    <li><a target="contentFrame" href="APP版本管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/system_9_1.png"/></em><span class="fl">APP版本管理</span></a></li>
+                    <li><a target="contentFrame" href="财务配置.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/system_10_1.png"/></em><span class="fl">财务配置</span></a></li>
+                    <li><a target="contentFrame" href="区域拍卖中心配置.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/system_11_1.png"/></em><span class="fl">区域拍卖中心配置</span></a></li>
+                </ul>
+                <div class="subNavimg subNavlist subNav"><em class="fl img-tab"><img src="../images/car-index/index_11_1.png"></em><label>操作记录</label></div>
+                <ul class="navContent">
+                    <li><a target="contentFrame" href="后台操作记录.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/operate_1_1.png"/></em><span class="fl">后台操作记录</span></a></li>
+                    <li><a target="contentFrame" href="黑名单IP管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/operate_2_1.png"/></em><span class="fl">黑名单IP管理</span></a></li>
+                    <li><a target="contentFrame" href="流量管理.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/operate_3_1.png"/></em><span class="fl">流量管理</span></a></li>
+                    <li><a target="contentFrame" href="报告上传记录.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/operate_4_1.png"/></em><span class="fl">报告上传记录</span></a></li>
+                    <li><a target="contentFrame" href="短信发送记录.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/operate_4_1.png"/></em><span class="fl">短信发送记录</span></a></li>
+                </ul>
+                <div class="subNavimg subNavlist subNav"><em class="fl img-tab"><img src="../images/car-index/index_12_1.png"></em><label>统计</label></div>
+                <ul class="navContent">
+                    <li><a target="contentFrame" href="4S数据统计.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/statistics_1_1.png"/></em><span class="fl">4S数据统计</span></a></li>
+                    <li><a target="contentFrame" href="车商数据统计.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/statistics_2_1.png"/></em><span class="fl">车商数据统计</span></a></li>
+                    <li><a target="contentFrame" href="4S店完成目标总表.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/statistics_4_1.png"/></em><span class="fl">4S店完成目标总表</span></a></li>
+                    <li><a target="contentFrame" href="4S店询价拍卖管理分析.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/statistics_5_1.png"/></em><span class="fl str">4S店询价拍卖管理</span></a></li>
+                    <li><a target="contentFrame" href="车商成交统计表.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/statistics_6_1.png"/></em><span class="fl">车商成交统计表</span></a></li>
+                    <li><a target="contentFrame" href="拍卖出价报表.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/statistics_7_1.png"/></em><span class="fl">拍卖出价报表</span></a></li>
+                    <li><a target="contentFrame" href="4S店数据按周统计.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/statistics_7_1.png"/></em><span class="fl">4S店数据按周统计</span></a></li>
+                    <li><a target="contentFrame" href="询价报价清单.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/statistics_7_1.png"/></em><span class="fl">询价报价清单</span></a></li>
+                    <li><a target="contentFrame" href="4s店成交品牌台数.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/statistics_7_1.png"/></em><span class="fl">4S平台数据分析</span></a></li>
+                </ul>
+                <div class="subNavimg subNavlist subNav"><em class="fl img-tab"><img src="../images/car-index/index_13_1.png"></em><label>来店登记</label></div>
+                <ul class="navContent">
+                    <li><a target="contentFrame" href="来店登记.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/register_1_1.png"/></em><span class="fl">来店登记</span></a></li>
+                    <li><a target="contentFrame" href="三率统计.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/statistics_3_1.png"/></em><span class="fl">三率统计</span></a></li>
+                </ul>
+                <div class="subNavimg subNavlist subNav"><em class="fl img-tab"><img src="../images/car-index/index_14_1.png"></em><label>视频管理</label></div>
+                <ul class="navContent">
+                    <li><a target="contentFrame" href="视频列表.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/register_1_1.png"/></em><span class="fl">视频列表</span></a></li>
+                    <li><a target="contentFrame" href="播放记录.html"><em class="fl subMenu-img-tab"><img src="../images/car-index/register_1_1.png"/></em><span class="fl">播放记录</span></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<iframe src="container.html" scrolling="auto" frameborder="0" name="contentFrame" id="contentFrame"></iframe>
+<script type="text/javascript" src="../js/divscroll.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.item').perfectScrollbar();
+    });
+    $(function () {
+        $("#note").click(function () {
+            self.frames["contentFrame"].location = "发送短信.html";
+        })
+	$("#MyPersonImg").click(function () {
+            self.frames["contentFrame"].location = "修改信息.html";
+        })
+    })
+</script>
+</body>
+</html>

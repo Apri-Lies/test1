@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=7">
+    <title>报名管理</title>
+    <link href="../css/base.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="../css/table/style.css" />
+    <link href="../css/common.css" rel="stylesheet" media="screen">
+    <link href="../css/admin-main.css" rel="stylesheet" media="screen">
+<body>
+<div class="content">
+    <!--位置路径-->
+    <div class="path mt5 clearfix">
+        <div class="fl pl20">
+            <i class="icon-home"></i>
+            <a href="#">内容管理</a>
+            <i class="icon-arrow-r"></i>
+            <a href="#">活动管理</a>
+            <i class="icon-arrow-r"></i>
+            <a href="#">报名管理</a>
+        </div>
+    </div>
+    <!--选择信息栏-->
+    <div class="info clearfix">
+        <dl class="fl mt10 w200">
+            <dt class="fl input-lable">状态：</dt>
+            <dd class="fl ml10">
+                <div class="diy_select  select-relative">
+                    <input type="hidden" name="" class="diy_select_input">
+                    <div class="diy_select_txt select_box w120">所有</div>
+                    <div class="diy_select_btn"></div>
+                    <ul class="diy_select_list slect-ul w120">
+                        <li class="">所有</li>
+                    </ul>
+                </div>
+            </dd>
+        </dl>
+        <dl class="fl mt10 w260">
+            <dt class="fl input-lable">关键字：</dt>
+            <dd class="fl input">
+                <input type="text" class="text" value="" placeholder="关键字">
+            </dd>
+        </dl>
+        <div class="fl w220">
+            <button class="fl btn mt10 orange w100">查询</button>
+            <button class="fl btn-export ml10 mt10 w100">导出Excel</button>
+        </div>
+    </div>
+    <!--查询表格-->
+    <div class="table_wrap clearfix mt10">
+        <table class="gridView table1">
+            <thead>
+            <tr class="orange-l">
+                <th width="5%">编号</th>
+                <th>报名人</th>
+                <th>电话</th>
+                <th>允许联络时段</th>
+                <th>最后更新时间</th>
+                <th>状态</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>fdasfdf</td>
+                <td>13245233542</td>
+                <td></td>
+                <td></td>
+                <td>失效</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>fdasfdf</td>
+                <td>13245233542</td>
+                <td></td>
+                <td></td>
+                <td>失效</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>fdasfdf</td>
+                <td>13245233542</td>
+                <td></td>
+                <td></td>
+                <td>失效</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>fdasfdf</td>
+                <td>13245233542</td>
+                <td></td>
+                <td></td>
+                <td>失效</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>fdasfdf</td>
+                <td>13245233542</td>
+                <td></td>
+                <td></td>
+                <td>失效</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>fdasfdf</td>
+                <td>13245233542</td>
+                <td></td>
+                <td></td>
+                <td>失效</td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="clearfix mt10">
+            <button class="btn orange w100">返回上一页</button>
+        </div>
+    </div>
+    <!--底部分页-->
+    <!--<div class="page fr clearfix mt10">
+        <ul>
+            <li><a href="#" class="list"><</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#" class="list">></a></li>
+        </ul>
+    </div>-->
+</div>
+<script src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/table/jquery.freezeheader.js"></script>
+<script src="../js/select.js" type="text/javascript"></script>
+<script src="../js/index.js" type="text/javascript"></script>
+<script>
+    $(function () {
+        $("tr:odd").addClass("odd");
+        $("tr:even").addClass("even");
+    });
+    $(document).ready(function () {
+        $(".table1").freezeHeader({ 'height': '220px' });
+    })
+</script>
+</body>
+</html>

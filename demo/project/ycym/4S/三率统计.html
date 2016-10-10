@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<title>三率统计</title>
+	<link rel="stylesheet" media="screen" href="../css/base.css">
+	<link rel="stylesheet" media="screen" href="../css/common.css">
+	<link rel="stylesheet" media="screen" href="../css/4s.css">
+	<link rel="stylesheet" type="text/css" href="../css/table/style.css" />
+	<style type="text/css">
+		.text3{width: 80px; color: #6b6b6b;padding-left: 15px;border: solid 1px #ccc;height:22px;line-height:22px;font-size:14px;}
+	</style>
+</head>
+<body>
+	<div class="content clearfix">
+		<div class="path clearfix">
+			<div class="fl w200">
+				<i class="icon-home"></i>
+				<a href="">来店登记</a>
+				<i class="icon-arrow-r"></i>
+				<a href="#">三率统计管理</a>
+			</div>
+		</div>
+		<div class="clearfix mt10">
+			<div class="tabs w1000">
+				<ul>
+					<li class="active pointer">按销售顾问</li>
+					<li class="pointer">按4S店</li>
+					<li class="pointer">按车系</li>
+				</ul>
+			</div>
+			<div class="sub_tab">
+<!--按销售顾问-->
+				<div class="content mb30 clearfix">
+					<div class="pb15 clearfix">											
+						<div class="w500 fl mt10">
+							<label class="input-lable fl ml10">统计月份：</label>
+							<dl class="fl">
+								<dd class="fl">
+									<input id="d11" type="text" onclick="WdatePicker()" class="input-date input-date-img">
+								</dd>
+								<dt class="fl ml10 mt5">至：</dt>
+								<dd class="fl ">
+									<input id="d11" type="text" onclick="WdatePicker()" class="input-date input-date-img">
+								</dd>
+							</dl>
+						</div>					
+						<div class="w270 fl mt10 ml10">
+							<div class="fl input-lable">销售顾问：</div>
+							<input type="text" class="fl text" placeholder="例：客户期望售价">
+						</div>
+						<div class="fl mt10 w220">
+							<button class="w100 btn orange">查询</button>
+							<button class="w100 ml10 btn-export">导出Excel</button>
+						</div>
+					</div>
+					<div class="table_wrap mt10 clearfix">
+						<table class="gridView table1">			
+							<thead>
+								<tr class="orange-l">						
+									<th width="5%">序号</th>
+									<th>月份</th>
+									<th>销售顾问</th>
+									<th>来店量</th>
+									<th>来店有车量</th>
+									<th>查勘量</th>
+									<th>置换量</th>
+									<th>查勘率</th>
+									<th>转化率</th>
+									<th>置换率</th>
+									<th>新车销量</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>					
+					                <td>1</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>2</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>3</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>4</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>5</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>6</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>7</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>8</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>9</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>10</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>	
+					<h3 class="orange-l mt30 pl15">历史统计</h3>
+					<div class="clearfix">
+						<table class="gridView table2">			
+							<thead>
+								<tr class="orange-l">						
+									<th width="5%">序号</th>
+									<th>月份</th>
+									<th>销售顾问</th>
+									<th>来店量</th>
+									<th>来店有车量</th>
+									<th>查勘量</th>
+									<th>置换量</th>
+									<th>查勘率</th>
+									<th>转化率</th>
+									<th>置换率</th>
+									<th>新车销量</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>					
+					                <td>1</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>2</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>3</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>4</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>5</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>6</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>7</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>8</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>9</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>10</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>	
+				</div>
+<!--按4S店-->				
+				<div class="content clearfix mb30 hide">
+					<div class="pb15 clearfix">											
+						<div class="w500 fl mt10">
+							<label class="input-lable fl ml10">统计月份：</label>
+							<dl class="fl">
+								<dd class="fl">
+									<input id="d11" type="text" onclick="WdatePicker()" class="input-date input-date-img">
+								</dd>
+								<dt class="fl ml10 mt5">至：</dt>
+								<dd class="fl ">
+									<input id="d11" type="text" onclick="WdatePicker()" class="input-date input-date-img">
+								</dd>
+							</dl>
+						</div>					
+						<div class="fl">
+							<button class="w100 mt10 ml10 btn orange">查询</button>
+							<button class="w100 mt10 ml10 btn-export">导出Excel</button>
+						</div>
+					</div>
+					<div class="mt10 clearfix">
+						<table class="gridView table3">			
+							<thead>
+								<tr class="orange-l">						
+									<th width="5%">序号</th>
+									<th>月份</th>
+									<th>4s店</th>
+									<th>来店量</th>
+									<th>来店有车量</th>
+									<th>查勘量</th>
+									<th>置换量</th>
+									<th>查勘率</th>
+									<th>转化率</th>
+									<th>置换率</th>
+									<th>新车销量</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>					
+					                <td>1</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>2</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>3</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>4</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>5</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>6</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>7</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>8</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>9</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>10</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>	
+					<h3 class="orange-l mt30 pl15">历史统计</h3>
+					<div class="clearfix">
+						<table class="gridView table4">			
+							<thead>
+								<tr class="orange-l">						
+									<th width="5%">序号</th>
+									<th>月份</th>
+									<th>4s店</th>
+									<th>来店量</th>
+									<th>来店有车量</th>
+									<th>查勘量</th>
+									<th>置换量</th>
+									<th>查勘率</th>
+									<th>转化率</th>
+									<th>置换率</th>
+									<th>新车销量</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>					
+					                <td>1</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>2</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>3</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>4</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>5</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>6</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>7</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>8</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>9</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>10</td>
+									<td>2016-05</td>
+									<td>电销人员</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>	
+				</div>
+<!--按车系-->	
+				<div class="content clearfix mb30 hide">
+					<div class="pb15 clearfix">											
+						<div class="w500 fl mt10">
+							<label class="input-lable fl ml10">统计月份：</label>
+							<dl class="fl">
+								<dd class="fl">
+									<input id="d11" type="text" onclick="WdatePicker()" class="input-date input-date-img">
+								</dd>
+								<dt class="fl ml10 mt5">至：</dt>
+								<dd class="fl ">
+									<input id="d11" type="text" onclick="WdatePicker()" class="input-date input-date-img">
+								</dd>
+							</dl>
+						</div>					
+						<div class="w240 fl mt10 ml10">
+							<div class="fl input-lable">品牌：</div>
+							<input type="text" class="fl text" placeholder="例：品牌">
+						</div>
+						<div class="w240 fl mt10 ml10">
+							<div class="fl input-lable">车系：</div>
+							<input type="text" class="fl text" placeholder="例：车系">
+						</div>
+						<div class="fl">
+							<button class="w100 mt10 ml10 btn orange">查询</button>
+							<button class="w100 mt10 ml10 btn-export">导出Excel</button>
+						</div>
+					</div>
+					<div class="mt10 clearfix">
+						<table class="gridView table5">			
+							<thead>
+								<tr class="orange-l">						
+									<th width="5%">序号</th>
+									<th>月份</th>
+									<th>品牌</th>
+									<th>车系</th>
+									<th>来店量</th>
+									<th>来店有车量</th>
+									<th>查勘量</th>
+									<th>置换量</th>
+									<th>查勘率</th>
+									<th>转化率</th>
+									<th>置换率</th>
+									<th>新车销量</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>					
+					                <td>1</td>
+									<td>2016-05</td>
+									<td>菲亚特</td>
+									<td>传祺</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>2</td>
+									<td>2016-05</td>
+									<td>菲亚特</td>
+									<td>传祺</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>3</td>
+									<td>2016-05</td>
+									<td>菲亚特</td>
+									<td>传祺</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>4</td>
+									<td>2016-05</td>
+									<td>菲亚特</td>
+									<td>传祺</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>5</td>
+									<td>2016-05</td>
+									<td>菲亚特</td>
+									<td>传祺</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>6</td>
+									<td>2016-05</td>
+									<td>菲亚特</td>
+									<td>传祺</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>7</td>
+									<td>2016-05</td>
+									<td>菲亚特</td>
+									<td>传祺</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>8</td>
+									<td>2016-05</td>
+									<td>菲亚特</td>
+									<td>传祺</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>9</td>
+									<td>2016-05</td>
+									<td>菲亚特</td>
+									<td>传祺</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+								<tr>					
+					                <td>10</td>
+									<td>2016-05</td>
+									<td>菲亚特</td>
+									<td>传祺</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td class="carNum"><input type="text" class="text3 hide"/></td>
+									<td>
+				                        <a href="javascript:void(0);" class="editCar">编辑</a>
+				                        <a href="javascript:void(0);" class="sumbit hide">确定</a>
+				                        <a href="javascript:void(0);" class="cancel hide">取消</a>
+					                </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>	
+					<h3 class="orange-l mt30 pl15">历史统计</h3>
+					<div class="clearfix">
+						<table class="gridView table6">			
+							<thead>
+								<tr class="orange-l">						
+									<th width="5%">序号</th>
+									<th>月份</th>
+									<th>品牌</th>
+									<th>车系</th>
+									<th>来店量</th>
+									<th>来店有车量</th>
+									<th>查勘量</th>
+									<th>置换量</th>
+									<th>查勘率</th>
+									<th>转化率</th>
+									<th>置换率</th>
+									<th>新车销量</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>					
+					                <td>1</td>
+									<td>2016-05</td>
+									<td>菲亚特</td>
+									<td>传祺</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>2</td>
+									<td>2016-05</td>
+									<td>菲亚特</td>
+									<td>传祺</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>3</td>
+									<td>2016-05</td>
+									<td>菲亚特</td>
+									<td>传祺</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>4</td>
+									<td>2016-05</td>
+									<td>菲亚特</td>
+									<td>传祺</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>5</td>
+									<td>2016-05</td>
+									<td>菲亚特</td>
+									<td>传祺</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>6</td>
+									<td>2016-05</td>
+									<td>菲亚特</td>
+									<td>传祺</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>7</td>
+									<td>2016-05</td>
+									<td>菲亚特</td>
+									<td>传祺</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>8</td>
+									<td>2016-05</td>
+									<td>菲亚特</td>
+									<td>传祺</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>9</td>
+									<td>2016-05</td>
+									<td>菲亚特</td>
+									<td>传祺</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+								<tr>					
+					                <td>10</td>
+									<td>2016-05</td>
+									<td>菲亚特</td>
+									<td>传祺</td>
+									<td>1</td>
+									<td>15</td>
+									<td>0</td>	
+									<td>0</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td>0.00%</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>	
+				</div>
+			</div>			
+		</div>
+	</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/select.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="../js/table/jquery.freezeheader.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.tabs>ul>li').click(function(){
+			var index=$(this).index();
+			$(this).addClass('active').siblings().removeClass('active');
+			$(".sub_tab>div").eq(index).show().siblings().hide();
+		})
+	})
+	$(function(){
+		$('.editCar').click(function(){
+			$(this).hide();
+			$(this).parent().siblings('.carNum').find('.text3').show();
+			$(this).siblings('.sumbit').show();
+			$(this).siblings('.cancel').show();
+		})
+		$('.sumbit').click(function(){
+			$(this).hide();
+			$(this).parent().siblings('.carNum').find('.text3').hide();
+			$(this).siblings('.cancel').hide();
+			$(this).siblings('.editCar').show()
+		})
+	})
+	$(document).ready(function () {
+		$(".table1").freezeHeader({ 'height': '300px' });
+		$(".table2").freezeHeader({ 'height': '300px' });
+		$(".table3").freezeHeader({ 'height': '300px' });
+		$(".table4").freezeHeader({ 'height': '300px' });
+		$(".table5").freezeHeader({ 'height': '300px' });
+		$(".table6").freezeHeader({ 'height': '300px' });
+	})
+	$(function () {
+        $("tbody tr:odd").addClass("odd");
+        $("tbody tr:even").addClass("even");
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<title>拍卖中心</title>
+	<link href="../css/base.css" rel="stylesheet" media="screen">
+	<link href="../css/common.css" rel="stylesheet" media="screen">
+	<link href="../css/4s.css" rel="stylesheet" media="screen">
+	<link href="../css/table/fixed_table_rc.css" type="text/css" rel="stylesheet" media="all"/>
+	<style>
+		.addPrice{color:#fff;border-radius:3px;border: none;font-size: 0.9em;padding-left:8px;padding-right:8px;cursor: pointer;}
+		.car a{color:blue;margin-right:7px;}
+	</style>
+<body>
+	<div class="content">
+		<div class="path">
+			<div class="w300">
+				<i class="icon-home"></i>
+				<a href="">拍卖管理</a>
+				<i class="icon-arrow-r"></i>
+				<a href="竞拍中心（车商）.html">竞拍中心</a>
+			</div>
+		</div>
+		<div class="clearfix">
+			<dl class="fl w330 mt10">
+				<dt class="fl input-lable">VIN码／拍卖编号：</dt>
+				<dd class="fl input">
+					<input type="text" class="text" placeholder="例：标题">
+				</dd>
+			</dl>
+			<dl class="fl w550 mt10 mr5">
+				<dt class="fl input-lable">开拍时间／成交时间：</dt>
+				<dd class="fl">
+					<input id="d11" type="text" onClick="WdatePicker()"class="input-date input-date-img">
+				</dd>
+				<dt class="fl input-lable pl5">至：</dt>
+				<dd class="fl">
+					<input id="d11" type="text" onClick="WdatePicker()"class="input-date input-date-img">
+				</dd>
+			</dl>
+			<dl class="fl mt10 w220">
+				<button class="btn orange w100">查询</button>
+				<button class="ml5 btn-export w100">导出</button>
+			</dl>
+		</div>
+		
+		<div class="clearfix mt10 w800">
+	        <span style="color: #FF0000">全部（65）</span>
+	        <span>预展中（15）</span>
+	        <span>拍卖中（3）</span>
+	        <span>撮合中（3）</span>
+	        <span>流标（3）</span>
+	        <span>拍卖成功（5）</span>
+	        <span>待交车（13）</span>
+	        <span>已交车（5）</span>
+	        <span>已取消（23）</span>
+	    </div>
+		<div class="tab-box mt10 bordl1 clearfix">
+			<table class="tab-fix">
+				<thead>
+					<tr class="orange-l">
+						<th>操作</th>
+						<th>序号</th>
+						<th>最新价格</th>
+						<th>出价（万元）</th>
+						<th>加价（元）</th>
+						<th>竞拍状态</th>
+						<th>品牌 车系 车型</th>
+						<th>拍卖结束时间</th>
+						<th>最新场次编号</th>
+						<th>起拍价(万元)</th>
+						<th>VIN</th>
+						<th>预计交车日</th>
+						<th>拍卖开始时间</th>
+						<th>发布商家</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="出价列表-代理商.html">出价列表</a><a href="#" class="deal">确认成交</a>
+	                        </div>
+	                    </td>
+	                    <td>1</td>
+						<td>7.1</td>
+						<td>6.9</td>
+						<td><button class="orange addPrice">+1500</button><button class="orange addPrice ml5 bid">自定义出价</button></td>
+						<td>未得标</td>
+						<td class="car"><a>奥迪汽车</a><a>A6</a><a>（1.5手动豪华版）</a></td>
+						<td>2015/12/25 16:57</td>
+						<td>123546</td>
+						<td>6</td>
+						<td>1528358395866556G</td>
+						<td>2015/12/30</td>
+						<td>2015/12/25 16:45</td>
+						<td>模拟操作</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="出价列表-代理商.html">出价列表</a><a href="#" class="deal">确认成交</a>
+	                        </div>
+	                    </td>
+	                    <td>2</td>
+						<td>7.1</td>
+						<td>6.9</td>
+						<td><button class="orange addPrice">+1500</button><button class="orange addPrice ml5 bid">自定义出价</button></td>
+						<td>未得标</td>
+						<td class="car"><a>奥迪汽车</a><a>A6</a><a>（1.5手动豪华版）</a></td>
+						<td>2015/12/25 16:57</td>
+						<td>123546</td>
+						<td>6</td>
+						<td>1528358395866556G</td>
+						<td>2015/12/30</td>
+						<td>2015/12/25 16:45</td>
+						<td>模拟操作</td>
+					</tr>					
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="出价列表-代理商.html">出价列表</a><a href="#" class="deal">确认成交</a>
+	                        </div>
+	                    </td>
+	                    <td>3</td>
+						<td>7.1</td>
+						<td>6.9</td>
+						<td><button class="orange addPrice">+1500</button><button class="orange addPrice ml5 bid">自定义出价</button></td>
+						<td>未得标</td>
+						<td class="car"><a>奥迪汽车</a><a>A6</a><a>（1.5手动豪华版）</a></td>
+						<td>2015/12/25 16:57</td>
+						<td>123546</td>
+						<td>6</td>
+						<td>1528358395866556G</td>
+						<td>2015/12/30</td>
+						<td>2015/12/25 16:45</td>
+						<td>模拟操作</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                           <a href="出价列表-代理商.html">出价列表</a><a href="#" class="deal">确认成交</a>
+	                        </div>
+	                    </td>
+	                    <td>4</td>
+						<td>7.1</td>
+						<td>6.9</td>
+						<td><button class="orange addPrice">+1500</button><button class="orange addPrice ml5 bid">自定义出价</button></td>
+						<td>未得标</td>
+						<td class="car"><a>奥迪汽车</a><a>A6</a><a>（1.5手动豪华版）</a></td>
+						<td>2015/12/25 16:57</td>
+						<td>123546</td>
+						<td>6</td>
+						<td>1528358395866556G</td>
+						<td>2015/12/30</td>
+						<td>2015/12/25 16:45</td>
+						<td>模拟操作</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="出价列表-代理商.html">出价列表</a><a href="#" class="deal">确认成交</a>
+	                        </div>
+	                    </td>
+	                    <td>5</td>
+						<td>7.1</td>
+						<td>6.9</td>
+						<td><button class="orange addPrice">+1500</button><button class="orange addPrice ml5 bid">自定义出价</button></td>
+						<td>未得标</td>
+						<td class="car"><a>奥迪汽车</a><a>A6</a><a>（1.5手动豪华版）</a></td>
+						<td>2015/12/25 16:57</td>
+						<td>123546</td>
+						<td>6</td>
+						<td>1528358395866556G</td>
+						<td>2015/12/30</td>
+						<td>2015/12/25 16:45</td>
+						<td>模拟操作</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="出价列表-代理商.html">出价列表</a><a href="#" class="deal">确认成交</a>
+	                        </div>
+	                    </td>
+	                    <td>6</td>
+						<td>7.1</td>
+						<td>6.9</td>
+						<td><button class="orange addPrice">+1500</button><button class="orange addPrice ml5 bid">自定义出价</button></td>
+						<td>未得标</td>
+						<td class="car"><a>奥迪汽车</a><a>A6</a><a>（1.5手动豪华版）</a></td>
+						<td>2015/12/25 16:57</td>
+						<td>123546</td>
+						<td>6</td>
+						<td>1528358395866556G</td>
+						<td>2015/12/30</td>
+						<td>2015/12/25 16:45</td>
+						<td>模拟操作</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="出价列表-代理商.html">出价列表</a><a href="#" class="deal">确认成交</a>
+	                        </div>
+	                    </td>
+	                    <td>7</td>
+						<td>7.1</td>
+						<td>6.9</td>
+						<td><button class="orange addPrice">+1500</button><button class="orange addPrice ml5 bid">自定义出价</button></td>
+						<td>未得标</td>
+						<td class="car"><a>奥迪汽车</a><a>A6</a><a>（1.5手动豪华版）</a></td>
+						<td>2015/12/25 16:57</td>
+						<td>123546</td>
+						<td>6</td>
+						<td>1528358395866556G</td>
+						<td>2015/12/30</td>
+						<td>2015/12/25 16:45</td>
+						<td>模拟操作</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="出价列表-代理商.html">出价列表</a><a href="#" class="deal">确认成交</a>
+	                        </div>
+	                    </td>
+	                    <td>8</td>
+						<td>7.1</td>
+						<td>6.9</td>
+						<td><button class="orange addPrice">+1500</button><button class="orange addPrice ml5 bid">自定义出价</button></td>
+						<td>未得标</td>
+						<td class="car"><a>奥迪汽车</a><a>A6</a><a>（1.5手动豪华版）</a></td>
+						<td>2015/12/25 16:57</td>
+						<td>123546</td>
+						<td>6</td>
+						<td>1528358395866556G</td>
+						<td>2015/12/30</td>
+						<td>2015/12/25 16:45</td>
+						<td>模拟操作</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="出价列表-代理商.html">出价列表</a><a href="#" class="deal">确认成交</a>
+	                        </div>
+	                    </td>
+	                    <td>9</td>
+						<td>7.1</td>
+						<td>6.9</td>
+						<td><button class="orange addPrice">+1500</button><button class="orange addPrice ml5 bid">自定义出价</button></td>
+						<td>未得标</td>
+						<td class="car"><a>奥迪汽车</a><a>A6</a><a>（1.5手动豪华版）</a></td>
+						<td>2015/12/25 16:57</td>
+						<td>123546</td>
+						<td>6</td>
+						<td>1528358395866556G</td>
+						<td>2015/12/30</td>
+						<td>2015/12/25 16:45</td>
+						<td>模拟操作</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="出价列表-代理商.html">出价列表</a><a href="#" class="deal">确认成交</a>
+	                        </div>
+	                    </td>
+	                    <td>10</td>
+						<td>7.1</td>
+						<td>6.9</td>
+						<td><button class="orange addPrice">+1500</button><button class="orange addPrice ml5 bid">自定义出价</button></td>
+						<td>未得标</td>
+						<td class="car"><a>奥迪汽车</a><a>A6</a><a>（1.5手动豪华版）</a></td>
+						<td>2015/12/25 16:57</td>
+						<td>123546</td>
+						<td>6</td>
+						<td>1528358395866556G</td>
+						<td>2015/12/30</td>
+						<td>2015/12/25 16:45</td>
+						<td>模拟操作</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="出价列表-代理商.html">出价列表</a><a href="#" class="deal">确认成交</a>
+	                        </div>
+	                    </td>
+	                    <td>11</td>
+						<td>7.1</td>
+						<td>6.9</td>
+						<td><button class="orange addPrice">+1500</button><button class="orange addPrice ml5 bid">自定义出价</button></td>
+						<td>未得标</td>
+						<td class="car"><a>奥迪汽车</a><a>A6</a><a>（1.5手动豪华版）</a></td>
+						<td>2015/12/25 16:57</td>
+						<td>123546</td>
+						<td>6</td>
+						<td>1528358395866556G</td>
+						<td>2015/12/30</td>
+						<td>2015/12/25 16:45</td>
+						<td>模拟操作</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="出价列表-代理商.html">出价列表</a><a href="#" class="deal">确认成交</a>
+	                        </div>
+	                    </td>
+	                    <td>12</td>
+						<td>7.1</td>
+						<td>6.9</td>
+						<td><button class="orange addPrice">+1500</button><button class="orange addPrice ml5 bid">自定义出价</button></td>
+						<td>未得标</td>
+						<td class="car"><a>奥迪汽车</a><a>A6</a><a>（1.5手动豪华版）</a></td>
+						<td>2015/12/25 16:57</td>
+						<td>123546</td>
+						<td>6</td>
+						<td>1528358395866556G</td>
+						<td>2015/12/30</td>
+						<td>2015/12/25 16:45</td>
+						<td>模拟操作</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="出价列表-代理商.html">出价列表</a><a href="#" class="deal">确认成交</a>
+	                        </div>
+	                    </td>
+	                    <td>13</td>
+						<td>7.1</td>
+						<td>6.9</td>
+						<td><button class="orange addPrice">+1500</button><button class="orange addPrice ml5 bid">自定义出价</button></td>
+						<td>未得标</td>
+						<td class="car"><a>奥迪汽车</a><a>A6</a><a>（1.5手动豪华版）</a></td>
+						<td>2015/12/25 16:57</td>
+						<td>123546</td>
+						<td>6</td>
+						<td>1528358395866556G</td>
+						<td>2015/12/30</td>
+						<td>2015/12/25 16:45</td>
+						<td>模拟操作</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <<a href="出价列表-代理商.html">出价列表</a><a href="#" class="deal">确认成交</a>
+	                        </div>
+	                    </td>
+	                    <td>14</td>
+						<td>7.1</td>
+						<td>6.9</td>
+						<td><button class="orange addPrice">+1500</button><button class="orange addPrice ml5 bid">自定义出价</button></td>
+						<td>未得标</td>
+						<td class="car"><a>奥迪汽车</a><a>A6</a><a>（1.5手动豪华版）</a></td>
+						<td>2015/12/25 16:57</td>
+						<td>123546</td>
+						<td>6</td>
+						<td>1528358395866556G</td>
+						<td>2015/12/30</td>
+						<td>2015/12/25 16:45</td>
+						<td>模拟操作</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="出价列表-代理商.html">出价列表</a><a href="#" class="deal">确认成交</a>
+	                        </div>
+	                    </td>
+	                    <td>15</td>
+						<td>7.1</td>
+						<td>6.9</td>
+						<td><button class="orange addPrice">+1500</button><button class="orange addPrice ml5 bid">自定义出价</button></td>
+						<td>未得标</td>
+						<td class="car"><a>奥迪汽车</a><a>A6</a><a>（1.5手动豪华版）</a></td>
+						<td>2015/12/25 16:57</td>
+						<td>123546</td>
+						<td>6</td>
+						<td>1528358395866556G</td>
+						<td>2015/12/30</td>
+						<td>2015/12/25 16:45</td>
+						<td>模拟操作</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="出价列表-代理商.html">出价列表</a><a href="#" class="deal">确认成交</a>
+	                        </div>
+	                    </td>
+	                    <td>16</td>
+						<td>7.1</td>
+						<td>6.9</td>
+						<td><button class="orange addPrice">+1500</button><button class="orange addPrice ml5 bid">自定义出价</button></td>
+						<td>未得标</td>
+						<td class="car"><a>奥迪汽车</a><a>A6</a><a>（1.5手动豪华版）</a></td>
+						<td>2015/12/25 16:57</td>
+						<td>123546</td>
+						<td>6</td>
+						<td>1528358395866556G</td>
+						<td>2015/12/30</td>
+						<td>2015/12/25 16:45</td>
+						<td>模拟操作</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="出价列表-代理商.html">出价列表</a><a href="#" class="deal">确认成交</a>
+	                        </div>
+	                    </td>
+	                    <td>17</td>
+						<td>7.1</td>
+						<td>6.9</td>
+						<td><button class="orange addPrice">+1500</button><button class="orange addPrice ml5 bid">自定义出价</button></td>
+						<td>未得标</td>
+						<td class="car"><a>奥迪汽车</a><a>A6</a><a>（1.5手动豪华版）</a></td>
+						<td>2015/12/25 16:57</td>
+						<td>123546</td>
+						<td>6</td>
+						<td>1528358395866556G</td>
+						<td>2015/12/30</td>
+						<td>2015/12/25 16:45</td>
+						<td>模拟操作</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix bottom0 left58">
+	                            <a href="出价列表-代理商.html">出价列表</a><a href="#" class="deal">确认成交</a>
+	                        </div>
+	                    </td>
+	                    <td>18</td>
+						<td>7.1</td>
+						<td>6.9</td>
+						<td><button class="orange addPrice">+1500</button><button class="orange addPrice ml5 bid">自定义出价</button></td>
+						<td>未得标</td>
+						<td class="car"><a>奥迪汽车</a><a>A6</a><a>（1.5手动豪华版）</a></td>
+						<td>2015/12/25 16:57</td>
+						<td>123546</td>
+						<td>6</td>
+						<td>1528358395866556G</td>
+						<td>2015/12/30</td>
+						<td>2015/12/25 16:45</td>
+						<td>模拟操作</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix bottom0 left58">
+	                           <a href="出价列表-代理商.html">出价列表</a><a href="#" class="deal">确认成交</a>
+	                        </div>
+	                    </td>
+	                    <td>19</td>
+						<td>7.1</td>
+						<td>6.9</td>
+						<td><button class="orange addPrice">+1500</button><button class="orange addPrice ml5 bid">自定义出价</button></td>
+						<td>未得标</td>
+						<td class="car"><a>奥迪汽车</a><a>A6</a><a>（1.5手动豪华版）</a></td>
+						<td>2015/12/25 16:57</td>
+						<td>123546</td>
+						<td>6</td>
+						<td>1528358395866556G</td>
+						<td>2015/12/30</td>
+						<td>2015/12/25 16:45</td>
+						<td>模拟操作</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix bottom0 left58">
+	                            <a href="出价列表-代理商.html">出价列表</a><a href="#" class="deal">确认成交</a>
+	                        </div>
+	                    </td>
+	                    <td>20</td>
+						<td>7.1</td>
+						<td>6.9</td>
+						<td><button class="orange addPrice">+1500</button><button class="orange addPrice ml5 bid">自定义出价</button></td>
+						<td>未得标</td>
+						<td class="car"><a>奥迪汽车</a><a>A6</a><a>（1.5手动豪华版）</a></td>
+						<td>2015/12/25 16:57</td>
+						<td>123546</td>
+						<td>6</td>
+						<td>1528358395866556G</td>
+						<td>2015/12/30</td>
+						<td>2015/12/25 16:45</td>
+						<td>模拟操作</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="page fr clearfix mt5">
+            <ul>
+              <li><a href="#" class="list"><</a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#" class="list">></a></li>
+            </ul> 
+        </div>
+	</div>
+	<div class="popup-cover deal-box">
+		<div class="popup-win w500 absolute" style="left:30%; top:32%; "id="bg">
+			<div class="popup-title">
+				<div class="fl title">温馨提示</div>
+				<div class="fr close deal-close">x</div>
+			</div>
+			<div class="lihe60 font24 center w250">成交价：<span style="color: #ff8000;">10000.00元</span></div>
+			<div class="text-c pt10 pb10">
+	        	<button class="button-confirm">提交</button>
+	        	<button class="button-cancel ml10">拒绝</button>
+	        	<button class="button-cancel deal-cancel ml10">取消</button>
+	    	</div>
+	    </div>	
+	</div>
+	<div class="popup-cover bid-box">
+		<div class="popup-win w500 absolute" style="  left:30%; top:32%;" id="bg">
+			<div class="popup-title">
+				<div class="fl title">信息</div>
+				<div class="fr close bid-close">x</div>
+			</div>
+			<div class="mt20 clearfix">
+				<div class="w260 center">
+				<div class="diy_select  select-relative fl">
+					<input type="hidden" name="" class="diy_select_input">
+					<div class="diy_select_txt select_box w150">请选择</div>
+					<div class="diy_select_btn"></div>
+					<ul class="diy_select_list slect-ul str w150">
+						<li class="">请选择</li>
+						<li class="">200元</li>
+						<li class="">300元</li>
+						<li class="">500元</li>
+						<li class="">1000元</li>
+					</ul>
+				</div>
+				<div class="input-lable fl pl5">确定要加价吗？</div>
+				</div>
+			</div>
+			<div class="text-c pt30 pb10">
+	        	<button class="button-confirm">提交</button>
+	        	<button class="button-cancel bid-cancel ml10">取消</button>
+	    	</div>
+	    </div>	
+	</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/select.js"></script>
+<script src="../js/inputshow.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script src="../js/layer.js"></script>
+<script src="../js/table/fixed_table_rc.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.tab-fix').fxdHdrCol({
+            fixedCols:0,
+            width: "100%",
+            height:500,
+            colModal: [
+                {width: 50,align: 'center'},
+                {width: 50,align: 'center'},
+                {width: 200,align: 'center'},
+                {width: 200,align: 'center'},
+                {width: 250,align: 'center'},
+                {width: 130,align: 'center'},
+                {width: 300,align: 'center'},
+                {width: 200,align: 'center'},
+                {width: 200,align: 'center'},
+                {width: 250,align: 'center'},
+                {width: 200,align: 'center'},
+                {width: 140,align: 'center'},
+                {width: 130,align: 'center'},
+                {width: 130,align: 'center'}
+            ]
+        });
+    });
+    $(function () {
+		$("tbody tr:odd").addClass("odd");
+		$("tbody tr:even").addClass("even");
+	});
+    function _on_hover(obj){
+        var li_div = obj.getElementsByTagName("div");
+        li_div[0].style.display="block";
+	    }
+    function _out_hover(obj){
+        var li_div = obj.getElementsByTagName("div");
+        li_div[0].style.display="none";
+    }
+    $(".deal").click(function(){
+		$(".deal-box").show();
+		$(".deal-close").click(function(){
+			 $(".deal-box").hide();
+		})
+		$(".deal-cancel").click(function(){
+			 $(".deal-box").hide();
+		})		
+	})
+    $(".bid").click(function(){
+		$(".bid-box").show();
+		$(".bid-cancel").click(function(){
+			 $(".bid-box").hide();
+		})
+		$(".bid-close").click(function(){
+			 $(".bid-box").hide();
+		})
+	})
+</script>
+</body>
+</html>

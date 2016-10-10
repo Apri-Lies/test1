@@ -1,0 +1,54 @@
+
+
+.data{ width:69.8%; border: 1px #ccc solid;}
+.data .date-marn{ margin: 11px 2%; border-bottom: 1px solid #ff8811;}
+.data .date-marn span{display: block;  float: left; width: 90px; line-height: 20px; background:url(../images/index_26.png) 0px 2px no-repeat;}
+.data .date-marn ul {float:right; }
+.data .date-marn li{float: left; margin-left: 15px;}
+.data .date-marn a{ color: #333333;}
+.data .date-marn a:hover{ color: #ff8000;}
+.data .date-title{width:100% ; float: left;/*display: none;*/}
+.data .date-title span{ margin: 10px 0px 0px 2.6%; width: 30%; float: left;height: auto;}
+.data .date-title .span1{ background:#27a9e3; }
+.data .date-title .span2{ background: #28b779;}
+.data .date-title .span3{ background: #852b99;}
+.data .date-title .span4{ background: #e35b5a;}
+.data .date-title .span5{ background: #ffb848;}
+.data .date-title span dd{ /*width:38%;*/display: block;/*float: left;*/ text-align: right; margin:10px 5%; color: #fff}
+.data .date-title span dd img{float: left;}
+.data .date-title span dd label{ color: #FFFFFF; font-size: 26px;}
+.data .date-title span dd p{ color: #FFFFFF; font-size: 16px;}
+/*.data .date-title span .dt1{width: 80%;  padding: 0px 10%; height:25px; float: left;filter:alpha(opacity=10);  -moz-opacity:0.1;  -khtml-opacity: 0.1;  opacity: 0.1;background: url(../images/index_33.png) 96% center #000  no-repeat;}*/
+.data .date-title span .dt1{width: 100%; position: relative;  height:25px; float: left;  line-height: 25px; color: #FFF; }
+.data .date-title span .dt-box{}
+.data .date-title span .list{ position: absolute; left: 10px; top: 0px; z-index: 10;}
+.data .date-title span .img{position: absolute;right: 10px; top: -2px; z-index: 10;}
+.data .date-title span .bg{position: absolute; left: 0px; top: 0px; width: 100%; height: 25px; filter:alpha(opacity=20);  -moz-opacity:0.2;  -khtml-opacity: 0.2;  opacity: 0.2; background: #000000;  /*background: url(../images/index_33.png) 96% center #000  no-repeat;*/}
+.warn{ width: 29%;}
+.warn-nav ul{ margin: 0px 10px 0px 0px; float: left; width: 100%;height: 40px; cursor: pointer;}
+.warn-nav li{ width: 35%; float: left; height: 38px;  text-align: center; line-height: 38px; position: relative; z-index: 10; background: #FFFFFF;border: 1px solid #FFFFFF; border-bottom: none; border-top: 2px #FFFFFF solid;}
+.warn-nav li i{font-size: 16px; color:#898989; width: 25px;height: 25px; margin-right: 10px;}
+.warn-nav li.list{border: 1px solid #ccc; float: left; width: 35%;  height: 39px; border-bottom: none; border-top: 2px solid #ff8000; position: relative; z-index: 10;}
+.warn-nav li.list i{color: #ff8000;}
+.table_box{border: 1px solid #ccc; position:relative; z-index: 6;}
+.table_box .warn-list ul{margin: 11px 5%}
+.table_box .warn-list ul li{ margin-bottom: 8px; *margin-bottom: 4px; cursor: pointer;  width: 100%;  height: 26px; line-height: 26px;   background:#fafafa; }
+.table_box .warn-list ul li label{ float: left; display: block;}
+.table_box .warn-list ul li em{ float:right ;display: block;} 
+.table_box .warn-list ul li a{color: #000; display: block;width: 90%; height: 26px;line-height: 26px; padding-left: 10%}
+.table_box .warn-list ul li a.docA{ background: url(../images/index_35.png) left center no-repeat; }
+.table_box .warn-list ul li a.docB{ background: url(../images/index_32.png) left center no-repeat; }
+.table_box .warn-list ul li a:hover{color: #ff8000;}
+
+.info{ border: 1px solid #ccc; padding: 0px 2%;}
+.user-info {}
+.user-info label { margin-right: 10px;}
+.user-info span { color: #ff8000; margin-left: 2px; cursor: pointer;}
+.tab{border: 1px solid #ccc; padding: 0px 2%;}
+.index h1{ border-bottom: 1px solid #ff8000; height: 42px; line-height: 42px; font-size: 14px; font-weight:normal;}
+.index h1 .iconfont{ font-size: 20px; color: #ff8000; padding-right: 5px;}
+.tab table th,table td{ padding: 10px 0px; text-align: center; border:solid #ccc; border-width:0 0 0 0;font-weight: normal;} 
+.tab table tr{border-bottom: 1px solid #ccc;}
+.tab table tr:last-child{border-width:0 0 0 0;}
+.tab table th{ color: #333; font-size: 16px;}
+.tab table td{ color: #666; }

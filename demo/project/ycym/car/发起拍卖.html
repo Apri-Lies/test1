@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<title>发起拍卖</title>
+	<link rel="stylesheet" media="screen" href="../css/base.css">
+	<link rel="stylesheet" media="screen" href="../css/common.css">
+	<link rel="stylesheet" media="screen" href="../css/4s.css">
+	<style>
+		.bottom{border-bottom:1px solid #ccc;}
+	</style>
+</head>
+<body>	
+	<div class="content clearfix">
+		<div class="path clearfix">
+			<div class="fl">
+				<i class="icon-home"></i>
+				<a href="">车辆管理</a>
+				<i class="icon-arrow-r"></i>
+				<a href="#">车辆拍卖</a>
+			</div>
+		</div>
+		<div class="table-box clearfix mt10">
+			<h3 class="orange-l pl15">车辆信息<a href="车辆查看.html" class="fr pr15" style="color:#fff;">详情</a></h3>
+			<table width="100%" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="20%">品牌</td>
+					<td width="30%">一汽丰田</td>
+					<td width="20%">车系</td>
+					<td width="30%">卡罗拉</td>
+				</tr>
+				<tr>
+					<td>车型</td>
+					<td>1.8L</td>
+					<td>牌照</td>
+					<td>粤AL0E37</td>
+				</tr>
+				<tr>
+					<td>VIN</td>
+					<td>LFMARE2CX90179558</td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		<div class="table-box clearfix mt15">
+			<h3 class="orange-l pl15 bottom">选择商户</h3>
+			<table width="100%" cellpadding="0" cellspacing="0">
+				<tr>
+					<th><input class="" type="checkbox"class="inp-checkbox"></th>
+					<th>商户</th>
+					<th>联系人</th>
+					<th>联系人电话</th>
+					<th>操作</th>
+				</tr>
+				<tr>
+					<td><input class="" type="checkbox"class="inp-checkbox"></td>
+					<td>车商HXDS001</td>
+					<td>HXDS001</td>
+					<td>12345678911</td>
+					<td><a href="#">删除</a></td>
+				</tr>
+				<tr>
+					<td><input class="" type="checkbox"class="inp-checkbox"></td>
+					<td>车商HXDS001</td>
+					<td>HXDS001</td>
+					<td>12345678911</td>
+					<td><a href="#">删除</a></td>
+				</tr>
+				<tr>
+					<td><input class="" type="checkbox"class="inp-checkbox"></td>
+					<td>车商HXDS001</td>
+					<td>HXDS001</td>
+					<td>12345678911</td>
+					<td><a href="#">删除</a></td>
+				</tr>
+				<tr>
+					<td><input class="" type="checkbox"class="inp-checkbox"></td>
+					<td>车商HXDS001</td>
+					<td>HXDS001</td>
+					<td>12345678911</td>
+					<td><a href="#">删除</a></td>
+				</tr>
+			</table>
+		</div>
+		</div>
+		<div class="tab-box clearfix mt15">
+			<h3 class="orange-l pl15">排场信息</h3>
+			<div class="clearfix">
+				<div class="clearfix fl mt15 w600">
+					<div class="fl lable-all">标题：</div>
+					<div class="fl">
+						<input type="text" class="text" placeholder="例：询价标题">
+						<span class="tip-color">输入信息有误</span>
+					</div>
+				</div>
+			</div>
+			<div class="w600 clearfix mt15">
+				<label class="lable-all fl">过户费用：</label>
+				<div class="radio-right fl">
+					<a href="javascript:void(0);" class="a_radio a3" date="1" name="order"><em>过户费用由车商承担</em></a>
+					<a href="javascript:void(0);" class="a_radio a3" date="1" name="order"><em>过户费用不需车商承担</em></a>
+				</div>
+			</div>
+			<div class="w600 mt15 clearfix">
+				<dl class="fl">
+						<dt class="fl lable-all">拍卖类别：</dt>
+						<dd class="fl">
+							<div class="diy_select select-relative fl z-100">
+								<input type="hidden" name="" class="diy_select_input">
+								<div class="diy_select_txt select_box w100">请选择</div>
+								<div class="diy_select_btn"></div>
+								<ul class="diy_select_list slect-ul str w100">
+									<li class="">1</li>
+									<li class="">2</li>
+									<li class="">3</li>
+									<li class="">4</li>
+									<li class="">5</li>
+								</ul>
+							</div>
+						</dd>
+					</dl>
+			</div>
+			<div class="clearfix w600">
+				<div class="fl mt15">
+					<label class="lable-all pt5 fl">开始拍卖时间：</label>
+					<input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img mt5" >
+				</div>
+				<div class="fl mt20 ml20 w200">
+					<dl>
+						<dt class="fl input-lable pl10">拍卖时长：</dt>
+						<dd class="fl">
+							<div class="diy_select select-relative fl z-99">
+								<input type="hidden" name="" class="diy_select_input">
+								<div class="diy_select_txt select_box w100">请选择</div>
+								<div class="diy_select_btn"></div>
+								<ul class="diy_select_list slect-ul str w100">
+									<li class="">1</li>
+									<li class="">2</li>
+									<li class="">3</li>
+									<li class="">4</li>
+									<li class="">5</li>
+								</ul>
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="clearfix w700">
+				<div class="fl mt15">
+					<div class="lable-all fl">底价：</div>
+					<div class="fl">
+						<input type="text" class="text" placeholder="例：询价标题">
+						<span class="tip-color">输入信息有误</span>
+					</div>
+				</div>
+				<div class="fl ml20 mt15">
+					<dl>
+						<dt class="fl input-lable pl10">最小增额：</dt>
+						<dd class="fl">
+							<div class="diy_select select-relative fl z-98">
+								<input type="hidden" name="" class="diy_select_input">
+								<div class="diy_select_txt select_box w100">请选择</div>
+								<div class="diy_select_btn"></div>
+								<ul class="diy_select_list slect-ul str w100">
+									<li class="">1</li>
+									<li class="">2</li>
+									<li class="">3</li>
+									<li class="">4</li>
+									<li class="">5</li>
+								</ul>
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="clearfix mt15 w600">
+				<label class="lable-all fl">预计交车日：</label>
+				<p class="fl">
+					<input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img">
+				</p>
+				<div class="clearfix mt15">
+					<dl>
+						<dt class="fl input-lable pl10 ml20">撮合时间：</dt>
+						<dd class="fl">
+							<div class="diy_select select-relative fl z-97">
+								<input type="hidden" name="" class="diy_select_input">
+								<div class="diy_select_txt select_box w100">请选择</div>
+								<div class="diy_select_btn"></div>
+								<ul class="diy_select_list slect-ul str w100">
+									<li class="">1</li>
+									<li class="">2</li>
+									<li class="">3</li>
+									<li class="">4</li>
+									<li class="">5</li>
+								</ul>
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="clearfix  pt10 ">
+				<label class="lable-all pt5 fl">是否委托拍卖：</label>
+				<div class="radio-right divW80 pt5 fl">
+					<a href="javascript:void(0);" class="a_radio a2" date="1" name="order"><em>是</em></a>
+					<a href="javascript:void(0);" class="a_radio a2" date="1" name="order"><em>否</em></a>
+				</div>
+			</div>
+			<div class="clearfix  pt10 w800">
+				<label class="lable-all fl">公司代码：</label>
+				<textarea class="textarea1"   cols="80" rows="10"></textarea>
+			</div>
+		</div>
+		<div class="clearfix text-c mt20 mb20">
+			<a href="车辆管理.html"><button class="btn orange-l w100">返回上一页</button></a>
+			<button class="ml10 btn orange w100">提交</button>
+		</div>
+	</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/select.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>

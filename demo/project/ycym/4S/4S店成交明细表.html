@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<title>4S店成交明细表</title>
+	<link href="../css/base.css" rel="stylesheet" media="screen">
+	<link href="../css/common.css" rel="stylesheet" media="screen">
+	<link href="../css/table/fixed_table_rc.css" type="text/css" rel="stylesheet" media="all"/>
+</head>
+<body>
+<div class="content">	
+	<div class="path clearfix">
+		<div class="fl w400">
+			<i class="icon-home"></i>			
+			<a href="#">统计</a>
+			<i class="icon-arrow-r"></i>
+			<a href="#">4S店成交明细表</a>
+		</div>
+	</div>
+	<div class="clearfix">
+		<dl class="fl mt10 w240">
+			<dt class="fl input-lable">品牌：</dt>
+			<dd class="input fl">
+				<input type="text" class="text" placeholder="品牌">
+			</dd>
+		</dl>
+		<dl class="fl mt10 w270">
+			<dt class="fl input-lable">得标商家：</dt>
+			<dd class="input fl">
+				<input type="text" class="text" placeholder="得标商家">
+			</dd>
+		</dl>
+		<dl class="fl mt10 w180">
+			<dt class="fl input-lable">拍卖编号：</dt>
+			<dd class="fl">
+				<div class="diy_select select-relative fl">
+					<input type="hidden" name="" class="diy_select_input">
+					<div class="diy_select_txt select_box w100">全部</div>
+					<div class="diy_select_btn"></div>
+					<ul class="diy_select_list slect-ul str w100">
+						<li class="">1</li>
+						<li class="">2</li>
+						<li class="">3</li>
+					</ul>
+				</div>
+			</dd>
+		</dl>
+		<dl class="fl mt10 w180">
+			<dt class="fl input-lable">状态：</dt>
+			<dd class="fl">
+				<div class="diy_select select-relative fl">
+					<input type="hidden" name="" class="diy_select_input">
+					<div class="diy_select_txt select_box w100">全部</div>
+					<div class="diy_select_btn"></div>
+					<ul class="diy_select_list slect-ul str w100">
+						<li class="">1</li>
+						<li class="">2</li>
+						<li class="">3</li>
+					</ul>
+				</div>
+			</dd>
+		</dl>
+		<dl class="fl w480 mt10">
+			<dt class="fl input-lable">成交时间：</dt>
+			<dd class="fl">
+				<input id="d11" type="text" onClick="WdatePicker()"
+					   class="input-date input-date-img">
+			</dd>
+			<dt class="fl input-lable pl5 pr5">~</dt>
+			<dd class="fl">
+				<input id="d11" type="text" onClick="WdatePicker()"
+					   class="input-date input-date-img">
+			</dd>
+		</dl>
+		<dl class="fl mt10 w220">
+			<button class="btn orange w100">查询</button>
+			<button class="ml5 btn-export w100">导出Excel</button>
+		</dl>
+	</div>
+	<div class="tab-box clearfix mt10 bordl1">
+		<table class="tab-fix">
+			<thead>
+				<tr class="orange-l">
+					<th>序号</th>
+					<th>车牌品牌</th>
+					<th>车系</th>
+					<th>车型</th>
+					<th>VIN码</th>
+					<th>状态</th>
+					<th>评估师</th>	
+					<th>销售顾问</th>
+					<th>客户需求</th>
+					<th>评估编号</th>
+					<th>拍卖编号</th>
+					<th>拍卖时间</th>
+					<th>拍卖模式</th>
+					<th>成交时间</th>	
+					<th>交车时间</th>
+					<th>得标商家</th>
+					<th>成交金额</th>	
+					<th>过户费承担</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+                    <td>1</td>
+					<td>北京奔驰</td>
+					<td>飞度</td>
+					<td>1.8自动VTI豪华版</td>
+					<td>123456</td>
+					<td>已交车</td>
+					<td>003</td>
+					<td>003</td>
+					<td>--</td>
+					<td>123456</td>
+					<td>123456</td>
+					<td>2016-04-27</td>
+					<td>一般</td>
+					<td>2016-04-27</td>
+					<td>2016-04-27</td>
+					<td>广汽</td>
+					<td>1000000</td>
+					<td>含过户费</td>
+				</tr>
+				<tr>
+                    <td>2</td>
+					<td>北京奔驰</td>
+					<td>飞度</td>
+					<td>1.8自动VTI豪华版</td>
+					<td>123456</td>
+					<td>已交车</td>
+					<td>003</td>
+					<td>003</td>
+					<td>--</td>
+					<td>123456</td>
+					<td>123456</td>
+					<td>2016-04-27</td>
+					<td>一般</td>
+					<td>2016-04-27</td>
+					<td>2016-04-27</td>
+					<td>广汽</td>
+					<td>1000000</td>
+					<td>含过户费</td>
+				</tr>
+				<tr>
+                    <td>3</td>
+					<td>北京奔驰</td>
+					<td>飞度</td>
+					<td>1.8自动VTI豪华版</td>
+					<td>123456</td>
+					<td>已交车</td>
+					<td>003</td>
+					<td>003</td>
+					<td>--</td>
+					<td>123456</td>
+					<td>123456</td>
+					<td>2016-04-27</td>
+					<td>一般</td>
+					<td>2016-04-27</td>
+					<td>2016-04-27</td>
+					<td>广汽</td>
+					<td>1000000</td>
+					<td>含过户费</td>
+				</tr>
+				<tr>
+                    <td>4</td>
+					<td>北京奔驰</td>
+					<td>飞度</td>
+					<td>1.8自动VTI豪华版</td>
+					<td>123456</td>
+					<td>已交车</td>
+					<td>003</td>
+					<td>003</td>
+					<td>--</td>
+					<td>123456</td>
+					<td>123456</td>
+					<td>2016-04-27</td>
+					<td>一般</td>
+					<td>2016-04-27</td>
+					<td>2016-04-27</td>
+					<td>广汽</td>
+					<td>1000000</td>
+					<td>含过户费</td>
+				</tr>
+				<tr>
+                    <td>5</td>
+					<td>北京奔驰</td>
+					<td>飞度</td>
+					<td>1.8自动VTI豪华版</td>
+					<td>123456</td>
+					<td>已交车</td>
+					<td>003</td>
+					<td>003</td>
+					<td>--</td>
+					<td>123456</td>
+					<td>123456</td>
+					<td>2016-04-27</td>
+					<td>一般</td>
+					<td>2016-04-27</td>
+					<td>2016-04-27</td>
+					<td>广汽</td>
+					<td>1000000</td>
+					<td>含过户费</td>
+				</tr>
+				<tr>
+                    <td>6</td>
+					<td>北京奔驰</td>
+					<td>飞度</td>
+					<td>1.8自动VTI豪华版</td>
+					<td>123456</td>
+					<td>已交车</td>
+					<td>003</td>
+					<td>003</td>
+					<td>--</td>
+					<td>123456</td>
+					<td>123456</td>
+					<td>2016-04-27</td>
+					<td>一般</td>
+					<td>2016-04-27</td>
+					<td>2016-04-27</td>
+					<td>广汽</td>
+					<td>1000000</td>
+					<td>含过户费</td>
+				</tr>
+				<tr>
+                    <td>7</td>
+					<td>北京奔驰</td>
+					<td>飞度</td>
+					<td>1.8自动VTI豪华版</td>
+					<td>123456</td>
+					<td>已交车</td>
+					<td>003</td>
+					<td>003</td>
+					<td>--</td>
+					<td>123456</td>
+					<td>123456</td>
+					<td>2016-04-27</td>
+					<td>一般</td>
+					<td>2016-04-27</td>
+					<td>2016-04-27</td>
+					<td>广汽</td>
+					<td>1000000</td>
+					<td>含过户费</td>
+				</tr>
+				<tr>
+                    <td>8</td>
+					<td>北京奔驰</td>
+					<td>飞度</td>
+					<td>1.8自动VTI豪华版</td>
+					<td>123456</td>
+					<td>已交车</td>
+					<td>003</td>
+					<td>003</td>
+					<td>--</td>
+					<td>123456</td>
+					<td>123456</td>
+					<td>2016-04-27</td>
+					<td>一般</td>
+					<td>2016-04-27</td>
+					<td>2016-04-27</td>
+					<td>广汽</td>
+					<td>1000000</td>
+					<td>含过户费</td>
+				</tr>
+				<tr>
+                    <td>9</td>
+					<td>北京奔驰</td>
+					<td>飞度</td>
+					<td>1.8自动VTI豪华版</td>
+					<td>123456</td>
+					<td>已交车</td>
+					<td>003</td>
+					<td>003</td>
+					<td>--</td>
+					<td>123456</td>
+					<td>123456</td>
+					<td>2016-04-27</td>
+					<td>一般</td>
+					<td>2016-04-27</td>
+					<td>2016-04-27</td>
+					<td>广汽</td>
+					<td>1000000</td>
+					<td>含过户费</td>
+				</tr>
+				<tr>
+                    <td>10</td>
+					<td>北京奔驰</td>
+					<td>飞度</td>
+					<td>1.8自动VTI豪华版</td>
+					<td>123456</td>
+					<td>已交车</td>
+					<td>003</td>
+					<td>003</td>
+					<td>--</td>
+					<td>123456</td>
+					<td>123456</td>
+					<td>2016-04-27</td>
+					<td>一般</td>
+					<td>2016-04-27</td>
+					<td>2016-04-27</td>
+					<td>广汽</td>
+					<td>1000000</td>
+					<td>含过户费</td>
+				</tr>
+				<tr>
+                    <td>11</td>
+					<td>北京奔驰</td>
+					<td>飞度</td>
+					<td>1.8自动VTI豪华版</td>
+					<td>123456</td>
+					<td>已交车</td>
+					<td>003</td>
+					<td>003</td>
+					<td>--</td>
+					<td>123456</td>
+					<td>123456</td>
+					<td>2016-04-27</td>
+					<td>一般</td>
+					<td>2016-04-27</td>
+					<td>2016-04-27</td>
+					<td>广汽</td>
+					<td>1000000</td>
+					<td>含过户费</td>
+				</tr>
+				<tr>
+                    <td>12</td>
+					<td>北京奔驰</td>
+					<td>飞度</td>
+					<td>1.8自动VTI豪华版</td>
+					<td>123456</td>
+					<td>已交车</td>
+					<td>003</td>
+					<td>003</td>
+					<td>--</td>
+					<td>123456</td>
+					<td>123456</td>
+					<td>2016-04-27</td>
+					<td>一般</td>
+					<td>2016-04-27</td>
+					<td>2016-04-27</td>
+					<td>广汽</td>
+					<td>1000000</td>
+					<td>含过户费</td>
+				</tr>
+				<tr>
+                    <td>13</td>
+					<td>北京奔驰</td>
+					<td>飞度</td>
+					<td>1.8自动VTI豪华版</td>
+					<td>123456</td>
+					<td>已交车</td>
+					<td>003</td>
+					<td>003</td>
+					<td>--</td>
+					<td>123456</td>
+					<td>123456</td>
+					<td>2016-04-27</td>
+					<td>一般</td>
+					<td>2016-04-27</td>
+					<td>2016-04-27</td>
+					<td>广汽</td>
+					<td>1000000</td>
+					<td>含过户费</td>
+				</tr>
+				<tr>
+                    <td>14</td>
+					<td>北京奔驰</td>
+					<td>飞度</td>
+					<td>1.8自动VTI豪华版</td>
+					<td>123456</td>
+					<td>已交车</td>
+					<td>003</td>
+					<td>003</td>
+					<td>--</td>
+					<td>123456</td>
+					<td>123456</td>
+					<td>2016-04-27</td>
+					<td>一般</td>
+					<td>2016-04-27</td>
+					<td>2016-04-27</td>
+					<td>广汽</td>
+					<td>1000000</td>
+					<td>含过户费</td>
+				</tr>
+				<tr>
+                    <td>15</td>
+					<td>北京奔驰</td>
+					<td>飞度</td>
+					<td>1.8自动VTI豪华版</td>
+					<td>123456</td>
+					<td>已交车</td>
+					<td>003</td>
+					<td>003</td>
+					<td>--</td>
+					<td>123456</td>
+					<td>123456</td>
+					<td>2016-04-27</td>
+					<td>一般</td>
+					<td>2016-04-27</td>
+					<td>2016-04-27</td>
+					<td>广汽</td>
+					<td>1000000</td>
+					<td>含过户费</td>
+				</tr>
+				<tr>
+                    <td>16</td>
+					<td>北京奔驰</td>
+					<td>飞度</td>
+					<td>1.8自动VTI豪华版</td>
+					<td>123456</td>
+					<td>已交车</td>
+					<td>003</td>
+					<td>003</td>
+					<td>--</td>
+					<td>123456</td>
+					<td>123456</td>
+					<td>2016-04-27</td>
+					<td>一般</td>
+					<td>2016-04-27</td>
+					<td>2016-04-27</td>
+					<td>广汽</td>
+					<td>1000000</td>
+					<td>含过户费</td>
+				</tr>
+				<tr>
+                    <td>17</td>
+					<td>北京奔驰</td>
+					<td>飞度</td>
+					<td>1.8自动VTI豪华版</td>
+					<td>123456</td>
+					<td>已交车</td>
+					<td>003</td>
+					<td>003</td>
+					<td>--</td>
+					<td>123456</td>
+					<td>123456</td>
+					<td>2016-04-27</td>
+					<td>一般</td>
+					<td>2016-04-27</td>
+					<td>2016-04-27</td>
+					<td>广汽</td>
+					<td>1000000</td>
+					<td>含过户费</td>
+				</tr>
+				<tr>
+                    <td>18</td>
+					<td>北京奔驰</td>
+					<td>飞度</td>
+					<td>1.8自动VTI豪华版</td>
+					<td>123456</td>
+					<td>已交车</td>
+					<td>003</td>
+					<td>003</td>
+					<td>--</td>
+					<td>123456</td>
+					<td>123456</td>
+					<td>2016-04-27</td>
+					<td>一般</td>
+					<td>2016-04-27</td>
+					<td>2016-04-27</td>
+					<td>广汽</td>
+					<td>1000000</td>
+					<td>含过户费</td>
+				</tr>
+				<tr>
+                    <td>19</td>
+					<td>北京奔驰</td>
+					<td>飞度</td>
+					<td>1.8自动VTI豪华版</td>
+					<td>123456</td>
+					<td>已交车</td>
+					<td>003</td>
+					<td>003</td>
+					<td>--</td>
+					<td>123456</td>
+					<td>123456</td>
+					<td>2016-04-27</td>
+					<td>一般</td>
+					<td>2016-04-27</td>
+					<td>2016-04-27</td>
+					<td>广汽</td>
+					<td>1000000</td>
+					<td>含过户费</td>
+				</tr>
+				<tr>
+                    <td>20</td>
+					<td>北京奔驰</td>
+					<td>飞度</td>
+					<td>1.8自动VTI豪华版</td>
+					<td>123456</td>
+					<td>已交车</td>
+					<td>003</td>
+					<td>003</td>
+					<td>--</td>
+					<td>123456</td>
+					<td>123456</td>
+					<td>2016-04-27</td>
+					<td>一般</td>
+					<td>2016-04-27</td>
+					<td>2016-04-27</td>
+					<td>广汽</td>
+					<td>1000000</td>
+					<td>含过户费</td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+	</div>
+	<div class="page fr clearfix mt5">
+		<ul>
+			<li><a href="#" class="list"><</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#" class="list">></a></li>
+		</ul>
+	</div>
+</div>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/select.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script src="../js/table/fixed_table_rc.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function(){						
+		  $('.tab-fix').fxdHdrCol({
+            fixedCols:0,
+            width: "100%",
+            height:500,
+            colModal: [
+                {width: 50, align: 'center'},
+                {width: 200, align: 'center'},
+                {width: 100, align: 'center'},
+                {width: 200, align: 'center'},
+                {width: 200, align: 'center'},
+                {width: 100, align: 'center'},
+                {width: 150, align: 'center'},
+                {width: 100, align: 'center'},  
+                {width: 100, align: 'center'},
+                {width: 150, align: 'center'},
+                {width: 100, align: 'center'},
+                {width: 200, align: 'center'},
+				{width: 150, align: 'center'},
+                {width: 200, align: 'center'},  
+                {width: 200, align: 'center'},
+                {width: 150, align: 'center'},
+                {width: 100, align: 'center'},
+                {width: 100, align: 'center'}   				
+            ]
+        });	        
+	})
+    $(function () {
+		$("tbody tr:odd").addClass("odd");
+		$("tbody tr:even").addClass("even");
+	});
+</script>
+</body>
+</html>

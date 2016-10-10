@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<title>车辆查看</title>
+	<link rel="stylesheet" media="screen" href="../css/base.css">
+	<link rel="stylesheet" media="screen" href="../css/common.css">
+	<link rel="stylesheet" media="screen" href="../css/4s.css">
+<!--	<style type="text/css">
+		.tabs>ul>li.active{height: 37px; background:#fff;  border: 1px solid #ccc;  border-bottom:none;border-top: 2px #ff4200 solid;  position: relative;z-index:10;}
+	</style>-->
+</head>
+<body>
+	<div class="content clearfix">
+		<div class="path clearfix">
+			<div class="fl pl10">
+				<i class="icon-home"></i>
+				<a href="">车辆管理</a>
+				<i class="icon-arrow-r"></i>
+				<a href="#">车辆管理</a>
+				<i class="icon-arrow-r"></i>
+				<a href="#">车辆详情</a>
+			</div>
+		</div>
+		<div class="clearfix mt10">
+			<div class="tabs w1000">
+				<ul>
+					<li class="active pointer">登记基本信息</li>
+					<li class="pointer">车辆基本信息</li>
+					<li class="pointer">车辆配置</li>
+					<li class="pointer">轮胎检查</li>
+					<li class="pointer">车辆照片</li>
+					<li class="pointer">车辆检查项</li>
+					<li class="pointer">车辆外观照片</li>
+					<li class="pointer">补充说明</li>
+					<li class="pointer">买卖信息</li>
+				</ul>
+			</div>
+			<div class="sub_tab">
+			<!--登记基本信息-->
+				<div class="warn-list">
+					<div class="pb15 clearfix">						
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">公司名称：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：公司名称">
+								<span class="tip-color">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">客户需求：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：客户需求">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">委托人：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：委托人">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl clearfix row mt15">
+							<div class="fl lable-all">联系人：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：联系人">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">委托方手机：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：委托方手机">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">联系人电话：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：联系人电话">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">委托方地区：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：委托方地区">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">联系人地址：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：联系人地址">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">委托方地址：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：委托方地区">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">车主：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：车主">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">门店：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：门店">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">法人/身份证号：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：法人/身份证号">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">评估师：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：门店">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">车主手机：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：法人/身份证号">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">评估方式：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：评估方式">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">车主地区：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：车主地区">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						
+						<div class="w550 fl mt15">
+							<label class="lable-all fl">创建日期:</label>
+							<input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img">
+						</div>
+						
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">客户期望售价：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：客户期望售价">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl mt15">
+							<label class="lable-all fl">评估日期:</label>
+							<input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img">
+						</div>
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">意向品牌：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：意向品牌">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl mt15">
+							<label class="lable-all fl">上传日期:</label>
+							<input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img">
+						</div>
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">意向车系：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：意向车系">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl mt15 ">
+							<label class="lable-all fl">最后修改:</label>
+							<input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img">
+						</div>
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">意向车型：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：意向车型">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl mt15">
+							<label class="lable-all fl">车牌照片:</label>
+							 <input type="file" name="fileField" id="fileField" class="pt5"/>
+						</div>
+						<div class="w550 fl mt15">
+							<label class="lable-all fl">车牌照片:</label>
+							<input type="file" name="fileField" id="fileField" />
+						</div>
+						<div class="w550 fl mt15">
+							<label class="lable-all fl">行驶人照片:</label>
+							<input type="file" name="fileField" id="fileField" class="pt5"/>
+						</div>
+						<div class="w550 fl mt15">
+							<label class="lable-all fl">委托人证件:</label>
+							<input type="file" name="fileField" id="fileField" class="pt5"/>
+						</div>
+						<div class="w550 fl mt15">
+							<label class="lable-all fl">VIN照片:</label>
+							 <input type="file" name="fileField" id="fileField" class="pt5"/>
+						</div>
+						<div class="w800 fl mt15">
+							<label class="lable-all fl">查估结果概述:</label>
+							<textarea class="textarea1 textWi420"   cols="80" rows="10"id="content"></textarea>
+						</div>
+					</div>	
+				</div>
+			<!--车辆基本信息-->
+				<div class="warn-list  pb15 clearfix" style="display: none;">						
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">牌照号码：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：牌照号码">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">品牌型号：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：品牌型号">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">品牌：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：品牌">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					
+					<div class="w550 fl  row mt15">
+						<div class="fl lable-all">首次上牌日期：</div>
+						<div class="fl">
+							<input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img">
+						</div>
+					</div>
+					<div class="w550 fl clearfix row mt15">
+						<div class="fl lable-all">车系：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：车系">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">过户次数：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：过户次数">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">车型：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：车型">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">车身样式：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：车身样式">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">车辆年式：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：车辆年式">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">排放标准：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：排放标准">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">VIN：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：VIN">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl mt15 relative z-100">
+						<div class="fl lable-all">使用性质：</div>
+						<div class="diy_select  select-relative fl">
+							<input type="hidden" name="" class="diy_select_input">
+							<div class="diy_select_txt select_box w100">请选择</div>
+							<div class="diy_select_btn"></div>
+							<ul class="diy_select_list slect-ul str w100">
+								<li class="">请选择</li>
+								<li class="">1</li>
+								<li class="">2</li>
+							</ul>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">发动机号：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：VIN">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl mt15 relative z-99">
+						<div class="fl lable-all">变速箱：</div>
+						<div class="diy_select  select-relative fl">
+							<input type="hidden" name="" class="diy_select_input">
+							<div class="diy_select_txt select_box w100">请选择</div>
+							<div class="diy_select_btn"></div>
+							<ul class="diy_select_list slect-ul str w100">
+								<li class="">请选择</li>
+								<li class="">1</li>
+								<li class="">2</li>
+							</ul>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">车架号：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：车架号">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">排量(L)：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：排量">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">仪表里程：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：仪表里程">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl mt15 relative z-98">
+						<div class="fl lable-all">燃料类型：</div>
+						<div class="diy_select  select-relative fl">
+							<input type="hidden" name="" class="diy_select_input">
+							<div class="diy_select_txt select_box w100">请选择</div>
+							<div class="diy_select_btn"></div>
+							<ul class="diy_select_list slect-ul str w100">
+								<li class="">请选择</li>
+								<li class="">1</li>
+								<li class="">2</li>
+							</ul>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">推定里程：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：推定里程">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl mt15 relative z-97">
+						<div class="fl lable-all">驱动方式：</div>
+						<div class="diy_select  select-relative fl">
+							<input type="hidden" name="" class="diy_select_input">
+							<div class="diy_select_txt select_box w100">请选择</div>
+							<div class="diy_select_btn"></div>
+							<ul class="diy_select_list slect-ul str w100">
+								<li class="">请选择</li>
+								<li class="">1</li>
+								<li class="">2</li>
+							</ul>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">里程单位：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：里程单位">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl mt15 relative z-96">
+						<div class="fl lable-all">车身颜色：</div>
+						<div class="diy_select  select-relative fl">
+							<input type="hidden" name="" class="diy_select_input">
+							<div class="diy_select_txt select_box w100">请选择</div>
+							<div class="diy_select_btn"></div>
+							<ul class="diy_select_list slect-ul str w100">
+								<li class="">请选择</li>
+								<li class="">1</li>
+								<li class="">2</li>
+							</ul>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">出厂年月：</div>
+						<div class="fl">
+							<input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img">
+						</div>
+					</div>
+					<div class="w550 fl mt15 relative z-95">
+						<div class="fl lable-all">驾驶舱色：</div>
+						<div class="diy_select  select-relative fl">
+							<input type="hidden" name="" class="diy_select_input">
+							<div class="diy_select_txt select_box w100">请选择</div>
+							<div class="diy_select_btn"></div>
+							<ul class="diy_select_list slect-ul str w100">
+								<li class="">请选择</li>
+								<li class="">1</li>
+								<li class="">2</li>
+							</ul>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">置购日期：</div>
+						<div class="fl">
+							<input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img">
+						</div>
+					</div>
+					<div class="w550 fl mt15 relative z-94">
+						<div class="fl lable-all">缸数：</div>
+						<div class="diy_select  select-relative fl">
+							<input type="hidden" name="" class="diy_select_input">
+							<div class="diy_select_txt select_box w100">请选择</div>
+							<div class="diy_select_btn"></div>
+							<ul class="diy_select_list slect-ul str w100">
+								<li class="">请选择</li>
+								<li class="">1</li>
+								<li class="">2</li>
+							</ul>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">市场价/万：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：市场价">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">总质量/kg：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：总质量">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">保险公司有效期：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：保险公司有效期">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">发动机功能/千瓦：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：发动机功能/千瓦">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">商业保险金额/万：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：商业保险金额/万">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">年检到期：</div>
+						<div class="fl">
+							<input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img">
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<label class="lable-all pt5 fl">购置税证书:</label>						
+						<div class="radio-right fl pt5">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>是</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>否</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">未处理违法记录:</label>
+						<div class="radio-right fl pt5">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">新车发票:</label>
+						<div class="radio-right fl pt5">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">是否查封抵押:</label>
+						<div class="radio-right fl pt5">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">机动车登记证书:</label>
+						<div class="radio-right fl pt5">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">带牌:</label>
+						<div class="radio-right fl pt5">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">机动车行驶证:</label>
+						<div class="radio-right fl pt5">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">车船税票:</label>
+						<div class="radio-right fl pt5">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">第三者强制保险单:</label>
+						<div class="radio-right fl pt5">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">商业保险:</label>
+						<div class="radio-right fl pt5">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">备用钥匙:</label>
+						<div class="radio-right fl pt5">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15">
+						<div class="fl lable-all">市场收购价/万：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：市场收购价">
+							<span class="tip-color" for="">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w800 fl mt15">
+						<label class="lable-all fl">车辆照片1:</label>
+						<p class="fl pt5">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w800 fl mt15">
+						<label class="lable-all fl">车辆照片2:</label>
+						<p class="fl pt5">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w800 fl mt15">
+						<label class="lable-all fl">车辆照片3:</label>
+						<p class="fl pt5">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w800 fl mt15">
+						<label class="lable-all fl">车辆照片4:</label>
+						<p class="fl pt5">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w800 fl mt15">
+						<label class="lable-all fl">车辆照片5:</label>
+						<p class="fl pt5">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+				</div>
+			<!--车辆配置-->
+				<div class="warn-list pb15 clearfix" style="display: none;">
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">天窗:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">皮椅:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">电动座椅:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">电动后视镜:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">防盗器:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">动力转向:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">倒车雷达:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">自动倒车:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">定速巡航:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">卫星导航:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">车身铭牌:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">音响主机:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">DVD:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">TV:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">行车记录仪:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">ABS:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">铝合金轮毂:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">铁圈:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">倒车显影:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">智能钥匙:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">CD:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl mt15 ">
+						<label class="lable-all pt5 fl">MP3:</label>
+						<div class="radio-right pt5 fl">
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+							<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+						</div>
+					</div>
+					<div class="w550 fl clearfix mt15">
+						<div class="fl lable-all">气囊数：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：气囊数">
+							<span class="tip-color">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl clearfix mt15">
+						<div class="fl lable-all">空调口数：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：空调口数">
+							<span class="tip-color">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl clearfix mt15">
+						<div class="fl lable-all">电动门数：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：电动门数">
+							<span class="tip-color">输入信息有误</span>
+						</div>
+					</div>
+					<div class="w550 fl clearfix row mt15">
+						<div class="fl lable-all">液晶屏幕数：</div>
+						<div class="fl">
+							<input type="text" class="text" placeholder="例：液晶屏幕数">
+							<span class="tip-color">输入信息有误</span>
+						</div>
+					</div>					
+				</div>
+				<!--轮胎检查-->
+				<div class="warn-list pb15 clearfix" style="display: none;">
+					<div class="table-box">
+						<table width="100%" cellpadding="0" cellspacing="0">
+							<tr>
+								<td>左前轮胎</td>
+								<td>少于1.6mm</td>
+								<td>左后轮胎</td>
+								<td>少于1.6mm</td>
+							</tr>
+							<tr>
+								<td>左后轮胎</td>
+								<td>少于1.6mm</td>
+								<td>右后轮胎</td>
+								<td>少于1.6mm</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="warn-list pb15 clearfix" style="display: none;">
+					<div class="w550 fl mt15">
+						<label class="lable-all fl">车辆左前部:</label>
+						<p class="fl pt5">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w550 fl mt15">
+						<label class="lable-all fl">车辆正前方:</label>
+						<p class="fl pt5">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w550 fl mt15">
+						<label class="lable-all fl">车辆右后部:</label>
+						<p class="pt5 fl">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w550 fl mt15">
+						<label class="lable-all fl">车辆正后部:</label>
+						<p class="pt5 fl">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w550 fl mt15">
+						<label class="lable-all fl">仪表台操纵杆:</label>
+						<p class="pt5 fl">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w550 fl mt15">
+						<label class="lable-all fl">前排座椅:</label>
+						<p class="pt5 fl">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w550 fl mt15">
+						<label class="lable-all fl">后排座椅:</label>
+						<p class="pt5 fl">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w550 fl mt15">
+						<label class="lable-all fl">中控台:</label>
+						<p class="pt5 fl">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w550 fl mt15">
+						<label class="lable-all fl">仪表:</label>
+						<p class="pt5 fl">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w550 fl mt15">
+						<label class="lable-all fl">发动机舱:</label>
+						<p class="pt5 fl">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w550 fl mt15">
+						<label class="lable-all fl">照片1:</label>
+						<p class="pt5 fl">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w550 fl mt15">
+						<label class="lable-all fl">照片2:</label>
+						<p class="pt5 fl">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w550 fl mt15">
+						<label class="lable-all fl">照片3:</label>
+						<p class="pt5 fl">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w550 fl mt15">
+						<label class="lable-all fl">照片4:</label>
+						<p class="pt5 fl">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w550 fl mt15">
+						<label class="lable-all fl">照片5:</label>
+						<p class="pt5 fl">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w550 fl mt15">
+						<label class="lable-all fl">照片6:</label>
+						<p class="pt5 fl">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w550 fl mt15">
+						<label class="lable-all fl">照片7:</label>
+						<p class="pt5 fl">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w550 fl mt15">
+						<label class="lable-all fl">照片8:</label>
+						<p class="pt5 fl">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w550 fl mt15">
+						<label class="lable-all fl">照片9:</label>
+						<p class="pt5 fl">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+					<div class="w550 fl mt15">
+						<label class="lable-all fl">照片10:</label>
+						<p class="pt5 fl">
+							 <input type="file" name="fileField" id="fileField" />
+						</p>
+					</div>
+				</div>
+				<!--车辆照片-->
+				<div class="warn-list" style="display: none;">
+					<div class="table-box clearfix mt15 mb20">
+						<table width="100%" cellpadding="0" cellspacing="0">
+							<tr>
+								<th width="10%">序号</th>
+								<th width="25%">检查项目</th>
+								<th width="10%">检查结果</th>
+								<th width="20%">照片</th>
+								<th width="10%">备注</th>								
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>机油混入冷却液中</td>
+								<td>无</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>机油混入冷却液中</td>
+								<td>无</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>机油混入冷却液中</td>
+								<td>无</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>机油混入冷却液中</td>
+								<td>无</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>机油混入冷却液中</td>
+								<td>无</td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>					
+				</div>
+			<!--车辆检查项-->
+				<div class="warn-list" style="display: none;">
+					8
+				</div>
+			<!--车辆外观照片-->
+				<div class="warn-list pb15 mt15 clearfix" style="display: none;">
+					<div class="w800 pb15">
+						<label class="lable fl">车身骨架检查:</label>
+						<textarea  cols="60" rows="6"></textarea>
+					</div>
+					<div class="w800 pb15">
+						<label class="lable fl">外观与车体检查:</label>
+						<textarea cols="60" rows="6"></textarea>
+					</div>
+					<div class="w800 pb15">
+						<label class="lable fl">发动机舱检查:</label>
+						<textarea  cols="60" rows="6"></textarea>
+					</div>
+					<div class="w800 pb15">
+						<label class="lable fl">驾驶舱检查:</label>
+						<textarea  cols="60" rows="6"></textarea>
+					</div>					
+					<div class="w800 pb15">
+						<label class="lable fl">启动检查:</label>
+						<textarea  cols="60" rows="6" ></textarea>
+					</div>
+					<div class="w800 pb15">
+						<label class="lable fl">路试检查:</label>
+						<textarea  cols="60" rows="6" ></textarea>
+					</div>
+					<div class="w800 pb15">
+						<label class="lable fl">底盘检查:</label>
+						<textarea  cols="60" rows="6"></textarea>
+					</div>
+					<div class="w800 pb15">
+						<label class="lable fl">功能性零部件列表:</label>
+						<textarea  cols="60" rows="6"></textarea>
+					</div>					
+				</div>
+			<!--补充说明-->
+				<div class="warn-list" style="display: none;">
+					<div class="mt15  mb15 clearfix">
+						<h3 class="orange-l pl15">置换信息</h3>
+						<div class="table-box  pb15 clearfix">
+							<div class="w550 fl mt15 ">
+								<label class="lable-all fl">最后修改：</label>
+								<p class="fl">
+									<input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img">
+								</p>
+							</div>
+							<div class="w550 fl mt15 ">
+								<label class="lable-all pt5 fl">置换类型：</label>
+								<div class="radio-right pt5 fl">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em >查估后置换</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>预约置换</em></a>
+								</div>
+							</div>
+							<div class="w550 fl clearfix mt15">
+								<div class="fl lable-all">置换新车价格/元：</div>
+								<div class="fl">
+									<input type="text" class="text" placeholder="例：置换新车价格/元">
+									<span class="tip-color">输入信息有误</span>
+								</div>
+							</div>
+							<div class="w550 fl clearfix mt15">
+								<div class="fl lable-all">品牌：</div>
+								<div class="fl">
+									<input type="text" class="text" placeholder="例：品牌">
+									<span class="tip-color">输入信息有误</span>
+								</div>
+							</div>
+							<div class="w550 fl clearfix mt15">
+								<div class="fl lable-all">车系：</div>
+								<div class="fl">
+									<input type="text" class="text" placeholder="例：车系">
+									<span class="tip-color">输入信息有误</span>
+								</div>
+							</div>
+							<div class="w550 fl clearfix row mt15">
+								<div class="fl lable-all">车型：</div>
+								<div class="fl">
+									<input type="text" class="text" placeholder="例：车型">
+									<span class="tip-color">输入信息有误</span>
+								</div>
+							</div>
+							<div class="w550 fl clearfix mt15">
+								<div class="fl lable-all">置换新车价格/元：</div>
+								<div class="fl">
+									<input type="text" class="text" placeholder="例：置换新车价格/元">
+									<span class="tip-color">输入信息有误</span>
+								</div>
+							</div>
+							<div class="w550 fl clearfix mt15">
+								<div class="fl lable-all">品牌：</div>
+								<div class="fl">
+									<input type="text" class="text" placeholder="例：品牌">
+									<span class="tip-color">输入信息有误</span>
+								</div>
+							</div>
+							<div class="w550 fl clearfix mt15">
+								<div class="fl lable-all">VIN：</div>
+								<div class="fl">
+									<input type="text" class="text" placeholder="例：VIN">
+									<span class="tip-color">输入信息有误</span>
+								</div>
+							</div>
+							<div class="w550 fl clearfix mt15">
+								<div class="fl lable-all">销售顾问：</div>
+								<div class="fl">
+									<input type="text" class="text" placeholder="例：销售顾问">
+									<span class="tip-color">输入信息有误</span>
+								</div>
+							</div>
+							<div class="w800 fl mt15">
+								<label class="lable-all fl">查估结果概述:</label>
+								<textarea cols="60" rows="7"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="mt15 mb15 clearfix">
+					<h3 class="orange-l pl15">购入信息</h3>
+					<div class="table-box  pb15 clearfix">
+						<div class="w550 fl clearfix mt15">
+							<div class="fl lable-all">购入日期：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：购入日期">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl  row mt15">
+							<div class="fl lable-all">价格：</div>
+							<div class="fl">
+								<input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img">
+							</div>
+						</div>
+						<div class="w550 fl clearfix row mt15">
+							<div class="fl lable-all">其他费用/元：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：其他费用/元">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl clearfix mt15">
+							<div class="fl lable-all">处理人：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：处理人">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl clearfix mt15">
+							<div class="fl lable-all">审核人：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：审核人">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">处理日期：</div>
+							<div class="fl">
+								<input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img">
+							</div>
+						</div>
+						<div class="w550 fl mt15 ">
+							<label class="lable-all fl">审核日期:</label>
+							<p class="fl">
+								<input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img">
+							</p>
+						</div>
+						<div class="w800 fl mt15">
+							<label class="lable-all fl">查估结果概述:</label>
+							<textarea cols="60" rows="7"></textarea>
+						</div>
+					</div>
+				</div>
+					<div class="mt15 mb15 clearfix">
+					<h3 class="orange-l pl15">卖出信息</h3>
+					<div class="talbe-box  pb15 clearfix">
+						<div class="w550 fl mt15 ">
+							<label class="lable-all pt5 fl">卖出状态:</label>
+							<div class="radio-right pt5 fl">
+								<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>预定</em></a>
+								<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>售出</em></a>
+							</div>
+						</div>
+						<div class="w550 fl clearfix mt15">
+							<div class="fl lable-all">预定车商：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：预定车商">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl clearfix mt15">
+							<div class="fl lable-all">取消预定人：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：取消预定人">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">取消预定日期：</div>
+							<div class="fl">
+								<input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img">
+							</div>
+						</div>
+						<div class="w550 fl clearfix mt15">
+							<div class="fl lable-all">预定金额/元：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：预定金额/元">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl mt15">
+							<div class="fl lable-all">预定日期：</div>
+							<div class="fl">
+								<input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img">
+							</div>
+						</div>
+						<div class="w550 fl clearfix mt15">
+							<div class="fl lable-all">销售金额/元：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：销售金额/元">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl  row mt15">
+							<div class="fl lable-all">销售日期：</div>
+							<div class="fl">
+								<input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img">
+							</div>
+						</div>
+						<div class="w550 fl clearfix row mt15">
+							<div class="fl lable-all">销售其他金额/元：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：销售金额/元">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl  row mt15">
+							<div class="fl lable-all">处理日期：</div>
+							<div class="fl">
+								<input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img">
+							</div>
+						</div>
+						<div class="w550 fl clearfix row mt15">
+							<div class="fl lable-all">处理人：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：销售金额/元">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+						<div class="w550 fl  row mt15">
+							<div class="fl lable-all">审核日期：</div>
+							<div class="fl">
+								<input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img">
+							</div>
+						</div>
+						<div class="w550 fl clearfix row mt15">
+							<div class="fl lable-all">审核人：</div>
+							<div class="fl">
+								<input type="text" class="text" placeholder="例：审核人">
+								<span class="tip-color" for="">输入信息有误</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/select.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.tabs>ul>li').click(function(){
+			var index=$(this).index();
+			$(this).addClass('active').siblings().removeClass('active');
+			$(".sub_tab>div").eq(index).show().siblings().hide();
+		})
+	})
+</script>
+</body>
+</html>

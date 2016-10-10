@@ -1,0 +1,100 @@
+/*CSS标准注释*/
+//LESS单行注释
+/*LESS变量*/
+@jd-red:#e4393d;
+@my-w:10px;
+@std-font:'SimHei';
+@half-opa:.5;
+body{
+  background: @jd-red;
+  margin: @my-w;
+}
+.h1{
+  color: @jd-red;
+  border: @my-w solid #faa;
+  font-family: @std-font;
+  opacity: @half-opa;
+}
+@kongzi:'子曰：';
+@mengzi:'孟子曰：';
+@author:'kongzi';
+p:before{
+  content:@@author;
+}
+.tex:before{
+  content:@@author;
+}
+/*LESS混入*/
+.box{
+  margin-left: 1px;
+  margin-right: 0;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+.bordered{
+  border-top: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+.well{
+  .bordered;
+  font-size: 14px;
+  .box;
+}
+
+/*带参数的混入*/
+.box2(@lf,@rt,@tp:3px){
+  padding-left: @lf;
+  padding-right: @rt;
+  padding-top: @tp;
+  padding-bottom: 4px;
+}
+.h2{
+  .box2(10px,20px);
+}
+.h3{
+  .box2(30px,20px,25px);
+}
+/*带参混入的引导现象*/
+.box3(@w) when (@w<=5px){
+  border:@w solid #000;
+}
+.box3(@w) when (@w>5px){
+  border:@w double #aaa;
+}
+.h4{
+  .box3(1px);
+}
+.h5{
+  .box3(100px);
+}
+/*嵌套*/
+.main{
+  background: #129;
+  .top-text{
+    color: #fff;
+    >a{
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+/*LESS函数*/
+.div2{
+  width:image-width('../img/2.jpg');
+  height: image-height('../img/2.jpg');
+}
+@intel-blue:#34a;
+@light-blue:lighten(@intel-blue,15%);
+@lighter-blue:lighten(@intel-blue,30%);
+@darker-blue:darken(@intel-blue,30%);
+@dark-blue:darken(@intel-blue,15%);
+.box5{
+  background: @lighter-blue;
+  border: 1px solid @intel-blue;
+  color:@darker-blue
+}

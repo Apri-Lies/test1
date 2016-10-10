@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<title>查询来店登记</title>
+	<link href="../css/base.css" rel="stylesheet" media="screen">
+	<link href="../css/common.css" rel="stylesheet" media="screen">
+	<link href="../css/4s.css" rel="stylesheet" media="screen">
+	<link href="../css/table/fixed_table_rc.css" type="text/css" rel="stylesheet" media="all"/>
+</head>
+<body>
+<div class="content">	
+	<div class="path clearfix">
+		<div class="fl w200">
+			<i class="icon-home"></i>			
+			<a href="区域拍卖中心.html">来店登记</a>
+			<i class="icon-arrow-r"></i>
+			<a href="#">查询来店登记</a>
+		</div>
+	</div>
+	<div class="clearfix">
+		<dl class="fl mt10 w310">
+			<dt class="fl">
+				<div class="diy_select select-relative fl">
+					<input type="hidden" name="" class="diy_select_input">
+					<div class="diy_select_txt select_box w100">姓名</div>
+					<div class="diy_select_btn"></div>
+					<ul class="diy_select_list slect-ul str w100">
+						<li class="">1</li>
+						<li class="">2</li>
+						<li class="">3</li>
+					</ul>
+				</div>
+			</dt>
+			<dd class="input fl ml10">
+				<input type="text" class="text" placeholder="例：张三">
+			</dd>
+		</dl>
+		<dl class="fl mt10 w240">
+			<dt class="fl input-lable">客户类型：</dt>
+			<dd class="fl">
+				<div class="diy_select select-relative fl">
+					<input type="hidden" name="" class="diy_select_input">
+					<div class="diy_select_txt select_box w150">全部</div>
+					<div class="diy_select_btn"></div>
+					<ul class="diy_select_list slect-ul str w150">
+						<li class="">1</li>
+						<li class="">2</li>
+						<li class="">3</li>
+					</ul>
+				</div>
+			</dd>
+		</dl>
+		<dl class="fl mt10 w240">
+			<dt class="fl input-lable">销售顾问：</dt>
+			<dd class="fl">
+				<div class="diy_select select-relative fl">
+					<input type="hidden" name="" class="diy_select_input">
+					<div class="diy_select_txt select_box w150">全部</div>
+					<div class="diy_select_btn"></div>
+					<ul class="diy_select_list slect-ul str w150">
+						<li class="">1</li>
+						<li class="">2</li>
+						<li class="">3</li>
+					</ul>
+				</div>
+			</dd>
+		</dl>
+		<dl class="fl w500 mt10">
+			<dt class="fl input-lable">来店日期：</dt>
+			<dd class="fl">
+				<input id="d11" type="text" onClick="WdatePicker()"
+					   class="input-date input-date-img">
+			</dd>
+			<dt class="fl input-lable pl5 pr5">~</dt>
+			<dd class="fl">
+				<input id="d11" type="text" onClick="WdatePicker()"
+					   class="input-date input-date-img">
+			</dd>
+		</dl>
+		<dl class="fl mt10 w330">
+			<button class="btn orange w100">查询</button>
+			<button class="ml5 btn-export w100 import">导入Excel</button>
+			<button class="ml5 btn-export w100">导出Excel</button>
+		</dl>
+	</div>
+	<div class="car clearfix mt10">
+        <span>全部（108）</span>
+        <span style="color: #FF0000">待接待（32）</span>
+         <span>已接待（76）</span>
+    </div>
+	<div class="tab-box clearfix mt10 bordl1">
+			<table class="tab-fix">
+				<thead>
+					<tr class="orange-l">
+						<th>操作</th>
+						<th>序号</th>
+						<th>编号</th>
+						<th>商家</th>
+						<th>来店日期</th>
+						<th>客户姓名</th>
+						<th>手机号码</th>
+						<th>登记人</th>
+						<th>信息途径</th>
+						<th>来店方式</th>
+						<th>客户类型</th>
+						<th>所在地区</th>
+						<th>限牌城市</th>
+						<th>来店类型</th>
+						<th>是否试驾</th>
+						<th>离店时间</th>
+						<th>状态</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="来店登记详情.html">查看详情</a>
+	                        </div>
+		                </td>
+		                <td>1</td>
+						<td>001</td>
+						<td>广汽</td>
+						<td>2016-04-27</td>
+						<td>张三</td>
+						<td>13536269568</td>
+						<td>002</td>
+						<td>电话</td>
+						<td>开车</td>
+						<td>新购</td>
+						<td>广州</td>
+						<td>否</td>
+						<td>首次</td>
+						<td>是</td>
+						<td>2016-04-27</td>
+						<td>已接待</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="来店登记详情.html">查看详情</a>
+	                        </div>
+		                </td>
+		                <td>2</td>
+						<td>001</td>
+						<td>广汽</td>
+						<td>2016-04-27</td>
+						<td>张三</td>
+						<td>13536269568</td>
+						<td>002</td>
+						<td>电话</td>
+						<td>开车</td>
+						<td>新购</td>
+						<td>广州</td>
+						<td>否</td>
+						<td>首次</td>
+						<td>是</td>
+						<td>2016-04-27</td>
+						<td>已接待</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="来店登记详情.html">查看详情</a>
+	                        </div>
+		                </td>
+		                <td>3</td>
+						<td>001</td>
+						<td>广汽</td>
+						<td>2016-04-27</td>
+						<td>张三</td>
+						<td>13536269568</td>
+						<td>002</td>
+						<td>电话</td>
+						<td>开车</td>
+						<td>新购</td>
+						<td>广州</td>
+						<td>否</td>
+						<td>首次</td>
+						<td>是</td>
+						<td>2016-04-27</td>
+						<td>已接待</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="来店登记详情.html">查看详情</a>
+	                        </div>
+		                </td>
+		                <td>4</td>
+						<td>001</td>
+						<td>广汽</td>
+						<td>2016-04-27</td>
+						<td>张三</td>
+						<td>13536269568</td>
+						<td>002</td>
+						<td>电话</td>
+						<td>开车</td>
+						<td>新购</td>
+						<td>广州</td>
+						<td>否</td>
+						<td>首次</td>
+						<td>是</td>
+						<td>2016-04-27</td>
+						<td>已接待</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="来店登记详情.html">查看详情</a>
+	                        </div>
+		                </td>
+		                <td>5</td>
+						<td>001</td>
+						<td>广汽</td>
+						<td>2016-04-27</td>
+						<td>张三</td>
+						<td>13536269568</td>
+						<td>002</td>
+						<td>电话</td>
+						<td>开车</td>
+						<td>新购</td>
+						<td>广州</td>
+						<td>否</td>
+						<td>首次</td>
+						<td>是</td>
+						<td>2016-04-27</td>
+						<td>已接待</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                           <a href="来店登记详情.html">查看详情</a>
+	                        </div>
+		                </td>
+		                <td>6</td>
+						<td>001</td>
+						<td>广汽</td>
+						<td>2016-04-27</td>
+						<td>张三</td>
+						<td>13536269568</td>
+						<td>002</td>
+						<td>电话</td>
+						<td>开车</td>
+						<td>新购</td>
+						<td>广州</td>
+						<td>否</td>
+						<td>首次</td>
+						<td>是</td>
+						<td>2016-04-27</td>
+						<td>已接待</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                           <a href="来店登记详情.html">查看详情</a>
+	                        </div>
+		                </td>
+		                <td>7</td>
+						<td>001</td>
+						<td>广汽</td>
+						<td>2016-04-27</td>
+						<td>张三</td>
+						<td>13536269568</td>
+						<td>002</td>
+						<td>电话</td>
+						<td>开车</td>
+						<td>新购</td>
+						<td>广州</td>
+						<td>否</td>
+						<td>首次</td>
+						<td>是</td>
+						<td>2016-04-27</td>
+						<td>已接待</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="来店登记详情.html">查看详情</a>
+	                        </div>
+		                </td>
+		                <td>8</td>
+						<td>001</td>
+						<td>广汽</td>
+						<td>2016-04-27</td>
+						<td>张三</td>
+						<td>13536269568</td>
+						<td>002</td>
+						<td>电话</td>
+						<td>开车</td>
+						<td>新购</td>
+						<td>广州</td>
+						<td>否</td>
+						<td>首次</td>
+						<td>是</td>
+						<td>2016-04-27</td>
+						<td>已接待</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="来店登记详情.html">查看详情</a>
+	                        </div>
+		                </td>
+		                <td>9</td>
+						<td>001</td>
+						<td>广汽</td>
+						<td>2016-04-27</td>
+						<td>张三</td>
+						<td>13536269568</td>
+						<td>002</td>
+						<td>电话</td>
+						<td>开车</td>
+						<td>新购</td>
+						<td>广州</td>
+						<td>否</td>
+						<td>首次</td>
+						<td>是</td>
+						<td>2016-04-27</td>
+						<td>已接待</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="来店登记详情.html">查看详情</a>
+	                        </div>
+		                </td>
+		                <td>10</td>
+						<td>001</td>
+						<td>广汽</td>
+						<td>2016-04-27</td>
+						<td>张三</td>
+						<td>13536269568</td>
+						<td>002</td>
+						<td>电话</td>
+						<td>开车</td>
+						<td>新购</td>
+						<td>广州</td>
+						<td>否</td>
+						<td>首次</td>
+						<td>是</td>
+						<td>2016-04-27</td>
+						<td>已接待</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="来店登记详情.html">查看详情</a>
+	                        </div>
+		                </td>
+		                <td>11</td>
+						<td>001</td>
+						<td>广汽</td>
+						<td>2016-04-27</td>
+						<td>张三</td>
+						<td>13536269568</td>
+						<td>002</td>
+						<td>电话</td>
+						<td>开车</td>
+						<td>新购</td>
+						<td>广州</td>
+						<td>否</td>
+						<td>首次</td>
+						<td>是</td>
+						<td>2016-04-27</td>
+						<td>已接待</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="来店登记详情.html">查看详情</a>
+	                        </div>
+		                </td>
+		                <td>12</td>
+						<td>001</td>
+						<td>广汽</td>
+						<td>2016-04-27</td>
+						<td>张三</td>
+						<td>13536269568</td>
+						<td>002</td>
+						<td>电话</td>
+						<td>开车</td>
+						<td>新购</td>
+						<td>广州</td>
+						<td>否</td>
+						<td>首次</td>
+						<td>是</td>
+						<td>2016-04-27</td>
+						<td>已接待</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                           <a href="来店登记详情.html">查看详情</a>
+	                        </div>
+		                </td>
+		                <td>13</td>
+						<td>001</td>
+						<td>广汽</td>
+						<td>2016-04-27</td>
+						<td>张三</td>
+						<td>13536269568</td>
+						<td>002</td>
+						<td>电话</td>
+						<td>开车</td>
+						<td>新购</td>
+						<td>广州</td>
+						<td>否</td>
+						<td>首次</td>
+						<td>是</td>
+						<td>2016-04-27</td>
+						<td>已接待</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="来店登记详情.html">查看详情</a>
+	                        </div>
+		                </td>
+		                <td>14</td>
+						<td>001</td>
+						<td>广汽</td>
+						<td>2016-04-27</td>
+						<td>张三</td>
+						<td>13536269568</td>
+						<td>002</td>
+						<td>电话</td>
+						<td>开车</td>
+						<td>新购</td>
+						<td>广州</td>
+						<td>否</td>
+						<td>首次</td>
+						<td>是</td>
+						<td>2016-04-27</td>
+						<td>已接待</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="来店登记详情.html">查看详情</a>
+	                        </div>
+		                </td>
+		                <td>15</td>
+						<td>001</td>
+						<td>广汽</td>
+						<td>2016-04-27</td>
+						<td>张三</td>
+						<td>13536269568</td>
+						<td>002</td>
+						<td>电话</td>
+						<td>开车</td>
+						<td>新购</td>
+						<td>广州</td>
+						<td>否</td>
+						<td>首次</td>
+						<td>是</td>
+						<td>2016-04-27</td>
+						<td>已接待</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="来店登记详情.html">查看详情</a>
+	                        </div>
+		                </td>
+		                <td>16</td>
+						<td>001</td>
+						<td>广汽</td>
+						<td>2016-04-27</td>
+						<td>张三</td>
+						<td>13536269568</td>
+						<td>002</td>
+						<td>电话</td>
+						<td>开车</td>
+						<td>新购</td>
+						<td>广州</td>
+						<td>否</td>
+						<td>首次</td>
+						<td>是</td>
+						<td>2016-04-27</td>
+						<td>已接待</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="来店登记详情.html">查看详情</a>
+	                        </div>
+		                </td>
+		                <td>17</td>
+						<td>001</td>
+						<td>广汽</td>
+						<td>2016-04-27</td>
+						<td>张三</td>
+						<td>13536269568</td>
+						<td>002</td>
+						<td>电话</td>
+						<td>开车</td>
+						<td>新购</td>
+						<td>广州</td>
+						<td>否</td>
+						<td>首次</td>
+						<td>是</td>
+						<td>2016-04-27</td>
+						<td>已接待</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="来店登记详情.html">查看详情</a>
+	                        </div>
+		                </td>
+		                <td>18</td>
+						<td>001</td>
+						<td>广汽</td>
+						<td>2016-04-27</td>
+						<td>张三</td>
+						<td>13536269568</td>
+						<td>002</td>
+						<td>电话</td>
+						<td>开车</td>
+						<td>新购</td>
+						<td>广州</td>
+						<td>否</td>
+						<td>首次</td>
+						<td>是</td>
+						<td>2016-04-27</td>
+						<td>已接待</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="来店登记详情.html">查看详情</a>
+	                        </div>
+		                </td>
+		                <td>19</td>
+						<td>001</td>
+						<td>广汽</td>
+						<td>2016-04-27</td>
+						<td>张三</td>
+						<td>13536269568</td>
+						<td>002</td>
+						<td>电话</td>
+						<td>开车</td>
+						<td>新购</td>
+						<td>广州</td>
+						<td>否</td>
+						<td>首次</td>
+						<td>是</td>
+						<td>2016-04-27</td>
+						<td>已接待</td>
+					</tr>
+					<tr>
+						<td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">操作
+	                        <div class="_operate clearfix top0 left58">
+	                            <a href="来店登记详情.html">查看详情</a>
+	                        </div>
+		                </td>
+		                <td>20</td>
+						<td>001</td>
+						<td>广汽</td>
+						<td>2016-04-27</td>
+						<td>张三</td>
+						<td>13536269568</td>
+						<td>002</td>
+						<td>电话</td>
+						<td>开车</td>
+						<td>新购</td>
+						<td>广州</td>
+						<td>否</td>
+						<td>首次</td>
+						<td>是</td>
+						<td>2016-04-27</td>
+						<td>已接待</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="page fr clearfix mt10">
+		<ul>
+			<li><a href="#" class="list"><</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#" class="list">></a></li>
+		</ul>
+	</div>
+</div>
+<!--导入弹框-->
+<div class="popup-cover import-box">
+	<div class="popup-win w470 absolute" style=" left:30%; top:10%;"  id="bg">
+		<div class="popup-title">
+			<div class="fl title">操作提示</div>
+			<div class="fr close">x</div>
+		</div>
+		<div class="pt20 pb10">
+			<label class="lable-all" style="display:inline-block;">1、下载模板</label>
+			<button class="btn orange w100">下载模板</button>
+		</div>	
+		<div class="pb10 clearfix">
+			<label class="lable-all fl" style="display:inline-block;">2、上传excel</label>
+			<input type="text" class="fl text mr15"style="width:135px;"/>
+			<button class="fl btn orange-l w100">浏览</button>
+		</div>
+		<div class="pb10 clearfix">
+			<label class="lable-all fl" style="display:inline-block;">状态</label>
+			<div class="diy_select select-relative fl">
+				<input type="hidden" name="" class="diy_select_input">
+				<div class="diy_select_txt select_box w150">正常</div>
+				<div class="diy_select_btn"></div>
+				<ul class="diy_select_list slect-ul str w150">
+					<li class="">正常</li>
+					<li class="">2</li>
+				</ul>
+			</div>
+		</div>
+		<div class="text-c mt15 mb15">
+			<button class="w100 btn orange">导入</button>
+		</div>
+	</div>		
+</div>		
+<script src="../js/jquery.js"></script>
+<script src="../js/select.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script src="../js/table/fixed_table_rc.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function(){						
+		  $('.tab-fix').fxdHdrCol({
+            fixedCols:0,
+            width: "100%",
+            height:500,
+            colModal: [
+                {width: 50,align: 'center'},
+                {width: 50,align: 'center'},
+                {width: 100,align: 'center'},
+                {width: 150,align: 'center'},
+                {width: 100,align: 'center'},
+                {width: 150,align: 'center'},
+                {width: 100,align: 'center'},
+                {width: 100,align: 'center'},  
+                {width: 100,align: 'center'},
+                {width: 100,align: 'center'},    
+                {width: 100,align: 'center'},
+                {width: 100,align: 'center'},
+                {width: 100,align: 'center'},
+                {width: 100,align: 'center'},
+                {width: 100,align: 'center'},  
+                {width: 200,align: 'center'},
+                {width: 100,align: 'center'}
+            ]
+        });	        
+	})
+		function _on_hover(obj){
+        var li_div = obj.getElementsByTagName("div");
+        li_div[0].style.display="block";
+    }
+    function _out_hover(obj){
+        var li_div = obj.getElementsByTagName("div");
+        li_div[0].style.display="none";
+    }
+	 $(function () {
+		$("tbody tr:odd").addClass("odd");
+		$("tbody tr:even").addClass("even");
+	});
+	$(function(){
+		$('.import').click(function(){
+			$('.import-box').show();
+		})
+		$('.close').click(function(){
+			$('.import-box').hide();
+		})
+	})
+</script>
+</body>
+</html>

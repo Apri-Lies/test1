@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<title>代理商佣金审核管理</title>
+	<link href="../css/base.css" rel="stylesheet" media="screen">
+	<link href="../css/table/fixed_table_rc.css" type="text/css" rel="stylesheet" media="all" />
+	<link href="../css/common.css" rel="stylesheet" media="screen">
+	<link href="../css/admin-main.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div class="content">
+	<!--位置路径-->
+	<div class="path mt5 clearfix">
+		<div class="fl pl20">
+			<i class="icon-home"></i>
+			<a href="区域列表.html">区域拍卖中心 </a>
+			<i class="icon-arrow-r"></i>
+			<a href="#">代理商佣金审核管理</a>
+		</div>
+	</div>
+	<!--选择信息栏-->
+	<div class="info clearfix">
+		<dl class="fl mt10 w330">
+			<dt class="fl input-lable pl10">区域拍卖中心名称：</dt>
+			<dd class="fl input">
+				<input type="text" class="text" value="" placeholder="商家姓名">
+			</dd>
+		</dl>
+		<dl class="fl mt10 w480">
+			<dt class="fl input-lable pl10">添加日期：</dt>
+			<dd class="fl">
+				<input id="d11" type="text" onclick="WdatePicker()" class="input-date input-date-img" placeholder="">
+			</dd>
+			<dd class="fl">~</dd>
+			<dd class="fl">
+				<input id="d11" type="text" onclick="WdatePicker()" class="input-date input-date-img" placeholder="">
+			</dd>
+		</dl>
+		<dl class="fl mt10 w210">
+			<dt class="fl input-lable pl10">审核状态：</dt>
+			<dd class="fl">
+				<div class="diy_select  select-relative">
+					<input type="hidden" name="" class="diy_select_input w100">
+					<div class="diy_select_txt select_box w100">请选择</div>
+					<div class="diy_select_btn"></div>
+					<ul class="diy_select_list slect-ul w100">
+						<li class="">请选择</li>
+						<li class="">已审核</li>
+						<li class="">未审核</li>
+					</ul>
+				</div>
+			</dd>
+		</dl>
+		<div class="fl w340">
+			<button class="fl btn ml10 mt10 orange w100">查询</button>
+		</div>
+	</div>
+	<!--查询表格-->
+	<div class="tab-box clearfix mt10">
+		<table class="tab-fix">
+			<thead>
+			<tr class="orange-l">
+				<th>操作</th>
+				<th>序号</th>
+				<th>所属区域中心</th>
+				<th>申请日期</th>
+				<th>申请车辆数</th>
+				<th>通过车辆数</th>
+				<th>申请佣金总额	</th>
+				<th>实际佣金总额</th>
+				<th>审核状态</th>
+				<th>确认到账</th>
+				<th>登记状态</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="查看已审核信息.html">查看</a>
+						<!--<a href="#" class="allot">登记</a>-->
+					</div>操作
+				</td>
+				<td>1</td>
+				<td>华南黄埔地区拍卖中心</td>
+				<td>2016-2-25 09:47:35</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10400.00</td>
+				<td>10400.00</td>
+				<td>已审核</td>
+				<td>已确认</td>
+				<td>dasf</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="佣金审核.html">审核</a>
+						<a href="查看未审核信息.html" class="allot">登记</a>
+					</div>操作
+				</td>
+				<td>2</td>
+				<td>华南黄埔地区拍卖中心</td>
+				<td>2016-2-25 09:47:35</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10400.00</td>
+				<td></td>
+				<td>未审核</td>
+				<td></td>
+				<td>dasf</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="查看已审核信息.html">查看</a>
+						<!--<a href="#" class="allot">登记</a>-->
+					</div>操作
+				</td>
+				<td>3</td>
+				<td>华南黄埔地区拍卖中心</td>
+				<td>2016-2-25 09:47:35</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10400.00</td>
+				<td>10400.00</td>
+				<td>已审核</td>
+				<td>已确认</td>
+				<td>dasf</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="佣金审核.html">审核</a>
+						<a href="查看未审核信息.html" class="allot">登记</a>
+					</div>操作
+				</td>
+				<td>4</td>
+				<td>华南黄埔地区拍卖中心</td>
+				<td>2016-2-25 09:47:35</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10400.00</td>
+				<td></td>
+				<td>未审核</td>
+				<td></td>
+				<td>dasf</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="查看已审核信息.html">查看</a>
+						<!--<a href="#" class="allot">登记</a>-->
+					</div>操作
+				</td>
+				<td>5</td>
+				<td>华南黄埔地区拍卖中心</td>
+				<td>2016-2-25 09:47:35</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10400.00</td>
+				<td>10400.00</td>
+				<td>已审核</td>
+				<td>已确认</td>
+				<td>dasf</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="佣金审核.html">审核</a>
+						<a href="查看未审核信息.html" class="allot">登记</a>
+					</div>操作
+				</td>
+				<td>6</td>
+				<td>华南黄埔地区拍卖中心</td>
+				<td>2016-2-25 09:47:35</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10400.00</td>
+				<td></td>
+				<td>未审核</td>
+				<td></td>
+				<td>dasf</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="查看已审核信息.html">查看</a>
+						<!--<a href="#" class="allot">登记</a>-->
+					</div>操作
+				</td>
+				<td>7</td>
+				<td>华南黄埔地区拍卖中心</td>
+				<td>2016-2-25 09:47:35</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10400.00</td>
+				<td>10400.00</td>
+				<td>已审核</td>
+				<td>已确认</td>
+				<td>dasf</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="佣金审核.html">审核</a>
+						<a href="查看未审核信息.html" class="allot">登记</a>
+					</div>操作
+				</td>
+				<td>8</td>
+				<td>华南黄埔地区拍卖中心</td>
+				<td>2016-2-25 09:47:35</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10400.00</td>
+				<td></td>
+				<td>未审核</td>
+				<td></td>
+				<td>dasf</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="查看已审核信息.html">查看</a>
+						<!--<a href="#" class="allot">登记</a>-->
+					</div>操作
+				</td>
+				<td>9</td>
+				<td>华南黄埔地区拍卖中心</td>
+				<td>2016-2-25 09:47:35</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10400.00</td>
+				<td>10400.00</td>
+				<td>已审核</td>
+				<td>已确认</td>
+				<td>dasf</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="佣金审核.html">审核</a>
+						<a href="查看未审核信息.html" class="allot">登记</a>
+					</div>操作
+				</td>
+				<td>10</td>
+				<td>华南黄埔地区拍卖中心</td>
+				<td>2016-2-25 09:47:35</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10400.00</td>
+				<td></td>
+				<td>未审核</td>
+				<td></td>
+				<td>dasf</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="查看已审核信息.html">查看</a>
+						<!--<a href="#" class="allot">登记</a>-->
+					</div>操作
+				</td>
+				<td>11</td>
+				<td>华南黄埔地区拍卖中心</td>
+				<td>2016-2-25 09:47:35</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10400.00</td>
+				<td>10400.00</td>
+				<td>已审核</td>
+				<td>已确认</td>
+				<td>dasf</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="佣金审核.html">审核</a>
+						<a href="查看未审核信息.html" class="allot">登记</a>
+					</div>操作
+				</td>
+				<td>12</td>
+				<td>华南黄埔地区拍卖中心</td>
+				<td>2016-2-25 09:47:35</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10400.00</td>
+				<td></td>
+				<td>未审核</td>
+				<td></td>
+				<td>dasf</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="查看已审核信息.html">查看</a>
+						<!--<a href="#" class="allot">登记</a>-->
+					</div>操作
+				</td>
+				<td>13</td>
+				<td>华南黄埔地区拍卖中心</td>
+				<td>2016-2-25 09:47:35</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10400.00</td>
+				<td>10400.00</td>
+				<td>已审核</td>
+				<td>已确认</td>
+				<td>dasf</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="佣金审核.html">审核</a>
+						<a href="查看未审核信息.html" class="allot">登记</a>
+					</div>操作
+				</td>
+				<td>14</td>
+				<td>华南黄埔地区拍卖中心</td>
+				<td>2016-2-25 09:47:35</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10400.00</td>
+				<td></td>
+				<td>未审核</td>
+				<td></td>
+				<td>dasf</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="查看已审核信息.html">查看</a>
+						<!--<a href="#" class="allot">登记</a>-->
+					</div>操作
+				</td>
+				<td>15</td>
+				<td>华南黄埔地区拍卖中心</td>
+				<td>2016-2-25 09:47:35</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10400.00</td>
+				<td>10400.00</td>
+				<td>已审核</td>
+				<td>已确认</td>
+				<td>dasf</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="佣金审核.html">审核</a>
+						<a href="查看未审核信息.html" class="allot">登记</a>
+					</div>操作
+				</td>
+				<td>16</td>
+				<td>华南黄埔地区拍卖中心</td>
+				<td>2016-2-25 09:47:35</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10400.00</td>
+				<td></td>
+				<td>未审核</td>
+				<td></td>
+				<td>dasf</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="查看已审核信息.html">查看</a>
+						<!--<a href="#" class="allot">登记</a>-->
+					</div>操作
+				</td>
+				<td>17</td>
+				<td>华南黄埔地区拍卖中心</td>
+				<td>2016-2-25 09:47:35</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10400.00</td>
+				<td>10400.00</td>
+				<td>已审核</td>
+				<td>已确认</td>
+				<td>dasf</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix bottom0 left58">
+						<a href="佣金审核.html">审核</a>
+						<a href="查看未审核信息.html" class="allot">登记</a>
+					</div>操作
+				</td>
+				<td>18</td>
+				<td>华南黄埔地区拍卖中心</td>
+				<td>2016-2-25 09:47:35</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10400.00</td>
+				<td></td>
+				<td>未审核</td>
+				<td></td>
+				<td>dasf</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix bottom0 left58">
+						<a href="查看已审核信息.html">查看</a>
+						<!--<a href="#" class="allot">登记</a>-->
+					</div>操作
+				</td>
+				<td>19</td>
+				<td>华南黄埔地区拍卖中心</td>
+				<td>2016-2-25 09:47:35</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10400.00</td>
+				<td>10400.00</td>
+				<td>已审核</td>
+				<td>已确认</td>
+				<td>dasf</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix bottom0 left58">
+						<a href="佣金审核.html">审核</a>
+						<a href="查看未审核信息.html" class="allot">登记</a>
+					</div>操作
+				</td>
+				<td>20</td>
+				<td>华南黄埔地区拍卖中心</td>
+				<td>2016-2-25 09:47:35</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10400.00</td>
+				<td></td>
+				<td>未审核</td>
+				<td></td>
+				<td>dasf</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+	<!--底部分页-->
+	<div class="page clearfix fr mt10">
+		<ul>
+			<li><a href="#" class="list"><</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#" class="list">></a></li>
+		</ul>
+	</div>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script src="../js/table/fixed_table_rc.js" type="text/javascript"></script>
+<script src="../js/select.js" type="text/javascript"></script>
+<script src="../js/index.js" type="text/javascript"></script>
+<script>
+	$('.tab-fix').fxdHdrCol({
+		fixedCols: 0,
+		width: "100%",
+		height: 500,
+		colModal: [
+			{width: 50,align: 'center'},
+			{width: 50,align: 'center'},
+			{width: 200,align: 'center'},
+			{width: 150,align: 'center'},
+			{width: 100,align: 'center'},
+			{width: 100,align: 'center'},
+			{width: 100,align: 'center'},
+			{width: 100,align: 'center'},
+			{width: 100,align: 'center'},
+			{width: 100,align: 'center'},
+			{width: 100,align: 'center'}
+		]
+	});
+	function _on_hover(obj){
+		var li_div = obj.getElementsByTagName("div");
+		li_div[0].style.display="block";
+	}
+	function _out_hover(obj){
+		var li_div = obj.getElementsByTagName("div");
+		li_div[0].style.display="none";
+	}
+	$(function () {
+		$("tr:odd").addClass("odd");
+		$("tr:even").addClass("even");
+	});
+</script>
+</body>
+</html>

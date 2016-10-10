@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<title>车辆查看</title>
+	<link rel="stylesheet" media="screen" href="../css/base.css">
+	<link rel="stylesheet" media="screen" href="../css/common.css">
+	<link rel="stylesheet" media="screen" href="../css/4s.css">
+	<style type="text/css">
+	.table-box table td{text-align:left;}
+	td.radio-right{float:none;}
+	</style>
+</head>
+<body>
+	<div class="content clearfix">
+		<div class="path clearfix">
+			<div class="fl pl10">
+				<i class="icon-home"></i>
+				<a href="">车辆管理</a>
+				<i class="icon-arrow-r"></i>
+				<a href="#">车辆管理</a>
+				<i class="icon-arrow-r"></i>
+				<a href="#">车辆详情</a>
+			</div>
+		</div>
+		<div class="clearfix mt10">
+			<div class="tabs w1000">
+				<ul>
+					<li class="active pointer">登记基本信息</li>
+					<li class="pointer">车辆基本信息</li>
+					<li class="pointer">车辆配置</li>
+					<li class="pointer">轮胎检查</li>
+					<li class="pointer">车辆照片</li>
+					<li class="pointer">车辆检查项</li>
+					<li class="pointer">车辆外观照片</li>
+					<li class="pointer">补充说明</li>
+					<li class="pointer">买卖信息</li>
+				</ul>
+			</div>
+			<div class="sub_tab" style="padding: 5px;">
+			<!--登记基本信息-->
+				<div class="warn-list">
+					<div class="table-box mb20 mt15 clearfix">
+						<table cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td width="15%">公司名称：</td>
+								<td width="35%"><input type="text" class="text" placeholder="例：公司名称"></td>
+								<td width="15%">客户需求：</td>
+								<td width="35%"><input type="text" class="text" placeholder="例：客户需求"></td>
+							</tr>
+							<tr>
+								<td>委托人：：</td>
+								<td><input type="text" class="text" placeholder="例：委托人"></td>
+								<td>联系人：</td>
+								<td><input type="text" class="text" placeholder="例：联系人"></td>
+							</tr>
+							<tr>
+								<td>委托方手机：</td>
+								<td><input type="text" class="text" placeholder="例：委托方手机"></td>
+								<td>联系人电话：</td>
+								<td><input type="text" class="text" placeholder="例：联系人电话"></td>
+							</tr>
+							<tr>
+								<td>委托方地区：</td>
+								<td><input type="text" class="text" placeholder="例：委托方地区"></td>
+								<td>联系人地址：</td>
+								<td><input type="text" class="text" placeholder="例：联系人地址"></td>
+							</tr>
+							<tr>
+								<td>委托方地址：</td>
+								<td><input type="text" class="text" placeholder="例：委托方地址"></td>
+								<td>车主：</td>
+								<td><input type="text" class="text" placeholder="例：车主"></td>
+							</tr>
+							<tr>
+								<td>门店：</td>
+								<td><input type="text" class="text" placeholder="例：门店"></td>
+								<td>法人/身份证号：</td>
+								<td><input type="text" class="text" placeholder="例：法人/身份证号"></td>
+							</tr>
+							<tr>
+								<td>评估方式：</td>
+								<td><input type="text" class="text" placeholder="例：评估方式"></td>
+								<td>车主地区：</td>
+								<td><input type="text" class="text" placeholder="例：车主地区"></td>
+							</tr>
+							<tr>
+								<td>创建日期：</td>
+								<td><input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img"></td>
+								<td>客户期望售价：</td>
+								<td><input type="text" class="text" placeholder="例：客户期望售价"></td>
+							</tr>
+							<tr>
+								<td>评估日期：</td>
+								<td><input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img"></td>
+								<td>意向品牌：</td>
+								<td><input type="text" class="text" placeholder="例：意向品牌"></td>
+							</tr>				
+							<tr>
+								<td>上传日期：</td>
+								<td><input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img"></td>
+								<td>意向车系：</td>
+								<td><input type="text" class="text" placeholder="例：意向车系"></td>
+							</tr>
+							<tr>
+								<td>最后修改：</td>
+								<td><input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img"></td>
+								<td>意向车型：</td>
+								<td><input type="text" class="text" placeholder="例：意向车型"></td>
+							</tr>
+							<tr>
+								<td>车牌照片：</td>
+								<td><input type="file" name="fileField" id="fileField" class="pt5"/></td>
+								<td>车主地区：</td>
+								<td><input type="text" class="text" placeholder="例：车主地区"></td>
+							</tr>
+							<tr>
+								<td>照片：</td>
+								<td><input type="file" name="fileField" id="fileField" class="pt5"/></td>
+								<td>车主地区：</td>
+								<td><input type="text" class="text" placeholder="例：车主地区"></td>
+							</tr>
+							<tr>
+								<td>行驶人照片：</td>
+								<td><input type="file" name="fileField" id="fileField" class="pt5"/></td>
+								<td>委托人证件：</td>
+								<td><input type="text" class="text" placeholder="例：车主地区"></td>
+							</tr>
+							<tr>
+								<td>VIN照片：</td>
+								<td><input type="file" name="fileField" id="fileField" class="pt5"/></td>
+								<td>查估结果概述：</td>
+								<td><textarea class="textarea1 textWi420"   cols="80" rows="10"id="content"></textarea></td>
+							</tr>
+						</table>
+					</div>
+						
+				</div>
+			<!--车辆基本信息-->
+				<div class="warn-list  pb15 clearfix" style="display: none;">	
+					<div class="table-box mb20 mt15 clearfix">
+						<table cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td width="15%">牌照号码：</td>
+								<td width="35%"><input type="text" class="text" placeholder="例：牌照号码"></td>
+								<td width="15%">品牌型号：</td>
+								<td width="35%"><input type="text" class="text" placeholder="例：品牌型号"></td>
+							</tr>
+							<tr>
+								<td>品牌：</td>
+								<td><input type="text" class="text" placeholder="例：品牌"></td>
+								<td>首次上牌日期：</td>
+								<td><input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img"></td>
+							</tr>
+							<tr>
+								<td>车系：</td>
+								<td><input type="text" class="text" placeholder="例：车系"></td>
+								<td>过户次数：</td>
+								<td><input type="text" class="text" placeholder="例：过户次数"></td>
+							</tr>
+							<tr>
+								<td>车型：</td>
+								<td><input type="text" class="text" placeholder="例：车型"></td>
+								<td>车身样式：</td>
+								<td><input type="text" class="text" placeholder="例：车身样式"></td>
+							</tr>
+							<tr>
+								<td>车辆年式：</td>
+								<td><input type="text" class="text" placeholder="例：车辆年式"></td>
+								<td>排放标准：</td>
+								<td><input type="text" class="text" placeholder="例：排放标准"></td>
+							</tr>
+							<tr class="relative z-100">
+								<td>VIN：</td>
+								<td><input type="text" class="text" placeholder="例：VIN"></td>
+								<td>使用性质：</td>
+								<td>
+									<div class="diy_select  select-relative fl">
+										<input type="hidden" name="" class="diy_select_input">
+										<div class="diy_select_txt select_box w100">请选择</div>
+										<div class="diy_select_btn"></div>
+										<ul class="diy_select_list slect-ul str w100">
+											<li class="">请选择</li>
+											<li class="">1</li>
+											<li class="">2</li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+							<tr class="relative z-99">
+								<td>发动机号：</td>
+								<td><input type="text" class="text" placeholder="例：发动机号"></td>
+								<td>变速箱：</td>
+								<td>
+									<div class="diy_select  select-relative fl">
+										<input type="hidden" name="" class="diy_select_input">
+										<div class="diy_select_txt select_box w100">请选择</div>
+										<div class="diy_select_btn"></div>
+										<ul class="diy_select_list slect-ul str w100">
+											<li class="">请选择</li>
+											<li class="">1</li>
+											<li class="">2</li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>车架号：</td>
+								<td><input type="text" class="text" placeholder="例：车架号"></td>
+								<td>排量(L)：</td>
+								<td><input type="text" class="text" placeholder="例：排量(L)"></td>
+							</tr>
+							<tr class="relative z-98">
+								<td>仪表里程：</td>
+								<td><input type="text" class="text" placeholder="例：仪表里程"></td>
+								<td>燃料类型：</td>
+								<td>
+									<div class="diy_select  select-relative fl">
+										<input type="hidden" name="" class="diy_select_input">
+										<div class="diy_select_txt select_box w100">请选择</div>
+										<div class="diy_select_btn"></div>
+										<ul class="diy_select_list slect-ul str w100">
+											<li class="">请选择</li>
+											<li class="">1</li>
+											<li class="">2</li>
+										</ul>
+									</div>
+								</td>
+							</tr>				
+							<tr>
+								<td>推定里程：</td>
+								<td><input type="text" class="text" placeholder="例：推定里程"></td>
+								<td>驱动方式：</td>
+								<td>
+									<div class="diy_select  select-relative fl">
+										<input type="hidden" name="" class="diy_select_input">
+										<div class="diy_select_txt select_box w100">请选择</div>
+										<div class="diy_select_btn"></div>
+										<ul class="diy_select_list slect-ul str w100">
+											<li class="">请选择</li>
+											<li class="">1</li>
+											<li class="">2</li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>里程单位：</td>
+								<td><input type="text" class="text" placeholder="例：里程单位"></td>
+								<td>车身颜色：</td>
+								<td>
+									<div class="diy_select  select-relative fl">
+										<input type="hidden" name="" class="diy_select_input">
+										<div class="diy_select_txt select_box w100">请选择</div>
+										<div class="diy_select_btn"></div>
+										<ul class="diy_select_list slect-ul str w100">
+											<li class="">请选择</li>
+											<li class="">1</li>
+											<li class="">2</li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>出厂年月：</td>
+								<td><input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img"></td>
+								<td>驾驶舱色：</td>
+								<td>
+									<div class="diy_select  select-relative fl">
+										<input type="hidden" name="" class="diy_select_input">
+										<div class="diy_select_txt select_box w100">请选择</div>
+										<div class="diy_select_btn"></div>
+										<ul class="diy_select_list slect-ul str w100">
+											<li class="">请选择</li>
+											<li class="">1</li>
+											<li class="">2</li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>置购日期：</td>
+								<td><input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img"></td>
+								<td>缸数：</td>
+								<td>
+									<div class="diy_select  select-relative fl">
+										<input type="hidden" name="" class="diy_select_input">
+										<div class="diy_select_txt select_box w100">请选择</div>
+										<div class="diy_select_btn"></div>
+										<ul class="diy_select_list slect-ul str w100">
+											<li class="">请选择</li>
+											<li class="">1</li>
+											<li class="">2</li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>市场价/万：</td>
+								<td><input type="text" class="text" placeholder="例：市场价"></td>
+								<td>总质量/kg：</td>
+								<td><input type="text" class="text" placeholder="例：总质量/kg"></td>
+							</tr>
+							<tr>
+								<td>保险公司有效期：</td>
+								<td><input type="text" class="text" placeholder="例：保险公司有效期"></td>
+								<td>发动机功能/千瓦：</td>
+								<td><input type="text" class="text" placeholder="例：发动机功能/千瓦"></td>
+							</tr>
+							<tr>
+								<td>商业保险金额/万：</td>
+								<td><input type="text" class="text" placeholder="例：商业保险金额"></td>
+								<td>年检到期：：</td>
+								<td><input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img"></td>
+							</tr>
+							<tr>
+								<td>购置税证书：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>是</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>否</em></a>
+								</td>
+								<td>未处理违法记录：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+							</tr>
+							<tr>
+								<td>新车发票：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+								<td>是否查封抵押：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+							</tr>
+							<tr>
+								<td>机动车登记证书：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+								<td>带牌：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+							</tr>
+							<tr>
+								<td>机动车行驶证：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+								<td>车船税票：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+							</tr>
+							<tr>
+								<td>第三者强制保险单：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+								<td>商业保险：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+							</tr>
+							<tr>
+								<td>备用钥匙：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+								<td>市场收购价/万：</td>
+								<td><input type="text" class="text" placeholder="例：市场收购价"></td>
+							</tr>
+							<tr>
+								<td>车辆照片1：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+								<td>车辆照片2：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+							</tr>
+							<tr>
+								<td>车辆照片3：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+								<td>车辆照片4：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+							</tr>
+							<tr>
+								<td>车辆照片5：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+								<td>车辆照片6：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+							</tr>
+						</table>
+					</div>
+					
+				</div>
+			<!--车辆配置-->
+				<div class="warn-list pb15 clearfix" style="display: none;">
+					<div class="table-box mb20 mt15 clearfix ">
+						<table cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td width="15%">天窗：</td>
+								<td width="35%" class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+								<td width="15%">皮椅：</td>
+								<td width="35%" class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+							</tr>
+							<tr>
+								<td>电动座椅：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+								<td>电动后视镜：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+							</tr>
+							<tr>
+								<td>防盗器：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+								<td>动力转向：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+							</tr>
+							<tr>
+								<td>倒车雷达：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+								<td>自动倒车：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+							</tr>
+							<tr>
+								<td>定速巡航：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+								<td>卫星导航：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+							</tr>
+							<tr>
+								<td>车身铭牌：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+								<td>音响主机：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+							</tr>
+							<tr>
+								<td>DVD：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+								<td>TV：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+							</tr>
+							<tr>
+								<td>行车记录仪：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+								<td>ABS：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+							</tr>
+							<tr>
+								<td>铝合金轮毂：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+								<td>铁圈：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+							</tr>			
+							<tr>
+								<td>倒车显影：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+								<td>智能钥匙：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+							</tr>		
+							<tr>
+								<td>CD：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+								<td>MP3：</td>
+								<td class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>有</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>无</em></a>
+								</td>
+							</tr>		
+							<tr>
+								<td>气囊数：</td>
+								<td><input type="text" class="text" placeholder="例：气囊数"></td>
+								<td>空调口数：</td>
+								<td><input type="text" class="text" placeholder="例：空调口数"></td>
+							</tr>
+							<tr>
+								<td>电动门数：</td>
+								<td><input type="text" class="text" placeholder="例：电动门数"></td>
+								<td>液晶屏幕数：</td>
+								<td><input type="text" class="text" placeholder="例：液晶屏幕数"></td>
+							</tr>				
+						</table>
+					</div>
+				</div>
+				<!--轮胎检查-->
+				<div class="warn-list pb15 clearfix" style="display: none;">
+					<div class="table-box mb20 mt15">
+						<table width="100%" cellpadding="0" cellspacing="0">
+							<tr>
+								<td>左前轮胎</td>
+								<td>少于1.6mm</td>
+								<td>左后轮胎</td>
+								<td>少于1.6mm</td>
+							</tr>
+							<tr>
+								<td>左后轮胎</td>
+								<td>少于1.6mm</td>
+								<td>右后轮胎</td>
+								<td>少于1.6mm</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!--车辆照片-->
+				<div class="warn-list pb15 clearfix" style="display: none;">
+					<div class="table-box mb20 mt15 clearfix">
+						<table cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td width="15%">车辆左前部：</td>
+								<td width="35%"><input type="file" name="fileField" id="fileField" /></td>
+								<td width="15%">车辆正前方：</td>
+								<td width="35%"><input type="file" name="fileField" id="fileField" /></td>
+							</tr>
+							<tr>
+								<td>车辆右后部：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+								<td>车辆正后部：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+							</tr>
+							<tr>
+								<td>仪表台操纵杆：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+								<td>前排座椅：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+							</tr>
+							<tr>
+								<td>后排座椅：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+								<td>中控台：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+							</tr>
+							<tr>
+								<td>仪表：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+								<td>发动机舱：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+							</tr>
+							<tr>
+								<td>照片1：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+								<td>照片2：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+							</tr>
+							<tr>
+								<td>照片3：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+								<td>照片4：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+							</tr>
+							<tr>
+								<td>照片5：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+								<td>照片6：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+							</tr>
+							<tr>
+								<td>照片7：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+								<td>照片8：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+							</tr>			
+							<tr>
+								<td>照片9：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+								<td>照片10：</td>
+								<td><input type="file" name="fileField" id="fileField" /></td>
+							</tr>
+							
+						</table>
+					</div>
+				</div>
+				<!--车辆检查项-->
+				<div class="warn-list" style="display: none;">
+					<div class="table-box clearfix mt15 mb20">
+						<table width="100%" cellpadding="0" cellspacing="0">
+							<tr>
+								<th width="10%">序号</th>
+								<th width="25%">检查项目</th>
+								<th width="10%">检查结果</th>
+								<th width="20%">照片</th>
+								<th width="10%">备注</th>								
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>机油混入冷却液中</td>
+								<td>无</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>机油混入冷却液中</td>
+								<td>无</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>机油混入冷却液中</td>
+								<td>无</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>机油混入冷却液中</td>
+								<td>无</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>机油混入冷却液中</td>
+								<td>无</td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>					
+				</div>
+			<!--车辆外观照片-->
+				<div class="warn-list" style="display: none;">
+					8
+				</div>
+			<!--补充说明-->
+				<div class="warn-list pb15 mt15 clearfix" style="display: none;">
+					<div class="table-box mb20 mt15 clearfix">
+						<table cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td width="30%">车身骨架检查：</td>
+								<td width="70%"><textarea  cols="60" rows="6"></textarea></td>								
+							</tr>
+							<tr>
+								<td>外观与车体检查：</td>
+								<td><textarea  cols="60" rows="6"></textarea></td>				
+							</tr>
+							<tr>
+								<td>发动机舱检查：</td>
+								<td><textarea  cols="60" rows="6"></textarea></td>				
+							</tr>
+							<tr>
+								<td>驾驶舱检查：</td>
+								<td><textarea  cols="60" rows="6"></textarea></td>				
+							</tr>
+							<tr>
+								<td>启动检查：</td>
+								<td><textarea  cols="60" rows="6"></textarea></td>				
+							</tr>
+							<tr>
+								<td>路试检查：</td>
+								<td><textarea  cols="60" rows="6"></textarea></td>				
+							</tr>
+							<tr>
+								<td>底盘检查：</td>
+								<td><textarea  cols="60" rows="6"></textarea></td>
+							</tr>
+							<tr>
+								<td>功能性零部件列表：</td>
+								<td><textarea  cols="60" rows="6"></textarea></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			<!--买卖信息-->
+				<div class="warn-list" style="display: none;">
+					<div class="table-box mb20 mt15 clearfix">
+						<h3 class="orange-l pl15">置换信息</h3>
+						<table cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td width="15%">最后修改：</td>
+								<td width="35%"><input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img"></td>
+								<td width="15%">置换类型：</td>
+								<td width="35%" class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em >查估后置换</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>预约置换</em></a>
+								</td>
+							</tr>
+							<tr>
+								<td>置换新车价格/元：</td>
+								<td><input type="text" class="text" placeholder="置换新车价格/元："></td>
+								<td>品牌：</td>
+								<td><input type="text" class="text" placeholder="例：品牌"></td>
+							</tr>
+							<tr>
+								<td>车系：</td>
+								<td><input type="text" class="text" placeholder="例：车系"></td>
+								<td>车型：</td>
+								<td><input type="text" class="text" placeholder="例：车型"></td>
+							</tr>
+							<tr>
+								<td>置换新车价格/元：</td>
+								<td><input type="text" class="text" placeholder="例：置换新车价格/元"></td>
+								<td>品牌：</td>
+								<td><input type="text" class="text" placeholder="例：品牌"></td>
+							</tr>
+							<tr>
+								<td>VIN：</td>
+								<td><input type="text" class="text" placeholder="例：VIN"></td>
+								<td>销售顾问：</td>
+								<td><input type="text" class="text" placeholder="例：销售顾问"></td>
+							</tr>
+							<tr>
+								<td>查估结果概述：</td>
+								<td><textarea cols="60" rows="7"></textarea></td>					
+							</tr>
+						</table>
+					</div>
+					<div class="table-box mt15 mb15 clearfix">
+						<h3 class="orange-l pl15">购入信息</h3>
+						<table cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td width="15%">购入日期：</td>
+								<td width="35%"><input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img"></td>
+								<td width="15%">价格：</td>
+								<td width="35%" class="radio-right"><input type="text" class="text" placeholder="价格"></td>
+							</tr>
+							<tr>
+								<td>其他费用/元：</td>
+								<td><input type="text" class="text" placeholder="置其他费用/元"></td>
+								<td>处理人：</td>
+								<td><input type="text" class="text" placeholder="例：处理人"></td>
+							</tr>
+							<tr>
+								<td>审核人：</td>
+								<td><input type="text" class="text" placeholder="例：审核人"></td>
+								<td>处理日期：</td>
+								<td><input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img"></td>
+							</tr>
+							<tr>
+								<td>审核日期：</td>
+								<td><input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img"></td>
+								<td>查估结果概述：</td>
+								<td><textarea cols="60" rows="7"></textarea></td>
+							</tr>				
+						</table>
+					</div>					
+					<div class="table-box mt15 mb15 clearfix">
+					<h3 class="orange-l pl15">卖出信息</h3>
+					<div class="talbe-box mb15 clearfix">
+						<table cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td width="15%">卖出状态：</td>
+								<td width="35%" class="radio-right">
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>预定</em></a>
+									<a href="javascript:void(0);" class="a_radio" date="1" name="order"><em>售出</em></a>
+								</td>
+								<td width="15%">预定车商：</td>
+								<td width="35%" class="radio-right"><input type="text" class="text" placeholder="预定车商"></td>
+							</tr>
+							<tr>
+								<td>取消预定人：</td>
+								<td><input type="text" class="text" placeholder="取消预定人"></td>
+								<td>取消预定日期：</td>
+								<td><input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img"></td>
+							</tr>
+							<tr>
+								<td>预定金额/元：</td>
+								<td><input type="text" class="text" placeholder="例：预定金额/元"></td>
+								<td>预定日期：</td>
+								<td><input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img"></td>
+							</tr>
+							<tr>
+								<td>销售金额/元：</td>
+								<td><input type="text" class="text" placeholder="例：销售金额/元"></td>
+								<td>销售日期：</td>
+								<td><input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img"></td>
+							</tr>	
+							<tr>
+								<td>销售其他金额/元：</td>
+								<td><input type="text" class="text" placeholder="例：销售其他金额/元"></td>
+								<td>处理日期：</td>
+								<td><input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img"></td>
+							</tr>		
+							<tr>
+								<td>处理人：</td>
+								<td><input type="text" class="text" placeholder="例：处理人"></td>
+								<td>审核日期：</td>
+								<td><input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img"></td>
+							</tr>	
+							<tr>
+								<td>审核人：</td>
+								<td colspan="3"><input type="text" class="text" placeholder="例：审核人"></td>		
+							</tr>	
+						</table>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/select.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.tabs>ul>li').click(function(){
+			var index=$(this).index();
+			$(this).addClass('active').siblings().removeClass('active');
+			$(".sub_tab>div").eq(index).show().siblings().hide();
+		})
+	})
+</script>
+</body>
+</html>

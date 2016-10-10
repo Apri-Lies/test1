@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=7">
+<title>广告管理</title>
+<link rel="stylesheet" media="screen" href="../css/base.css">
+<link rel="stylesheet" media="screen" href="../css/common.css">
+<link rel="stylesheet" media="screen" href="../css/4s.css">
+<link rel="stylesheet" type="text/css" href="../css/table/style.css"/>
+</head>
+<body>
+	<div class="content">
+		<div class="path clearfix">
+			<div class="fl w300">
+				<i class="icon-home"></i> <a href="">网站管理</a> 
+				<i class="icon-arrow-r"></i><a href="广告管理.html">广告管理</a>
+			</div>
+		</div>
+		<div class="clearfix">
+			<dl class="fl w250">
+				<dt class="fl mt10 input-lable">标题：</dt>
+				<dd class="fl mt10 input">
+					<input type="text" class="text" placeholder="例：标题">
+				</dd>
+			</dl>
+			<dl class="fl w500">
+				<dt class="fl mt10 input-lable">开始时间：</dt>
+				<dd class="fl mt10">
+					<input id="d11" type="text" onClick="WdatePicker()"
+						class="input-date input-date-img">
+				</dd>
+				<dt class="fl mt10 ml10 input-lable">至：</dt>
+				<dd class="fl mt10">
+					<input id="d11" type="text" onClick="WdatePicker()"
+						class="input-date input-date-img">
+				</dd>
+			</dl>
+			<dl class="fl w220 mt10">
+				<button class="fl btn orange w100">查询</button>
+				<a href="添加广告位.html"><button class="fl ml10 btn-export w100">添加</button></a>
+			</dl>
+		</div>		
+			<div class="table_wrap clearfix mt10 ">
+					<table class="gridView table1">
+						<thead>
+							<tr class="orange-l">
+								<th>序号</th>
+								<th>所在模块</th>
+								<th>广告位置</th>
+								<th>排序</th>
+								<th>标题</th>
+								<th>开始时间</th>
+								<th>结束时间</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>首页</td>
+								<td>主题海报轮换 1920 x 500</td>
+								<td>102</td>
+								<td>轮播图4</td>
+								<td>2015-5-12</td>
+								<td>2015-5-29</td>
+								<td><a href="">[预览]</a> <a href="编辑广告位.html">[编辑]</a><a href="#" class="disabled">[禁用]</a>
+									<a href="javascript:void(0);"class="top-ad">[置顶]</a> <a href="javascript:void(0);" class="unstuck">[取消置顶]</a>
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>首页</td>
+								<td>主题海报轮换 1920 x 500</td>
+								<td>102</td>
+								<td>轮播图4</td>
+								<td>2015-5-12</td>
+								<td>2015-5-29</td>
+								<td><a href="">[预览]</a> <a href="编辑广告位.html">[编辑]</a><a href="#"class="disabled">[禁用]</a>
+									<a href="javascript:void(0);"class="top-ad">[置顶]</a> <a href="javascript:void(0);" class="unstuck">[取消置顶]</a>
+								</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>首页</td>
+								<td>主题海报轮换 1920 x 500</td>
+								<td>102</td>
+								<td>轮播图4</td>
+								<td>2015-5-12</td>
+								<td>2015-5-29</td>
+								<td><a href="">[预览]</a> <a href="编辑广告位.html">[编辑]</a><a href="#" class="disabled">[禁用]</a>
+									<a href="javascript:void(0);"class="top-ad">[置顶]</a> <a href="javascript:void(0);" class="unstuck">[取消置顶]</a>
+								</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>首页</td>
+								<td>主题海报轮换 1920 x 500</td>
+								<td>102</td>
+								<td>轮播图4</td>
+								<td>2015-5-12</td>
+								<td>2015-5-29</td>
+								<td><a href="">[预览]</a> <a href="编辑广告位.html">[编辑]</a><a href="#" class="disabled">[禁用]</a>
+									<a href="javascript:void(0);"class="top-ad">[置顶]</a> <a href="javascript:void(0);" class="unstuck">[取消置顶]</a>
+								</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>首页</td>
+								<td>主题海报轮换 1920 x 500</td>
+								<td>102</td>
+								<td>轮播图4</td>
+								<td>2015-5-12</td>
+								<td>2015-5-29</td>
+								<td><a href="">[预览]</a> <a href="编辑广告位.html">[编辑]</a><a href="#" class="disabled">[禁用]</a>
+									<a href="javascript:void(0);"class="top-ad">[置顶]</a> <a href="javascript:void(0);" class="unstuck">[取消置顶]</a>
+								</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>首页</td>
+								<td>主题海报轮换 1920 x 500</td>
+								<td>102</td>
+								<td>轮播图4</td>
+								<td>2015-5-12</td>
+								<td>2015-5-29</td>
+								<td><a href="">[预览]</a> <a href="编辑广告位.html">[编辑]</a><a href="#" class="disabled">[禁用]</a>
+									<a href="javascript:void(0);"class="top-ad">[置顶]</a> <a href="javascript:void(0);" class="unstuck">[取消置顶]</a>
+								</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>首页</td>
+								<td>主题海报轮换 1920 x 500</td>
+								<td>102</td>
+								<td>轮播图4</td>
+								<td>2015-5-12</td>
+								<td>2015-5-29</td>
+								<td><a href="">[预览]</a> <a href="编辑广告位.html">[编辑]</a><a href="#" class="disabled">[禁用]</a>
+									<a href="javascript:void(0);"class="top-ad">[置顶]</a> <a href="javascript:void(0);" class="unstuck">[取消置顶]</a>
+								</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>首页</td>
+								<td>主题海报轮换 1920 x 500</td>
+								<td>102</td>
+								<td>轮播图4</td>
+								<td>2015-5-12</td>
+								<td>2015-5-29</td>
+								<td><a href="">[预览]</a> <a href="编辑广告位.html">[编辑]</a><a href="#" class="disabled">[禁用]</a>
+									<a href="javascript:void(0);"class="top-ad">[置顶]</a> <a href="javascript:void(0);" class="unstuck">[取消置顶]</a>
+								</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>首页</td>
+								<td>主题海报轮换 1920 x 500</td>
+								<td>102</td>
+								<td>轮播图4</td>
+								<td>2015-5-12</td>
+								<td>2015-5-29</td>
+								<td><a href="">[预览]</a> <a href="编辑广告位.html">[编辑]</a><a href="#" class="disabled">[禁用]</a>
+									<a href="javascript:void(0);"class="top-ad">[置顶]</a> <a href="javascript:void(0);" class="unstuck">[取消置顶]</a>
+								</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>首页</td>
+								<td>主题海报轮换 1920 x 500</td>
+								<td>102</td>
+								<td>轮播图4</td>
+								<td>2015-5-12</td>
+								<td>2015-5-29</td>
+								<td><a href="">[预览]</a> <a href="编辑广告位.html">[编辑]</a><a href="#">[禁用]</a>
+									<a href="javascript:void(0);"class="top-ad">[置顶]</a> <a href="javascript:void(0);" class="unstuck">[取消置顶]</a>
+								</td>
+							</tr>
+							<tr>
+								<td>11</td>
+								<td>首页</td>
+								<td>主题海报轮换 1920 x 500</td>
+								<td>102</td>
+								<td>轮播图4</td>
+								<td>2015-5-12</td>
+								<td>2015-5-29</td>
+								<td><a href="">[预览]</a> <a href="编辑广告位.html">[编辑]</a><a href="#">[禁用]</a>
+									<a href="javascript:void(0);"class="top-ad">[置顶]</a> <a href="javascript:void(0);" class="unstuck">[取消置顶]</a>
+								</td>
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>首页</td>
+								<td>主题海报轮换 1920 x 500</td>
+								<td>102</td>
+								<td>轮播图4</td>
+								<td>2015-5-12</td>
+								<td>2015-5-29</td>
+								<td><a href="">[预览]</a> <a href="编辑广告位.html">[编辑]</a><a href="#">[禁用]</a>
+									<a href="javascript:void(0);"class="top-ad">[置顶]</a> <a href="javascript:void(0);" class="unstuck">[取消置顶]</a>
+								</td>
+							</tr>
+							<tr>
+								<td>13</td>
+								<td>首页</td>
+								<td>主题海报轮换 1920 x 500</td>
+								<td>102</td>
+								<td>轮播图4</td>
+								<td>2015-5-12</td>
+								<td>2015-5-29</td>
+								<td><a href="">[预览]</a> <a href="编辑广告位.html">[编辑]</a><a href="#">[禁用]</a>
+									<a href="javascript:void(0);"class="top-ad">[置顶]</a> <a href="javascript:void(0);" class="unstuck">[取消置顶]</a>
+								</td>
+							</tr>
+							<tr>
+								<td>14</td>
+								<td>首页</td>
+								<td>主题海报轮换 1920 x 500</td>
+								<td>102</td>
+								<td>轮播图4</td>
+								<td>2015-5-12</td>
+								<td>2015-5-29</td>
+								<td><a href="">[预览]</a> <a href="编辑广告位.html">[编辑]</a><a href="#">[禁用]</a>
+									<a href="javascript:void(0);"class="top-ad">[置顶]</a> <a href="javascript:void(0);" class="unstuck">[取消置顶]</a>
+								</td>
+							</tr>
+							<tr>
+								<td>15</td>
+								<td>首页</td>
+								<td>主题海报轮换 1920 x 500</td>
+								<td>102</td>
+								<td>轮播图4</td>
+								<td>2015-5-12</td>
+								<td>2015-5-29</td>
+								<td><a href="">[预览]</a> <a href="编辑广告位.html">[编辑]</a><a href="#">[禁用]</a>
+									<a href="javascript:void(0);"class="top-ad">[置顶]</a> <a href="javascript:void(0);" class="unstuck">[取消置顶]</a>
+								</td>
+							</tr>
+							<tr>
+								<td>16</td>
+								<td>首页</td>
+								<td>主题海报轮换 1920 x 500</td>
+								<td>102</td>
+								<td>轮播图4</td>
+								<td>2015-5-12</td>
+								<td>2015-5-29</td>
+								<td><a href="">[预览]</a> <a href="编辑广告位.html">[编辑]</a><a href="#">[禁用]</a>
+									<a href="javascript:void(0);"class="top-ad">[置顶]</a> <a href="javascript:void(0);" class="unstuck">[取消置顶]</a>
+								</td>
+							</tr>
+							<tr>
+								<td>17</td>
+								<td>首页</td>
+								<td>主题海报轮换 1920 x 500</td>
+								<td>102</td>
+								<td>轮播图4</td>
+								<td>2015-5-12</td>
+								<td>2015-5-29</td>
+								<td><a href="">[预览]</a> <a href="编辑广告位.html">[编辑]</a><a href="#">[禁用]</a>
+									<a href="javascript:void(0);"class="top-ad">[置顶]</a> <a href="javascript:void(0);" class="unstuck">[取消置顶]</a>
+								</td>
+							</tr>
+							<tr>
+								<td>18</td>
+								<td>首页</td>
+								<td>主题海报轮换 1920 x 500</td>
+								<td>102</td>
+								<td>轮播图4</td>
+								<td>2015-5-12</td>
+								<td>2015-5-29</td>
+								<td><a href="">[预览]</a> <a href="编辑广告位.html">[编辑]</a><a href="#">[禁用]</a>
+									<a href="javascript:void(0);"class="top-ad">[置顶]</a> <a href="javascript:void(0);" class="unstuck">[取消置顶]</a>
+								</td>
+							</tr>
+							<tr>
+								<td>19</td>
+								<td>首页</td>
+								<td>主题海报轮换 1920 x 500</td>
+								<td>102</td>
+								<td>轮播图4</td>
+								<td>2015-5-12</td>
+								<td>2015-5-29</td>
+								<td><a href="">[预览]</a> <a href="编辑广告位.html">[编辑]</a><a href="#">[禁用]</a>
+									<a href="javascript:void(0);"class="top-ad">[置顶]</a> <a href="javascript:void(0);" class="unstuck">[取消置顶]</a>
+								</td>
+							</tr>
+							<tr>
+								<td>20</td>
+								<td>首页</td>
+								<td>主题海报轮换 1920 x 500</td>
+								<td>102</td>
+								<td>轮播图4</td>
+								<td>2015-5-12</td>
+								<td>2015-5-29</td>
+								<td><a href="">[预览]</a> <a href="编辑广告位.html">[编辑]</a><a href="#">[禁用]</a>
+									<a href="javascript:void(0);"class="top-ad">[置顶]</a> <a href="javascript:void(0);" class="unstuck">[取消置顶]</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="page fr clearfix mt5">
+					<ul>
+						<li><a href="#" class="list"><</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#" class="list">></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--置顶弹框-->
+<div class="popup-cover ad-box">
+	<div class="popup-win w500 absolute" style=" left:20%; top:8%;"  id="bg">
+		<h2 class="pl20 pr20">温馨提示</h2>
+		<div class="text-c pt20 pb20">
+			<img src="../images/layer.jpg">
+			<span>你真的打算置顶【1】？</span>
+		</div>	
+		<div class="mt15 mb20 text-c">
+			<button class="w100 btn orange">确定</button>
+			<button class="w100 ml10 btn orange-l close">取消</button>
+		</div>
+	</div>		
+</div>	
+<!--取消置顶弹框-->
+<div class="popup-cover unstuck-box">
+	<div class="popup-win w500 absolute" style=" left:20%; top:8%;"  id="bg">
+		<h2 class="pl20 pr20">温馨提示</h2>
+		<div class="text-c pt20 pb20">
+			<img src="../images/layer.jpg">
+			<span>你真的打算取消置顶【1】？</span>
+		</div>	
+		<div class="mt15 mb20 text-c">
+			<button class="w100 btn orange">确定</button>
+			<button class="w100 ml10 btn orange-l close">取消</button>
+		</div>
+	</div>		
+</div>	
+<!--禁用弹框-->
+<div class="popup-cover disabled-box">
+	<div class="popup-win w500 absolute" style=" left:20%; top:8%;"  id="bg">
+		<h2 class="pl20 pr20">温馨提示</h2>
+		<div class="text-c pt20 pb20">
+			<img src="../images/layer.jpg">
+			<span>你真的打算禁用吗？</span>
+		</div>	
+		<div class="mt15 mb20 text-c">
+			<button class="w100 btn orange">确定</button>
+			<button class="w100 ml10 btn orange-l close">取消</button>
+		</div>
+	</div>		
+</div>	
+<script src="../js/jquery.js"></script>
+<script src="../js/inputshow.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="../js/table/jquery.freezeheader.js"></script>
+<script type="text/javascript">
+	    $(function () {
+			$("tbody tr:odd").addClass("odd");
+			$("tbody tr:even").addClass("even");
+		});
+		$(document).ready(function () {
+			$(".table1").freezeHeader({ 'height': '500px' });
+		})
+		$(function(){
+			$(".top-ad").click(function(){
+				$(".ad-box").show();
+				})	
+			$(".close").click(function(){
+				 $(".ad-box").hide();
+			})	
+			$('.unstuck').click(function(){
+				$('.unstuck-box').show();
+			})
+			$('.close').click(function(){
+				$('.unstuck-box').hide();		
+			})
+			$(".disabled").click(function(){
+				$(".disabled-box").show();
+				})	
+			$(".close").click(function(){
+				 $(".disabled-box").hide();
+			})	
+		})
+</script>
+</body>
+</html>

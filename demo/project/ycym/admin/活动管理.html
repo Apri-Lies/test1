@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<title>活动管理</title>
+	<link href="../css/base.css" rel="stylesheet" media="screen">
+	<link href="../css/table/fixed_table_rc.css" type="text/css" rel="stylesheet" media="all" />
+	<link href="../css/common.css" rel="stylesheet" media="screen">
+	<link href="../css/admin-main.css" rel="stylesheet" media="screen">
+<body>
+<div class="content">
+	<!--位置路径-->
+	<div class="path mt5 clearfix">
+		<div class="fl pl20">
+			<i class="icon-home"></i>
+			<a href="新闻管理.html">内容管理</a>
+			<i class="icon-arrow-r"></i>
+			<a href="#">活动管理</a>
+		</div>
+	</div>
+	<!--选择信息栏-->
+	<div class="info clearfix">
+		<dl class="fl mt10 w190">
+			<dt class="fl input-lable pl10">活动类型：</dt>
+			<dd class="fl">
+				<div class="diy_select  select-relative">
+					<input type="hidden" name="" class="diy_select_input w100">
+					<div class="diy_select_txt select_box w100">请选择</div>
+					<div class="diy_select_btn"></div>
+					<ul class="diy_select_list slect-ul w100">
+						<li class="">请选择</li>
+						<li class="">是</li>
+						<li class="">否</li>
+					</ul>
+				</div>
+			</dd>
+		</dl>
+		<dl class="fl mt10 w250">
+			<dt class="fl input-lable">标题：</dt>
+			<dd class="fl input">
+				<input type="text" class="text" value="" placeholder="标题">
+			</dd>
+		</dl>
+		<dl class="fl mt10 w470">
+			<dt class="fl input-lable">开始时间：</dt>
+			<dd class="fl">
+				<input id="d11" type="text" onclick="WdatePicker()" class="input-date input-date-img" placeholder="">
+			</dd>
+			<dd class="fl">~</dd>
+			<dd class="fl">
+				<input id="d11" type="text" onclick="WdatePicker()" class="input-date input-date-img" placeholder="">
+			</dd>
+		</dl>
+		<div class="fl w330">
+			<button class="fl btn mt10 orange w100">查询</button>
+			<button class="fl btn-export ml10 mt10 w100" onclick="javascript:window.location.href='活动管理-添加活动.html'">添加活动</button>
+			<button class="fl btn-export ml10 mt10 w100" onclick="javascript:window.location.href='活动管理-报名管理.html'">报名管理</button>
+		</div>
+	</div>
+	<!--查询表格-->
+	<div class="tab-box clearfix mt10">
+		<table class="tab-fix">
+			<thead>
+			<tr class="orange-l">
+				<th>操作</th>
+				<th>序号</th>
+				<th>排序</th>
+				<th>封面</th>
+				<th>标题</th>
+				<th>活动类型</th>
+				<th>开始时间</th>
+				<th>结束时间</th>
+				<th>状态</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="#" class="">预览</a>
+						<a href="活动管理-编辑.html" class="str">编辑</a>
+						<a href="#" class="">禁用</a>
+					</div>操作
+				</td>
+				<td>1</td>
+				<td>110</td>
+				<td><img src="../images/head.gif" class="w-10"></td>
+				<td>为爱而生-提前过520，爱的优惠日</td>
+				<td>线上活动</td>
+				<td>2015-5-12 16:08:00</td>
+				<td>2015-5-29 18:00</td>
+				<td>正常</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="#" class="">预览</a>
+						<a href="活动管理-编辑.html" class="str">编辑</a>
+					</div>操作
+				</td>
+				<td>2</td>
+				<td>110</td>
+				<td><img src="../images/head.gif" class="w-10"></td>
+				<td>为爱而生-提前过520，爱的优惠日</td>
+				<td>线上活动</td>
+				<td>2015-5-12 16:08:00</td>
+				<td>2015-5-29 18:00</td>
+				<td>失效</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="#" class="">预览</a>
+						<a href="活动管理-编辑.html" class="str">编辑</a>
+						<a href="#" class="">禁用</a>
+					</div>操作
+				</td>
+				<td>3</td>
+				<td>110</td>
+				<td><img src="../images/head.gif" class="w-10"></td>
+				<td>为爱而生-提前过520，爱的优惠日</td>
+				<td>线上活动</td>
+				<td>2015-5-12 16:08:00</td>
+				<td>2015-5-29 18:00</td>
+				<td>正常</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="#" class="">预览</a>
+						<a href="活动管理-编辑.html" class="str">编辑</a>
+					</div>操作
+				</td>
+				<td>4</td>
+				<td>110</td>
+				<td><img src="../images/head.gif" class="w-10"></td>
+				<td>为爱而生-提前过520，爱的优惠日</td>
+				<td>线上活动</td>
+				<td>2015-5-12 16:08:00</td>
+				<td>2015-5-29 18:00</td>
+				<td>失效</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="#" class="">预览</a>
+						<a href="活动管理-编辑.html" class="str">编辑</a>
+						<a href="#" class="">禁用</a>
+					</div>操作
+				</td>
+				<td>5</td>
+				<td>110</td>
+				<td><img src="../images/head.gif" class="w-10"></td>
+				<td>为爱而生-提前过520，爱的优惠日</td>
+				<td>线上活动</td>
+				<td>2015-5-12 16:08:00</td>
+				<td>2015-5-29 18:00</td>
+				<td>正常</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="#" class="">预览</a>
+						<a href="活动管理-编辑.html" class="str">编辑</a>
+					</div>操作
+				</td>
+				<td>6</td>
+				<td>110</td>
+				<td><img src="../images/head.gif" class="w-10"></td>
+				<td>为爱而生-提前过520，爱的优惠日</td>
+				<td>线上活动</td>
+				<td>2015-5-12 16:08:00</td>
+				<td>2015-5-29 18:00</td>
+				<td>失效</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="#" class="">预览</a>
+						<a href="活动管理-编辑.html" class="str">编辑</a>
+						<a href="#" class="">禁用</a>
+					</div>操作
+				</td>
+				<td>7</td>
+				<td>110</td>
+				<td><img src="../images/head.gif" class="w-10"></td>
+				<td>为爱而生-提前过520，爱的优惠日</td>
+				<td>线上活动</td>
+				<td>2015-5-12 16:08:00</td>
+				<td>2015-5-29 18:00</td>
+				<td>正常</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="#" class="">预览</a>
+						<a href="活动管理-编辑.html" class="str">编辑</a>
+					</div>操作
+				</td>
+				<td>8</td>
+				<td>110</td>
+				<td><img src="../images/head.gif" class="w-10"></td>
+				<td>为爱而生-提前过520，爱的优惠日</td>
+				<td>线上活动</td>
+				<td>2015-5-12 16:08:00</td>
+				<td>2015-5-29 18:00</td>
+				<td>失效</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="#" class="">预览</a>
+						<a href="活动管理-编辑.html" class="str">编辑</a>
+						<a href="#" class="">禁用</a>
+					</div>操作
+				</td>
+				<td>9</td>
+				<td>110</td>
+				<td><img src="../images/head.gif" class="w-10"></td>
+				<td>为爱而生-提前过520，爱的优惠日</td>
+				<td>线上活动</td>
+				<td>2015-5-12 16:08:00</td>
+				<td>2015-5-29 18:00</td>
+				<td>正常</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="#" class="">预览</a>
+						<a href="活动管理-编辑.html" class="str">编辑</a>
+					</div>操作
+				</td>
+				<td>10</td>
+				<td>110</td>
+				<td><img src="../images/head.gif" class="w-10"></td>
+				<td>为爱而生-提前过520，爱的优惠日</td>
+				<td>线上活动</td>
+				<td>2015-5-12 16:08:00</td>
+				<td>2015-5-29 18:00</td>
+				<td>失效</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="#" class="">预览</a>
+						<a href="活动管理-编辑.html" class="str">编辑</a>
+						<a href="#" class="">禁用</a>
+					</div>操作
+				</td>
+				<td>11</td>
+				<td>110</td>
+				<td><img src="../images/head.gif" class="w-10"></td>
+				<td>为爱而生-提前过520，爱的优惠日</td>
+				<td>线上活动</td>
+				<td>2015-5-12 16:08:00</td>
+				<td>2015-5-29 18:00</td>
+				<td>正常</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="#" class="">预览</a>
+						<a href="活动管理-编辑.html" class="str">编辑</a>
+					</div>操作
+				</td>
+				<td>12</td>
+				<td>110</td>
+				<td><img src="../images/head.gif" class="w-10"></td>
+				<td>为爱而生-提前过520，爱的优惠日</td>
+				<td>线上活动</td>
+				<td>2015-5-12 16:08:00</td>
+				<td>2015-5-29 18:00</td>
+				<td>失效</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="#" class="">预览</a>
+						<a href="活动管理-编辑.html" class="str">编辑</a>
+						<a href="#" class="">禁用</a>
+					</div>操作
+				</td>
+				<td>13</td>
+				<td>110</td>
+				<td><img src="../images/head.gif" class="w-10"></td>
+				<td>为爱而生-提前过520，爱的优惠日</td>
+				<td>线上活动</td>
+				<td>2015-5-12 16:08:00</td>
+				<td>2015-5-29 18:00</td>
+				<td>正常</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="#" class="">预览</a>
+						<a href="活动管理-编辑.html" class="str">编辑</a>
+					</div>操作
+				</td>
+				<td>14</td>
+				<td>110</td>
+				<td><img src="../images/head.gif" class="w-10"></td>
+				<td>为爱而生-提前过520，爱的优惠日</td>
+				<td>线上活动</td>
+				<td>2015-5-12 16:08:00</td>
+				<td>2015-5-29 18:00</td>
+				<td>失效</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="#" class="">预览</a>
+						<a href="活动管理-编辑.html" class="str">编辑</a>
+						<a href="#" class="">禁用</a>
+					</div>操作
+				</td>
+				<td>15</td>
+				<td>110</td>
+				<td><img src="../images/head.gif" class="w-10"></td>
+				<td>为爱而生-提前过520，爱的优惠日</td>
+				<td>线上活动</td>
+				<td>2015-5-12 16:08:00</td>
+				<td>2015-5-29 18:00</td>
+				<td>正常</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="#" class="">预览</a>
+						<a href="活动管理-编辑.html" class="str">编辑</a>
+					</div>操作
+				</td>
+				<td>16</td>
+				<td>110</td>
+				<td><img src="../images/head.gif" class="w-10"></td>
+				<td>为爱而生-提前过520，爱的优惠日</td>
+				<td>线上活动</td>
+				<td>2015-5-12 16:08:00</td>
+				<td>2015-5-29 18:00</td>
+				<td>失效</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix top0 left58">
+						<a href="#" class="">预览</a>
+						<a href="活动管理-编辑.html" class="str">编辑</a>
+						<a href="#" class="">禁用</a>
+					</div>操作
+				</td>
+				<td>17</td>
+				<td>110</td>
+				<td><img src="../images/head.gif" class="w-10"></td>
+				<td>为爱而生-提前过520，爱的优惠日</td>
+				<td>线上活动</td>
+				<td>2015-5-12 16:08:00</td>
+				<td>2015-5-29 18:00</td>
+				<td>正常</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix bottom0 left58">
+						<a href="#" class="">预览</a>
+						<a href="活动管理-编辑.html" class="str">编辑</a>
+					</div>操作
+				</td>
+				<td>18</td>
+				<td>110</td>
+				<td><img src="../images/head.gif" class="w-10"></td>
+				<td>为爱而生-提前过520，爱的优惠日</td>
+				<td>线上活动</td>
+				<td>2015-5-12 16:08:00</td>
+				<td>2015-5-29 18:00</td>
+				<td>失效</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix bottom0 left58">
+						<a href="#" class="">预览</a>
+						<a href="活动管理-编辑.html" class="str">编辑</a>
+						<a href="#" class="">禁用</a>
+					</div>操作
+				</td>
+				<td>19</td>
+				<td>110</td>
+				<td><img src="../images/head.gif" class="w-10"></td>
+				<td>为爱而生-提前过520，爱的优惠日</td>
+				<td>线上活动</td>
+				<td>2015-5-12 16:08:00</td>
+				<td>2015-5-29 18:00</td>
+				<td>正常</td>
+			</tr>
+			<tr>
+				<td class="_first_td"  onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+					<div class="_operate clearfix bottom0 left58">
+						<a href="#" class="">预览</a>
+						<a href="活动管理-编辑.html" class="str">编辑</a>
+					</div>操作
+				</td>
+				<td>20</td>
+				<td>110</td>
+				<td><img src="../images/head.gif" class="w-10"></td>
+				<td>为爱而生-提前过520，爱的优惠日</td>
+				<td>线上活动</td>
+				<td>2015-5-12 16:08:00</td>
+				<td>2015-5-29 18:00</td>
+				<td>失效</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+	<!--底部分页-->
+	<div class="page fr clearfix mt10">
+		<ul>
+			<li><a href="#" class="list"><</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#" class="list">></a></li>
+		</ul>
+	</div>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script src="../js/table/fixed_table_rc.js" type="text/javascript"></script>
+<script src="../js/select.js" type="text/javascript"></script>
+<script src="../js/index.js" type="text/javascript"></script>
+<script>
+	$('.tab-fix').fxdHdrCol({
+		fixedCols: 0,
+		width: "100%",
+		height: 700,
+		colModal: [
+			{width: 50,align: 'center'},
+			{width: 50,align: 'center'},
+			{width: 100,align: 'center'},
+			{width: 150,align: 'center'},
+			{width: 250,align: 'center'},
+			{width: 200,align: 'center'},
+			{width: 250,align: 'center'},
+			{width: 250,align: 'center'},
+			{width: 200,align: 'center'}
+		]
+	});
+	function _on_hover(obj){
+		var li_div = obj.getElementsByTagName("div");
+		li_div[0].style.display="block";
+	}
+	function _out_hover(obj){
+		var li_div = obj.getElementsByTagName("div");
+		li_div[0].style.display="none";
+	}
+	$(function () {
+		$("tr:odd").addClass("odd");
+		$("tr:even").addClass("even");
+	});
+</script>
+</body>
+</html>

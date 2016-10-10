@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=7">
+    <title>添加结算</title>
+    <link href="../css/base.css" rel="stylesheet" media="screen">
+    <link href="../css/common.css" rel="stylesheet" media="screen">
+    <link href="../css/admin-main.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div class="content">
+    <!--位置路径-->
+    <div class="path mt5 clearfix">
+        <div class="fl pl20">
+            <i class="icon-home"></i>
+            <a href="">资金管理</a>
+            <i class="icon-arrow-r"></i>
+            <a href="#">信息费结算</a>
+            <i class="icon-arrow-r"></i>
+            <a href="#">添加结算</a>
+        </div>
+    </div>
+    <div class="bordt1 bordl1">
+        <h3 class="orange-l pl5 bordb1 bordr1">结算</h3>
+        <div class="info clearfix ml10">
+            <dl class="fl mt10 w480">
+                <dt class="fl input-lable">结算日期：</dt>
+                <dd class="fl ml5">
+                    <input id="d11" type="text" onclick="WdatePicker()" class="input-date input-date-img" placeholder="">
+                </dd>
+                <dd class="fl ml5 h32 line-h30">~</dd>
+                <dd class="fl ml5">
+                    <input id="d11" type="text" onclick="WdatePicker()" class="input-date input-date-img" placeholder="">
+                </dd>
+            </dl>
+            <dl class="fl mt10 w270">
+                <dt class="fl input-lable">商家名称：</dt>
+                <dd class="fl input">
+                    <input type="text" class="text" value="" placeholder="例：标题">
+                </dd>
+            </dl>
+            <div class="w110 fl">
+                <button class="fl btn ml10 orange mt10 w100">查询</button>
+            </div>
+        </div>
+        <table class="table bordt1 mt10" width="100%">
+            <tbody>
+            <tr>
+                <td>结算台数（台）：</td>
+                <td>5</td>
+                <td>金额（元）：</td>
+                <td>2500.00</td>
+                <td>应收/付发生金额（元）：</td>
+                <td>2500.00</td>
+            </tr>
+            <tr>
+                <td>结算月份：</td>
+                <td><input type="text" class="text"/></td>
+                <td>标题：</td>
+                <td colspan="3"><input type="text" class="text"/></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="bordt1 bordl1 mt10">
+        <h3 class="orange-l pl5 bordb1 bordr1">结算清单</h3>
+        <table class="table" width="100%">
+            <thead>
+            <tr class="orange-l">
+                <td>日期</td>
+                <td>评估编号</td>
+                <td>拍场编号</td>
+                <td>拍场</td>
+                <td>金额（元）</td>
+                <td>应付金额（元）</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>2015-12-09</td>
+                <td>UU151208135157038144</td>
+                <td>120720151209100955</td>
+                <td>上海大众1.6 自动 智选型</td>
+                <td>500.00</td>
+                <td>500.00</td>
+            </tr>
+            <tr>
+                <td>2015-12-09</td>
+                <td>UU151208135157038144</td>
+                <td>120720151209100955</td>
+                <td>上海大众1.6 自动 智选型</td>
+                <td>500.00</td>
+                <td>500.00</td>
+            </tr>
+            <tr>
+                <td>2015-12-09</td>
+                <td>UU151208135157038144</td>
+                <td>120720151209100955</td>
+                <td>上海大众1.6 自动 智选型</td>
+                <td>500.00</td>
+                <td>500.00</td>
+            </tr>
+            <tr>
+                <td>2015-12-09</td>
+                <td>UU151208135157038144</td>
+                <td>120720151209100955</td>
+                <td>上海大众1.6 自动 智选型</td>
+                <td>500.00</td>
+                <td>500.00</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="mt20 mb20">
+        <button class="btn orange-l w100">返回上一页</button>
+        <button class="btn orange-l w100 ml10">提交</button>
+    </div>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>

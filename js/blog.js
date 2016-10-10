@@ -45,6 +45,7 @@ $(function () {
         $('body,html').animate({scrollTop:0},1000);
         return false;
     });
+    //tabs
 });
 // NOTICE!! DO NOT USE ANY OF THIS JAVASCRIPT
 // IT'S JUST JUNK FOR OUR DOCS!

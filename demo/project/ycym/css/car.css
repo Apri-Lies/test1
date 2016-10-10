@@ -1,0 +1,41 @@
+.mt8{margin-top: 8px;}
+.info-table { border-top: 1px #ccc solid; }
+.info-table table th,table td{padding: 5px 10px; border:solid #ccc; border-width:0 1px 1px 0;font-weight: normal; text-align: center; color: #6b6b6b;} 
+.info-table table th,table td:last-child{}
+.info-table table th{background: #ff6537; color: #fff;}
+.semarn{width: 350px;  height: 32px; margin: 0 auto;}
+.info-wd100{ width: 100%;}
+.info-wd50{ min-width: 560px;}
+.w320{width: 340px;}
+.w440{width: 440px;}
+.w530{width: 530px;}
+.w580{width: 580px;}
+.w580m{width: 580px; margin: 40px 25%;}
+.info-wd700m{ width: 700px; margin: 0px 50px;}
+.info-wd1000{ width: 1000px;}
+.info-wd800{ width: 800px;}
+.info-wd500{width: 500px;  margin: 0px 50px;}
+.info-m30{margin: 40px 20%;}
+.lable-all{  width: 120px; text-align: right;line-height: 32px; color: #6b6b6b;}
+.lihe32{line-height: 32px;}
+.lihe30{line-height: 30px;}
+.lable-left{  width: 120px; text-align: left;line-height: 32px; color: #6b6b6b;}
+.textarea{border: 1px #ccc solid;  padding-left: 10px; line-height: 30px;  color: #6b6b6b;}
+.car{}
+.car a{margin-left: 10px;}
+.car span{margin-left: 10px;}
+.sp1{text-align: center;  display: block;}
+.sp1 em{color: #000; font-size: 16px;}
+.sp1 label{color: #FF8000; font-size: 22px;}
+.color1{color:#fff; font-size: 14px; width: 100px; height: 32px; }
+.bank-card{position: absolute; z-index: 999; left: 6px; top: 20px; width: 420px; height: 190px; background: #f2f2f2; display: none;}
+.bank-card-box{ position: relative; z-index: 99; background: #ffffff; width: 380px; height: 170px; margin: 10px; padding: 0px 10px; overflow-y: scroll;}
+.bank-card-box li{border-bottom: 1px solid #ccc; line-height: 40px; width: 370px; height: 40px; cursor: pointer; }
+.bank-card-box li label{margin-right: 10px;}
+.warn .editor ul{ margin: 0px 0%; float: left; width: 98%;height: 40px; cursor: pointer; }
+.warn .editor li{ overflow: hidden; width: 10%; float: left; height: 38px; text-align: center; line-height: 38px; position: relative; z-index: 10; background: #FFFFFF;border: 1px solid #FFFFFF; border-bottom: none; border-top: 2px #FFFFFF solid;}
+.warn .editor li.list{border: 1px solid #ccc; float: left; width: 10%;  height: 40px; border-bottom: none;  border-top: 1px solid #ff8000; position: relative; z-index: 10;}
+.warn .editor li.list i{color: #ff8000;}
+.table_box{ border-bottom: none; position:relative;  z-index: 6;}
+.table_box .warn-list{border: 1px solid #CCC;}
+.sort-input{color: #6b6b6b;padding-left: 10px;border: solid 1px #ccc;height: 20px;line-height: 20px;font-size: 14px;width: 20px;}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=7">
+<title>Header</title>
+<link rel="stylesheet" media="screen" href="../css/base.css">
+<!--<link rel="stylesheet" media="screen" href="css/comom.css">-->
+</head>
+<body>
+    <div class="Head-All clearfix">  
+      <a href="#" alt="" class="logo fl"><img src="../images/logo.png" alt=""></a>
+      <div class="headTips fr pt10">
+        <a href="#" class="tips"><img src="../images/car-index/computer.png" alt="" class="img1"></a>
+        <!--<a href="#" class="tips notice"><img src="../images/car-index/news.png" alt="" class="img1">
+            <div class="Number">5</div>
+        </a>-->
+        <a href="#" class="tips"><img src="../images/car-index/guide.png" alt="" class="img1"></a>
+        <a href="#" class="tips"><img src="../images/car-index/down.png" alt="" class="img1"></a>
+        <!--<a href="#" class="tips"><img src="../images/car-index/compass.png" alt="" class="img1"></a>-->
+        <a href="#" class="tips"><img src="../images/car-index/about.png" alt="" class="img1">
+        </a>
+       <!-- <a href="#" class="tips fsk"><img src="../images/car-index/personal.png" alt="" class="img1"><img src="../images/car-index/personal-bottom.png"/>
+        </a>
+        <a href="#" class="tips"><img src="../images/note.png" alt="" class="img1"></a>-->
+        <a href="#" class="tips"><img src="../images/car-index/edition.png" alt="" class="img1 deal"></a>
+        <a href="#" class="tips"><img src="../images/exit.png" alt="" class="img1"></a>
+    </div>
+   		
+    </div>
+		<div class="popup-cover deal-box" style="display: none;">
+			<div class="popup-win" style="  left:30%; top:35%; width: 600px;position:absolute;" id="bg">
+				<div class="popup-title">
+					<div class="fl title">温馨提示</div>
+					<div class="fr close deal-close">x</div>
+				</div>
+				<div class="info-wd500 fl">
+					<span class="sp1 mt20 mt10"><em>成交价：</em><label>10000.00元</label></span>
+		       	</div>
+				<div class="info-wd500 fl">
+		            <div class="text-c mt10 mb5">
+		            	<button class="btn btn_bg_gray w100">提交</button>
+			        	<button class="btn btn_bg_gray ml10 w100">确定</button>
+			            <button class="btn orange-l ml10 deal-cancel w100">取消</button>
+			        </div>
+				</div>
+		    </div>	
+		</div>
+
+</body>
+<script src="../js/jquery.js"></script>
+<script>
+$(".deal").click(function(){
+		$(".deal-box").show();
+		$(".deal-close").click(function(){
+			 $(".deal-box").hide();
+		})
+		$(".deal-cancel").click(function(){
+			 $(".deal-box").hide();
+		})
+	})
+</script>
+</html>

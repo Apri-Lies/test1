@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<title>共享车源</title>
+	<link href="../css/base.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" type="text/css" href="../css/table/style.css" />
+	<link href="../css/common.css" rel="stylesheet" media="screen">
+	<link href="../css/car.css" rel="stylesheet" media="screen">
+<body>
+<div class="content">
+	<!--位置路径-->
+	<div class="path mt5 clearfix">
+		<div class="fl pl20">
+			<i class="icon-home"></i>
+			<a href="">网站管理</a>
+			<i class="icon-arrow-r"></i>
+			<a href="">共享车源</a>
+		</div>
+	</div>
+	<!--选择信息栏-->
+	<div class="info clearfix">
+		<dl class="fl mt10 w500">
+			<dt class="fl input-lable pl10 pr10">申请日期：</dt>
+			<dd class="fl"><input type="text" onclick="WdatePicker()" class="input-date input-date-img"></dd>
+			<dd class="fl lihe32 ml10 mr10">至</dd>
+			<dd class="fl"><input type="text" onclick="WdatePicker()" class="input-date input-date-img"></dd>
+		</dl>
+		<dl class="fl mt10 w220">
+			<dt class="fl input-lable pl10 pr10">申请类型：</dt>
+			<dd class="fl">
+				<div class="diy_select relative z-100 fl">
+                    <input type="hidden" name="" class="diy_select_input">
+                    <div class="diy_select_txt select_box w120" >请选择</div>
+                    <div class="diy_select_btn"></div>
+                    <ul class="diy_select_list slect-ul str w120" >
+                        <li class="">请选择</li>
+                        <li class="">申请合作</li>
+                        <li class="">申请解除合作</li>
+                    </ul>
+                </div>
+			</dd>
+		</dl>
+		<dl class="fl mt10 w220">
+			<dt class="fl input-lable pl10 pr10">申请状态：</dt>
+			<dd class="fl">
+				<div class="diy_select relative z-100 fl">
+					<input type="hidden" name="" class="diy_select_input">
+					<div class="diy_select_txt select_box w120" >请选择</div>
+					<div class="diy_select_btn"></div>
+					<ul class="diy_select_list slect-ul str w120" >
+						<li class="">请选择</li>
+						<li class="">待确认</li>
+						<li class="">已成功</li>
+					</ul>
+				</div>
+			</dd>
+		</dl>
+		<div class="fl w440">
+			<button class="fl btn ml10 mt10 orange w100">查询</button>
+			<button class="fl btn-export ml10 mt10 w100" onclick="javascrtpt:window.location.href='###'">我的合作</button>
+			<button class="fl btn-export ml10 mt10 w100" onclick="javascrtpt:window.location.href='###'">申请合作</button>
+			<button class="fl btn-export ml10 mt10 w100" onclick="javascrtpt:window.location.href='###'">确认申请</button>
+		</div>
+	</div>
+	<!--查询表格-->
+	<div class="table_wrap clearfix mt10 bordl1">
+		<table class="gridView table1">
+			<thead>
+			<tr class="orange-l">
+				<th width="5%">序号</th>
+				<th >申请商家</th>
+				<th >接受商家</th>
+				<th >申请类型</th>
+				<th >申请状态</th>
+				<th >申请时间</th>
+				<th >确认时间</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>1</td>
+				<td>试用4S店003</td>
+				<td>测试车商002</td>
+				<td>申请解除合作</td>
+				<td>待确认</td>
+				<td>2015-12-24 12:03:41</td>
+				<td>2015-12-24 12:03:21</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>试用4S店003</td>
+				<td>测试车商002</td>
+				<td>申请解除合作</td>
+				<td>待确认</td>
+				<td>2015-12-24 12:03:41</td>
+				<td>2015-12-24 12:03:21</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>试用4S店003</td>
+				<td>测试车商002</td>
+				<td>申请解除合作</td>
+				<td>待确认</td>
+				<td>2015-12-24 12:03:41</td>
+				<td>2015-12-24 12:03:21</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>试用4S店003</td>
+				<td>测试车商002</td>
+				<td>申请解除合作</td>
+				<td>待确认</td>
+				<td>2015-12-24 12:03:41</td>
+				<td>2015-12-24 12:03:21</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>试用4S店003</td>
+				<td>测试车商002</td>
+				<td>申请解除合作</td>
+				<td>待确认</td>
+				<td>2015-12-24 12:03:41</td>
+				<td>2015-12-24 12:03:21</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>试用4S店003</td>
+				<td>测试车商002</td>
+				<td>申请解除合作</td>
+				<td>待确认</td>
+				<td>2015-12-24 12:03:41</td>
+				<td>2015-12-24 12:03:21</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>试用4S店003</td>
+				<td>测试车商002</td>
+				<td>申请解除合作</td>
+				<td>待确认</td>
+				<td>2015-12-24 12:03:41</td>
+				<td>2015-12-24 12:03:21</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>试用4S店003</td>
+				<td>测试车商002</td>
+				<td>申请解除合作</td>
+				<td>待确认</td>
+				<td>2015-12-24 12:03:41</td>
+				<td>2015-12-24 12:03:21</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>试用4S店003</td>
+				<td>测试车商002</td>
+				<td>申请解除合作</td>
+				<td>待确认</td>
+				<td>2015-12-24 12:03:41</td>
+				<td>2015-12-24 12:03:21</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>试用4S店003</td>
+				<td>测试车商002</td>
+				<td>申请解除合作</td>
+				<td>待确认</td>
+				<td>2015-12-24 12:03:41</td>
+				<td>2015-12-24 12:03:21</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>试用4S店003</td>
+				<td>测试车商002</td>
+				<td>申请解除合作</td>
+				<td>待确认</td>
+				<td>2015-12-24 12:03:41</td>
+				<td>2015-12-24 12:03:21</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>试用4S店003</td>
+				<td>测试车商002</td>
+				<td>申请解除合作</td>
+				<td>待确认</td>
+				<td>2015-12-24 12:03:41</td>
+				<td>2015-12-24 12:03:21</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>试用4S店003</td>
+				<td>测试车商002</td>
+				<td>申请解除合作</td>
+				<td>待确认</td>
+				<td>2015-12-24 12:03:41</td>
+				<td>2015-12-24 12:03:21</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>试用4S店003</td>
+				<td>测试车商002</td>
+				<td>申请解除合作</td>
+				<td>待确认</td>
+				<td>2015-12-24 12:03:41</td>
+				<td>2015-12-24 12:03:21</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>试用4S店003</td>
+				<td>测试车商002</td>
+				<td>申请解除合作</td>
+				<td>待确认</td>
+				<td>2015-12-24 12:03:41</td>
+				<td>2015-12-24 12:03:21</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>试用4S店003</td>
+				<td>测试车商002</td>
+				<td>申请解除合作</td>
+				<td>待确认</td>
+				<td>2015-12-24 12:03:41</td>
+				<td>2015-12-24 12:03:21</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>试用4S店003</td>
+				<td>测试车商002</td>
+				<td>申请解除合作</td>
+				<td>待确认</td>
+				<td>2015-12-24 12:03:41</td>
+				<td>2015-12-24 12:03:21</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>试用4S店003</td>
+				<td>测试车商002</td>
+				<td>申请解除合作</td>
+				<td>待确认</td>
+				<td>2015-12-24 12:03:41</td>
+				<td>2015-12-24 12:03:21</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>试用4S店003</td>
+				<td>测试车商002</td>
+				<td>申请解除合作</td>
+				<td>待确认</td>
+				<td>2015-12-24 12:03:41</td>
+				<td>2015-12-24 12:03:21</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>试用4S店003</td>
+				<td>测试车商002</td>
+				<td>申请解除合作</td>
+				<td>待确认</td>
+				<td>2015-12-24 12:03:41</td>
+				<td>2015-12-24 12:03:21</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+	<!--底部分页-->
+	<div class="page fr clearfix mt15">
+		<ul>
+			<li><a href="#" class="list"><</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#" class="list">></a></li>
+		</ul>
+	</div>
+</div>
+
+	
+
+<script src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/table/jquery.freezeheader.js"></script>
+<script src="../js/index.js" type="text/javascript"></script>
+<script src="../js/select.js"></script>
+<script>
+	$(function () {
+		$("tr:odd").addClass("odd");
+		$("tr:even").addClass("even");
+	});
+	$(document).ready(function () {
+		$(".table1").freezeHeader({ 'height': '500px' });
+	})
+	
+	
+</script>
+</body>
+</html>
