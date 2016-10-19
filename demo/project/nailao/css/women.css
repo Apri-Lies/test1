@@ -1,0 +1,187 @@
+/*内容  start*/
+/*section1*/
+.US_content1{
+	background-color:#fff;
+	border: 1px solid #F1F1F1;
+	border-top:none;
+	margin-bottom: 0.6em;
+}
+.US_content1_up{
+	padding: 4em 0 0;
+}
+.US_content1_up h2{
+	font-weight:normal;
+	line-height: 1.3;
+	font-size: 2.5em;
+}
+.US_content1_up h2 span{
+	display: block;
+}
+.US_content1_up p{
+	font-size: 0.9em;
+	padding:1em 0 0;
+}
+.US_content1_up>div{
+	padding:2.8em 1em;
+}
+.US_content1_up>div>img{
+	margin: 0 auto;
+}
+.US_content1 .am-intro-default .am-intro-bd{
+	padding:2.2em 0;
+}
+.am-intro-bd .am-intro-left{
+	padding-left: 1em;
+	display: inline-block;
+	vertical-align: middle;
+	width: 55%;
+}
+.am-intro-bd .am-intro-right{
+	display: inline-block;
+	vertical-align: middle;
+	width: 40%;
+}
+.am-intro-bd .am-intro-left h3{
+	font-size: 1.5em;
+	font-weight:normal;
+}
+.am-intro-bd .am-intro-left h3>span{
+	font-size: 1.4em;
+}
+.am-intro-bd .am-intro-left p{
+	font-size: 1em;
+	font-weight:normal;
+	line-height: 1.2;
+	padding-top:1.8em ;
+	text-align: justify;
+	padding-right: 1.5em;
+}
+
+/*section2*/
+.US_content2 .scrollspy-nav>ul>li>a>span{
+	font-size: 1.3em;
+}
+.US_content2 .am-panel-group .am-panel+.am-panel{
+  	margin-top: 0.8em;
+}
+.US_content2 .am-paragraph-default>div{
+	  padding: 15% 20% 0;
+}
+.US_content2 .cxfw .am-paragraph-default img{
+	margin: 0 auto;
+}
+.US_content2 .cxfw .am-panel:nth-of-type(1) .am-paragraph-default>div:nth-of-type(1){
+	background-color: #FAD749;
+	  padding: 5% 25%;
+}
+.US_content2 .cxfw .am-panel:nth-of-type(1) .am-paragraph-default>div:nth-of-type(2){
+	background-color: #F1F1F1;
+  	  padding: 10% 20% 0;
+}
+.US_content2 .cxfw .am-panel:nth-of-type(2) .am-paragraph-default>div:nth-of-type(1){
+  	padding: 0;
+}
+.US_content2 .cxfw .am-panel:nth-of-type(2) .am-paragraph-default>div:nth-of-type(2){
+  	  padding: 15% 20%;
+}
+.US_content2 .cxfw .am-panel:nth-of-type(3) .am-g{
+	padding: 2.5em 1.5em 0 1.8em;
+	border-bottom: 1px solid #F1F1F1;
+}
+.US_content2 .cxfw .am-panel:nth-of-type(3) .am-paragraph-default p{
+	padding: 0;
+}
+.US_content2 .cxfw .am-panel:nth-of-type(3) .am-g>p{
+	font-size: 1em;
+	color: #454545;
+	padding: 3em 0;
+	  text-align: justify;
+}
+.US_content2 .cxfw .am-panel:nth-of-type(3).US2_img{
+}
+.US_content2 .cxfw .am-panel:nth-of-type(3).US2_img>img{
+	max-width: 100%;
+	margin: 0 auto;
+}
+.US_content2 .Jztz .am-panel:nth-of-type(1) .am-paragraph-default>div,
+.US_content2 .Jztz .am-panel:nth-of-type(4) .am-paragraph-default>div,
+.US_content2 .Jztz .am-panel:nth-of-type(5) .am-paragraph-default>div,
+.US_content2 .Jztz .am-panel:nth-of-type(6) .am-paragraph-default>div
+{
+  	padding: 0;
+}
+.US_content2 .Jztz .am-panel+.am-panel{
+	margin-top: 0.9em;
+}
+.US_content2 .Jztz .am-panel .am-paragraph-default p:nth-of-type(1){
+	padding: 4em 0 0.8em 1.1em;
+}
+.US_content2 .Jztz .am-panel .am-paragraph-default p:nth-of-type(1)>span{
+	padding: 0.4em 0.9em;
+	font-size: 1.3em;
+	text-align: center;
+	display: inline-block;
+	background-color: #474747;
+	color: #FAD749;
+}
+.US_content2 .Jztz .am-panel .am-paragraph-default p:nth-of-type(2){
+	padding: 0 0 3.2em 1.1em;
+}
+.US_content2 .Jztz .am-panel .am-paragraph-default p:nth-of-type(2)>span{
+	font-size: 2em;
+	color: #474747;
+}
+.US_content2 .Jztz .am-panel .am-paragraph-default p:nth-of-type(3){
+	padding: 0 1.5em 4.6em 1em;
+	font-size: 1.1em;
+	color: #676767;
+}
+.US_content2 .Jztz .am-panel:nth-of-type(3) .am-paragraph-default>div{
+	  padding: 5% 15% 0;
+}
+.US_content2 .Jztz .am-panel:nth-of-type(4) .am-paragraph-default>div:nth-child(1){
+	  padding: 0 0 2% 40%;
+	background-color: #F2C833;
+	text-align: right;
+}
+.US_content2 .Jztz .am-panel:nth-of-type(4) .am-paragraph-default>div:nth-child(1)>img{
+	display: inline-block;
+	margin: 0;
+}
+.US_content2 .Jztz .am-panel:nth-of-type(5) .am-paragraph-default>div:nth-child(2){
+	background-color: #474747;
+	  margin-top: 0.8em;
+}
+.US_content2 .Jztz .am-panel:nth-of-type(5) .am-paragraph-default>div:nth-child(2)>img{
+	margin: 0 auto;
+}
+.US_content2 .Jztz .am-panel:nth-of-type(5) .am-paragraph-default>p:nth-of-type(1),
+.US_content2 .Jztz .am-panel:nth-of-type(6) .am-paragraph-default>p:nth-of-type(1)
+{
+  	margin: 0;
+	padding: 2em 0 0 0;
+}
+.US_content2 .Jztz .am-panel:nth-of-type(5) .am-paragraph-default>p:nth-of-type(1)>span,
+.US_content2 .Jztz .am-panel:nth-of-type(6) .am-paragraph-default>p:nth-of-type(1)>span
+{
+  	font-size: 2em;
+ 	color: #474747;
+ 	background-color: #FFFFFF;
+}
+.US_content2 .Jztz .am-panel:nth-of-type(5) .am-paragraph-default>p:nth-of-type(2),
+.US_content2 .Jztz .am-panel:nth-of-type(6) .am-paragraph-default>p:nth-of-type(2)
+{
+  	font-size: 1.1em;
+  	margin: 0;
+	padding: 0 0 2.5em 1.5em;
+ 	color: #474747;
+ 	line-height: 1.5;
+}
+.US_content2 .Jztz .am-panel:nth-of-type(5),.US_content2 .Jztz .am-panel:nth-of-type(6){
+	margin-bottom:0;
+	margin-top: 0;
+}
+/*内容END*/
+.am-footer{
+	background-color: #F1F1F1;
+}

@@ -3,12 +3,9 @@
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 0;
   font-family: "Arial", "Microsoft Yahei", "微软雅黑", "Times New Roman", "sans-serif", "serif";
   /*font-family: Tahoma, Helvetica, Arial, sans-serif; //Tahoma 系的中性字体。推荐使用在13px以上的环境。
   font-family: Trebuchet MS, Verdana, Helvetica, Arial, sans-serif; //Verdana 系的宽扁字体。推荐在11px以下环境使用。
@@ -27,6 +24,7 @@ ul,li{margin:0;padding:0;}
 /* default-list */
 ol,ul{list-style: none;}
 table {border-collapse:collapse;border-spacing:0;}
+td{border-width:1px ;}
 /* default-link */
 a{color:#3B9A93;}
 a:hover{color:#8E44AD;}

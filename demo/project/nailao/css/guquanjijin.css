@@ -1,0 +1,116 @@
+/*content----start*/
+/*section1*/
+.GQJJ_content1{
+	padding: 12%;
+	background: url(../img/guquanjijin_bg.png) no-repeat 0 0;
+	background-size: cover;
+	margin-bottom: 1em;
+}
+.GQJJ_content1>div>h2{
+	font-size: 2em;
+}
+.GQJJ_content1>div>p{
+	font-size: 1.1em;
+	padding: 2em 0;
+	letter-spacing: 0.5em;
+}
+.GQJJ_content1 .am-img-responsive{
+	margin: 0 auto;
+}
+/*section2*/
+.GQJJ_content2 .am-img-responsive{
+	margin: 0 auto;
+}
+.am-slider img{
+	margin: 0 auto;
+}
+.GQJJ_content2 .am-paragraph-default>div {
+  padding: 0;
+}
+.GQJJ_content2 .jdjt .am-panel:nth-of-type(3) .am-paragraph-default>div{
+	padding: 0 10%;
+}
+
+.GQJJ_content2 .am-paragraph-default p {
+  padding: 0.7em 1.5em 3em;
+  font-size: 1em;
+  text-align: justify;
+  color: #000000;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.GQJJ_content2  .gq_title{
+	background-color: #FAD749;
+  padding: 0;
+  margin-bottom: 0.8em;
+}
+.GQJJ_content2  .gq_title>p{
+  padding: 1.8em 0;
+  font-size: 1.3em;
+  letter-spacing: 0.5em;
+  color: #454545;
+  line-height: 1.5;
+}
+
+.GQJJ_content2 .am-paragraph-default h3 {
+  font-size: 1.6em;
+  padding: 2.5em 0 0 0.8em;
+  color: #000000;
+}
+.GQJJ_content2 .am-paragraph-default h3>span {
+  font-size: 0.7em;
+  display: block;
+  color: #000000;
+}
+.GQJJ_content2 .am-slider h3 {
+  font-size: 1.6em;
+  padding: 2.5em 0 0 0.8em;
+  color: #000000;
+}
+.GQJJ_content2 .am-slider h3>span {
+  font-size: 0.7em;
+  display: block;
+  color: #000000;
+}
+.GQJJ_content2 .fhq .am-panel:nth-of-type(2) .am-paragraph>div{
+	background-color: #FAD749;
+	padding: 10% 27% 10% 15%
+}
+
+.GQJJ_content2 .nljj .gq_title{
+	background: url(../img/shouye_chuangixn_bg.png) no-repeat 0 0;
+	background-size: cover;
+}
+.GQJJ_content2 .nljj .gq_title>p{
+	padding: 3em 0;
+  font-size: 2em;
+  letter-spacing: 0;
+  color: #454545;
+  line-height: 2;
+}
+.GQJJ_content2 .nljj .am-panel:nth-of-type(3) .am-paragraph>div{
+	background-color: #FAD749;
+	padding: 2em 6em;
+}
+.GQJJ_content2 .nljj .gq_title>p>span{
+	display: block;
+	 font-size: 0.6em;
+}
+.GQJJ_content2 .nljj .am-panel:last-of-type .am-paragraph-default>div:nth-of-type(2){
+	padding: 2em;
+}
+.GQJJ_content2 .nljj .am-panel:last-of-type .am-paragraph-default>hr{
+	border-top: 1px solid #E8E8E8;
+	margin: 0 1.5em;
+}
+.GQJJ_content2 .nljj .am-panel:nth-last-of-type(2) .am-paragraph-default>div{
+	padding: 5em;
+	background-color: #F8D447;
+}
+/*content----end*/
+
+/*footer----start*/
+.am-footer{
+	position: absolute;
+}
+/*footer----end*/

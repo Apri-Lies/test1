@@ -41,6 +41,7 @@ pre code{white-space:pre-line;}
 .ol{list-style-type:decimal;padding-left:1em;}
 /*width height*/
 .wp-33{width: 33.3%;}
+.table-1 td{border: 1px solid #ccc;}
 /*back top*/
 .backtop{position: fixed;right:10px;bottom:30px;width:70px;height:115px;cursor:pointer;background:transparent url("../img/backtop.png") no-repeat 0 0;display: none;}
 /*Footer*/

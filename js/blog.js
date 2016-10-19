@@ -11,7 +11,7 @@ $(function () {
     function loadUrl(){
         var aHref =  $(this).prop("href");
         var temporary = aHref.split("#");
-        var aload = "../tpl/"+temporary[1]+".tpl";
+        var aload = "tpl/"+temporary[1]+".tpl";
         $(".blog-main").load(aload);
         return aload;
     }
