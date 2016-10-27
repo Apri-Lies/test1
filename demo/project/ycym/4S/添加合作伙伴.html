@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=7">
+<title>添加合作伙伴</title>
+<link rel="stylesheet" media="screen" href="../css/base.css">
+<link rel="stylesheet" media="screen" href="../css/common.css">
+<link rel="stylesheet" media="screen" href="../css/4s.css">
+</head>
+<body>
+	<div class="content">
+		<div class="path clearfix">
+			<div class="fl w300">
+				<i class="icon-home"></i> <a href="">网站管理</a> 
+				<i class="icon-arrow-r"></i><a href="合作伙伴.html">合作伙伴</a> 
+				<i class="icon-arrow-r"></i><a href="添加合作伙伴.html">添加合作伙伴</a>
+			</div>
+		</div>
+		<div class="mt10 clearfix">
+			<h3 class="orange-l pl15">添加合作伙伴</h3>
+			<div class="pb15 clearfix info-box">				
+				<div class="w800 fl mt15 ">
+					<label class="lable-all fl">标题:</label>
+					<input class="text fl" placeholder="请输入标题" id="name">
+				</div>
+				
+				<div class="w800 fl mt15 ">
+					<label class="lable-all fl">图片:</label>
+					<input type="file" name="fileField" id="fileField" class="fl pt5"/>
+				</div>
+				
+				<div class="w800 fl mt15 ">
+					<label class="lable-all fl">排序:</label>
+					<input class="text fl" placeholder="请输入新闻排序" id="name">	
+				</div>					
+				<div class="w800 fl mt15 ">
+					<label class="lable-all fl">外链:</label>
+					<input class="text fl w300" placeholder="请输入外链地址" id="name"><em class="input-lable ml5">如果填写本框，则点击标题即跳转到该地址</em>
+				</div>						
+				<div class="w800 fl mt15 ">
+					<label class="lable-all fl">生效日期:</label>
+					<input id="d11" type="text" onClick="WdatePicker()"class="input-date input-date-img">
+				</div>
+				<div class="w800 fl mt15 ">
+					<label class="lable-all fl">结束时间:</label>
+					<input id="d11" type="text" onClick="WdatePicker()"class="input-date input-date-img">
+				</div>
+				<div class="w800 fl mt15 ">
+					<label class="lable-all pt5 fl">状态:</label>
+					<div class="radio-right fl pt5">
+						<a href="javascript:void(0);" class="a_radio a1" date="1" name="order"><em>正常</em></a>
+						<a href="javascript:void(0);" class="a_radio a1" date="1" name="order"><em>失效</em></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mt20 text-c">
+			<a href="合作伙伴.html"><button class="w100 btn orange-l">返回上一页</button></a>
+			<button class="ml5 w100 btn orange">提交</button>
+		</div>
+	</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>

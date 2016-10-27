@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=7">
+<title>保证金明细查询</title>
+<link rel="stylesheet" media="screen" href="../css/base.css">
+<link rel="stylesheet" media="screen" href="../css/4s.css">
+<link rel="stylesheet" media="screen" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/table/style.css"/>
+</head>
+<body>
+	<div class="content">
+		<div class="path clearfix">
+			<div class="w300">
+				<i class="icon-home"></i> <a href="#">财务管理</a> 
+				<i class="icon-arrow-r"></i><a href="#">保证金明细查询</a>
+			</div>
+		</div>
+		<div class="clearfix">
+			<div class="mt10 clearfix">
+				<h3 class="pl15 orange-l">汇总信息</h3>
+			</div>
+		</div>
+
+		<div class="clearfix mt20">
+			<label class="lable-all fl w200"> 当前冻结台数： <span>0台</span></label>
+			<label class="lable-all fl w200"> 当前冻结金额： <span>0.0元</span></label> 
+			<label class="lable-all fl w200">当前剩余保证金金额： <span>0.00元</span></label> 
+			<label class="input-lable fr w200"><a href="信息单明细查询.html" style="color:#0044CC;">查看详情</a></label>
+			
+		</div>
+		<div class="seller mt15 mb15 clearfix">
+			<h3 class="pl15 orange-l">查询</h3>
+		</div>
+		<div class="car clearfix  ">
+			<dl class="fl mt10 w500">
+				<dt class="fl pl10 input-lable">日期：</dt>
+				<dd class="fl">
+					<input id="d11" type="text" onClick="WdatePicker()"
+						class="input-date input-date-img">
+				</dd>
+				<dt class="fl pl10 input-lable">至：</dt>
+				<dd class="fl">
+					<input id="d11" type="text" onClick="WdatePicker()"
+						class="input-date input-date-img">
+				</dd>
+			</dl>
+			<dl class="fl pl10 mt10 w220">
+					<button class="fl btn orange w100">查询</button>
+					<button class="fl ml10 btn-export w100">导出Excel</button>
+			</dl>
+		</div>
+		<div class="table_wrap clearfix mt10" >
+			<table class="gridView table1">
+				<thead>
+					<tr class="orange-l">
+						<th>序号</th>
+						<th>标题</th>
+						<th>有效日期</th>
+						<th>金额</th>
+						<th>实收金额</th>
+						<th>收款日期</th>
+						<th>发票/收据号</th>
+						<th>发票/收据日期</th>
+						<th>目标台数</th>
+						<th>完成台数</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>10月保证金</td>
+						<td>2015-12-18-2015-12-18</td>
+						<td>1000.00</td>
+						<td>1000.00</td>
+						<td>2015-12-18</td>
+						<td>122</td>
+						<td>2015-12-18</td>
+						<td>7</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>10月保证金</td>
+						<td>2015-12-18-2015-12-18</td>
+						<td>1000.00</td>
+						<td>1000.00</td>
+						<td>2015-12-18</td>
+						<td>122</td>
+						<td>2015-12-18</td>
+						<td>7</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>10月保证金</td>
+						<td>2015-12-18-2015-12-18</td>
+						<td>1000.00</td>
+						<td>1000.00</td>
+						<td>2015-12-18</td>
+						<td>122</td>
+						<td>2015-12-18</td>
+						<td>7</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>10月保证金</td>
+						<td>2015-12-18-2015-12-18</td>
+						<td>1000.00</td>
+						<td>1000.00</td>
+						<td>2015-12-18</td>
+						<td>122</td>
+						<td>2015-12-18</td>
+						<td>7</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>10月保证金</td>
+						<td>2015-12-18-2015-12-18</td>
+						<td>1000.00</td>
+						<td>1000.00</td>
+						<td>2015-12-18</td>
+						<td>122</td>
+						<td>2015-12-18</td>
+						<td>7</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>10月保证金</td>
+						<td>2015-12-18-2015-12-18</td>
+						<td>1000.00</td>
+						<td>1000.00</td>
+						<td>2015-12-18</td>
+						<td>122</td>
+						<td>2015-12-18</td>
+						<td>7</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>10月保证金</td>
+						<td>2015-12-18-2015-12-18</td>
+						<td>1000.00</td>
+						<td>1000.00</td>
+						<td>2015-12-18</td>
+						<td>122</td>
+						<td>2015-12-18</td>
+						<td>7</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>10月保证金</td>
+						<td>2015-12-18-2015-12-18</td>
+						<td>1000.00</td>
+						<td>1000.00</td>
+						<td>2015-12-18</td>
+						<td>122</td>
+						<td>2015-12-18</td>
+						<td>7</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>10月保证金</td>
+						<td>2015-12-18-2015-12-18</td>
+						<td>1000.00</td>
+						<td>1000.00</td>
+						<td>2015-12-18</td>
+						<td>122</td>
+						<td>2015-12-18</td>
+						<td>7</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>10月保证金</td>
+						<td>2015-12-18-2015-12-18</td>
+						<td>1000.00</td>
+						<td>1000.00</td>
+						<td>2015-12-18</td>
+						<td>122</td>
+						<td>2015-12-18</td>
+						<td>7</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>10月保证金</td>
+						<td>2015-12-18-2015-12-18</td>
+						<td>1000.00</td>
+						<td>1000.00</td>
+						<td>2015-12-18</td>
+						<td>122</td>
+						<td>2015-12-18</td>
+						<td>7</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td>10月保证金</td>
+						<td>2015-12-18-2015-12-18</td>
+						<td>1000.00</td>
+						<td>1000.00</td>
+						<td>2015-12-18</td>
+						<td>122</td>
+						<td>2015-12-18</td>
+						<td>7</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>13</td>
+						<td>10月保证金</td>
+						<td>2015-12-18-2015-12-18</td>
+						<td>1000.00</td>
+						<td>1000.00</td>
+						<td>2015-12-18</td>
+						<td>122</td>
+						<td>2015-12-18</td>
+						<td>7</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>14</td>
+						<td>10月保证金</td>
+						<td>2015-12-18-2015-12-18</td>
+						<td>1000.00</td>
+						<td>1000.00</td>
+						<td>2015-12-18</td>
+						<td>122</td>
+						<td>2015-12-18</td>
+						<td>7</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>15</td>
+						<td>10月保证金</td>
+						<td>2015-12-18-2015-12-18</td>
+						<td>1000.00</td>
+						<td>1000.00</td>
+						<td>2015-12-18</td>
+						<td>122</td>
+						<td>2015-12-18</td>
+						<td>7</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>16</td>
+						<td>10月保证金</td>
+						<td>2015-12-18-2015-12-18</td>
+						<td>1000.00</td>
+						<td>1000.00</td>
+						<td>2015-12-18</td>
+						<td>122</td>
+						<td>2015-12-18</td>
+						<td>7</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>17</td>
+						<td>10月保证金</td>
+						<td>2015-12-18-2015-12-18</td>
+						<td>1000.00</td>
+						<td>1000.00</td>
+						<td>2015-12-18</td>
+						<td>122</td>
+						<td>2015-12-18</td>
+						<td>7</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>18</td>
+						<td>10月保证金</td>
+						<td>2015-12-18-2015-12-18</td>
+						<td>1000.00</td>
+						<td>1000.00</td>
+						<td>2015-12-18</td>
+						<td>122</td>
+						<td>2015-12-18</td>
+						<td>7</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>19</td>
+						<td>10月保证金</td>
+						<td>2015-12-18-2015-12-18</td>
+						<td>1000.00</td>
+						<td>1000.00</td>
+						<td>2015-12-18</td>
+						<td>122</td>
+						<td>2015-12-18</td>
+						<td>7</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>20</td>
+						<td>10月保证金</td>
+						<td>2015-12-18-2015-12-18</td>
+						<td>1000.00</td>
+						<td>1000.00</td>
+						<td>2015-12-18</td>
+						<td>122</td>
+						<td>2015-12-18</td>
+						<td>7</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="page fr clearfix mt5">
+			<ul>
+				<li><a href="#" class="list"><</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#" class="list">></a></li>
+			</ul>
+		</div>
+	</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="../js/table/jquery.freezeheader.js"></script>
+<script type="text/javascript">
+    $(function () {
+		$("tbody tr:odd").addClass("odd");
+		$("tbody tr:even").addClass("even");
+	});
+	$(document).ready(function () {
+		$(".table1").freezeHeader({ 'height': '500px' });
+	})
+</script>
+</body>
+</html>

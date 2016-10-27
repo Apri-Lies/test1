@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=7">
+    <title>添加保证金</title>
+    <link href="../css/base.css" rel="stylesheet" media="screen">
+    <link href="../css/common.css" rel="stylesheet" media="screen">
+    <link href="../css/admin-main.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<!--位置路径-->
+<div class="path mt5 clearfix">
+    <div class="fl pl20">
+        <i class="icon-home"></i>
+        <a href="">区域拍卖中心</a>
+        <i class="icon-arrow-r"></i>
+        <a href="#">代理商保证金管理</a>
+        <i class="icon-arrow-r"></i>
+        <a href="#">添加保证金</a>
+    </div>
+</div>
+<!--添加保证金-->
+<div class="clearfix bordb1 bordt1 bordl1 bordr1">
+    <h3 class="orange-l mt10 pl5">添加保证金</h3>
+
+    <div class="mt10 pb20 clearfix">
+        <dl class="fl min-w500 mt10">
+            <dt class="fl input-lable w180 text-r"><em>*</em>标题：</dt>
+            <dd class="fl input">
+                <input type="text" class="text" value="" placeholder="标题">
+            </dd>
+        </dl>
+        <dl class="fl min-w500 mt10  relative z-100">
+            <dt class="fl input-lable w180 text-r"><em>*</em>选择商家：</dt>
+            <dd class="fl input">
+                <div class="diy_select  select-relative">
+                    <input type="hidden" name="" class="diy_select_input">
+                    <div class="diy_select_txt select_box w190">请选择</div>
+                    <div class="diy_select_btn"></div>
+                    <ul class="diy_select_list slect-ul w190">
+                        <li class="">请选择</li>
+                        <li class="">1</li>
+                        <li class="">2</li>
+                        <li class="">3</li>
+                    </ul>
+                </div>
+            </dd>
+        </dl>
+        <dl class="fl min-w500 mt10">
+            <dt class="fl input-lable w180 text-r"><em>*</em>保证金金额：</dt>
+            <dd class="fl input">
+                <input type="text" class="text" value="" placeholder="保证金金额">
+            </dd>
+        </dl>
+        <dl class="fl min-w500 mt10">
+            <dt class="fl input-lable w180 text-r"><em>*</em>实际缴纳金额：</dt>
+            <dd class="fl input">
+                <input type="text" class="text" value="" placeholder="实际缴纳金额">
+            </dd>
+        </dl>
+        <dl class="fl min-w500 mt10">
+            <dt class="fl input-lable w180 text-r"><em>*</em>缴纳日期：</dt>
+            <dd class="fl input">
+                <input type="text" class="text" value="" placeholder="缴纳日期">
+            </dd>
+        </dl>
+        <dl class="fl min-w500 mt10">
+            <dt class="fl input-lable w180 text-r"><em>*</em>目标台数：</dt>
+            <dd class="fl input">
+                <input type="text" class="text" value="" placeholder="目标台数">
+            </dd>
+        </dl>
+        <dl class="fl min-w500 mt10">
+            <dt class="fl input-lable w180 text-r"><em>*</em>发票/收据号：</dt>
+            <dd class="fl input">
+                <input type="text" class="text" value="" placeholder="发票/收据号">
+            </dd>
+        </dl>
+        <dl class="fl min-w500 mt10">
+            <dt class="fl input-lable w180 text-r"><em>*</em>发票/收据-日期：</dt>
+            <dd class="fl input">
+                <input id="d11" type="text" onclick="WdatePicker()" class="input-date input-date-img" placeholder="">
+            </dd>
+        </dl>
+        <dl class="fl min-w500 mt10">
+            <dt class="fl input-lable w180 text-r"><em>*</em>审核人：</dt>
+            <dd class="fl input">
+                <input type="text" class="text" value="" placeholder="审核人">
+            </dd>
+        </dl>
+        <dl class="fl min-w500 mt10">
+            <dt class="fl input-lable w180 text-r"><em>*</em>审核日期：</dt>
+            <dd class="fl input">
+                <input id="d11" type="text" onclick="WdatePicker()" class="input-date input-date-img" placeholder="">
+            </dd>
+        </dl>
+        <dl class="fl min-w500 mt10">
+            <dt class="fl input-lable w180 text-r"><em>*</em>保证金开始日期：</dt>
+            <dd class="fl input">
+                <input id="d11" type="text" onclick="WdatePicker()" class="input-date input-date-img" placeholder="">
+            </dd>
+        </dl>
+        <dl class="fl min-w500 mt10">
+            <dt class="fl input-lable w180 text-r"><em>*</em>保证金结束日期：</dt>
+            <dd class="fl input">
+                <input id="d11" type="text" onclick="WdatePicker()" class="input-date input-date-img" placeholder="">
+            </dd>
+        </dl>
+    </div>
+</div>
+<!--提交-->
+<div class="text-c mt20 mb20">
+    <button class="btn orange-l w100">返回</button>
+    <button class="btn orange-l w100 ml10">提交</button>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script src="../js/select.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>

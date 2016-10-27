@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<title>新闻管理</title> 
+	<link rel="stylesheet" media="screen" href="../css/base.css">
+	<link rel="stylesheet" media="screen" href="../css/common.css">
+	<link rel="stylesheet" media="screen" href="../css/4s.css">
+	<link rel="stylesheet" type="text/css" href="../css/table/style.css"/>
+<body>
+	<div class="content">
+		<div class="path clearfix">
+			<div class="fl w200">
+				<i class="icon-home"></i>
+				<a href="">网站管理</a>
+				<i class="icon-arrow-r"></i>
+				<a href="#">新闻管理</a>
+			</div>
+		</div>
+		<div class="clearfix">
+			<dl class="fl mt10 w180">
+				<dt class="fl input-lable">状态：</dt>
+				<dd class="fl">
+			       <div class="diy_select  select-relative fl">
+						<input type="hidden" name="" class="diy_select_input">
+						<div class="diy_select_txt select_box w100">请选择</div>
+						<div class="diy_select_btn"></div>
+						<ul class="diy_select_list slect-ul str" style="width: 100px;">
+							<li class="">请选择</li>
+							<li class="">集团</li>
+							<li class="">4S</li>
+							<li class="">车商</li>
+						</ul>
+					</div>
+			    </dd>
+			</dl>
+			<dl class="fl w250">
+				<dt class="fl mt10 input-lable">标题：</dt>
+				<dd class="fl mt10 input">
+					<input type="text" class="text" placeholder="例：标题">
+				</dd>
+			</dl>
+			<dl class="fl w500 mt10">
+				<dt class="fl input-lable">开始时间：</dt>
+				<dd class="fl">
+					<input id="d11" type="text" onClick="WdatePicker()"
+						class="input-date input-date-img">
+				</dd>
+				<dt class="fl ml10 input-lable">至：</dt>
+				<dd class="fl">
+					<input id="d11" type="text" onClick="WdatePicker()"
+						class="input-date input-date-img">
+				</dd>
+			</dl>
+			<dl class="fl mt10 w220">
+				<button class="fl btn orange w100">查询</button>
+				<dd class="ml10 fl"><a href="内容管理-添加新闻.html"><button class=" w100 btn-export">添加</button></a></dd>
+			</dl>
+		</div>		
+		<div class="table_wrap mt10 clearfix">
+			<table class="gridView table1">
+				<thead>
+					<tr class="orange-l">
+						<th>序号</th>
+						<th>排序</th>
+						<th>封面</th>
+						<th>标题</th>
+						<th>发布时间</th>
+						<th>开始时间</th>
+						<th>介绍时间</th>
+						<th>状态</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>10000</td>
+						<td>48</td>
+						<td>新车上市</td>
+						<td>2015-10-16 14:09:18</td>
+						<td>2015-12-25</td>
+						<td>2015-12-24</td>
+						<td>失效</td>
+						<td><a href="内容管理-编辑新闻.html">编辑</a><a href="#"class="disabled">禁用</a></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>10000</td>
+						<td>48</td>
+						<td>新车上市</td>
+						<td>2015-10-16 14:09:18</td>
+						<td>2015-12-25</td>
+						<td>2015-12-24</td>
+						<td>失效</td>
+						<td><a href="内容管理-编辑新闻.html">编辑</a><a href="#"class="disabled">禁用</a></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>10000</td>
+						<td>48</td>
+						<td>新车上市</td>
+						<td>2015-10-16 14:09:18</td>
+						<td>2015-12-25</td>
+						<td>2015-12-24</td>
+						<td>失效</td>
+						<td><a href="内容管理-编辑新闻.html">编辑</a><a href="#"class="disabled">禁用</a></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>10000</td>
+						<td>48</td>
+						<td>新车上市</td>
+						<td>2015-10-16 14:09:18</td>
+						<td>2015-12-25</td>
+						<td>2015-12-24</td>
+						<td>失效</td>
+						<td><a href="内容管理-编辑新闻.html">编辑</a><a href="#"class="disabled">禁用</a></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>10000</td>
+						<td>48</td>
+						<td>新车上市</td>
+						<td>2015-10-16 14:09:18</td>
+						<td>2015-12-25</td>
+						<td>2015-12-24</td>
+						<td>失效</td>
+						<td><a href="内容管理-编辑新闻.html">编辑</a><a href="#"class="disabled">禁用</a></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>10000</td>
+						<td>48</td>
+						<td>新车上市</td>
+						<td>2015-10-16 14:09:18</td>
+						<td>2015-12-25</td>
+						<td>2015-12-24</td>
+						<td>失效</td>
+						<td><a href="内容管理-编辑新闻.html">编辑</a><a href="#"class="disabled">禁用</a></td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>10000</td>
+						<td>48</td>
+						<td>新车上市</td>
+						<td>2015-10-16 14:09:18</td>
+						<td>2015-12-25</td>
+						<td>2015-12-24</td>
+						<td>失效</td>
+						<td><a href="内容管理-编辑新闻.html">编辑</a><a href="#"class="disabled">禁用</a></td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>10000</td>
+						<td>48</td>
+						<td>新车上市</td>
+						<td>2015-10-16 14:09:18</td>
+						<td>2015-12-25</td>
+						<td>2015-12-24</td>
+						<td>失效</td>
+						<td><a href="内容管理-编辑新闻.html">编辑</a><a href="#"class="disabled">禁用</a></td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>10000</td>
+						<td>48</td>
+						<td>新车上市</td>
+						<td>2015-10-16 14:09:18</td>
+						<td>2015-12-25</td>
+						<td>2015-12-24</td>
+						<td>失效</td>
+						<td><a href="内容管理-编辑新闻.html">编辑</a><a href="#"class="disabled">禁用</a></td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>10000</td>
+						<td>48</td>
+						<td>新车上市</td>
+						<td>2015-10-16 14:09:18</td>
+						<td>2015-12-25</td>
+						<td>2015-12-24</td>
+						<td>失效</td>
+						<td><a href="内容管理-编辑新闻.html">编辑</a><a href="#"class="disabled">禁用</a></td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>10000</td>
+						<td>48</td>
+						<td>新车上市</td>
+						<td>2015-10-16 14:09:18</td>
+						<td>2015-12-25</td>
+						<td>2015-12-24</td>
+						<td>失效</td>
+						<td><a href="内容管理-编辑新闻.html">编辑</a><a href="#"class="disabled">禁用</a></td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td>10000</td>
+						<td>48</td>
+						<td>新车上市</td>
+						<td>2015-10-16 14:09:18</td>
+						<td>2015-12-25</td>
+						<td>2015-12-24</td>
+						<td>失效</td>
+						<td><a href="内容管理-编辑新闻.html">编辑</a><a href="#"class="disabled">禁用</a></td>
+					</tr>
+					<tr>
+						<td>13</td>
+						<td>10000</td>
+						<td>48</td>
+						<td>新车上市</td>
+						<td>2015-10-16 14:09:18</td>
+						<td>2015-12-25</td>
+						<td>2015-12-24</td>
+						<td>失效</td>
+						<td><a href="内容管理-编辑新闻.html">编辑</a><a href="#"class="disabled">禁用</a></td>
+					</tr>
+					<tr>
+						<td>14</td>
+						<td>10000</td>
+						<td>48</td>
+						<td>新车上市</td>
+						<td>2015-10-16 14:09:18</td>
+						<td>2015-12-25</td>
+						<td>2015-12-24</td>
+						<td>失效</td>
+						<td><a href="内容管理-编辑新闻.html">编辑</a><a href="#"class="disabled">禁用</a></td>
+					</tr>
+					<tr>
+						<td>15</td>
+						<td>10000</td>
+						<td>48</td>
+						<td>新车上市</td>
+						<td>2015-10-16 14:09:18</td>
+						<td>2015-12-25</td>
+						<td>2015-12-24</td>
+						<td>失效</td>
+						<td><a href="内容管理-编辑新闻.html">编辑</a><a href="#"class="disabled">禁用</a></td>
+					</tr>
+					<tr>
+						<td>16</td>
+						<td>10000</td>
+						<td>48</td>
+						<td>新车上市</td>
+						<td>2015-10-16 14:09:18</td>
+						<td>2015-12-25</td>
+						<td>2015-12-24</td>
+						<td>失效</td>
+						<td><a href="内容管理-编辑新闻.html">编辑</a><a href="#"class="disabled">禁用</a></td>
+					</tr>
+					<tr>
+						<td>17</td>
+						<td>10000</td>
+						<td>48</td>
+						<td>新车上市</td>
+						<td>2015-10-16 14:09:18</td>
+						<td>2015-12-25</td>
+						<td>2015-12-24</td>
+						<td>失效</td>
+						<td><a href="内容管理-编辑新闻.html">编辑</a><a href="#"class="disabled">禁用</a></td>
+					</tr>
+					<tr>
+						<td>18</td>
+						<td>10000</td>
+						<td>48</td>
+						<td>新车上市</td>
+						<td>2015-10-16 14:09:18</td>
+						<td>2015-12-25</td>
+						<td>2015-12-24</td>
+						<td>失效</td>
+						<td><a href="内容管理-编辑新闻.html">编辑</a><a href="#"class="disabled">禁用</a></td>
+					</tr>
+					<tr>
+						<td>19</td>
+						<td>10000</td>
+						<td>48</td>
+						<td>新车上市</td>
+						<td>2015-10-16 14:09:18</td>
+						<td>2015-12-25</td>
+						<td>2015-12-24</td>
+						<td>失效</td>
+						<td><a href="内容管理-编辑新闻.html">编辑</a><a href="#"class="disabled">禁用</a></td>
+					</tr>
+					<tr>
+						<td>20</td>
+						<td>10000</td>
+						<td>48</td>
+						<td>新车上市</td>
+						<td>2015-10-16 14:09:18</td>
+						<td>2015-12-25</td>
+						<td>2015-12-24</td>
+						<td>失效</td>
+						<td><a href="内容管理-编辑新闻.html">编辑</a><a href="#"class="disabled">禁用</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="page fr clearfix mt5">
+				<ul>
+					<li><a href="#" class="list"><</a></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#" class="list">></a></li>
+				</ul>
+			</div>
+	</div>
+<!--禁用弹框-->
+<div class="popup-cover disabled-box">
+	<div class="popup-win w500 absolute" style=" left:20%; top:8%;"  id="bg">
+		<div class="popup-title">
+			<div class="fl title">温馨提示</div>
+			<div class="fr close">x</div>
+		</div>
+		<div class="text-c pt20 pb20">
+			<img src="../images/layer.jpg">
+			<span>你真的打算禁用吗？</span>
+		</div>	
+		<div class="text-c mt15 mb20">
+			<button class="w100 btn orange">确定</button>
+			<button class="w100 ml10 btn orange-l close">取消</button>
+		</div>
+	</div>		
+</div>	
+  <script src="../js/jquery.js"></script>
+  <script src="../js/select.js"></script>
+  <script src="../js/My97DatePicker/WdatePicker.js"></script>
+  <script type="text/javascript" src="../js/table/jquery.freezeheader.js"></script>
+	<script type="text/javascript">
+	    $(function () {
+			$("tbody tr:odd").addClass("odd");
+			$("tbody tr:even").addClass("even");
+		});
+		$(document).ready(function () {
+			$(".table1").freezeHeader({ 'height': '500px' });
+		})
+		$(function(){
+			$(".disabled").click(function(){
+				$(".disabled-box").show();
+				})	
+			$(".close").click(function(){
+				 $(".disabled-box").hide();
+			})	
+			
+		})
+</script>
+</body>
+</html>

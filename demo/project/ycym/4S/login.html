@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<title>登录</title>	
+	<link rel="stylesheet" media="screen" href="../css/common.css">
+	<link rel="stylesheet" media="screen" href="../css/base.css">
+	<link rel="stylesheet" media="screen" href="../css/4s.css">
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/inputshow.js" ></script>
+	<script type="text/javascript" src="../js/login.js"></script>
+	</head>
+<body>
+	<div class="logon clearfix">
+		<div class="logon-box w360">
+			<div class="logo pt10 pb10 mb30"><a href="#"><img src="../images/logo.png" alt=""></a></div>
+			<dl>					
+				<dd class="clearfix">	
+					<div class="form-input fl">
+						<i><img src="../images/people.png"/></i>
+						<span class="defaultTips" style="display: block;">商家代码</span>
+	          			<input type="text" id="captcha" name="" class="w260 text pl30"/>
+					</div>
+				</dd>
+				<dd class="clearfix">	
+					<div class="form-input fl">
+						<i><img src="../images/people.png"/></i>
+						<span class="defaultTips" style="display: block;">登录账号</span>
+	          			<input type="text" id="username" name="" class="w260 text pl30"/>
+					</div>
+				</dd>
+				<dd class="clearfix">	
+					<div class="form-input fl">
+						<i><img src="../images/password.png"/></i>
+						<span class="defaultTips" style="display: block;">登录密码</span>
+	          			<input type="text" id="password" name="" class="w260 text pl30"/>
+					</div>
+				</dd>
+				<dd class="clearfix">	
+					<div class="form-input fl">
+						<i><img src="../images/password.png"/></i>
+	          			<input type="text" id="code" name="" class="fl text w140 pl30"/>
+	          			<span class="defaultTips" style="display: block;">验证码</span>
+	          			<label class="ml10"><img src="../images/verify_code.png" height="32px"/></label>
+					</div>
+				</dd>
+				<dd><div class="error-tips error"  style="display: none;" id="msg"></div></dd>
+				<dd class="pt10"><button class="border0">登录</button></dd>
+			</dl>
+		</div>
+		<div class="logon-bg"><img src="../images/login.gif" width="100%" height="720px" alt=""></div>
+	</div>
+</body>
+</html>

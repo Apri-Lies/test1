@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<title>添加违约金</title>
+	<link rel="stylesheet" media="screen" href="../css/base.css">
+	<link rel="stylesheet" media="screen" href="../css/common.css">
+	<link rel="stylesheet" media="screen" href="../css/4s.css">	
+</head>
+<body>
+	<div class="content">
+		<div class="path clearfix">
+			<div class="fl">
+				<i class="icon-home"></i>
+				<a href="">首页</a>
+				<i class="icon-arrow-r"></i>
+				<a href="#">添加违约金</a>
+			</div>
+		</div>
+		<div class="clearfix ml10">
+			<dl class="fl mt10 w330">
+	            <dt class="fl input-lable">选择商家：</dt>
+	            <dd class="fl input-lable">
+	               <a href="#" >【选择商家】</a>荣发4s店
+	            </dd>
+	        </dl>
+	        <dl class="fl mt10 w350">
+	            <dt class="fl input-lable">选择车辆：</dt>
+	            <dd class="fl input-lable">
+	               <a href="#" class="car">【选择车辆】</a>3.6 手自一体 两驱精英舒适型
+	            </dd>
+	        </dl>
+		</div>
+		
+		<div class="table-box mt15 clearfix">
+			<h3 class="orange-l pl15">添加退车申请</h3>
+			<table width="100%" cellpadding="0" cellspacing="0">
+				<tr>
+					<td>所属区域：</td>
+					<td>广州地区</td>
+					<td>所属拍场：</td>
+					<td>2016年1月23日第一场</td>
+				</tr>
+				<tr>
+					<td>品牌：</td>
+					<td>4S店</td>
+					<td>车系：</td>
+					<td>300</td>
+				</tr>
+				<tr>
+					<td>车型：</td>
+					<td>100</td>
+					<td>场次编号：</td>
+					<td>200</td>
+				</tr>
+				<tr>
+					<td>VIN：</td>
+					<td>300</td>
+					<td>评估编号：</td>
+					<td>100</td>
+				</tr>
+				<tr>
+					<td>发布商家：</td>
+					<td>300</td>
+					<td>商家代码：</td>
+					<td>100</td>
+				</tr>
+				<tr>
+					<td>得标商家：</td>
+					<td>300</td>
+					<td>商家代码：</td>
+					<td>100</td>
+				</tr>
+				<tr>
+					<td>违约方：</td>
+					<td>
+						<div class="radio-right fl">
+							<a href="javascript:void(0);" class="a_radio a1" date="1" name="order"><em>荣发4s店</em></a>
+							<a href="javascript:void(0);" class="a_radio a1" date="1" name="order"><em>星星汽车服务商行</em></a>
+						</div>
+					</td>
+					<td>违约金：</td>
+					<td>
+						<input type="text" class="input-search text n-valid" value="">
+					</td>
+				</tr>
+				<tr>
+					<td>违约内容：</td>
+					<td colspan="3">
+						<textarea type="textarea" class="text-all" cols="50" rows="5" value="" id="content" style="width: 70%; margin: 0px 0px;"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>附件：</td>
+					<td id="td-l" colspan="3">
+						<input type="file" name="fileField" id="fileField">
+					</td>
+				</tr>
+				<tr>
+					<td>创建时间：</td>
+					<td colspan="3" id="td-l">2012-11-11</td>
+				</tr>
+			</table>
+		</div>
+		<div class="mt20 mb20 text-c">
+			<button class="w100 btn orange-l">返回上一页</button>
+			<button class="w100 ml10 btn orange">提交</button>
+		</div>
+
+	</div>
+	<div class="popup-cover seller-box">
+		<div class="popup-win w800 absolute" style="left:22%; top:18%;"id="bg">
+			<h2 class="pl20 pr20">选择商户<div class="seller-close fr" style="cursor: pointer;">x</div></h2>
+			<div class=" clearfix">
+				<div class=" fl mt15 relative z-100 w800">
+					<label class="lable-all fl w60">省：</label>
+					<div class='diy_select fl' >
+						<input type='hidden' name='' class='diy_select_input'/>
+						<div class='diy_select_txt select_box w150'>广东</div>
+						<div class='diy_select_btn'></div>
+						<ul class='diy_select_list slect-ul w150 str'>
+							<li>北京</li>
+						</ul>
+					</div>
+					<label class="input-lable fl pl15">市：</label>
+					<div class='diy_select fl' >
+						<input type='hidden' name='' class='diy_select_input'/>
+						<div class='diy_select_txt select_box w150'>深圳</div>
+						<div class='diy_select_btn'></div>
+						<ul class='diy_select_list slect-ul w150 str'>
+							<li>广州</li>
+						</ul>
+					</div>
+					<div class=" fl  ml20">
+						<p class="p-all fl input">
+							<input type="text" class="fl text w150" placeholder="输入查询全国车辆"> 
+						</p>
+					</div>
+					<div class="fl ml10"><button class="button-confirm">查询</button></div>
+				</div>
+			</div>
+			<div class="table-box clearfix mt20">
+				<table width="100%" cellpadding="0" cellspacing="0">
+					<tr class="">
+						<th>序号</th>
+						<th>商家名称</th>
+						<th>联系人</th>
+						<th>联系人电话</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>4s</td>
+						<td>张三</td>
+						<td>100000000001</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>4s</td>
+						<td>张三</td>
+						<td>100000000001</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>4s</td>
+						<td>张三</td>
+						<td>100000000001</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>4s</td>
+						<td>张三</td>
+						<td>100000000001</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>4s</td>
+						<td>张三</td>
+						<td>100000000001</td>
+					</tr>
+				</table>
+				<div class="page fr clearfix mt5">
+					<ul>
+						<li><a href="#" class="list"><</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#" class="list">></a></li>
+					</ul>
+				</div>
+			
+			</div>
+			<div class="up-manage-button clearfix ">
+	        	<button class="button-confirm  fl mt10">提交</button>
+	        	<button class="button-cancel seller-cancel mt10 fr">取消</button>
+	    	</div>
+	    </div>	
+	</div>
+	<div class="popup-cover car-box">
+		<div class="popup-win w800 absolute" style="left:22%; top:18%;"id="bg">
+			<h2 class="pl20 pr20">选择车辆<div class="car-close fr" style="cursor: pointer;">x</div></h2>
+			<div class="clearfix">
+				<div class=" fl mt15 relative z-100">
+					<label class="lable-all fl">VIN：</label>
+					<div class='diy_select w150 fl' >
+						<input type='hidden' name='' class='diy_select_input'/>
+						<div class='diy_select_txt select_box w150'>品牌</div>
+						<div class='diy_select_btn'></div>
+						<ul class='diy_select_list slect-ul w150 str'>
+							<li>评估编号</li>
+						</ul>
+					</div>
+					<div class=" fl ml20">
+						<p class="fl input" >
+							<input type="text" class="fl text w150" placeholder="输入条件搜索"> 
+						</p>
+					</div>
+					<div class="fl ml10"><button class="button-confirm">查询</button></div>
+				</div>
+			</div>
+			<div class="table-box clearfix mt20">
+				<table width="100%" cellpadding="0" cellspacing="0">
+					<tr class="" style="line-height: 20px;">
+						<th>序号</th>
+						<th>品牌</th>
+						<th>VIN</th>
+						<th>评估编号</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>4s</td>
+						<td>张三</td>
+						<td>100000000001</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>4s</td>
+						<td>张三</td>
+						<td>100000000001</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>4s</td>
+						<td>张三</td>
+						<td>100000000001</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>4s</td>
+						<td>张三</td>
+						<td>100000000001</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>4s</td>
+						<td>张三</td>
+						<td>100000000001</td>
+					</tr>
+				</table>
+				<div class="page fr clearfix mt5">
+					<ul>
+						<li><a href="#" class="list"><</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#" class="list">></a></li>
+					</ul>
+				</div>
+			
+			</div>
+<!--			<div class="text-c clearfix ">
+	        	<button class="button-confirm  fl mt10">提交</button>
+	        	<button class="button-cancel car-cancel mt10 fr">取消</button>
+	    	</div>-->
+	    </div>	
+	</div>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/layer.js"></script>
+<script src="../js/select.js"></script>
+</body>
+</html>

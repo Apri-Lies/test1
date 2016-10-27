@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=7">
+    <title>添加保证金流水</title>
+    <link href="../css/base.css" rel="stylesheet" media="screen">
+    <link href="../css/common.css" rel="stylesheet" media="screen">
+    <link href="../css/admin-main.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div class="content">
+    <!--位置路径-->
+    <div class="path mt5 clearfix">
+        <div class="fl pl20">
+            <i class="icon-home"></i>
+            <a href="">财务管理</a>
+            <i class="icon-arrow-r"></i>
+            <a href="#">保证金流水记录</a>
+            <i class="icon-arrow-r"></i>
+            <a href="#">添加保证金流水</a>
+        </div>
+    </div>
+    <div class="bordt1 bordl1">
+        <h3 class="orange-l pl5 bordb1 bordr1">添加保证金流水</h3>
+        <dl class="clearfix pt10 pb10">
+            <dt class="input-lable text-r w180 fl">选择商家：</dt>
+            <dd class="fl ml10">
+                <button class="btn-export w100 merchant">选择商家</button>
+            </dd>
+        </dl>
+        <table class="table bordt1" width="100%">
+            <tbody>
+            <tr>
+                <td width="10%">商家名称：</td>
+                <td width="20%"></td>
+                <td width="10%">商家代码：</td>
+                <td width="20%"></td>
+                <td width="10%">商家类型：</td>
+                <td width="20%"></td>
+            </tr>
+            <tr>
+                <td>保证金类型：</td>
+                <td colspan="2">
+                    <div class="diy_select  select-relative relative z-100">
+                        <input type="hidden" name="" class="diy_select_input">
+                        <div class="diy_select_txt select_box w120">请选择</div>
+                        <div class="diy_select_btn"></div>
+                        <ul class="diy_select_list slect-ul w120">
+                            <li class="">请选择</li>
+                            <li class=""></li>
+                        </ul>
+                    </div>
+                </td>
+                <td>保证金余额：</td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>操作类型：</td>
+                <td colspan="2">
+                    <div class="diy_select  select-relative relative z-99">
+                        <input type="hidden" name="" class="diy_select_input">
+                        <div class="diy_select_txt select_box w120">请选择</div>
+                        <div class="diy_select_btn"></div>
+                        <ul class="diy_select_list slect-ul w120">
+                            <li class="">请选择</li>
+                            <li class=""></li>
+                        </ul>
+                    </div>
+                </td>
+                <td>金额：</td>
+                <td colspan="2">
+                    <input type="text" class="input fl" placeholder="100"/>
+                </td>
+            </tr>
+            <tr>
+                <td>备注：</td>
+                <td colspan="5">
+                    <textarea class="fl bordl1 bordr1 bordt1 bordb1" cols="70" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>创建时间：</td>
+                <td colspan="5" class="text-l">
+                    2016-02-17
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="mt20 mb20 text-c">
+        <button class="btn orange w100">提交</button>
+        <button class="btn orange-l w100 ml10">返回</button>
+    </div>
+    <!--弹框-->
+    <div class="popup-cover merchant-box">
+        <div class="popup-win absolute w700" style="  left:22%; top:22%; ">
+            <div class="popup-title">
+                <div class="fl title">选择商户</div>
+                <div class="fr close">x</div>
+            </div>
+            <div class=" clearfix">
+                <div class=" fl relative z-100 w700">
+                    <dl class="mt10 fl w150">
+                        <dt class="fl input-lable pl10">省：</dt>
+                        <dd class="fl">
+                            <div class="diy_select  select-relative fl">
+                                <input type="hidden" name="" class="diy_select_input">
+
+                                <div class="diy_select_txt select_box w100">请选择</div>
+                                <div class="diy_select_btn"></div>
+                                <ul class="diy_select_list slect-ul str w100">
+                                    <li class="">请选择</li>
+                                    <li class="">1</li>
+                                    <li class="">2</li>
+                                </ul>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="mt10 fl w150">
+                        <dt class="fl input-lable pl10">市：</dt>
+                        <dd class="fl">
+                            <div class="diy_select  select-relative fl">
+                                <input type="hidden" name="" class="diy_select_input">
+
+                                <div class="diy_select_txt select_box w100">请选择</div>
+                                <div class="diy_select_btn"></div>
+                                <ul class="diy_select_list slect-ul str w100">
+                                    <li class="">请选择</li>
+                                    <li class="">1</li>
+                                    <li class="">2</li>
+                                </ul>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="fl mt10 w270">
+                        <dt class="input-lable fl pl10">商家名称：</dt>
+                        <dd class="fl">
+                            <input type="text" class="text" placeholder="例：张三">
+                        </dd>
+                    </dl>
+                    <div class="fl ml10">
+                        <button class="btn mt10 orange w100 confirm">查询</button>
+                    </div>
+                </div>
+            </div>
+            <div class="table clearfix pt10" style="margin: 10px auto 0px auto;">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>商家名称</th>
+                        <th>联系人</th>
+                        <th>联系人电话</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="radio-right w-100">
+                                <a href="javascript:void(0);" class="a_radio a_radio-c" date="1" name="order"><em></em></a>
+                            </div>
+                        </td>
+                        <td>4s</td>
+                        <td>张三</td>
+                        <td>100000000001</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="radio-right w-100">
+                                <a href="javascript:void(0);" class="a_radio a_radio-c" date="1" name="order"><em></em></a>
+                            </div>
+                        </td>
+                        <td>4s</td>
+                        <td>张三</td>
+                        <td>100000000001</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="radio-right w-100">
+                                <a href="javascript:void(0);" class="a_radio a_radio-c" date="1" name="order"><em></em></a>
+                            </div>
+                        </td>
+                        <td>4s</td>
+                        <td>张三</td>
+                        <td>100000000001</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="radio-right w-100">
+                                <a href="javascript:void(0);" class="a_radio a_radio-c" date="1" name="order"><em></em></a>
+                            </div>
+                        </td>
+                        <td>4s</td>
+                        <td>张三</td>
+                        <td>100000000001</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="radio-right w-100">
+                                <a href="javascript:void(0);" class="a_radio a_radio-c" date="1" name="order"><em></em></a>
+                            </div>
+                        </td>
+                        <td>4s</td>
+                        <td>张三</td>
+                        <td>100000000001</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="page fr mt15">
+                    <ul>
+                        <li><a href="#" class="list"><</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#" class="list">></a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class=" text-c">
+                <button class="btn mt10 orange w100 confirm">提交</button>
+                <button class="btn mt10 orange-l w100 ml10 cancel">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/select.js"></script>
+<script src="../js/index.js"></script>
+<script>
+    $(".merchant").click(function () {
+        $(".merchant-box").show();
+        $(".close").click(function () {
+            $(".merchant-box").hide();
+        })
+        $(".cancel").click(function () {
+            $(".merchant-box").hide();
+        })
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=7">
+    <title>添加付款记录</title>
+    <link href="../css/base.css" rel="stylesheet" media="screen">
+    <link href="../css/common.css" rel="stylesheet" media="screen">
+    <link href="../css/admin-main.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div class="content">
+    <!--位置路径-->
+    <div class="path mt5 clearfix">
+        <div class="fl pl20">
+            <i class="icon-home"></i>
+            <a href="">财务管理</a>
+            <i class="icon-arrow-r"></i>
+            <a href="#">返还付款登记</a>
+            <i class="icon-arrow-r"></i>
+            <a href="#">添加付款登记</a>
+        </div>
+    </div>
+    <div class="bordt1 bordr1 bordl1 bordb1 pb20">
+        <h3 class="orange pl10">添加付款登记</h3>
+        <!--选择信息栏-->
+        <div class="info clearfix pl30">
+            <dl class="fl mt10 w480">
+                <dt class="fl input-lable">添加日期：</dt>
+                <dd class="fl ml5">
+                    <input id="d11" type="text" onclick="WdatePicker()" class="input-date input-date-img" placeholder="">
+                </dd>
+                <dd class="fl ml5 h32 line-h30">~</dd>
+                <dd class="fl ml5">
+                    <input id="d11" type="text" onclick="WdatePicker()" class="input-date input-date-img" placeholder="">
+                </dd>
+            </dl>
+            <dl class="fl mt10 w210">
+                <dt class="fl input-lable pl10">选择商家：</dt>
+                <dd class="fl">
+                    <div class="diy_select  select-relative">
+                        <input type="hidden" name="" class="diy_select_input w120">
+
+                        <div class="diy_select_txt select_box w120">请选择</div>
+                        <div class="diy_select_btn"></div>
+                        <ul class="diy_select_list slect-ul w120">
+                            <li class="">请选择</li>
+                            <li class="">1</li>
+                        </ul>
+                    </div>
+                </dd>
+            </dl>
+            <div class="fl w330">
+                <button class="fl btn ml10 mt10 orange w100">查询</button>
+            </div>
+        </div>
+        <div class="mt10 pl30 pr30">
+            <table class="table bordt1 bordl1" width="100%">
+                <tbody>
+                <tr>
+                    <td>结算台数</td>
+                    <td>1台</td>
+                    <td>金额</td>
+                    <td>10000元</td>
+                </tr>
+                <tr>
+                    <td>月份</td>
+                    <td>
+                        <input type=" text" class="text"/>
+                    </td>
+                    <td>标题</td>
+                    <td>
+                        <input type=" text" class="text"/>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mt10 pl30 pr30">
+            <h3 class="orange pl10 bordl1">结算清单</h3>
+            <table class="table bordt1 bordl1" width="100%">
+                <thead>
+                <tr class="orange">
+                    <td>日期</td>
+                    <td>评估编号</td>
+                    <td>拍卖编号</td>
+                    <td>拍场</td>
+                    <td>金额</td>
+                    <td>应付金额</td>
+                    <td>操作</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>2016-03-21</td>
+                    <td>affggafdfasdfa</td>
+                    <td>32421432r</td>
+                    <td>fafagfag</td>
+                    <td>500</td>
+                    <td>500</td>
+                    <td><a href="#" class="color-a">删除</a></td>
+                </tr>
+                <tr>
+                    <td>2016-03-21</td>
+                    <td>affggafdfasdfa</td>
+                    <td>32421432r</td>
+                    <td>fafagfag</td>
+                    <td>500</td>
+                    <td>500</td>
+                    <td><a href="#" class="color-a">删除</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="mt20  text-c">
+        <button class="btn orange w100">提交</button>
+        <button class="btn orange-l w100 ml10">返回</button>
+    </div>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script src="../js/select.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>

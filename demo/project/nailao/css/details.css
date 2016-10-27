@@ -1,0 +1,89 @@
+/*内容start*/
+.CL_content1,.NEWS_content1{
+	padding: 1em 0.8em 5em;
+	background-color:#F1F1F1;
+}
+.CL_content1 div,.NEWS_content1 div{
+	background-color:#fff;
+	padding: 1.2em;
+}
+.CL_content1 div:nth-child(1),.NEWS_content1 div:nth-child(1){
+	  padding: 5% 10%;
+}
+.CL_content1 div:nth-child(1)>h2,.NEWS_content1 div:nth-child(1)>h2{
+	font-size: 1.5em;
+  	font-family: "微软雅黑";
+  	font-weight: normal;
+  	padding: 0.5em 0;
+  	color: #474747;
+}
+.CL_content1 div:nth-child(1)>p,.NEWS_content1 div:nth-child(1)>p{
+	font-size: 0.8em;
+  	font-family: "微软雅黑";
+  	font-weight: normal;
+  	padding: 0.5em 0;
+  	color: #B8B8B8;
+}
+.CL_content1 div:nth-child(2){
+	margin: 1px 0;
+}
+.CL_content1 div:nth-child(2)>span,.CL_content1 div:nth-child(2)>p{
+	display: inline-block;
+	vertical-align: middle;
+}
+.CL_content1 div:nth-child(2)>span{
+	padding: 0 0.5em 0 0.1em;
+	width: 15%;
+}
+.CL_content1 div:nth-child(2)>p{
+	font-size: 1.2em;
+  	font-weight: normal;
+  	color: #474747;
+  	width: 79%;
+}
+.CL_content1 div:nth-child(3)>div,.NEWS_content1 div:nth-child(2)>div{
+	text-align: right;
+	padding:1.5em 0 1em;
+}
+.CL_content1 div:nth-child(3)>div>a,.NEWS_content1 div:nth-child(2)>div>a{
+	color: #ABABAB;
+	font-size: 0.9em;
+}
+.am-paragraph-default{
+	margin: 0;
+}
+.am-paragraph-default>div{
+	background-color: #FAD749;
+}
+.am-paragraph-default>div img{
+	max-width: 100%;
+	border: 0;
+}
+.CL_content1 .am-paragraph-default p,.NEWS_content1 .am-paragraph-default p{
+	font-size: 1em;
+  	font-weight: normal;
+  	color: #474747;
+  	line-height: 1.2;
+  	padding: 1em 0;
+}  
+.CL_content1 div:nth-child(4),.NEWS_content1 div:nth-child(3){
+	padding:1.5em 0 1.5em 1em;
+	margin: 1em 0;
+	color: #474747;
+}
+.CL_content1 div:nth-child(4)>span,.NEWS_content1 div:nth-child(3)>span{
+	font-size: 1em;
+  	font-weight: normal;
+  	color: #ABABAB;
+  	padding: 0;
+}
+.CL_content1 div:nth-child(5),.NEWS_content1 div:nth-child(4){
+	padding:1.5em 0 1.5em 1em;
+  	color: #474747;
+}
+.CL_content1 div:nth-child(5)>span,.NEWS_content1 div:nth-child(4)>span{
+	font-size: 1em;
+  	font-weight: normal;
+  	padding: 0;
+}
+/*内容end*/

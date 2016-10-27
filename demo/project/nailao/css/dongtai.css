@@ -1,0 +1,234 @@
+/*内容开始*/
+.DT_content1 .am-tabs-default ul.am-tabs-nav{
+	height: 3em;
+	line-height: 3em;
+}
+.DT_content1 .am-tabs-default .am-tabs-nav li{
+	background-color: #FFFFFF;
+  	color: #ABABAB;
+  	height: 3em;
+  	line-height: 3em;
+  	font-size: 1.2em;
+}
+.DT_content1 .am-tabs-default .am-tabs-nav li>a{
+  	color: #ABABAB;
+}
+.DT_content1 .am-tabs-default .am-tabs-nav>.am-active a {
+   	color: #474747;
+   	height: 3em;
+	line-height: 3em;
+	background-color: #FFFFFF;
+}
+/*理念分享*/
+.DT_content1{
+	overflow-x: hidden;
+}
+.DT_content1 [data-am-widget=tabs]{
+  	margin: 0;
+}
+.DT_content1 [data-am-widget=tabs] .am-tabs-bd{
+	border: none;
+}
+
+.DT_content1 .am-panel-group>p{
+	font-family: "微软雅黑";
+	font-weight: normal;
+	color: #ABABAB;
+	font-size: 0.9em;
+	padding-top: 10%;
+}
+.DT_content1 .am-tabs-bd .am-tab-panel .idea_share{
+	position: relative;
+	background-color: #fff;
+  	margin: 1.5em 1em 1em;
+}
+.DT_content1 .am-panel-group .am-panel+.am-panel{
+	background-color: #fff;
+  	margin: 1em;
+}
+.DT_content1 .am-tabs-bd .am-tab-panel .idea_share:after{
+	content: "";
+  	position: absolute;
+  	width: 0;
+  	height: 0;
+  	margin-left: -0.2em;
+  	border: 0.7em solid #F1F1F1;
+  	z-index: 1;
+    border-left-color: #FAD749;
+  	border-bottom-color: #FAD749;
+  	right: -1px;
+  	top: -1px;
+}
+.idea_share h3{
+	font-family: "微软雅黑";
+	font-weight: normal;
+	color: #474747;
+	font-size: 1.1em;
+	padding: 1em 0;
+}
+.idea_share h3 span{
+	color: #ABABAB;
+}
+.idea_share p{
+	font-weight: normal;
+	font-size: 1.2em;
+	color: #777777;
+	padding: 0 0.8em 1.5em;
+}
+
+
+/*公司新闻*/
+.am-paragraph-default{
+	margin: 0 1em;
+}
+.am-paragraph-default div{
+	background-color: #FAD749;
+	padding: 5% 10%;
+}
+.am-paragraph-default div img{
+	border: 0;
+}
+.DT_content1 .am-tabs-bd .am-tab-panel{
+	  padding: 0;
+	 
+}
+.celue,.news{
+	 background-color: #fff;
+	 margin: 1.5em 1em;
+   	padding: 1em 0;
+}
+.news .am-btn,.celue .am-btn{
+	background-color: #FAD749;
+  	border: 1px solid #FAD749;
+  	border-radius: 0.2em;
+  	color: #474747;
+  	padding: 0.5em 0.6em;
+}
+.news h2,.celue h2{
+	font-size: 1.5em;
+	font-weight: normal;
+	padding:0.5em 0;
+	color: #474747;
+}
+.news p,.celue p{
+	font-size: 0.9em;
+	font-weight: normal;
+	padding:0 0 1em;
+	color: #B8B8B8;
+}
+.news>div,.celue>div{
+	padding: 0 1em;
+}
+
+.news .paragraph-default-p,.celue .paragraph-default-p{
+	font-size: 1em;
+	font-weight: normal;
+	padding:0.7em 0;
+	color: #777777;
+}
+.dt_bottom{
+	background:#303030 ;
+	padding:8%;
+	color: #fff;
+}
+.dt_bottom .am-g:nth-child(1)>header{
+	padding: 0;
+	border-bottom:1px solid #595959 ;
+}
+.dt_bottom .am-g:nth-child(1)>header>h3{
+	display: inline-block;
+	padding: 0.5em 0;
+	border-bottom: 1px solid #FAD749;
+  	font-size: 1.5em;
+  	font-weight: normal;
+}
+.dt_bottom .am-g .am-panel-bd{
+	border-bottom:1px dashed #595959 ;
+	padding-left: 0;
+	padding-bottom: 1em;
+}
+.dt_bottom .am-g .am-panel-bd p{
+	font-size: 1.2em;
+	padding: 1em 0 0;
+}
+.dt_bottom .am-g .am-panel-bd span{
+	color: #ABABAB;
+	font-size: 0.7em;
+	line-height: 1.5;
+}
+.dt_bottom .am-g:nth-child(2){
+	padding-top:15%;
+}
+.dt_bottom .am-g:nth-child(2)>header{
+	padding: 0;
+	border-bottom:1px solid #595959 ;
+}
+.dt_bottom .am-g:nth-child(2)>header>h3{
+	display: inline-block;
+	border-bottom: 1px solid #FAD749;
+	padding: 0.5em 0;
+  	font-size: 1.5em;
+  	font-weight: normal;
+}
+.dt_bottom .am-g:nth-child(2)>.am-panel-bd{
+	border-bottom:0 ;
+	padding-top: 2em;
+}
+.dt_bottom .am-g:nth-child(2)>.am-panel-bd ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+/*投资策略*/
+.celue>div>a{
+    vertical-align: middle;
+}
+.celue>div>span{
+	display: inline-block;
+    vertical-align: middle;
+	float: right;
+}
+.celue>div>span>img{
+	width: 80%;
+}
+/*-----分页-----*/
+.fenye{
+	padding-top: 30%;
+}
+.am-pagination>li>a{
+  	padding: 0.2em;
+  	margin: 0 auto;
+  	border-radius: 0.2em;
+  	background-color: #FAD749;
+}
+.am-pagination>li>a>img{
+  	width: 3em;
+}
+.am-pagination>li{
+	vertical-align: middle;
+}
+.am-pagination>li>span {
+	padding: 1em;
+	margin: 0 auto;
+	border-radius: 0.2em;
+  	background-color: #FAD749;
+  	color:#474747;
+}
+.dt_bottom .am-g:last-of-type .am-panel-bd>ul>li{
+	padding: 0 0 0 1em;
+}
+.dt_bottom .am-g:last-of-type .am-panel-bd>ul>li>span{
+	font-size: 0.8em;
+	color: #FFFFFF;
+} 
+/*内容end*/
+/*footer*/
+.footer{
+	background: #1B1B1B;
+	position: absolute;
+    width: 100%;
+}
+.footer p{
+	color:#2c2c2c;
+	font-size: 1em;
+}

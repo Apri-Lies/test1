@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=7">
+    <title>添加新闻管理</title>
+    <link href="../css/base.css" rel="stylesheet" media="screen">
+    <link href="../css/common.css" rel="stylesheet" media="screen">
+    <link href="../css/car.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div class="content">
+    <!--位置路径-->
+    <div class="path mt5 clearfix">
+        <div class="fl pl20">
+            <i class="icon-home"></i>
+            <a href="">新闻管理</a>
+            <i class="icon-arrow-r"></i>
+            <a href="#">添加新闻管理</a>
+        </div>
+    </div>
+    <!--内容页签切换-->
+    <div class="clearfix mt10">
+        
+        <div class="sub_tab">
+            <h3 class="orange-l  pl5">添加新闻</h3>
+            <div class="clearfix pt10 pb20">
+                <dl class="fl info-wd50 mt10">
+                    <dt class="fl input-lable  w180 text-r">标题：</dt>
+                    <dd class="fl ml10">
+                        <input type="text" class="text" value="" placeholder="4S店">
+                    </dd>
+                </dl>
+               	<dl class="fl info-wd50 mt10">
+                    <dt class="fl input-lable  w180 text-r">排序：</dt>
+                    <dd class="fl ml10">
+                        <input type="text" class="text" value="" placeholder="4S店">
+                    </dd>
+                </dl>
+            	<dl class="fl info-wd50 mt10">
+                    <dt class="fl input-lable  w180 text-r">新闻日期：</dt>
+                    <dd class="fl ml10">
+                        <input type="text" onclick="WdatePicker()" class="input-date input-date-img">
+                    </dd>
+                </dl>
+                <dl class="fl info-wd50 mt10">
+                    <dt class="fl input-lable  w180 text-r">有效日期：</dt>
+                    <dd class="fl ml10">
+                        <input type="text" onclick="WdatePicker()" class="input-date input-date-img">
+                    </dd>
+                </dl>
+                <dl class="fl info-wd50 mt10">
+                    <dt class="fl input-lable  w180 text-r">失效日期：</dt>
+                    <dd class="fl ml10">
+                        <input type="text" onclick="WdatePicker()" class="input-date input-date-img">
+                    </dd>
+                </dl>
+                <dl class="fl info-wd50 mt10">
+                    <dt class="fl input-lable  w180 text-r">PC端点击量：</dt>
+                    <dd class="fl ml10">
+                        <input type="text" class="text" value="" placeholder="4S店">
+                    </dd>
+                </dl>
+                <dl class="fl info-wd50 mt10">
+                    <dt class="fl input-lable  w180 text-r">移动端点击量：</dt>
+                    <dd class="fl ml10">
+                        <input type="text" class="text" value="" placeholder="4S店">
+                    </dd>
+                </dl>
+                <dl class="fl info-wd50 mt10">
+                    <dt class="fl input-lable pr10 w180 text-r">封面照片：</dt>
+                    <dd class="fl input">
+                        <span class="defaultTips"></span>
+                        <input type="file" class="" value="">
+                    </dd>
+                </dl>
+                <dl class="fl info-wd1000 mt10">
+                    <dt class="fl input-lable  w180 text-r">外链：</dt>
+                    <dd class="fl ml10">
+                        <input type="text" class="text" value="" placeholder="外链">
+                    </dd>
+                </dl>
+                <dl class="fl info-wd1000 mt10">
+                    <dt class="fl input-lable  w180 text-r">描述：</dt>
+                    <dd class="fl ml10">
+                        <textarea class="textarea" cols="80" rows="6" id="content" placeholder="简介"></textarea>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="text-c mt10">
+        	<button class="btn btn_bg_gray w100">返回上一页</button>
+            <button class="btn orange-l ml10 w100">提交</button>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/select.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+
+</body>
+</html>

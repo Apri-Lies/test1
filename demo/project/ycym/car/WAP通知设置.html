@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<title>WAP通知设置</title>
+	<link href="../css/base.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" type="text/css" href="../css/table/style.css" />
+	<link href="../css/common.css" rel="stylesheet" media="screen">
+	<link href="../css/car.css" rel="stylesheet" media="screen">
+<body>
+<div class="content">
+	<!--位置路径-->
+	<div class="path mt5 clearfix">
+		<div class="fl pl20">
+			<i class="icon-home"></i>
+			<a href="">区域拍卖中心</a>
+			<i class="icon-arrow-r"></i>
+			<a href="">WAP通知设置</a>
+		</div>
+	</div>
+	<div class="info-wd100 clearfix">
+		<dl class="fl  w580m">
+			<dt class="fl input-lable pl10 pr10">拍卖专场编号：</dt>
+			<dd class="fl">
+				<textarea class="textarea" cols="60" rows="6" id="content" placeholder="简介"></textarea>
+			</dd>
+		</dl>
+	</div>
+		
+	<!--底部分页-->
+   <div class="info-wd100 clearfix" >
+		<div class="text-c mt10 ">
+	    	<button class="btn ml10 mt10 orange w100">提交</button>
+	    </div>
+    </div>
+   
+</div>
+
+<script src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/table/jquery.freezeheader.js"></script>
+<script src="../js/index.js" type="text/javascript"></script>
+<script src="../js/select.js" type="text/javascript"></script>
+<script>
+	$(function () {
+		$("tr:odd").addClass("odd");
+		$("tr:even").addClass("even");
+	});
+	$(document).ready(function () {
+		$(".table1").freezeHeader({ 'height': '500px' });
+	})
+
+</script>
+</body>
+</html>

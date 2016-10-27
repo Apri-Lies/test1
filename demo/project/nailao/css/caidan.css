@@ -1,0 +1,215 @@
+* {
+	font-family: "微软雅黑","Microsoft Yahei","黑体",'DroidSansFallback','DroidSans,HelveticaNeue';
+	font-weight: normal;
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+html,body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background: #F1F1F1;
+}
+body, pre {
+   line-height: 1.1;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0;
+}
+/*header--------------start*/
+.am-header .am-header-nav img {
+	width: 2.6em;
+  	height: 2.5em;
+}
+.am-header-default {
+	background-color:#303030;
+  	font-size: 20px;
+	height: 4em;
+  	line-height: 4em;
+}
+.am-header-default .am-header-title a {
+  	color: #F7D243;
+	font-size: 1.5em;
+}
+.am-header .am-header-title{
+	font-size: 1em;
+}
+[class*=am-icon-] {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+.am-menu-offcanvas1 .am-menu-nav>.am-parent>a:after{
+	content: '';
+}
+.am-menu-offcanvas1 .am-menu-nav>.am-parent.am-open>a:after{
+	content: '';
+}
+.shouye_div,.us_div,.product_div,.team_div,.dongtai_div,.contact_div{
+	background:#FAD749;
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	padding: 0;
+	text-align: center;
+}
+.shouye_div img,.us_div img,.product_div img,.team_div img,.dongtai_div img,.contact_div img{
+	width: 50%;
+}
+.am-menu-offcanvas1 .am-menu-nav>li>a{
+	text-indent: 0;
+}
+.am-menu-offcanvas1 .am-menu-sub{
+	padding:0;
+}
+.am-parent ul.am-menu-sub{
+	padding: 0;
+	margin: 0;
+  	font-size: 1em;
+}
+.cebianlan_div{
+	background: #FFFFFF;
+	width: 80%;
+}
+.cebianlan_div:before{
+	content: '';
+  	width: 16.6667%;
+  	height: 100%;
+  	display: block;
+  	position: absolute;
+  	background-color: rgb(250,215,73);
+}
+.am-offcanvas-bar:after{
+	background: #ddd;
+}
+
+.am-menu-offcanvas1 .am-menu-nav>li>a, .am-menu-offcanvas1 .am-menu-sub{
+	border:0 ;
+}
+.am-menu-offcanvas1 .am-menu-nav>.am-open>a, .am-menu-offcanvas1 .am-menu-nav>li>a:focus, .am-menu-offcanvas1 .am-menu-nav>li>a:hover{
+	background-color: #fff;
+	color: #fff;
+	outline: 0;
+	border:0;
+}
+.am-menu-offcanvas1 .am-menu-nav {
+	border-bottom:none;
+}
+#cebianlan a{
+  color: #666;
+  font-weight: normal;
+  padding: 0;
+  border: 0;
+}
+.cebianlan .am-menu-nav>li>a{
+	height: 4em;
+  line-height: 4em;
+}
+.nav-icon{
+	background:rgb(250,215,73) ;
+	border-bottom:1px solid rgb(250,215,73);
+  	height: 4em;
+  	line-height: 4em;
+    text-align: center;
+      padding: 0;
+}
+.nav-icon2{
+	background:#E8BE16 ;
+}
+.nav-icon>img{
+	width: 40%;
+}
+#cebianlan li{
+	padding:0
+}
+.nav-bo{
+	border-bottom:1px solid rgb(232,232,232);
+  	height: 4em;
+  	line-height: 4em;
+    padding: 0 1em;
+}
+
+.nav-bo>span{
+  	font-size: 1.2em;
+  	text-shadow: none;
+}
+.shouye_li{
+	overflow: hidden;
+}
+.collapse_a{
+	
+}
+.collapse_a div{
+	border-bottom: 1px rgba(255,255,255,0.3) solid;
+  	height: 4em;
+}
+.collapse_a div:nth-child(2){
+  	font-size: 1em;
+  	padding-left: 2em;
+	position: relative;
+	background-color: #fff;
+}
+
+.collapse_a div:nth-child(2)>span{
+  	font-size: 1.2em;
+}
+.collapse_a div:nth-child(2)>i{
+	position: absolute;
+	right:1em;
+}
+.am-open .nav-bo{
+	background-color: #f4cf41;
+}
+/*------header   end------*/
+
+
+/*------footer   end------*/
+
+/*------footer   end------*/
+@media only screen and (max-width: 1280px) {
+	.am-header-default {
+  		font-size: 28px;
+	}
+}
+@media only screen and (max-width: 960px) {
+	.am-header-default {
+  		font-size: 24px;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.am-header-default {
+  		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 560px) {
+	.am-header-default {
+  		font-size: 17px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.nav-icon>img{
+	width: 50%;
+	}
+	.am-header-default {
+  		font-size: 15px;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.am-header-default {
+  		font-size: 13px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.am-header-default {
+  		font-size: 12px;
+	}
+	.nav-icon>img{
+	width: 50%;
+	}
+}

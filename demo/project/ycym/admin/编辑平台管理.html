@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>编辑平台</title>
+<link rel="stylesheet" media="screen" href="../css/base.css">
+<link rel="stylesheet" media="screen" href="../css/common.css">
+<link href="../css/admin-main.css" rel="stylesheet" media="screen">
+</head>
+<body>
+	<div class="content">
+		<div class="path clearfix">
+			<div class="fl pl20">
+				<i class="icon-home"></i>
+				<a href="#">系统设置</a>
+				<i class="icon-arrow-r"></i>
+				<a href="#">平台管理</a>
+				<i class="icon-arrow-r"></i>
+				<a href="#">编辑平台</a>
+			</div>
+		</div>
+		<div class="mt10 clearfix info">
+			<div style="margin: 0 auto; width: 100%; line-height: 30px;">
+				<div class="pb15 clearfix">							
+					<div class="fl w800 mt10">
+						<label class="lable-all fl">平台ID:</label>
+						<input class="text fl w250" value="" id="name" placeholder="请输入平台ID">
+					</div>					
+					<div class="fl w800 mt15">
+						<label class="lable-all fl">平台名称:</label>
+                        <input class="text fl w250" value="" id="name" placeholder="请输入平台名称">
+					</div>					
+					<div class="fl mt15">
+						<label class="lable-all fl">平台简介：</label>
+						<script id="ueditor" class="fl" type="text/plain" style="width:900px;height:500px;"></script>
+					</div>
+					
+					<div class="fl w800 mt15">
+						<label class="lable-all fl">文件路径:</label>
+							<input class="text fl w250" value="" id="name" placeholder="请输入文件路径">
+					</div>
+				
+	</div>
+		<div class="text-c clearfix pt20">
+			<button class="w100 btn orange-l">返回上一页</button>
+			<button class="w100 btn orange">提交</button>
+		</div>
+	</div>
+<script src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/UEditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/UEditor/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="../js/UEditor/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript" src="../js/UEditor/ueditor.js"></script>
+<script type="text/javascript">
+	var ue = UE.getEditor('ueditor');
+</script>
+</body>
+</html>

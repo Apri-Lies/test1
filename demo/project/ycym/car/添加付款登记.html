@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=7">
+    <title>添加付款登记</title>
+    <link href="../css/base.css" rel="stylesheet" media="screen">
+    <link href="../css/common.css" rel="stylesheet" media="screen">
+    <link href="../css/car.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div class="content">
+    <!--位置路径-->
+    <div class="path mt5 clearfix">
+        <div class="fl pl20">
+            <i class="icon-home"></i>
+            <a href="">财务管理</a>
+            <i class="icon-arrow-r"></i>
+            <a href="#">添加付款登记</a>
+        </div>
+    </div>
+    <!--内容页签切换-->
+    <div class="clearfix mt10">
+        
+       	
+        <div class="bordt1 bordl1">
+            <h3 class="orange-l  pl5">公司信息</h3>
+            <div class="info-table">
+				<table width="100%" cellpadding="0" cellspacing="0" >
+					<tbody>
+						<tr>
+							<td >缴款日期：</td>
+							<td  colspan="2">
+								<input type="text" onclick="WdatePicker()" class="input-date input-date-img">
+							</td>
+							
+						</tr>
+						<tr>
+							<td>银行名称：</td>
+							<td colspan="2">
+								<input type="text" class="text fl" value="" placeholder="">
+							</td>
+						</tr>
+						<tr>
+							<td>银行卡号：</td>
+							<td>
+								<input type="text" class="text fl" value="" placeholder="">
+							</td>
+							<td width="50%" class="text-l">
+								<div style="position: relative;">
+									<div class="bank"> <a href="#" id="show">历史银行卡记录</a></div>
+									 <div  class="bank-card" id="b">
+									 	<div class="bank-card-box" >
+											<ul class="clearfix">
+												<li><label>张三</label><label>招商银行</label><label>12312344444444444</label></li>
+												<li><label>张三</label><label>招商银行</label><label>12312344444444444</label></li>
+												<li><label>张三</label><label>招商银行</label><label>12312344444444444</label></li>
+												<li><label>张三</label><label>招商银行</label><label>12312344444444444</label></li>
+												<li><label>张三</label><label>招商银行</label><label>12312344444444444</label></li>
+												<li><label>张三</label><label>招商银行</label><label>12312344444444444</label></li>
+											</ul>
+										</div>
+									 </div>
+									
+								</div>
+							</td>
+				
+						</tr>
+						<tr>
+							<td>开户人姓名：</td>
+							<td colspan="2">
+								<input type="text" class="text fl" value="" placeholder="">
+							</td>
+						</tr>
+						<tr>
+							<td>付款金额：</td>
+							<td colspan="2">
+								<input type="text" class="text fl" value="" placeholder="">
+							</td>
+						</tr>
+						<tr>
+							<td>备注：</td>
+							<td colspan="2">
+								<textarea class="textarea fl" cols="40" rows="3" id="content" placeholder="简介"></textarea>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+            
+        </div>
+        
+        <div class="text-c mt10">
+        	<button class="btn btn_bg_gray w100">返回上一页</button>
+            <button class="btn orange-l ml10 w100">提交</button>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script src="../js/index.js"></script>
+<script>
+
+ 		$b = $("#b");
+        $("#show").on({
+            "click": function(){
+                $b.toggle();
+                return false;
+            }
+        });
+        $(document).on({
+            "click": function(e){
+                var src = e.target;
+                if(src.id && src.id ==="b"){
+                    return false;
+                }else{
+                    $b.hide();
+                }
+            }
+        });
+	
+</script>
+
+
+</body>
+</html>

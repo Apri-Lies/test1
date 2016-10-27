@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=7">
+    <title>新增专场拍卖</title>
+    <link href="../css/base.css" rel="stylesheet" media="screen">
+    <link href="../css/common.css" rel="stylesheet" media="screen">
+    <link href="../css/car.css" rel="stylesheet" media="screen"
+</head>
+<body>
+<div class="content">
+    <!--位置路径-->
+    <div class="path mt5 clearfix">
+        <div class="fl pl20">
+            <i class="icon-home"></i>
+            <a href="">区域拍卖中心</a>
+            <i class="icon-arrow-r"></i>
+            <a href="#">新增专场拍卖</a>
+        </div>
+    </div>
+    <!--内容页签切换-->
+    <div class="clearfix mt10">
+        
+        <div class="sub_tab">
+            <h3 class="orange-l  pl5">新增拍卖专场</h3>
+            <div class="clearfix  pb15">
+	        	<div class="info-wd100 clearfix">
+	        		<dl class="fl  mt15">
+	                    <dt class="fl input-lable pr10 w180 text-r"><em>*</em>专场名：</dt>
+	                    <dd class="fl">
+	                        <input type="text" class="text" value="" placeholder="专场名">
+	                    </dd>
+	                </dl>
+	        	</div>
+	        	<div class="info-wd100 clearfix">
+	        		<dl class="fl  mt15">
+	                    <dt class="fl input-lable pr10 w180 text-r"><em>*</em>专场描述：</dt>
+	                    <dd class="fl">
+	                        <textarea class="textarea" cols="60" rows="3" id="content" placeholder="专场描述"></textarea>
+	                    </dd>
+	                </dl>
+	        	</div>
+	        	<div class="info-wd100 clearfix">
+	        		<dl class="fl  mt15">
+	                    <dt class="fl input-lable pr10 w180 text-r"><em>*</em>专场图片1：</dt>
+	                    <dd class="fl">
+	                        <input type="text" class="text" value="" >
+	                    </dd>
+	                    <button class="btn orange-l ml10 w100">上传</button>
+	                </dl>
+	        	</div>
+	        	<div class="info-wd100 clearfix">
+	        		<dl class="fl  mt15">
+	                    <dt class="fl input-lable pr10 w180 text-r">专场图片2：</dt>
+	                    <dd class="fl">
+	                        <input type="text" class="text" value="" >
+	                    </dd>
+	                    <button class="btn orange-l ml10 w100">上传</button>
+	                </dl>
+	        	</div>
+	        	<div class="info-wd100 clearfix">
+	        		<dl class="fl  mt15">
+	                    <dt class="fl input-lable pr10 w180 text-r">专场图片3：</dt>
+	                    <dd class="fl">
+	                        <input type="text" class="text" value="" >
+	                    </dd>
+	                    <button class="btn orange-l ml10 w100">上传</button>
+	                </dl>
+	        	</div>
+	        	<div class="info-wd100 clearfix">
+	        		<dl class="fl  mt15">
+	                    <dt class="fl input-lable pr10 w180 text-r"><em>*</em>拍卖周期时间：</dt>
+	                    <dd class="fl">
+	                        <input type="text" class="text" value=""  placeholder="拍卖周期时间">
+	                    </dd>
+	                </dl>
+	        	</div>
+	        	<div class="info-wd100 clearfix">
+	        		<dl class="fl  mt15">
+	                    <dt class="fl input-lable pr10 w180 text-r"><em>*</em>拍卖开始时间：</dt>
+	                    <dd class="fl">
+	                        <div class="diy_select relative z-100 fl">
+			                    <input type="hidden" name="" class="diy_select_input">
+			                    <div class="diy_select_txt select_box w60" >00</div>
+			                    <div class="diy_select_btn"></div>
+			                    <ul class="diy_select_list slect-ul str w60" >
+			                        <li class="">00</li>
+			                        <li class="">01</li>
+			                        <li class="">02</li>
+			                        <li class="">03</li>
+			                    </ul>
+			                </div>
+			                <div class="fl ml10 lihe30">时</div>
+	                    </dd>
+	                    <dd class="fl">
+	                        <div class="diy_select relative z-100 fl ml10">
+			                    <input type="hidden" name="" class="diy_select_input">
+			                    <div class="diy_select_txt select_box w60" >00</div>
+			                    <div class="diy_select_btn"></div>
+			                    <ul class="diy_select_list slect-ul str w60" >
+			                        <li class="">00</li>
+			                        <li class="">01</li>
+			                        <li class="">02</li>
+			                        <li class="">03</li>
+			                    </ul>
+			                </div>
+			                <div class="fl ml10 lihe30">分</div>
+	                    </dd>
+	                    <dd class="fl">
+	                        <div class="diy_select relative z-100 ml10 fl">
+			                    <input type="hidden" name="" class="diy_select_input">
+			                    <div class="diy_select_txt select_box w60" >00</div>
+			                    <div class="diy_select_btn"></div>
+			                    <ul class="diy_select_list slect-ul str w60" >
+			                        <li class="">00</li>
+			                        <li class="">01</li>
+			                        <li class="">02</li>
+			                        <li class="">03</li>
+			                    </ul>
+			                </div>
+			                <div class="fl ml10 lihe30">秒</div>
+	                    </dd>
+	                </dl>
+	        	</div>
+        		<div class="info-wd100 clearfix">
+	        		<dl class="fl  mt15">
+	                    <dt class="fl input-lable pr10 w180 text-r"><em>*</em>单次拍卖间隔：</dt>
+	                    <dd class="fl">
+	                        <div class="diy_select relative z-100 fl">
+			                    <input type="hidden" name="" class="diy_select_input">
+			                    <div class="diy_select_txt select_box w60" >00</div>
+			                    <div class="diy_select_btn"></div>
+			                    <ul class="diy_select_list slect-ul str w60" >
+			                        <li class="">00</li>
+			                        <li class="">01</li>
+			                        <li class="">02</li>
+			                        <li class="">03</li>
+			                    </ul>
+			                </div>
+			                <div class="fl ml10 lihe30">时</div>
+	                    </dd>
+	                    <dd class="fl">
+	                        <div class="diy_select relative z-100 fl ml10">
+			                    <input type="hidden" name="" class="diy_select_input">
+			                    <div class="diy_select_txt select_box w60" >00</div>
+			                    <div class="diy_select_btn"></div>
+			                    <ul class="diy_select_list slect-ul str w60" >
+			                        <li class="">00</li>
+			                        <li class="">01</li>
+			                        <li class="">02</li>
+			                        <li class="">03</li>
+			                    </ul>
+			                </div>
+			                <div class="fl ml10 lihe30">分</div>
+	                    </dd>
+	                    <dd class="fl">
+	                        <div class="diy_select relative z-100 ml10 fl">
+			                    <input type="hidden" name="" class="diy_select_input">
+			                    <div class="diy_select_txt select_box w60" >00</div>
+			                    <div class="diy_select_btn"></div>
+			                    <ul class="diy_select_list slect-ul str w60" >
+			                        <li class="">00</li>
+			                        <li class="">01</li>
+			                        <li class="">02</li>
+			                        <li class="">03</li>
+			                    </ul>
+			                </div>
+			                <div class="fl ml10 lihe30">秒</div>
+	                    </dd>
+	                </dl>
+	        	</div>
+        		<div class="info-wd100 clearfix">
+	        		<dl class="fl  mt15">
+	                    <dt class="fl input-lable pr10 w180 text-r"><em>*</em>单次参拍车辆数：</dt>
+	                    <dd class="fl ">
+			                <div class="radio-right  fl ml10">
+								<a href="javascript:void(0);" class="a_radio a1 " date="1" name="order"><em>审核通过</em></a>
+								<a href="javascript:void(0);" class="a_radio a1" date="1" name="order"><em>驳回申请</em></a>
+							</div>
+							 <input type="text" class="text w100" value=""  placeholder="">
+	                    </dd>
+	                </dl>
+	        	</div>
+            	<div class="info-wd100 clearfix">
+	        		<dl class="fl  mt15">
+	                    <dt class="fl input-lable pr10 w180 text-r"><em>*</em>出价增额选项：</dt>
+	                    <dd class="fl">
+	                        <input type="text" class="text" value="" placeholder="元">
+	                    </dd>
+	                    <button class="btn orange-l w180 ml10">添加出价增额选项</button>
+	                </dl>
+	        	</div>
+	        	<div class="info-wd100 clearfix">
+	        		<dl class="fl  mt15">
+	                    <dt class="fl input-lable pr10 w180 text-r"><em>*</em>上传车辆截至时间：</dt>
+	                    <dd class="fl">
+	                        <input type="text" class="text" value="" placeholder="上传车辆截至时间">
+	                    </dd>
+	                </dl>
+	        	</div>
+	        	<div class="info-wd100 clearfix">
+	        		<dl class="fl  mt15">
+	                    <dt class="fl input-lable pr10 w180 text-r"><em>*</em>临时会员申请截止时间：</dt>
+	                    <dd class="fl">
+	                        <input type="text" class="text" value="" placeholder="临时会员申请截止时间">
+	                    </dd>
+	                </dl>
+	        	</div>
+	        	<div class="info-wd100 clearfix">
+	        		<dl class="fl  mt15">
+	                    <dt class="fl input-lable pr10 w180 text-r"><em>*</em>车辆查估报告有效期：</dt>
+	                    <dd class="fl">
+	                        <input type="text" class="text" value="" placeholder="车辆查估报告有效期">
+	                    </dd>
+	                </dl>
+	        	</div>
+            </div>
+        	
+                
+
+           
+           
+        </div>
+        <div class="text-c mt10">
+            <button class="btn orange-l w100">提交</button>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/select.js"></script>
+<script src="../js/index.js"></script>
+
+</body>
+</html>

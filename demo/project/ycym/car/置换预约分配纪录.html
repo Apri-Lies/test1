@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<title>置换预约分配纪录</title>
+	<link href="../css/base.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" type="text/css" href="../css/table/style.css" />
+	<link href="../css/common.css" rel="stylesheet" media="screen">
+	<link href="../css/car.css" rel="stylesheet" media="screen">
+<body>
+<div class="content">
+	<!--位置路径-->
+	<div class="path mt5 clearfix">
+		<div class="fl pl20">
+			<i class="icon-home"></i>
+			<a href="">网站管理</a>
+			<i class="icon-arrow-r"></i>
+			<a href="">分配纪录</a>
+		</div>
+	</div>
+	<!--选择信息栏-->
+	<!--查询表格-->
+	<div class="table_wrap clearfix mt10 bordl1">
+		<table class="gridView table1">
+			<thead>
+			<tr class="orange-l">
+				<th width="5%">序号</th>
+				<th >原预约所属商家</th>
+				<th >预约分配至商家</th>
+				<th >操作用户</th>
+				<th >预约联系人</th>
+				<th >操作时间</th>
+				<th >操作</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>1</td>
+				<td>fdasfdf</td>
+				<td>fr4regfs</td>
+				<td>小超客服主管</td>
+				<td>小超客服主管</td>
+				<td>fdasfdf</td>
+				<td>
+					<a href="#" class="edit-sector">查看</a>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+	<!--底部分页-->
+	<div class="page fr clearfix mt15">
+		<ul>
+			<li><a href="#" class="list"><</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#" class="list">></a></li>
+		</ul>
+	</div>
+</div>
+
+<script src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/table/jquery.freezeheader.js"></script>
+<script src="../js/index.js" type="text/javascript"></script>
+<script src="../js/select.js" type="text/javascript"></script>
+<script>
+	$(function () {
+		$("tr:odd").addClass("odd");
+		$("tr:even").addClass("even");
+	});
+	$(document).ready(function () {
+		$(".table1").freezeHeader({ 'height': '500px' });
+	})
+
+</script>
+</body>
+</html>

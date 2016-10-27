@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<title>发起拍卖</title>
+	<link rel="stylesheet" media="screen" href="../css/base.css">
+	<link rel="stylesheet" media="screen" href="../css/common.css">
+	<link rel="stylesheet" media="screen" href="../css/4s.css">
+</head>
+<body>	
+	<div class="content clearfix ml20">
+		<div class="path clearfix">
+			<div class="fl">
+				<i class="icon-home"></i>
+				<a href="">车辆管理</a>
+				<i class="icon-arrow-r"></i>
+				<a href="#">车辆拍卖</a>
+			</div>
+		</div>
+		<div class="table-box clearfix mt10">
+			<h3 class="orange-l pl15">车辆信息</h3>
+			<table width="100%" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="30%" id="td-r">品牌：</td>
+					<td width="70%" id="td-l">一汽丰田</td>
+				</tr>
+				<tr>
+					<td id="td-r">车系：</td>
+					<td id="td-l">卡罗拉</td>
+				</tr>
+				<tr>
+					<td id="td-r">车型：</td>
+					<td id="td-l">轿车</td>
+				</tr>
+				<tr>
+					<td id="td-r">拍照：</td>
+					<td id="td-l">---</td>
+				</tr>
+				<tr>
+					<td id="td-r">VIN：</td>
+					<td id="td-l">123456789</td>
+				</tr>
+			</table>
+		</div>
+		<div class="table-box clearfix mt15">
+			<h3 class="orange-l pl15">拍场信息</h3>
+			<table width="100%" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="30%" id="td-r">区域中心名称：</td>
+					<td width="70%" id="td-l">天天拍场</td>
+				</tr>
+				<tr>
+					<td id="td-r">所在地区：</td>
+					<td id="td-l">广东</td>
+				</tr>
+				<tr>
+					<td id="td-r">区域拍卖期数：</td>
+					<td id="td-l">123456</td>
+				</tr>
+				<tr>
+					<td id="td-r">车辆上传截止日期：</td>
+					<td id="td-l">---</td>
+				</tr>
+			</table>
+		</div>
+		<div class="tab-box clearfix mt15">
+			<h3 class="orange-l pl15">排场信息</h3>
+			<div class="w800 fl mt15">
+				<div class="fl lable-all">拍卖标题：</div>
+				<div class="fl">
+					<input type="text" class="text" placeholder="例：拍卖标题">
+				</div>
+			</div>
+			<div class="w800 fl mt15">
+				<div class="fl lable-all">底价：</div>
+				<div class="fl">
+					<input type="text" class="text" placeholder="例：底价">万元<em class="tip-color ml15">不超过小数点2位</em>
+				</div>
+			</div>
+			<div class="w800 fl mt15">
+				<div class="fl lable-all">起拍金额：</div>
+				<div class="fl">
+					<input type="text" class="text" placeholder="例：起拍金额">万元<em class="tip-color ml15">不超过小数点2位</em>
+				</div>
+			</div>
+			<div class="w800 fl mt15">
+				<label class="lable-all fl">预计交车日：</label>
+					<p class="fl">
+						<input id="d11" type="text" onClick="WdatePicker()" class="input-date input-date-img">
+					</p>
+			</div>
+		</div>
+		<div class="w220 clearfix pt20 center">
+			<a href="车辆管理.html"><button class="fl btn btn orange-l w100">返回上一页</button></a>
+			<button class="fl ml10 btn orange w100">提交</button>
+	</div>
+	</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>

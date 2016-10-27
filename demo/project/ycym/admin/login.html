@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=7">
+    <title>登录</title>
+    <link rel="stylesheet" media="screen" href="../css/base.css">
+    <link rel="stylesheet" media="screen" href="../css/common.css">
+    <link rel="stylesheet" media="screen" href="../css/admin-main.css">
+</head>
+
+<body>
+<div class="logon clearfix">
+    <div class="logon-box w360 h400 absolute">
+        <div class="logo pt10 pb10">
+            <a href="###"><img src="../images/logo.png" alt=""></a>
+        </div>
+        <h3 class="color666 pl20 mt20">管理员登录</h3>
+        <div class="mt20 clearfix text-c">
+            <input class="w280 uname login-input" type="text" placeholder="登录账号"/>
+        </div>
+        <div  class="mt20 clearfix text-c">
+            <input class="w280 upwd login-input" type="password" placeholder="登录密码"/>
+        </div>
+        <div  class="mt20 pl15 clearfix">
+            <input class="fl ml10 w120 ucode login-input" type="text" placeholder="验证码"/>
+            <span class="fl w120 ml10"><img class="w-100" src="../images/admin_erify_code.png" alt=""/></span>
+        </div>
+        <div class="mt20 pl20 clearfix error hide" id="msg"></div>
+        <div class="clearfix mt20 text-c">
+            <button class="btn login-btn w310 orange-l">登录</button>
+        </div>
+    </div>
+    <div class="logon-bg">
+        <img src="../images/login.gif" class="w-100 h720" alt="">
+    </div>
+</div>
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script>
+    $(function(){
+        $(".uname").blur(function(){
+            if($(".uname").val() == ""){
+                $("#label_moblie").css("display","inline");
+                $("#msg").text("请输入用户名").show();return;
+            }
+        });
+        $(".upwd").blur(function(){
+            if($(".upwd").val() == ""){
+                $("#label_pass").css("display","inline");
+                $("#msg").text("请输入密码").show(); return;
+            }
+            if($(".upwd").val().length > 16 || $("#password").val().length <6){
+                $("#msg").text("密码需在6-16个字符内").show(); return;
+            }
+        });
+        $(".ucode").blur(function(){
+            if($(".ucode").val() == ""){
+                $("#label_cap").css("display","inline");
+                $("#msg").text("请输入验证码").show(); return;
+            }
+        });
+    });
+</script>
+</body>
+</html>

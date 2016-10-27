@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<title>添加节点</title>
+	<link href="../css/base.css" rel="stylesheet" media="screen">
+	<link href="../css/common.css" rel="stylesheet" media="screen">
+	<link href="../css/admin-main.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div class="content">
+	<!--位置路径-->
+	<div class="path mt5 clearfix">
+		<div class="fl pl20">
+			<i class="icon-home"></i>
+			<a href="#">区域拍卖中心</a>
+			<i class="icon-arrow-r"></i>
+			<a href="#">区域列表</a>
+			<i class="icon-arrow-r"></i>
+			<a href="#">添加节点</a>
+		</div>
+	</div>
+	<!--流量统计-->
+	<div class="clearfix mt10">
+		<div class="bordl1 bordt1 bordb1 bordr1">
+			<h3 class="orange-l pl10">添加节点</h3>
+
+			<div class="clearfix pb20">
+				<dl class="fl min-w500 w-100 mt20">
+					<dt class="fl input-lable w180 text-r">名称：</dt>
+					<dd class="fl input ml10">
+						<input type="text" class="text" value="" placeholder="名称">
+					</dd>
+					<dd class="fl ml10 line-h32">
+						英文，为model_name的时候首字母大写
+					</dd>
+				</dl>
+				<dl class="fl min-w500 w-100 mt20">
+					<dt class="fl input-lable w180 text-r">显示名：</dt>
+					<dd class="fl input ml10">
+						<input type="text" class="text" value="" placeholder="显示名">
+					</dd>
+					<dd class="fl ml10 line-h32">
+						中英文均可
+					</dd>
+				</dl>
+				<dl class="fl mt20 w-100 min-w500 relative z-100">
+					<dt class="fl input-lable w180 text-r">状态：</dt>
+					<dd class="fl ml10">
+						<div class="diy_select  select-relative">
+							<input type="hidden" name="" class="diy_select_input">
+							<div class="diy_select_txt select_box w190">禁用</div>
+							<div class="diy_select_btn"></div>
+							<ul class="diy_select_list slect-ul w190">
+								<li class="">禁用</li>
+								<li class=""></li>
+							</ul>
+						</div>
+					</dd>
+					<dd class="fl ml10 line-h32">
+						如果禁用那么只有超级管理员才可以访问，其他用户都无权访问
+					</dd>
+				</dl>
+				<dl class="fl mt20 w-100 min-w500 relative z-99">
+					<dt class="fl input-lable w180 text-r">类型：</dt>
+					<dd class="fl ml10">
+						<div class="diy_select  select-relative">
+							<input type="hidden" name="" class="diy_select_input">
+							<div class="diy_select_txt select_box w190">项目</div>
+							<div class="diy_select_btn"></div>
+							<ul class="diy_select_list slect-ul w190">
+								<li class="">项目</li>
+								<li class=""></li>
+							</ul>
+						</div>
+					</dd>
+				</dl>
+				<dl class="fl mt20 w-100 min-w500 relative z-98">
+					<dt class="fl input-lable w180 text-r">父级节点：</dt>
+					<dd class="fl ml10">
+						<div class="diy_select  select-relative">
+							<input type="hidden" name="" class="diy_select_input">
+							<div class="diy_select_txt select_box w190">请选择</div>
+							<div class="diy_select_btn"></div>
+							<ul class="diy_select_list slect-ul w190">
+								<li class="">请选择</li>
+								<li class=""></li>
+							</ul>
+						</div>
+					</dd>
+				</dl>
+				<dl class="fl min-w500 w-100 mt20">
+					<dt class="fl input-lable w180 text-r">显示排序：</dt>
+					<dd class="fl input ml10">
+						<input type="text" class="text" value="" placeholder="显示排序">
+					</dd>
+				</dl>
+				<dl class="fl min-w500 w-100 mt20">
+					<dt class="fl input-lable w180 text-r">显示排序：</dt>
+					<dd class="fl ml10">
+						<textarea cols="70" rows="7" class="bordl1 bordt1 bordb1 bordr1 "></textarea>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="text-c mt20 mb10">
+			<button class="btn orange-l w100">返回</button>
+			<button class="btn orange-l w100">提交</button>
+		</div>
+	</div>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/select.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>

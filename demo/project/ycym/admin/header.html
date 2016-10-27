@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=7">
+    <title>Header</title>
+    <link rel="stylesheet" media="screen" href="../css/base.css">
+    <!--<link rel="stylesheet" media="screen" href="css/comom.css">-->
+</head>
+<body>
+<div class="Head-All clearfix">
+    <a href="#" alt="" class="logo fl"><img src="../images/logo.png" alt=""></a>
+
+    <div class="headTips fr pt10">
+  	<a href="#" class="tips" id="MyPersonImg"><img src="../images/我的头像.jpg" alt="" width="30px" height="30px"></a>
+        <a href="#" class="tips"><img src="../images/car-index/computer.png" alt="" class="img1"></a>
+        <a href="#" class="tips"><img src="../images/car-index/set.png" alt="" class="img1"></a>
+        <!--<a href="#" class="tips notice"><img src="../images/car-index/news.png" alt="" class="img1">
+            <div class="Number">5</div>
+        </a>-->
+        <!--<a href="#" class="tips"><img src="../images/car-index/compass.png" alt="" class="img1"></a>-->
+        <a href="#" class="tips"><img src="../images/car-index/about.png" alt="" class="img1">
+        </a>
+        <!-- <a href="#" class="tips fsk"><img src="../images/car-index/personal.png" alt="" class="img1"><img src="../images/car-index/personal-bottom.png"/>
+         </a>-->
+        <a href="#" class="tips" id="note"><img src="../images/note.png" alt="" class="img1">
+        </a>
+        <a href="#" class="tips"><img src="../images/exit.png" alt="" class="img1">
+        </a>
+    </div>
+</div>
+</body>
+<script src="../js/jquery.js"></script>
+<script>
+    $(function () {
+        $("#note").click(function () {
+            self.parent.frames["mianFrame"].frames["contentFrame"].location = "发送短信.html";
+        })
+
+	$("#MyPersonImg").click(function () {
+            self.parent.frames["mianFrame"].frames["contentFrame"].location = "修改信息.html";
+        })
+
+    })
+
+    //	$("#tips").hover(function() {
+    //		$(".skin").stop(true,true).animate({
+    //			'width':120,
+    //			'opacity':1
+    //		},300).show();
+    //	}, function() {
+    //		$(".skin").stop(true,true).animate({
+    //			'width':0,
+    //			'opacity':0
+    //		},300).hide();
+    //	});
+    //
+    //	$("#lan").click(function(){
+    //		$(".Head-All").css("background-color","#0000FF")
+    //	})
+    //
+    //	$("#cheng").click(function(){
+    //		$(".Head-All").css("background-color","#FF8000")
+    //	})
+    //
+    //	$("#hei").click(function(){
+    //		$(".Head-All").css("background-color","#000000")
+    //	})
+</script>
+</html>

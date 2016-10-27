@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=7">
+    <title>信息费结算</title>
+    <link href="../css/base.css" rel="stylesheet" media="screen">
+    <link href="../css/table/fixed_table_rc.css" type="text/css" rel="stylesheet" media="all" />
+    <link href="../css/common.css" rel="stylesheet" media="screen">
+    <link href="../css/admin-main.css" rel="stylesheet" media="screen">
+<body>
+<div class="content">
+    <!--位置路径-->
+    <div class="path mt5 clearfix">
+        <div class="fl pl20">
+            <i class="icon-home"></i>
+            <a href="代理商保证金管理.html">财务管理</a>
+            <i class="icon-arrow-r"></i>
+            <a href="#">信息费结算</a>
+        </div>
+    </div>
+    <!--选择信息栏-->
+    <div class="info clearfix">
+        <dl class="fl mt10 w270">
+            <dt class="fl input-lable">商家名称：</dt>
+            <dd class="fl input">
+                <input type="text" class="text" value="" placeholder="例：标题">
+            </dd>
+        </dl>
+        <dl class="fl mt10 w510">
+            <dt class="fl">
+                <div class="diy_select  select-relative">
+                    <input type="hidden" name="" class="diy_select_input w100">
+                    <div class="diy_select_txt select_box w100">请选择</div>
+                    <div class="diy_select_btn"></div>
+                    <ul class="diy_select_list slect-ul w100">
+                        <li class="">请选择</li>
+                        <li class="">1</li>
+                        <li class="">2</li>
+                    </ul>
+                </div>
+            </dt>
+            <dd class="fl ml5">
+                <input id="d11" type="text" onclick="WdatePicker()" class="input-date input-date-img" placeholder="">
+            </dd>
+            <dd class="fl ml5 h32 line-h30">~</dd>
+            <dd class="fl ml5">
+                <input id="d11" type="text" onclick="WdatePicker()" class="input-date input-date-img" placeholder="">
+            </dd>
+        </dl>
+        <dl class="fl mt10 w190">
+            <dt class="fl input-lable pl10">结算状态：</dt>
+            <dd class="fl">
+                <div class="diy_select  select-relative">
+                    <input type="hidden" name="" class="diy_select_input w100">
+                    <div class="diy_select_txt select_box w100">待确认</div>
+                    <div class="diy_select_btn"></div>
+                    <ul class="diy_select_list slect-ul w100">
+                        <li class="">待确认</li>
+                        <li class="">已确认</li>
+                        <li class="">已取消</li>
+                    </ul>
+                </div>
+            </dd>
+        </dl>
+        <dl class="fl mt10 w190">
+            <dt class="fl input-lable pl10">商家类型：</dt>
+            <dd class="fl">
+                <div class="diy_select  select-relative">
+                    <input type="hidden" name="" class="diy_select_input">
+                    <div class="diy_select_txt select_box w100">请选择</div>
+                    <div class="diy_select_btn"></div>
+                    <ul class="diy_select_list slect-ul w100">
+                        <li class="">请选择</li>
+                        <li class="">1</li>
+                        <li class="">2</li>
+                    </ul>
+                </div>
+            </dd>
+        </dl>
+        <div class="w330 fl">
+            <button class="fl btn ml10 orange mt10 w100">查询</button>
+            <button class="fl btn-export ml10 mt10 w100" onclick="javascript:window.location.href='信息费结算-添加结算.html'">添加结算</button>
+            <button class="fl btn-export ml10 mt10 w100">导出</button>
+        </div>
+    </div>
+    <!--查询表格-->
+    <div class="tab-box clearfix mt10">
+        <table class="tab-fix">
+            <thead>
+            <tr class="orange-l">
+                <th>操作</th>
+                <th>序号</th>
+                <th>商家</th>
+                <th>商家代码</th>
+                <th>标题</th>
+                <th>信息费时间范围</th>
+                <th>结算台数</th>
+                <th>结算总金额(元)</th>
+                <th>结算状态</th>
+                <th>结算日期</th>
+                <th>审核日期</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>广州长佶科技有限公司</td>
+                <td>CJKJ001</td>
+                <td>测试结算日期 2015-01-07~2016-01-08 广州长佶科技有限公司 结算</td>
+                <td>2015-01-07至2016-01-08</td>
+                <td>15</td>
+                <td>4900.00</td>
+                <td>已确认</td>
+                <td>2016-01-07 09:44:19</td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>黄晓东</td>
+                <td>HXD001</td>
+                <td>2015-12-01~2015-12-31 黄晓东 结算</td>
+                <td>2015-12-01至2015-12-31</td>
+                <td>0</td>
+                <td>0</td>
+                <td>已确认</td>
+                <td></td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>良雪汽车销售服务有限公司</td>
+                <td>LX168</td>
+                <td>2015-12-16~2015-12-25 良雪汽车销售服务有限公司 结算sdf</td>
+                <td>2015-12-16至2015-12-25</td>
+                <td>0</td>
+                <td>0</td>
+                <td>已确认</td>
+                <td></td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>黄晓东</td>
+                <td>HXD001</td>
+                <td>2015-12-01~2015-12-31 黄晓东 结算</td>
+                <td>2015-12-01至2015-12-31</td>
+                <td>0</td>
+                <td>0</td>
+                <td>已确认</td>
+                <td></td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>良雪汽车销售服务有限公司</td>
+                <td>LX168</td>
+                <td>2015-12-16~2015-12-25 良雪汽车销售服务有限公司 结算sdf</td>
+                <td>2015-12-16至2015-12-25</td>
+                <td>0</td>
+                <td>0</td>
+                <td>已确认</td>
+                <td></td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>广州长佶科技有限公司</td>
+                <td>CJKJ001</td>
+                <td>测试结算日期 2015-01-07~2016-01-08 广州长佶科技有限公司 结算</td>
+                <td>2015-01-07至2016-01-08</td>
+                <td>15</td>
+                <td>4900.00</td>
+                <td>已确认</td>
+                <td>2016-01-07 09:44:19</td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>黄晓东</td>
+                <td>HXD001</td>
+                <td>2015-12-01~2015-12-31 黄晓东 结算</td>
+                <td>2015-12-01至2015-12-31</td>
+                <td>0</td>
+                <td>0</td>
+                <td>已确认</td>
+                <td></td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>良雪汽车销售服务有限公司</td>
+                <td>LX168</td>
+                <td>2015-12-16~2015-12-25 良雪汽车销售服务有限公司 结算sdf</td>
+                <td>2015-12-16至2015-12-25</td>
+                <td>0</td>
+                <td>0</td>
+                <td>已确认</td>
+                <td></td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>黄晓东</td>
+                <td>HXD001</td>
+                <td>2015-12-01~2015-12-31 黄晓东 结算</td>
+                <td>2015-12-01至2015-12-31</td>
+                <td>0</td>
+                <td>0</td>
+                <td>已确认</td>
+                <td></td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>良雪汽车销售服务有限公司</td>
+                <td>LX168</td>
+                <td>2015-12-16~2015-12-25 良雪汽车销售服务有限公司 结算sdf</td>
+                <td>2015-12-16至2015-12-25</td>
+                <td>0</td>
+                <td>0</td>
+                <td>已确认</td>
+                <td></td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>广州长佶科技有限公司</td>
+                <td>CJKJ001</td>
+                <td>测试结算日期 2015-01-07~2016-01-08 广州长佶科技有限公司 结算</td>
+                <td>2015-01-07至2016-01-08</td>
+                <td>15</td>
+                <td>4900.00</td>
+                <td>已确认</td>
+                <td>2016-01-07 09:44:19</td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>黄晓东</td>
+                <td>HXD001</td>
+                <td>2015-12-01~2015-12-31 黄晓东 结算</td>
+                <td>2015-12-01至2015-12-31</td>
+                <td>0</td>
+                <td>0</td>
+                <td>已确认</td>
+                <td></td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>良雪汽车销售服务有限公司</td>
+                <td>LX168</td>
+                <td>2015-12-16~2015-12-25 良雪汽车销售服务有限公司 结算sdf</td>
+                <td>2015-12-16至2015-12-25</td>
+                <td>0</td>
+                <td>0</td>
+                <td>已确认</td>
+                <td></td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>黄晓东</td>
+                <td>HXD001</td>
+                <td>2015-12-01~2015-12-31 黄晓东 结算</td>
+                <td>2015-12-01至2015-12-31</td>
+                <td>0</td>
+                <td>0</td>
+                <td>已确认</td>
+                <td></td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>良雪汽车销售服务有限公司</td>
+                <td>LX168</td>
+                <td>2015-12-16~2015-12-25 良雪汽车销售服务有限公司 结算sdf</td>
+                <td>2015-12-16至2015-12-25</td>
+                <td>0</td>
+                <td>0</td>
+                <td>已确认</td>
+                <td></td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>广州长佶科技有限公司</td>
+                <td>CJKJ001</td>
+                <td>测试结算日期 2015-01-07~2016-01-08 广州长佶科技有限公司 结算</td>
+                <td>2015-01-07至2016-01-08</td>
+                <td>15</td>
+                <td>4900.00</td>
+                <td>已确认</td>
+                <td>2016-01-07 09:44:19</td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>黄晓东</td>
+                <td>HXD001</td>
+                <td>2015-12-01~2015-12-31 黄晓东 结算</td>
+                <td>2015-12-01至2015-12-31</td>
+                <td>0</td>
+                <td>0</td>
+                <td>已确认</td>
+                <td></td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>良雪汽车销售服务有限公司</td>
+                <td>LX168</td>
+                <td>2015-12-16~2015-12-25 良雪汽车销售服务有限公司 结算sdf</td>
+                <td>2015-12-16至2015-12-25</td>
+                <td>0</td>
+                <td>0</td>
+                <td>已确认</td>
+                <td></td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>黄晓东</td>
+                <td>HXD001</td>
+                <td>2015-12-01~2015-12-31 黄晓东 结算</td>
+                <td>2015-12-01至2015-12-31</td>
+                <td>0</td>
+                <td>0</td>
+                <td>已确认</td>
+                <td></td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>良雪汽车销售服务有限公司</td>
+                <td>LX168</td>
+                <td>2015-12-16~2015-12-25 良雪汽车销售服务有限公司 结算sdf</td>
+                <td>2015-12-16至2015-12-25</td>
+                <td>0</td>
+                <td>0</td>
+                <td>已确认</td>
+                <td></td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>广州长佶科技有限公司</td>
+                <td>CJKJ001</td>
+                <td>测试结算日期 2015-01-07~2016-01-08 广州长佶科技有限公司 结算</td>
+                <td>2015-01-07至2016-01-08</td>
+                <td>15</td>
+                <td>4900.00</td>
+                <td>已确认</td>
+                <td>2016-01-07 09:44:19</td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix top0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>黄晓东</td>
+                <td>HXD001</td>
+                <td>2015-12-01~2015-12-31 黄晓东 结算</td>
+                <td>2015-12-01至2015-12-31</td>
+                <td>0</td>
+                <td>0</td>
+                <td>已确认</td>
+                <td></td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix bottom0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>良雪汽车销售服务有限公司</td>
+                <td>LX168</td>
+                <td>2015-12-16~2015-12-25 良雪汽车销售服务有限公司 结算sdf</td>
+                <td>2015-12-16至2015-12-25</td>
+                <td>0</td>
+                <td>0</td>
+                <td>已确认</td>
+                <td></td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix bottom0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>黄晓东</td>
+                <td>HXD001</td>
+                <td>2015-12-01~2015-12-31 黄晓东 结算</td>
+                <td>2015-12-01至2015-12-31</td>
+                <td>0</td>
+                <td>0</td>
+                <td>已确认</td>
+                <td></td>
+                <td>2016-01-07</td>
+            </tr>
+            <tr>
+                <td class="_first_td" onmouseover="javascript:_on_hover(this)" onmouseout="javascript:_out_hover(this)">
+                    <div class="_operate clearfix bottom0 left58">
+                        <a href="#" class="check">审核结算</a>
+                        <a href="#" class="recall">撤回结算</a>
+                        <a href="#">删除</a>
+                    </div>操作
+                </td>
+                <td>1</td>
+                <td>良雪汽车销售服务有限公司</td>
+                <td>LX168</td>
+                <td>2015-12-16~2015-12-25 良雪汽车销售服务有限公司 结算sdf</td>
+                <td>2015-12-16至2015-12-25</td>
+                <td>0</td>
+                <td>0</td>
+                <td>已确认</td>
+                <td></td>
+                <td>2016-01-07</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--底部分页-->
+    <div class="page fr clearfix mt15 ">
+        <ul>
+            <li><a href="#" class="list"><</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#" class="list">></a></li>
+        </ul>
+    </div>
+    <!--弹框-->
+    <div class="layer-bg clearfix"></div>
+    <div class="popup-cover  recall-box">
+        <div class="popup-win" style="  left:27%; top:20%; width: 600px;position:absolute;">
+            <div class="popup-title">
+                <div class="fl title">温馨提示</div>
+                <div class="fr close">x</div>
+            </div>
+            <div class="w-60 text-c box-center mt20 mb20">
+                <img src="../images/layer.jpg"/>
+                <span class="font20 color666 pl20">你真的打算撤回吗？</span>
+            </div>
+            <div class="clearfix pb20">
+                <div class="clearfix text-c">
+                    <button class="btn mt10 orange w100 confirm">确定</button>
+                    <button class="btn mt10 w100 ml10 cancel">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-cover  check-box">
+        <div class="popup-win" style="  left:27%; top:20%; width: 600px;position:absolute;">
+            <div class="popup-title">
+                <div class="fl title">温馨提示</div>
+                <div class="fr close">x</div>
+            </div>
+            <div class="w-60 text-c box-center mt20 mb20">
+                <img src="../images/layer.jpg"/>
+                <span class="font20 color666 pl20">你真的打算结算吗？</span>
+            </div>
+            <div class="clearfix pb20">
+                <div class="clearfix text-c">
+                    <button class="btn mt10 orange w100 confirm">确定</button>
+                    <button class="btn mt10 w100 ml10 cancel">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script src="../js/table/fixed_table_rc.js" type="text/javascript"></script>
+<script src="../js/select.js"></script>
+<script src="../js/index.js"></script>
+<script>
+    $(function () {
+        $('.tab-fix').fxdHdrCol({
+            fixedCols: 0,
+            width: "100%",
+            height: 700,
+            colModal: [
+                {width: 50,align: 'center'},
+                {width: 50,align: 'center'},
+                {width: 200,align: 'center'},
+                {width: 150,align: 'center'},
+                {width: 450,align: 'center'},
+                {width: 200,align: 'center'},
+                {width: 120,align: 'center'},
+                {width: 150,align: 'center'},
+                {width: 100,align: 'center'},
+                {width: 150,align: 'center'},
+                {width: 120,align: 'center'}
+            ]
+        });
+    });
+    function _on_hover(obj){
+        var li_div = obj.getElementsByTagName("div");
+        li_div[0].style.display="block";
+    }
+    function _out_hover(obj){
+        var li_div = obj.getElementsByTagName("div");
+        li_div[0].style.display="none";
+    }
+    $(function () {
+        $("tr:odd").addClass("odd");
+        $("tr:even").addClass("even");
+    });
+    $(function () {
+        $(".recall").click(function () {
+            $(".recall-box").show();
+            $(".close").click(function () {
+                $(".recall-box").hide();
+            })
+            $(".cancel").click(function () {
+                $(".recall-box").hide();
+            })
+        });
+        $(".check").click(function () {
+            $(".check-box").show();
+            $(".close").click(function () {
+                $(".check-box").hide();
+            })
+            $(".cancel").click(function () {
+                $(".check-box").hide();
+            })
+        });
+    })
+</script>
+</body>
+</html>

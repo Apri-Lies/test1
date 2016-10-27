@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<title>短信配置-区域拍卖</title>
+	<link href="../css/base.css" rel="stylesheet" media="screen">
+	<link href="../css/common.css" rel="stylesheet" media="screen">
+	<link href="../css/admin-main.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div class="content">
+	<!--位置路径-->
+	<div class="path mt5 clearfix">
+		<div class="fl pl20">
+			<i class="icon-home"></i>
+			<a href="站点设置.html">系统设置</a>
+			<i class="icon-arrow-r"></i>
+			<a href="#">短信配置</a>
+		</div>
+	</div>
+	<!--内容-->
+	<h3 class="orange-l pl5 mt5">短信接口</h3>
+
+	<div class="clearfix bordb1 bordl1 bordr1 pb20">
+		<dl class="min-w500 mt20 fl">
+			<dt class="fl input-lable w180 text-r">接口地址：</dt>
+			<dd class="fl input">
+				<input type="text" class="text" value="" placeholder="接口地址">
+			</dd>
+			<dd class="color-ff4200 fl line-h32 hide">输入信息有误</dd>
+		</dl>
+		<dl class="min-w500 mt20 fl">
+			<dt class="fl input-lable w180 text-r">接口用户名：</dt>
+			<dd class="fl input">
+				<input type="text" class="text" value="" placeholder="接口用户名">
+			</dd>
+			<dd class="color-ff4200 fl line-h32 hide">输入信息有误</dd>
+		</dl>
+		<dl class="min-w500 mt20 fl">
+			<dt class="fl input-lable w180 text-r">接口密码：</dt>
+			<dd class="fl input">
+				<input type="text" class="text" value="" placeholder="接口密码">
+			</dd>
+			<dd class="color-ff4200 fl line-h32 hide">输入信息有误</dd>
+		</dl>
+	</div>
+	<h3 class="orange-l pl5 mt5">常用配置</h3>
+
+	<div class="clearfix bordr1 bordl1 bordt1">
+		<div class="tabs mt20">
+			<ul class="pl30">
+				<li class="ml40"><a href="短信配置.html">单独配置</a></li>
+				<li class=""><a href="短信配置-小规模拍卖.html">小规模拍卖</a></li>
+				<li class="active"><a href="短信配置-区域拍卖.html">区域拍卖</a></li>
+			</ul>
+		</div>
+		<div class="sub_tab pb10 bordl0 bordr0 clearfix pt30">
+			<dl class="w-100 mt10 fl">
+				<dt class="fl input-lable w200 text-r">拍场暂停提醒：</dt>
+				<dd class="fl">
+					<textarea class="bordt1 bordb1 bordl1 bordr1 line-h32 pl10" cols="60" rows="4" placeholder=""></textarea>
+				</dd>
+				<dd class="fl pl10 w400">[act_code]为拍场编号</dd>
+			</dl>
+			<dl class="w-100 mt10 fl">
+				<dt class="fl input-lable w200 text-r">临时会员审核不通过提醒：</dt>
+				<dd class="fl">
+					<textarea class="bordt1 bordb1 bordl1 bordr1 line-h32 pl10" cols="60" rows="4" placeholder=""></textarea>
+				</dd>
+				<dd class="fl pl10 w400">[act_code]为拍场编号，[acm_dismissed_reason]为审核未通过原因</dd>
+			</dl>
+			<dl class="w-100 mt10 fl">
+				<dt class="fl input-lable w200 text-r">临时会员审核通过：</dt>
+				<dd class="fl">
+					<textarea class="bordt1 bordb1 bordl1 bordr1 line-h32 pl10" cols="60" rows="4" placeholder=""></textarea>
+				</dd>
+				<dd class="fl pl10 w400">[act_code]为拍场编号，[SITE_IN_FO.name]为平台名称,[acm_mobile]为商家代码/账号,[u_pwd]为密码</dd>
+			</dl>
+			<dl class="w-100 mt10 fl">
+				<dt class="fl input-lable w200 text-r">拍场重新开启提醒：</dt>
+				<dd class="fl">
+					<textarea class="bordt1 bordb1 bordl1 bordr1 line-h32 pl10" cols="60" rows="4" placeholder=""></textarea>
+				</dd>
+				<dd class="fl pl10 w400">[act_code]为拍场编号</dd>
+			</dl>
+			<dl class="w-100 mt10 fl">
+				<dt class="fl input-lable w200 text-r">关注提醒：</dt>
+				<dd class="fl">
+					<textarea class="bordt1 bordb1 bordl1 bordr1 line-h32 pl10" cols="60" rows="4" placeholder=""></textarea>
+				</dd>
+				<dd class="fl pl10 w400">[au_title]为拍卖标题</dd>
+			</dl>
+			<dl class="w-100 mt10 fl">
+				<dt class="fl input-lable w200 text-r">拍场开拍提醒：</dt>
+				<dd class="fl">
+					<textarea class="bordt1 bordb1 bordl1 bordr1 line-h32 pl10" cols="60" rows="4" placeholder=""></textarea>
+				</dd>
+				<dd class="fl pl10 w400">[act_code]为拍场编号</dd>
+			</dl>
+			<dl class="w-100 mt10 fl">
+				<dt class="fl input-lable w200 text-r">邀请参拍提醒：</dt>
+				<dd class="fl">
+					<textarea class="bordt1 bordb1 bordl1 bordr1 line-h32 pl10" cols="60" rows="4" placeholder=""></textarea>
+				</dd>
+				<dd class="fl pl10 w400">[g_name]邀请您参与区域拍卖中心第[act_code]场次拍卖！</dd>
+			</dl>
+			<dl class="w-100 mt10 fl">
+				<dt class="fl input-lable w200 text-r">成交后通知买家：</dt>
+				<dd class="fl">
+					<textarea class="bordt1 bordb1 bordl1 bordr1 line-h32 pl10" cols="60" rows="4" placeholder=""></textarea>
+				</dd>
+				<dd class="fl pl10 w400">[pmcc]为拍卖场次，[car]为车辆信息(品牌+车系)，[group]为发起拍卖的商家名称，[price]为得标价格(元)，[shortname]为发布商家简称</dd>
+			</dl>
+			<div class="clearfix w-100 text-c">
+				<button class="btn orange mt20 w100">提交</button>
+			</div>
+		</div>
+	</div>
+
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>

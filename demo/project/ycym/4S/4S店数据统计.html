@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<title>4S数据统计</title>
+	<link rel="stylesheet" media="screen" href="../css/base.css">
+	<link rel="stylesheet" media="screen" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/table/style.css"/>
+<body>
+	<div class="content">
+		<div class="path clearfix">
+			<div class="fl w250">
+				<i class="icon-home"></i>
+				<a href="">统计</a>
+				<i class="icon-arrow-r"></i>
+				<a href="">4S数据统计</a>
+			</div>
+		</div>
+		<div class="clearfix">
+			<dl class="fl mt10 w270">
+				<dt class="fl pl10 input-lable">查询日期：</dt>
+				<dd class="input fl">
+					<input type="text" class="text" placeholder="13623652369">
+				</dd>
+			</dl>
+			<dl class="fl w490">
+				<dt class="fl mt10 input-lable pl10">查询时间：</dt>
+				<dd class="fl mt10">
+					<input id="d11" type="text" onClick="WdatePicker()"
+						   class="input-date input-date-img">
+				</dd>
+				<dt class="fl mt10 input-lable pl10">~</dt>
+				<dd class="fl mt10">
+					<input id="d11" type="text" onClick="WdatePicker()"
+						   class="input-date input-date-img">
+				</dd>
+			</dl>
+			<dl class="fl mt10 w190">
+				<dt class="fl input-lable pl10">查询周期：</dt>
+				<dd class="fl">
+					<div class="diy_select select-relative fl">
+						<input type="hidden" name="" class="diy_select_input">
+						<div class="diy_select_txt select_box w100">全部</div>
+						<div class="diy_select_btn"></div>
+						<ul class="diy_select_list slect-ul str w100">
+							<li class="">1</li>
+							<li class="">2</li>
+							<li class="">3</li>
+						</ul>
+					</div>
+				</dd>
+			</dl>
+			<dl class="fl">
+				<button class="fl mt10 ml10 btn orange mt10 w100">查询</button>
+				<button class="fl mt10 ml10 btn-export ml10 w100">添加</button>
+			</dl>
+		</div>
+		<div class="table_wrap clearfix mt10 ml10">
+			<table class="gridView table1">
+				<thead>
+					<tr class="orange-l">						
+						<th width="5%">序号</th>
+						<th>部门名称</th>
+						<th>部门代码</th>
+						<th>简介</th>
+						<th>备注</th>
+						<th>状态</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tr>					
+	                <td>1</td>
+					<td>财务部</td>
+					<td>001</td>
+					<td>财务部</td>
+					<td>备注</td>
+					<td>状态</td>	
+					<td>
+                        <a href="">编辑</a><a href="">禁用</a>
+	                </td>
+				</tr>
+				<tr>
+	                <td>2</td>
+					<td>财务部</td>
+					<td>001</td>
+					<td>财务部</td>
+					<td>备注</td>
+					<td>状态</td>
+					<td>
+                        <a href="">编辑</a><a href="">禁用</a>
+	                </td>
+				</tr>
+				<tr>
+	                <td>3</td>
+					<td>财务部</td>
+					<td>001</td>
+					<td>财务部</td>
+					<td>备注</td>
+					<td>状态</td>
+					<td>
+                        <a href="">编辑</a><a href="">禁用</a>
+	                </td>
+				</tr>
+				<tr>
+	                <td>4</td>
+					<td>财务部</td>
+					<td>001</td>
+					<td>财务部</td>
+					<td>备注</td>
+					<td>状态</td>
+					<td>
+                        <a href="">编辑</a><a href="">禁用</a>
+	                </td>
+				</tr>
+				<tr>
+	                <td>5</td>
+					<td>财务部</td>
+					<td>001</td>
+					<td>财务部</td>
+					<td>备注</td>
+					<td>状态</td>
+					<td>
+                        <a href="">编辑</a><a href="">禁用</a>
+	                </td>
+				</tr>
+				<tr>
+	                <td>6</td>
+					<td>财务部</td>
+					<td>001</td>
+					<td>财务部</td>
+					<td>备注</td>
+					<td>状态</td>	
+					<td>
+                        <a href="">编辑</a><a href="">禁用</a>
+	                </td>
+				</tr>
+				<tr>
+	                <td>7</td>
+					<td>财务部</td>
+					<td>001</td>
+					<td>财务部</td>
+					<td>备注</td>
+					<td>状态</td>
+					<td>
+                        <a href="">编辑</a><a href="">禁用</a>
+	                </td>
+				</tr>
+				<tr>
+	                <td>8</td>
+					<td>财务部</td>
+					<td>001</td>
+					<td>财务部</td>
+					<td>备注</td>
+					<td>状态</td>
+					<td>
+                        <a href="">编辑</a><a href="">禁用</a>
+	                </td>
+				</tr>
+				<tr>
+	                <td>9</td>
+					<td>财务部</td>
+					<td>001</td>
+					<td>财务部</td>
+					<td>备注</td>
+					<td>状态</td>
+					<td>
+                        <a href="">编辑</a><a href="">禁用</a>
+	                </td>
+				</tr>
+				<tr>
+	                <td>10</td>
+					<td>财务部</td>
+					<td>001</td>
+					<td>财务部</td>
+					<td>备注</td>
+					<td>状态</td>
+					<td>
+                        <a href="">编辑</a><a href="">禁用</a>
+	                </td>
+				</tr>
+				<tr>
+	                <td>11</td>
+					<td>财务部</td>
+					<td>001</td>
+					<td>财务部</td>
+					<td>备注</td>
+					<td>状态</td>	
+					<td>
+                        <a href="">编辑</a><a href="">禁用</a>
+	                </td>
+				</tr>
+				<tr>
+	                <td>12</td>
+					<td>财务部</td>
+					<td>001</td>
+					<td>财务部</td>
+					<td>备注</td>
+					<td>状态</td>
+					<td>
+                        <a href="">编辑</a><a href="">禁用</a>
+	                </td>
+				</tr>
+				<tr>
+	                <td>13</td>
+					<td>财务部</td>
+					<td>001</td>
+					<td>财务部</td>
+					<td>备注</td>
+					<td>状态</td>
+					<td>
+                        <a href="">编辑</a><a href="">禁用</a>
+	                </td>
+				</tr>
+				<tr>
+	                <td>14</td>
+					<td>财务部</td>
+					<td>001</td>
+					<td>财务部</td>
+					<td>备注</td>
+					<td>状态</td>
+					<td>
+                        <a href="">编辑</a><a href="">禁用</a>
+	                </td>
+				</tr>
+				<tr>					
+	                <td>15</td>
+					<td>财务部</td>
+					<td>001</td>
+					<td>财务部</td>
+					<td>备注</td>
+					<td>状态</td>
+					<td>
+                        <a href="">编辑</a><a href="">禁用</a>
+	                </td>
+				</tr>
+				<tr>				
+	                <td>16</td>
+					<td>财务部</td>
+					<td>001</td>
+					<td>财务部</td>
+					<td>备注</td>
+					<td>状态</td>	
+					<td>
+                        <a href="">编辑</a><a href="">禁用</a>
+	                </td>
+				</tr>
+				<tr>
+	                <td>17</td>
+					<td>财务部</td>
+					<td>001</td>
+					<td>财务部</td>
+					<td>备注</td>
+					<td>状态</td>
+					<td>
+                        <a href="">编辑</a><a href="">禁用</a>
+	                </td>
+				</tr>
+				<tr>
+	                <td>18</td>
+					<td>财务部</td>
+					<td>001</td>
+					<td>财务部</td>
+					<td>备注</td>
+					<td>状态</td>	
+					<td>
+                        <a href="">编辑</a><a href="">禁用</a>
+	                </td>
+				</tr>
+				<tr>
+	                <td>19</td>
+					<td>财务部</td>
+					<td>001</td>
+					<td>财务部</td>
+					<td>备注</td>
+					<td>状态</td>
+					<td>
+                        <a href="">编辑</a><a href="">禁用</a>
+	                </td>
+				</tr>
+				<tr>
+	                <td>20</td>
+					<td>财务部</td>
+					<td>001</td>
+					<td>财务部</td>
+					<td>备注</td>
+					<td>状态</td>
+					<td>
+                        <a href="">编辑</a><a href="">禁用</a>
+	                </td>
+				</tr>
+			</table>
+		</div>
+		<div class="page fr clearfix mt5">
+		      <ul>
+		        <li><a href="#" class="list"><</a></li>
+		        <li><a href="#">1</a></li>
+		        <li><a href="#">2</a></li>
+		        <li><a href="#">3</a></li>
+		        <li><a href="#">4</a></li>
+		        <li><a href="#">5</a></li>
+		        <li><a href="#" class="list">></a></li>
+		      </ul> 
+		</div>
+	</div>
+	<div class="layer-bg clearfix"></div>
+	<div class="new-sector layer_box" style="display: none;">
+		<h2 class="pl20 pr20">新增部门<div class="lour-close fr">x</div></h2>
+		<div class="jobs-box clearfix">
+			<div class="div560px fl mt15 ">
+				<label class="lable-all fl">部门名称:</label>
+				<p class="p-all fl">
+					<input class="input-all fl" value="请输入部门名称" id="name" onmouseover="" onmouseout="" onfocus="if (value =='请输入部门名称'){value =''}" onblur="if (value ==''){value='请输入部门名称'}"> 
+					<!--<em  class="span-all fl">输入信息有误</em>-->
+				</p>
+			</div>
+			<div class="div560px fl mt15 ">
+				<label class="lable-all fl">部门代码:</label>
+				<p class="p-all fl">
+					<input class="input-all fl" value="请输入部门代码" id="name" onmouseover="" onmouseout="" onfocus="if (value =='请输入部门代码'){value =''}" onblur="if (value ==''){value='请输入部门代码'}"> 
+					<!--<em  class="span-all fl">输入信息有误</em>-->
+				</p>
+			</div>
+			<div class="div560px fl mt15 ">
+				<label class="lable-all fl">简介:</label>
+				<p class="p-all fl">
+					<textarea  class="text-all" cols="50" rows="5" value="请输入简介" id="content" onmouseover="" onmouseout="" onfocus="if (value =='请输入简介'){value =''}" onblur="if (value ==''){value='请输入简介'}">请输入简介</textarea>
+				</p>
+			</div>
+			<div class="div560px fl mt15 ">
+				<label class="lable-all fl">备注:</label>
+				<p class="p-all fl">
+					<textarea  class="text-all" cols="50" rows="5" value="请输入备注" id="content" onmouseover="" onmouseout="" onfocus="if (value =='请输入备注'){value =''}" onblur="if (value ==''){value='请输入备注'}">请输入备注</textarea>
+				</p>
+			</div>
+			<div class="up-manage-button clearfix">
+	        	<button class="button-confirm mt15 fl">确定</button>
+	        	<button class="button-cancel close-sector mt15 fr">取消</button>
+        	</div>
+		</div>
+		
+	</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/inputshow.js"></script>
+<script type="text/javascript" src="../js/table/jquery.freezeheader.js"></script>
+<script type="text/javascript">
+    $(function () {
+		$("tbody tr:odd").addClass("odd");
+		$("tbody tr:even").addClass("even");
+	});
+	$(document).ready(function () {
+		$(".table1").freezeHeader({ 'height':'500px' });
+	})
+</script>
+</body>
+</html>

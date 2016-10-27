@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<title>员工管理</title>
+	<link href="../css/base.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" type="text/css" href="../css/table/style.css" />
+	<link href="../css/common.css" rel="stylesheet" media="screen">
+	<link href="../css/car.css" rel="stylesheet" media="screen">
+<body>
+<div class="content">
+	<!--位置路径-->
+	<div class="path mt5 clearfix">
+		<div class="fl pl20">
+			<i class="icon-home"></i>
+			<a href="">商家管理</a>
+			<i class="icon-arrow-r"></i>
+			<a href="">员工管理</a>
+		</div>
+	</div>
+	<!--选择信息栏-->
+	<div class="info clearfix">
+		<dl class="fl mt10 w180">
+            <dt class="fl input-lable pl10">部门：</dt>
+            <dd class="fl">
+                <div class="diy_select  select-relative">
+                    <input type="hidden" name="" class="diy_select_input">
+                    <div class="diy_select_txt select_box w120 ">请选择</div>
+                    <div class="diy_select_btn"></div>
+                    <ul class="diy_select_list slect-ul w120 ">
+                        <li class="">请选择</li>
+                        <li class="">集团</li>
+                        <li class="">4S</li>
+                        <li class="">车商</li>
+                    </ul>
+                </div>
+            </dd>
+        </dl>
+        <dl class="fl mt10 w180">
+            <dt class="fl input-lable pl10">岗位：</dt>
+            <dd class="fl">
+                <div class="diy_select  select-relative">
+                    <input type="hidden" name="" class="diy_select_input">
+                    <div class="diy_select_txt select_box w120">请选择</div>
+                    <div class="diy_select_btn"></div>
+                    <ul class="diy_select_list slect-ul w120">
+                        <li class="">请选择</li>
+                        <li class="">集团</li>
+                        <li class="">4S</li>
+                        <li class="">车商</li>
+                    </ul>
+                </div>
+            </dd>
+        </dl>      
+		<dl class="fl mt10 w260">
+			<dt class="fl input-lable pl10 pr10">姓名：</dt>
+			<dd class="fl input">
+				<input type="text" class="text" value="" placeholder="姓名">
+			</dd>
+		</dl>
+		<dl class="fl mt10 w260">
+			<dt class="fl input-lable pl10 pr10">手机：</dt>
+			<dd class="fl input">
+				<input type="text" class="text" value="" placeholder="手机">
+			</dd>
+		</dl>
+		<dl class="fl mt10 w280">
+			<dt class="fl input-lable pl10 pr10">登录账号：</dt>
+			<dd class="fl input">
+				<input type="text" class="text" value="" placeholder="登录账号">
+			</dd>
+		</dl>
+		<div class="fl  w220">
+			<button class="fl btn ml10 mt10 orange w100">查询</button>
+			<button class="fl btn-export ml10 mt10 w100 " onclick="javascrtpt:window.location.href='员工管理新增.html'">添加</button>
+		</div>
+	</div>
+	<!--查询表格-->
+	<div class="table_wrap clearfix mt10 ">
+		<table class="gridView table1">
+			<thead>
+			<tr class="orange-l">
+				<th width="5%">序号</th>
+				<th >员工姓名</th>
+				<th >登录账号</th>
+				<th >手机</th>
+				<th >性别</th>
+				<th >Email</th>
+				<th >委托人</th>
+				<th >部门</th>
+				<th >岗位</th>
+				<th >权限组</th>
+				
+				<th >操作</th>
+				
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>1</td>
+				<td>fdasfdf</td>
+				<td>fr4regfs</td>
+				<td>小超客服主管</td>
+				<td>小超客服主管</td>
+				<td>2016-04-12</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				
+				<td>
+					<a href="#" class="edit-sector">禁用</a>
+					<a href="员工管理编辑.html" class="edit-sector">编辑</a>
+				</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>fdasfdf</td>
+				<td>fr4regfs</td>
+				<td>小超客服主管</td>
+				<td>小超客服主管</td>
+				<td>2016-04-12</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				
+				<td>
+					<a href="#" class="edit-sector">禁用</a>
+					<a href="员工管理编辑.html" class="edit-sector">编辑</a>
+				</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>fdasfdf</td>
+				<td>fr4regfs</td>
+				<td>小超客服主管</td>
+				<td>小超客服主管</td>
+				<td>2016-04-12</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				
+				<td>
+					<a href="#" class="edit-sector">禁用</a>
+					<a href="员工管理编辑.html" class="edit-sector">编辑</a>
+				</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>fdasfdf</td>
+				<td>fr4regfs</td>
+				<td>小超客服主管</td>
+				<td>小超客服主管</td>
+				<td>2016-04-12</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				
+				<td>
+					<a href="#" class="edit-sector">禁用</a>
+					<a href="员工管理编辑.html" class="edit-sector">编辑</a>
+				</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>fdasfdf</td>
+				<td>fr4regfs</td>
+				<td>小超客服主管</td>
+				<td>小超客服主管</td>
+				<td>2016-04-12</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				
+				<td>
+					<a href="#" class="edit-sector">禁用</a>
+					<a href="员工管理编辑.html" class="edit-sector">编辑</a>
+				</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>fdasfdf</td>
+				<td>fr4regfs</td>
+				<td>小超客服主管</td>
+				<td>小超客服主管</td>
+				<td>2016-04-12</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				
+				<td>
+					<a href="#" class="edit-sector">禁用</a>
+					<a href="员工管理编辑.html" class="edit-sector">编辑</a>
+				</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>fdasfdf</td>
+				<td>fr4regfs</td>
+				<td>小超客服主管</td>
+				<td>小超客服主管</td>
+				<td>2016-04-12</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				
+				<td>
+					<a href="#" class="edit-sector">禁用</a>
+					<a href="员工管理编辑.html" class="edit-sector">编辑</a>
+				</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>fdasfdf</td>
+				<td>fr4regfs</td>
+				<td>小超客服主管</td>
+				<td>小超客服主管</td>
+				<td>2016-04-12</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				
+				<td>
+					<a href="#" class="edit-sector">禁用</a>
+					<a href="员工管理编辑.html" class="edit-sector">编辑</a>
+				</td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td>fdasfdf</td>
+				<td>fr4regfs</td>
+				<td>小超客服主管</td>
+				<td>小超客服主管</td>
+				<td>2016-04-12</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				
+				<td>
+					<a href="#" class="edit-sector">禁用</a>
+					<a href="员工管理编辑.html" class="edit-sector">编辑</a>
+				</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>fdasfdf</td>
+				<td>fr4regfs</td>
+				<td>小超客服主管</td>
+				<td>小超客服主管</td>
+				<td>2016-04-12</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				
+				<td>
+					<a href="#" class="edit-sector">禁用</a>
+					<a href="员工管理编辑.html" class="edit-sector">编辑</a>
+				</td>
+			</tr>
+			<tr>
+				<td>11</td>
+				<td>fdasfdf</td>
+				<td>fr4regfs</td>
+				<td>小超客服主管</td>
+				<td>小超客服主管</td>
+				<td>2016-04-12</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				
+				<td>
+					<a href="#" class="edit-sector">禁用</a>
+					<a href="员工管理编辑.html" class="edit-sector">编辑</a>
+				</td>
+			</tr>
+			<tr>
+				<td>12</td>
+				<td>fdasfdf</td>
+				<td>fr4regfs</td>
+				<td>小超客服主管</td>
+				<td>小超客服主管</td>
+				<td>2016-04-12</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				
+				<td>
+					<a href="#" class="edit-sector">禁用</a>
+					<a href="员工管理编辑.html" class="edit-sector">编辑</a>
+				</td>
+			</tr>
+			<tr>
+				<td>13</td>
+				<td>fdasfdf</td>
+				<td>fr4regfs</td>
+				<td>小超客服主管</td>
+				<td>小超客服主管</td>
+				<td>2016-04-12</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				
+				<td>
+					<a href="#" class="edit-sector">禁用</a>
+					<a href="员工管理编辑.html" class="edit-sector">编辑</a>
+				</td>
+			</tr>
+			<tr>
+				<td>14</td>
+				<td>fdasfdf</td>
+				<td>fr4regfs</td>
+				<td>小超客服主管</td>
+				<td>小超客服主管</td>
+				<td>2016-04-12</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				
+				<td>
+					<a href="#" class="edit-sector">禁用</a>
+					<a href="员工管理编辑.html" class="edit-sector">编辑</a>
+				</td>
+			</tr>
+			<tr>
+				<td>15</td>
+				<td>fdasfdf</td>
+				<td>fr4regfs</td>
+				<td>小超客服主管</td>
+				<td>小超客服主管</td>
+				<td>2016-04-12</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				
+				<td>
+					<a href="#" class="edit-sector">禁用</a>
+					<a href="员工管理编辑.html" class="edit-sector">编辑</a>
+				</td>
+			</tr>
+			<tr>
+				<td>16</td>
+				<td>fdasfdf</td>
+				<td>fr4regfs</td>
+				<td>小超客服主管</td>
+				<td>小超客服主管</td>
+				<td>2016-04-12</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				
+				<td>
+					<a href="#" class="edit-sector">禁用</a>
+					<a href="员工管理编辑.html" class="edit-sector">编辑</a>
+				</td>
+			</tr>
+			<tr>
+				<td>17</td>
+				<td>fdasfdf</td>
+				<td>fr4regfs</td>
+				<td>小超客服主管</td>
+				<td>小超客服主管</td>
+				<td>2016-04-12</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				
+				<td>
+					<a href="#" class="edit-sector">禁用</a>
+					<a href="员工管理编辑.html" class="edit-sector">编辑</a>
+				</td>
+			</tr>
+			<tr>
+				<td>18</td>
+				<td>fdasfdf</td>
+				<td>fr4regfs</td>
+				<td>小超客服主管</td>
+				<td>小超客服主管</td>
+				<td>2016-04-12</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				
+				<td>
+					<a href="#" class="edit-sector">禁用</a>
+					<a href="员工管理编辑.html" class="edit-sector">编辑</a>
+				</td>
+			</tr>
+			<tr>
+				<td>19</td>
+				<td>fdasfdf</td>
+				<td>fr4regfs</td>
+				<td>小超客服主管</td>
+				<td>小超客服主管</td>
+				<td>2016-04-12</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				
+				<td>
+					<a href="#" class="edit-sector">禁用</a>
+					<a href="员工管理编辑.html" class="edit-sector">编辑</a>
+				</td>
+			</tr>
+			<tr>
+				<td>20</td>
+				<td>fdasfdf</td>
+				<td>fr4regfs</td>
+				<td>小超客服主管</td>
+				<td>小超客服主管</td>
+				<td>2016-04-12</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				<td>2016</td>
+				
+				<td>
+					<a href="#" class="edit-sector">禁用</a>
+					<a href="员工管理编辑.html" class="edit-sector">编辑</a>
+				</td>
+			</tr>
+			
+			
+			</tbody>
+		</table>
+	</div>
+	<!--底部分页-->
+	<div class="page fr clearfix mt15">
+		<ul>
+			<li><a href="#" class="list"><</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#" class="list">></a></li>
+		</ul>
+	</div>
+</div>
+
+<script src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/table/jquery.freezeheader.js"></script>
+<script src="../js/index.js" type="text/javascript"></script>
+<script src="../js/select.js" type="text/javascript"></script>
+<script>
+	$(function () {
+		$("tr:odd").addClass("odd");
+		$("tr:even").addClass("even");
+	});
+	$(document).ready(function () {
+		$(".table1").freezeHeader({ 'height': '500px' });
+	})
+
+</script>
+</body>
+</html>

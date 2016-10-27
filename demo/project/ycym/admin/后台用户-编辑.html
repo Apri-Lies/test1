@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=7">
+    <title>编辑后台用户</title>
+    <link href="../css/base.css" rel="stylesheet" media="screen">
+    <link href="../css/common.css" rel="stylesheet" media="screen">
+    <link href="../css/admin-main.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div class="content">
+    <!--位置路径-->
+    <div class="path mt5 clearfix">
+        <div class="fl pl20">
+            <i class="icon-home"></i>
+            <a href="#">权限管理</a>
+            <i class="icon-arrow-r"></i>
+            <a href="#">后台用户管理</a>
+            <i class="icon-arrow-r"></i>
+            <a href="#">编辑用户</a>
+        </div>
+    </div>
+    <div class="bordt1 bordl1">
+        <!--<h3 class="orange-l pl5 bordb1 bordr1">编辑用户</h3>-->
+        <table class="table" width="100%">
+            <tbody>
+            <tr>
+                <td width="20%">账号：</td>
+                <td><input type="text" class="text fl"/></td>
+            </tr>
+            <tr>
+                <td>新密码：</td>
+                <td><input type="text" class="text fl"/></td>
+            </tr>
+            <tr>
+                <td>姓名：</td>
+                <td><input type="text" class="text fl"/></td>
+            </tr>
+            <tr>
+                <td>手机号码：</td>
+                <td><input type="text" class="text fl"/></td>
+            </tr>
+            <tr>
+                <td>头像：</td>
+                <td>
+                    <input type="text" class="text fl"/>
+                    <button class="btn orange fl w100 ml10">上传</button>
+                </td>
+            </tr>
+            <tr>
+                <td>状态：</td>
+                <td class="clearfix relative z-100">
+                    <div class="diy_select  select-relative w140 fl">
+                        <input type="hidden" name="" class="diy_select_input w120">
+
+                        <div class="diy_select_txt select_box w120">启用</div>
+                        <div class="diy_select_btn"></div>
+                        <ul class="diy_select_list slect-ul w120">
+                            <li class="">启用</li>
+                        </ul>
+                    </div>
+                    <div class="fl line-h32">如果禁用了将无法登陆本系统</div>
+                </td>
+            </tr>
+            <tr>
+                <td>用户后台权限：</td>
+                <td class="clearfix">
+                    <div class="diy_select  select-relative w140 fl">
+                        <input type="hidden" name="" class="diy_select_input w120">
+
+                        <div class="diy_select_txt select_box w120">启用</div>
+                        <div class="diy_select_btn"></div>
+                        <ul class="diy_select_list slect-ul w120">
+                            <li class="">启用</li>
+                        </ul>
+                    </div>
+                    <div class="fl line-h32">启用可以进入任意商家后台 *偌开启，账号必须全用大写</div>
+                </td>
+            </tr>
+            <tr>
+                <td>权限模块：</td>
+                <td>
+                    <div class="fl">
+                        <div class="checkbox-list fl mt10">
+                            <span class="checkbox_item">
+                                <input type="checkbox">
+                                <label class="check_label on">
+                                    <i class="checkbox_icon "></i>
+                                    <em class="checkbox_text">4S-总经理</em>
+                                </label>
+                            </span>
+                        </div>
+                        <div class="checkbox-list fl mt10">
+                            <span class="checkbox_item">
+                                <input type="checkbox">
+                                <label class="check_label on">
+                                    <i class="checkbox_icon "></i>
+                                    <em class="checkbox_text">4S-车辆管理员</em>
+                                </label>
+                            </span>
+                        </div>
+                        <div class="checkbox-list fl mt10">
+                            <span class="checkbox_item">
+                                <input type="checkbox">
+                                <label class="check_label on">
+                                    <i class="checkbox_icon "></i>
+                                    <em class="checkbox_text">4S-常用内容</em>
+                                </label>
+                            </span>
+                        </div>
+                        <div class="checkbox-list fl mt10">
+                            <span class="checkbox_item">
+                                <input type="checkbox">
+                                <label class="check_label on">
+                                    <i class="checkbox_icon "></i>
+                                    <em class="checkbox_text">4S-车辆查询</em>
+                                </label>
+                            </span>
+                        </div>
+                        <div class="checkbox-list fl mt10">
+                            <span class="checkbox_item">
+                                <input type="checkbox">
+                                <label class="check_label on">
+                                    <i class="checkbox_icon "></i>
+                                    <em class="checkbox_text">4S-网络管理员</em>
+                                </label>
+                            </span>
+                        </div>
+                        <div class="checkbox-list fl mt10">
+                            <span class="checkbox_item">
+                                <input type="checkbox">
+                                <label class="check_label on">
+                                    <i class="checkbox_icon "></i>
+                                    <em class="checkbox_text">4S-拍卖询价</em>
+                                </label>
+                            </span>
+                        </div>
+                        <div class="checkbox-list fl mt10">
+                            <span class="checkbox_item">
+                                <input type="checkbox">
+                                <label class="check_label on">
+                                    <i class="checkbox_icon "></i>
+                                    <em class="checkbox_text">4S-车辆管理</em>
+                                </label>
+                            </span>
+                        </div>
+                        <div class="checkbox-list fl mt10">
+                            <span class="checkbox_item">
+                                <input type="checkbox">
+                                <label class="check_label on">
+                                    <i class="checkbox_icon "></i>
+                                    <em class="checkbox_text">4S-子站功能</em>
+                                </label>
+                            </span>
+                        </div>
+                        <div class="checkbox-list fl mt10">
+                            <span class="checkbox_item">
+                                <input type="checkbox">
+                                <label class="check_label on">
+                                    <i class="checkbox_icon "></i>
+                                    <em class="checkbox_text">子站</em>
+                                </label>
+                            </span>
+                        </div>
+                        <div class="checkbox-list fl mt10">
+                            <span class="checkbox_item">
+                                <input type="checkbox">
+                                <label class="check_label on">
+                                    <i class="checkbox_icon "></i>
+                                    <em class="checkbox_text">4S-置换顾问</em>
+                                </label>
+                            </span>
+                        </div>
+                        <div class="checkbox-list fl mt10">
+                            <span class="checkbox_item">
+                                <input type="checkbox">
+                                <label class="check_label on">
+                                    <i class="checkbox_icon "></i>
+                                    <em class="checkbox_text">4S店-销售接待</em>
+                                </label>
+                            </span>
+                        </div>
+                        <div class="checkbox-list fl mt10">
+                            <span class="checkbox_item">
+                                <input type="checkbox">
+                                <label class="check_label on">
+                                    <i class="checkbox_icon "></i>
+                                    <em class="checkbox_text">4S店-前台接待</em>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>备注：</td>
+                <td>
+                    <textarea class="bordt1 bordb1 bordl1 bordr1 fl" cols="70" rows="6" placeholder=""></textarea>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="mt10 text-c">
+        <button class="btn orange w100">返回上一页</button>
+        <button class="btn orange-l w100 ml10">提交</button>
+    </div>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/select.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>

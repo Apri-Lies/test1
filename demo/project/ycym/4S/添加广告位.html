@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=7">
+<title>添加广告位</title>
+<link rel="stylesheet" media="screen" href="../css/base.css">
+<link rel="stylesheet" media="screen" href="../css/common.css">
+<link rel="stylesheet" media="screen" href="../css/4s.css"></head>
+</head>
+<body>
+	<div class="content clearfix">
+		<div class="path clearfix">
+			<div class="fl w400">
+				<i class="icon-home"></i> <a href="">网站管理</a> 
+				<i class="icon-arrow-r"></i><a href="广告位管理.html">广告位管理</a>
+				<i class="icon-arrow-r"></i><a href="添加广告位.html">添加广告位</a>
+			</div>
+		</div>
+		<div class="seller mt15 h-title clearfix">
+			<h3 class="orange-l pl15">添加广告位</h3>
+			<div class="pb15 clearfix">				
+				<div class="w800 fl mt15 ">
+					<label class="lable-all fl">标题:</label>
+					<input class="text fl" placeholder="请输入标题" id="name"/>
+				</div>					
+				<div class="w800 fl mt15 ">
+					<label class="lable-all fl">类型:</label>
+					<div class="clearfix">
+						<div class="diy_select  select-relative fl">
+							<input type="hidden" name="" class="diy_select_input">
+							<div class="diy_select_txt select_box w150">请选择</div>
+							<div class="diy_select_btn"></div>
+							<ul class="diy_select_list slect-ul str w150">
+								<li class="">首页-主题海报轮换</li>
+								<li class="">首页-优质推荐商</li>
+								<li class="">会员登录-右侧幻灯片</li>
+							</ul>
+						</div>
+						<div class="diy_select  select-relative fl ml10">
+							<input type="hidden" name="" class="diy_select_input">
+							<div class="diy_select_txt select_box w150">请选择</div>
+							<div class="diy_select_btn"></div>
+							<ul class="diy_select_list slect-ul str w150">
+								<li class="">图片</li>
+								<li class="">html</li>
+							</ul>
+						</div>							
+					</div>				
+				</div>				
+				<div class="w800 fl mt15 ">
+					<label class="lable-all fl">图片:</label>
+					<input type="file" name="fileField" id="fileField" />
+				</div>				
+				<div class="w800 fl mt15 ">
+					<label class="lable-all fl">排序:</label>
+					<input class="text fl" placeholder="请输入广告位排序" id="name"/>
+				</div>
+				
+				<div class="div800px fl mt15 ">
+					<label class="lable-all fl">外链:</label>
+					<input class="text fl w300" placeholder="请输入外链地址"/> <em class="lihe32 ml5">如果填写本框，则点击标题即跳转到该地址</em>
+				</div>
+				
+				<div class="w800 fl mt15 ">
+					<label class="lable-all fl">生效日期:</label>
+					<input id="d11" type="text" onClick="WdatePicker()"class="input-date input-date-img" value="有效日期">
+				</div>
+				<div class="w800 fl mt15 ">
+					<label class="lable-all fl">结束时间:</label>
+						<input id="d11" type="text" onClick="WdatePicker()"class="input-date input-date-img" value="失效日期">
+				</div>				
+				<div class="w800 fl mt15 ">
+					<label class="lable-all pt5 fl">状态:</label>
+					<div class="radio-right pt5 fl">
+						<a href="javascript:void(0);" class="a_radio" date="1"name="order"><em>正常</em></a> 
+						<a href="javascript:void(0);" class="a_radio" date="1"name="order"><em>失效</em></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mt20 mb20 text-c">
+			<a href="广告管理.html"><button class="btn orange-l w100">返回上一页</button></a>
+			<button class="ml5 btn orange-l w100">提交</button>
+		</div>
+	</div>
+	</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/My97DatePicker/WdatePicker.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/select.js"></script>
+</body>
+</html>
