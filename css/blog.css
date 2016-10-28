@@ -1,6 +1,6 @@
 .header{background-color:rgb(73, 22, 86);}
 .content{padding-top: 60px;}
-.canvas{top:0px;left:0px;z-index:100;position:fixed;pointer-events:none;}
+.canvas{top:0px;left:0px;z-index:0;position:fixed;pointer-events:none;}
 .blog-masthead {background-color: #428bca;-webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);}
 pre code{white-space:pre-line;}
 /* Nav links */
