@@ -1,0 +1,58 @@
+@import "../bootstrap/css/bootstrap.css";
+@import "reset";
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{zoom:1} 
+.fl{float:left;}
+.fr{float:right;}
+/***渐变***/
+.gradient1{background-image: repeating-linear-gradient(30deg,red 0,blue 50%,yellow 100%);}
+.gradient2{background: repeating-radial-gradient(red, yellow 10%, green 15%); }
+body {
+  position: relative;
+  overflow-x: hidden;
+  margin: 50px 0 100px 0;
+}
+.page {
+  position: absolute;
+  width: 100%;
+}
+.page.ng-enter,
+.page.ng-leave {
+  -webkit-transition: .5s linear all;
+  -moz-transition: .5s linear all;
+  -ms-transition: .5s linear all;
+  -o-transition: .5s linear all;
+  transition: .5s linear all;
+}
+.page.ng-leave {
+  left: 0;
+  opacity: 1;
+}
+.page.ng-leave.ng-leave-active {
+  left: -100%;
+  opacity: 0;
+}
+.page.ng-enter {
+  left: 100%;
+  opacity: 0;
+}
+.page.ng-enter.ng-enter-active {
+  left: 0;
+  opacity: 1;
+}
+
+//main
+.price {
+  border-top: 1px solid #eee;
+  color: #f00;
+  padding-top: 5px;
+  font-size: 1.2em;
+}
+
+.navbar .col-xs-4 .navbar-link {
+  line-height: 50px;
+}
+
+.table td {
+  vertical-align: middle !important;
+}
