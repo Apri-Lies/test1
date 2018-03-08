@@ -1,0 +1,81 @@
+/**************组件****************/
+/*页签*/
+.tab .tabnav {
+  margin: 0;
+  padding: 0;
+}
+.tab .tabnav li {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid transparent;
+  border-top-width: 2px;
+  padding: 0 20px;
+  text-align: center;
+}
+.tab .tabnav li.active {
+  height: 41px;
+  line-height: 40px;
+  margin-bottom: -1px;
+  border-color: #ccc;
+  border-bottom-color: #fff ;
+  border-top-color: #188EEE;
+}
+.tab-list {
+  border-top: 1px solid #ccc;
+  position: relative;
+}
+/*nav*/
+/*nav  start*/
+.nav-wrap {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  margin: 0;
+  padding: 0 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.nav-wrap .nav-menu li {
+  transform: rotate(30deg);
+}
+.nav-wrap .nav-menu li > a {
+  display: inline-block;
+  line-height: 60px;
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #fafafa;
+}
+.nav-wrap .nav-menu li.active {
+  background-color: rgba(30, 30, 30, 0.63);
+  border-radius: 20%;
+  box-shadow: 5px 3px 3px 1px #995599;
+  transform: scale(0.6) rotate(15deg);
+}
+.nav-wrap .nav-bar {
+  padding-left: 5px;
+}
+.nav-wrap .nav-bar > a {
+  line-height: 60px;
+}
+.nav-wrap .nav-bar > a.btn {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  line-height: 20px;
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+/*nav  end*/
+/*back top*/
+#backtop {
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  width: 70px;
+  height: 115px;
+  cursor: pointer;
+  background: transparent url("../img/backtop.png") no-repeat 0 0;
+  display: none;
+}

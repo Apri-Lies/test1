@@ -1,0 +1,94 @@
+//canvas背景
+.cosmos {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    position: fixed;
+}
+//内容主体
+//左侧内容
+
+.blog-header {
+    padding-top: 30px;
+    .blog-title {
+        margin-top: 30px;
+        margin-bottom: 0;
+        font-size: 50px;
+        font-weight: normal;
+    }
+    .blog-description {
+        font-size: 18px;
+    }
+}
+
+.blog-main {
+    font-size: 14px;
+    line-height: 1.5;
+    .nav-tabs {
+        border-color: transparent;
+        li {
+            a {
+                border: none;
+                color: #666;
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+        li.active {
+            a {
+                border: none;
+                background-color: transparent;
+                color: #2a4396;
+            }
+        }
+    }
+    .tab-content {
+        }
+    pre {
+        background-color: transparent;
+        border: none;
+        padding: 10px 0 0 40px;
+    }
+    h3 {
+        padding: 15px 10px 0;
+    }
+    p {
+        padding: 10px 0 0;
+        text-align: justify;
+        text-indent: 1em;
+    }
+    ol {
+        padding: 10px 0 10px 40px;
+        list-style-type: cambodian;
+    }
+}
+
+//右侧内容
+.blog-sidebar {}
+.sidebar-module-inset {
+    padding: 15px;
+    background-color: rgba(122,122,122,.5);
+    border-radius: 4px;
+}
+.sidebar-module-inset ol:last-child,
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child {
+    margin-bottom: 0;
+}
+.sidebar-module {
+    padding: 15px;
+    margin: 0;
+}
+
+.pager {
+    margin-bottom: 60px;
+    text-align: left;
+}
+.pager > li > a {
+    width: 140px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 30px;
+}
+

@@ -1,0 +1,24 @@
+/*Media Queries*/
+@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 996px) {}
+@media screen and (max-width: 768px) {
+    .nav-wrap{padding:0 2em;}
+    .nav-wrap .nav-menu{position:fixed;width:101%;top:60px;left:-101%;float:none;
+                    -webkit-transition: left 2s, height 2s, -webkit-transform 2s;
+                    -moz-transition: left 2s, height 2s, -moz-transform 2s;
+                    -o-transition: left 2s, height 2s,-o-transform 2s;
+                    transition: left 2s, height 2s, transform 2s;}
+    .nav-wrap .nav-menu li{display:inherit;padding-left: 1em}
+    .nav-wrap .nav-bar>a.btn{display:block;}
+    .nav-wrap .nav-bar>a.btn>span{color:#29CAC2;}
+    .nav-wrap .in{left:0px;
+                -webkit-transition: left 2s, height 2s, -webkit-transform 2s;
+                -moz-transition: left 2s, height 2s, -moz-transform 2s;
+                -o-transition: left 2s, height 2s,-o-transform 2s;
+                transition: left 2s, height 2s, transform 2s;}
+    .nav-wrap .nav-menu{background-color:rgba(0,0,0,0.5);}
+    .nav-wrap .nav-menu li>a{color:#D4CF30;}
+}
+@media screen and (max-width: 480px) {
+    .carousel-inner .carousel-caption{display: none;}
+}
